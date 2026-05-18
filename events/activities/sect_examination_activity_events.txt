@@ -15,7 +15,7 @@ xianxia_activity.7300 = {
 				limit = {
 					is_alive = yes
 					is_adult = yes
-					faith = root.faith
+					faith = scope:root.faith
 					NOT = { is_ruler = yes }
 					NOT = { has_trait = sect_elder }
 				OR = {
@@ -50,11 +50,11 @@ xianxia_activity.7300 = {
 		# If no fitting inner-court recruit exists in realm/court, recruit a talented wanderer.
 		if = {
 			limit = { NOT = { exists = scope:sect_exam_inner_recruit } }
-			random_character = {
+			random_living_character = {
 				limit = {
 					is_alive = yes
 					is_adult = yes
-					faith = root.faith
+					faith = scope:root.faith
 					is_ruler = no
 					is_courtier = no
 					OR = {
@@ -98,7 +98,7 @@ xianxia_activity.7300 = {
 				age = { 16 25 }
 				gender_female_chance = 35
 				employer = root
-				faith = root.faith
+				faith = scope:root.faith
 				culture = root.culture
 				dynasty = none
 				random_traits = no
@@ -118,7 +118,7 @@ xianxia_activity.7300 = {
 				limit = {
 					is_alive = yes
 					is_adult = yes
-					faith = root.faith
+					faith = scope:root.faith
 					NOT = { is_ruler = yes }
 					NOT = { has_trait = sect_elder }
 				NOT = { has_character_modifier = inner_court_disciple }
@@ -135,11 +135,11 @@ xianxia_activity.7300 = {
 		# Fallback to wandering disciple for outer court.
 		if = {
 			limit = { NOT = { exists = scope:sect_exam_outer_recruit } }
-			random_character = {
+			random_living_character = {
 				limit = {
 					is_alive = yes
 					is_adult = yes
-					faith = root.faith
+					faith = scope:root.faith
 					is_ruler = no
 					is_courtier = no
 				}
@@ -176,7 +176,7 @@ xianxia_activity.7300 = {
 				age = { 16 30 }
 				gender_female_chance = 45
 				employer = root
-				faith = root.faith
+				faith = scope:root.faith
 				culture = root.culture
 				dynasty = none
 				random_traits = no
@@ -376,7 +376,7 @@ xianxia_activity.7320 = {
 				age = { 16 28 }
 				gender_female_chance = 35
 				employer = root
-				faith = root.faith
+				faith = scope:root.faith
 				culture = root.culture
 				dynasty = none
 				trait = cultivation_qi_gathering

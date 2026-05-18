@@ -1,4 +1,4 @@
-namespace = xianxia_activity
+﻿namespace = xianxia_activity
 
 xianxia_activity.7200 = {
 	type = activity_event
@@ -39,7 +39,7 @@ xianxia_activity.7220 = {
 				is_alive = yes
 				is_adult = yes
 				is_cultivator = yes
-				faith = root.faith
+				faith = scope:host.faith
 			}
 			add_character_modifier = { modifier = dao_exchange_participant days = 730 }
 			add_learning_lifestyle_xp = minor_lifestyle_xp

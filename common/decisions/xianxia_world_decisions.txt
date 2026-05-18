@@ -426,8 +426,8 @@ found_martial_confederation_decision = {
         is_landed = yes
         is_independent_ruler = yes
         is_confederation_member = no
-        highest_held_title_tier <= tier_king
-        NOT = { highest_held_title_tier >= tier_emperor }
+        highest_held_title_tier <= tier_kingdom
+        NOT = { highest_held_title_tier >= tier_empire }
         has_trait = sect_leader
         has_cultivation_sect_faith = yes
         realm_size >= 35
@@ -436,8 +436,8 @@ found_martial_confederation_decision = {
     is_valid = {
         is_independent_ruler = yes
         is_confederation_member = no
-        highest_held_title_tier <= tier_king
-        NOT = { highest_held_title_tier >= tier_emperor }
+        highest_held_title_tier <= tier_kingdom
+        NOT = { highest_held_title_tier >= tier_empire }
         has_trait = sect_leader
         has_cultivation_sect_faith = yes
         realm_size >= 35
@@ -474,8 +474,8 @@ proclaim_orthodox_alliance_leader_decision = {
         is_landed = yes
         is_independent_ruler = yes
         is_confederation_member = no
-        highest_held_title_tier <= tier_king
-        NOT = { highest_held_title_tier >= tier_emperor }
+        highest_held_title_tier <= tier_kingdom
+        NOT = { highest_held_title_tier >= tier_empire }
         has_trait = sect_leader
         realm_size >= 55
         faith = { has_doctrine_parameter = orthodox_cultivation }
@@ -484,8 +484,8 @@ proclaim_orthodox_alliance_leader_decision = {
     is_valid = {
         is_independent_ruler = yes
         is_confederation_member = no
-        highest_held_title_tier <= tier_king
-        NOT = { highest_held_title_tier >= tier_emperor }
+        highest_held_title_tier <= tier_kingdom
+        NOT = { highest_held_title_tier >= tier_empire }
         has_trait = sect_leader
         realm_size >= 55
         faith = { has_doctrine_parameter = orthodox_cultivation }
@@ -521,8 +521,8 @@ proclaim_demonic_alliance_leader_decision = {
         is_landed = yes
         is_independent_ruler = yes
         is_confederation_member = no
-        highest_held_title_tier <= tier_king
-        NOT = { highest_held_title_tier >= tier_emperor }
+        highest_held_title_tier <= tier_kingdom
+        NOT = { highest_held_title_tier >= tier_empire }
         has_trait = sect_leader
         realm_size >= 55
         faith = { has_doctrine_parameter = demonic_cultivation }
@@ -531,8 +531,8 @@ proclaim_demonic_alliance_leader_decision = {
     is_valid = {
         is_independent_ruler = yes
         is_confederation_member = no
-        highest_held_title_tier <= tier_king
-        NOT = { highest_held_title_tier >= tier_emperor }
+        highest_held_title_tier <= tier_kingdom
+        NOT = { highest_held_title_tier >= tier_empire }
         has_trait = sect_leader
         realm_size >= 55
         faith = { has_doctrine_parameter = demonic_cultivation }
@@ -569,8 +569,8 @@ proclaim_unorthodox_alliance_leader_decision = {
         is_landed = yes
         is_independent_ruler = yes
         is_confederation_member = no
-        highest_held_title_tier <= tier_king
-        NOT = { highest_held_title_tier >= tier_emperor }
+        highest_held_title_tier <= tier_kingdom
+        NOT = { highest_held_title_tier >= tier_empire }
         has_trait = sect_leader
         realm_size >= 55
         faith = { has_doctrine_parameter = unorthodox_cultivation }
@@ -579,8 +579,8 @@ proclaim_unorthodox_alliance_leader_decision = {
     is_valid = {
         is_independent_ruler = yes
         is_confederation_member = no
-        highest_held_title_tier <= tier_king
-        NOT = { highest_held_title_tier >= tier_emperor }
+        highest_held_title_tier <= tier_kingdom
+        NOT = { highest_held_title_tier >= tier_empire }
         has_trait = sect_leader
         realm_size >= 55
         faith = { has_doctrine_parameter = unorthodox_cultivation }
@@ -756,7 +756,7 @@ seek_legendary_world_artifact_decision = {
     }
 
     effect = {
-        gold = { add = -250 }
+        add_gold = -250
         add_character_flag = { flag = seek_legendary_world_artifact_cooldown days = 1460 }
         trigger_event = xianxia_world.1810
     }
@@ -791,7 +791,7 @@ refine_grand_spirit_pills_decision = {
     }
 
     effect = {
-        gold = { add = -180 }
+        add_gold = -180
         add_character_flag = { flag = grand_spirit_pill_cooldown days = 540 }
         trigger_event = xianxia_world.1830
     }
@@ -842,7 +842,7 @@ study_magic_treasure_crafting_decision = {
     }
 
     effect = {
-        gold = { add = -150 }
+        add_gold = -150
         add_character_flag = { flag = study_magic_treasure_crafting_cooldown days = 730 }
         trigger_event = xianxia_world.1840
     }
@@ -1014,7 +1014,7 @@ consecrate_sacred_mountain_decision = {
     }
 
     effect = {
-        gold = { add = -120 }
+        add_gold = -120
         add_piety = -250
         add_prestige = 180
         capital_county = {
@@ -1067,7 +1067,7 @@ establish_sect_branch_hall_decision = {
     }
 
     effect = {
-        gold = { add = -100 }
+        add_gold = -100
         random_held_title = {
             limit = {
                 tier = tier_county

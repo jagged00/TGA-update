@@ -1,4 +1,4 @@
-namespace = xianxia_activity
+﻿namespace = xianxia_activity
 
 xianxia_activity.7100 = {
 	type = activity_event

@@ -48,13 +48,6 @@ summon_thousand_qi_needles_decision = {
             location = capital_province
             save_scope_as = last_spawned_qi_army
         }
-        scope:last_spawned_qi_army = {
-            on_destroyed = {
-                root = {
-                    remove_character_flag = active_qi_army
-                }
-            }
-        }
     }
 }
 
@@ -96,13 +89,6 @@ summon_nine_heavens_sword_intent_decision = {
             uses_supply = no
             location = capital_province
             save_scope_as = last_spawned_qi_army
-        }
-        scope:last_spawned_qi_army = {
-            on_destroyed = {
-                root = {
-                    remove_character_flag = active_qi_army
-                }
-            }
         }
     }
 }
@@ -146,13 +132,6 @@ summon_golden_core_flame_lotus_decision = {
             location = capital_province
             save_scope_as = last_spawned_qi_army
         }
-        scope:last_spawned_qi_army = {
-            on_destroyed = {
-                root = {
-                    remove_character_flag = active_qi_army
-                }
-            }
-        }
     }
 }
 
@@ -194,13 +173,6 @@ summon_nascent_soul_phantom_decision = {
             uses_supply = no
             location = capital_province
             save_scope_as = last_spawned_qi_army
-        }
-        scope:last_spawned_qi_army = {
-            on_destroyed = {
-                root = {
-                    remove_character_flag = active_qi_army
-                }
-            }
         }
     }
 }
@@ -244,13 +216,6 @@ summon_heaven_severing_blade_decision = {
             location = capital_province
             save_scope_as = last_spawned_qi_army
         }
-        scope:last_spawned_qi_army = {
-            on_destroyed = {
-                root = {
-                    remove_character_flag = active_qi_army
-                }
-            }
-        }
     }
 }
 
@@ -293,13 +258,6 @@ summon_myriad_dao_suppression_domain_decision = {
             location = capital_province
             save_scope_as = last_spawned_qi_army
         }
-        scope:last_spawned_qi_army = {
-            on_destroyed = {
-                root = {
-                    remove_character_flag = active_qi_army
-                }
-            }
-        }
     }
 }
 
@@ -341,13 +299,6 @@ summon_heavenly_tribulation_descent_decision = {
             uses_supply = no
             location = capital_province
             save_scope_as = last_spawned_qi_army
-        }
-        scope:last_spawned_qi_army = {
-            on_destroyed = {
-                root = {
-                    remove_character_flag = active_qi_army
-                }
-            }
         }
     }
 }
