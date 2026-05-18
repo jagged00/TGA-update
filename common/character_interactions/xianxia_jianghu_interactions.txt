@@ -13,7 +13,7 @@
 	}
 
 	is_shown = {
-		scope: != scope:actor
+		scope:recipient != scope:actor
 		scope:actor = {
 			is_alive = yes
 			is_adult = yes

@@ -14,7 +14,7 @@ xianxia_activity.7400 = {
 				limit = {
 					is_alive = yes
 					is_adult = yes
-					faith = root.faith
+					faith = scope:root.faith
 					has_trait = sect_disciple
 				NOT = { has_character_modifier = inner_court_disciple }
 				OR = {
@@ -34,11 +34,11 @@ xianxia_activity.7400 = {
 
 		if = {
 			limit = { NOT = { exists = scope:promoted_inner_disciple } }
-			random_character = {
+			random_living_character = {
 				limit = {
 					is_alive = yes
 					is_adult = yes
-					faith = root.faith
+					faith = scope:root.faith
 					is_ruler = no
 					is_courtier = no
 					OR = {
@@ -67,7 +67,7 @@ xianxia_activity.7400 = {
 				age = { 16 26 }
 				gender_female_chance = 40
 				employer = root
-				faith = root.faith
+				faith = scope:root.faith
 				culture = root.culture
 				dynasty = none
 				random_traits = no

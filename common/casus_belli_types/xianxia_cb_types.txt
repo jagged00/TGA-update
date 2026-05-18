@@ -46,13 +46,8 @@ xianxia_seize_spirit_vein_cb = {
     }
     on_defeat = { scope:attacker = { add_prestige = -120 } add_truce_attacker_defeat_effect = yes }
     on_white_peace = { add_truce_white_peace_effect = yes }
-    ai_will_do = {
-        base = 80
-        modifier = { add = 120 OR = { trait = ambitious trait = greedy trait = wrathful } }
-        modifier = { add = -90 trait = craven }
-        modifier = { add = -70 trait = content }
-        modifier = { add = 40 has_opinion = { target = scope:defender value > 40 } }
-    }
+    # ai_will_do removed for CK3 1.19 casus belli parser compatibility
+
 }
 
 xianxia_destroy_sect_foundation_cb = {
@@ -141,13 +136,8 @@ xianxia_destroy_sect_foundation_cb = {
     max_attacker_score_from_occupation = 200
     max_defender_score_from_occupation = 160
     max_ai_diplo_distance_to_title = 650
-    ai_will_do = {
-        base = 60
-        modifier = { add = 180 OR = { trait = ambitious trait = wrathful trait = vengeful trait = sadistic } }
-        modifier = { add = -110 trait = craven }
-        modifier = { add = -80 trait = content }
-        modifier = { add = 50 has_opinion = { target = scope:defender value > 60 } }
-    }
+    # ai_will_do removed for CK3 1.19 casus belli parser compatibility
+
 }
 
 xianxia_purge_demonic_sect_cb = {
@@ -246,14 +236,8 @@ xianxia_purge_demonic_sect_cb = {
     max_attacker_score_from_occupation = 200
     max_defender_score_from_occupation = 160
     max_ai_diplo_distance_to_title = 650
-    ai_will_do = {
-        base = 65
-        modifier = { add = 150 OR = { trait = wrathful trait = vengeful trait = ambitious trait = brave } }
-        modifier = { add = -80 trait = craven }
-        modifier = { add = -60 trait = content }
-        modifier = { add = 40 OR = { faith = { has_doctrine_parameter = orthodox_cultivation } faith = { has_doctrine_parameter = unorthodox_cultivation } } }
-        modifier = { add = 50 has_opinion = { target = scope:defender value > 50 } }
-    }
+    # ai_will_do removed for CK3 1.19 casus belli parser compatibility
+
 }
 
 xianxia_purge_vagrant_sect_cb = {
@@ -303,14 +287,8 @@ xianxia_purge_vagrant_sect_cb = {
         add_truce_attacker_defeat_effect = yes
     }
     on_white_peace = { scope:attacker = { add_prestige = -300 } add_truce_white_peace_effect = yes }
-    ai_will_do = {
-        base = 65
-        modifier = { add = 140 OR = { trait = ambitious trait = adventurer trait = gregarious trait = brave } }
-        modifier = { add = -80 trait = craven }
-        modifier = { add = -60 trait = content }
-        modifier = { add = 40 OR = { faith = { has_doctrine_parameter = orthodox_cultivation } faith = { has_doctrine_parameter = unorthodox_cultivation } } }
-        modifier = { add = 50 has_opinion = { target = scope:defender value > 40 } }
-    }
+    # ai_will_do removed for CK3 1.19 casus belli parser compatibility
+
     check_defender_inheritance_validity = no
     on_primary_attacker_death = inherit
     on_primary_defender_death = inherit
@@ -363,13 +341,8 @@ xianxia_purge_unorthodox_sect_cb = {
         add_truce_attacker_defeat_effect = yes
     }
     on_white_peace = { scope:attacker = { add_prestige = -300 } add_truce_white_peace_effect = yes }
-    ai_will_do = {
-        base = 70
-        modifier = { add = 160 OR = { trait = just trait = diligent trait = brave } }
-        modifier = { add = -90 trait = craven }
-        modifier = { add = -55 trait = content }
-        modifier = { add = 60 faith = { has_doctrine_parameter = orthodox_cultivation } }
-    }
+    # ai_will_do removed for CK3 1.19 casus belli parser compatibility
+
     check_defender_inheritance_validity = no
     on_primary_attacker_death = inherit
     on_primary_defender_death = inherit
@@ -432,13 +405,8 @@ xianxia_purge_orthodox_sect_cb = {
         add_truce_attacker_defeat_effect = yes
     }
     on_white_peace = { scope:attacker = { add_prestige = -300 } add_truce_white_peace_effect = yes }
-    ai_will_do = {
-        base = 65
-        modifier = { add = 170 OR = { trait = wrathful trait = sadistic trait = callous trait = vengeful trait = ambitious } }
-        modifier = { add = -70 trait = craven }
-        modifier = { add = -50 trait = content }
-        modifier = { add = 55 OR = { faith = { has_doctrine_parameter = demonic_cultivation } faith = { has_doctrine_parameter = vagrant_cultivation } faith = { has_doctrine_parameter = unorthodox_cultivation } } }
-    }
+    # ai_will_do removed for CK3 1.19 casus belli parser compatibility
+
     check_defender_inheritance_validity = no
     on_primary_attacker_death = inherit
     on_primary_defender_death = inherit
@@ -500,12 +468,8 @@ xianxia_capture_sacred_mountain_cb = {
     }
     on_defeat = { scope:attacker = { add_prestige = -120 } add_truce_attacker_defeat_effect = yes }
     on_white_peace = { add_truce_white_peace_effect = yes }
-    ai_will_do = {
-        base = 85
-        modifier = { add = 110 trait = ambitious }
-        modifier = { add = -75 trait = craven }
-        modifier = { add = 50 has_opinion = { target = scope:defender value > 30 } }
-    }
+    # ai_will_do removed for CK3 1.19 casus belli parser compatibility
+
 }
 
 xianxia_avenge_sect_insult_cb = {
@@ -696,12 +660,6 @@ xianxia_force_recruit_talented_meridians_cb = {
     }
     on_defeat = { scope:attacker = { add_prestige = -100 } add_truce_attacker_defeat_effect = yes }
     on_white_peace = { add_truce_white_peace_effect = yes }
-    ai_will_do = {
-        base = 75
-        modifier = { add = 130 trait = ambitious }
-        modifier = { add = 100 trait = greedy }
-        modifier = { add = -90 trait = craven }
-        modifier = { add = -50 trait = content }
-        modifier = { add = 60 has_opinion = { target = scope:defender value > 30 } }
-    }
+    # ai_will_do removed for CK3 1.19 casus belli parser compatibility
+
 }

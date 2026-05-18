@@ -616,7 +616,7 @@
 				dynamicgridbox = {
 					name = "traits_medium"
 					datamodel = "[TraitArrays.GetTraits]"
-					visible = "[EqualTo_int32(GetDataModelSize(TraitArrays.GetTraits), '(int32)9'))]"
+					visible = "[EqualTo_int32(GetDataModelSize(TraitArrays.GetTraits), '(int32)9')]"
 					flipdirection = yes
 					datamodel_wrap = 10
 
@@ -638,7 +638,7 @@
 				dynamicgridbox = {
 					name = "traits_medium_1"
 					datamodel = "[TraitArrays.GetTraits]"
-					visible = "[EqualTo_int32(GetDataModelSize(TraitArrays.GetTraits), '(int32)10'))]"
+					visible = "[EqualTo_int32(GetDataModelSize(TraitArrays.GetTraits), '(int32)10')]"
 					flipdirection = yes
 					datamodel_wrap = 10
 
@@ -660,7 +660,7 @@
 				dynamicgridbox = {
 					name = "traits_medium_2"
 					datamodel = "[TraitArrays.GetTraits]"
-					visible = "[EqualTo_int32(GetDataModelSize(TraitArrays.GetTraits), '(int32)11'))]"
+					visible = "[EqualTo_int32(GetDataModelSize(TraitArrays.GetTraits), '(int32)11')]"
 					flipdirection = yes
 					datamodel_wrap = 11
 
@@ -682,7 +682,7 @@
 				dynamicgridbox = {
 					name = "traits_medium_3"
 					datamodel = "[TraitArrays.GetTraits]"
-					visible = "[EqualTo_int32(GetDataModelSize(TraitArrays.GetTraits), '(int32)12'))]"
+					visible = "[EqualTo_int32(GetDataModelSize(TraitArrays.GetTraits), '(int32)12')]"
 					flipdirection = yes
 					datamodel_wrap = 12
 
@@ -1172,7 +1172,7 @@
 				dynamicgridbox = {
 					name = "traits_medium"
 					datamodel = "[TraitArrays.GetTraits]"
-					visible = "[And(GreaterThan_int32(GetDataModelSize(TraitArrays.GetTraits), '(int32)8'), LessThanOrEqualTo_int32(GetDataModelSize(TraitArrays.GetTraits), '(int32)10'))]"
+					visible = "[And(GreaterThan_int32(GetDataModelSize(TraitArrays.GetTraits), '(int32)8'), LessThanOrEqualTo_int32(GetDataModelSize(TraitArrays.GetTraits), '(int32)10')]"
 					flipdirection = yes
 					datamodel_wrap = 10
 
@@ -1280,7 +1280,7 @@
 				dynamicgridbox = {
 					name = "traits_medium"
 					datamodel = "[TraitArrays.GetTraits]"
-					visible = "[And(GreaterThan_int32(GetDataModelSize(TraitArrays.GetTraits), '(int32)7'), LessThanOrEqualTo_int32(GetDataModelSize(TraitArrays.GetTraits), '(int32)10'))]"
+					visible = "[And(GreaterThan_int32(GetDataModelSize(TraitArrays.GetTraits), '(int32)7'), LessThanOrEqualTo_int32(GetDataModelSize(TraitArrays.GetTraits), '(int32)10')]"
 					flipdirection = yes
 					datamodel_wrap = 10
 
