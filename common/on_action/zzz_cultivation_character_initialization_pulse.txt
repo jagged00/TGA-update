@@ -9,7 +9,14 @@
 
 on_game_start_after_lobby = {
 	events = {
-		cultivation_character_initialization.0001  # Initialize ALL characters at game start
+		cultivation_character_initialization.0007  # Seed guaranteed foundation bloodlines once.
+		cultivation_character_initialization.0001  # Run one lightweight initialization batch at game start.
+	}
+}
+
+on_monthly_pulse = {
+	events = {
+		cultivation_character_initialization.0001  # Continue lightweight world initialization without freezing unpause.
 	}
 }
 

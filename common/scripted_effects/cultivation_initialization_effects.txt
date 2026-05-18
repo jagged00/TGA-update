@@ -1,0 +1,9 @@
+﻿# Shared helper for the batched cultivation initialization pass.
+cultivation_initialize_character_effect = {
+	trigger_event = cultivation_character_initialization.0002
+	trigger_event = cultivation_character_initialization.0003
+	trigger_event = cultivation_character_initialization.0004
+	trigger_event = cultivation_character_initialization.0005
+	trigger_event = cultivation_character_initialization.0006
+	add_character_flag = cultivation_initialization_checked
+}
