@@ -3,7 +3,7 @@
 	icon = rv_revenge
 	#ai_only_against_neighbors = yes
 	target_top_liege_if_outside_realm = no
-	
+
 	allowed_for_character = {
 		### Valid Memory list:
 		#relative_died dead_relation
@@ -26,13 +26,15 @@
 						#is_local_player = yes
 						is_ai = no
 						OR = {
-							any_heir = {
-								even_if_dead = yes
-								is_alive = no
-								exists = killer
-								killer = {
-									is_alive = yes
-									is_landed = yes
+							any_memory = {
+								has_memory_type = relative_died
+								exists = memory_participant:dead_relation
+								memory_participant:dead_relation = {
+									exists = killer
+									killer = {
+										is_alive = yes
+										is_landed = yes
+									}
 								}
 							}
 							any_memory = {
@@ -90,29 +92,9 @@
 									}
 								}
 							}
-	
-							### Write memory for on_family_friend_death!
-	
-							any_close_family_member = {
-								even_if_dead = yes
-								is_alive = no
-								exists = killer
-								killer = {
-									is_alive = yes
-									is_landed = yes
-								}
-							}
-							any_extended_family_member = {
-								even_if_dead = yes
-								is_alive = no
-								exists = killer
-								killer = {
-									is_alive = yes
-									is_landed = yes
-								}
-							}
+
 						}
-	
+
 						NOT = {
 							any_owned_story = {
 								has_variable_list = rv_currently_revenging
@@ -120,13 +102,13 @@
 						}
 						#any_owned_story = {
 							#NOT = {has_variable_list = rv_currently_revenging}
-						#}    
+						#}
 					}
-		
+
 					AND = {
 						is_ai = yes
 						any_owned_story = {
-							story_type = rv_revenge_war_story 
+							story_type = rv_revenge_war_story
 							has_variable_list = rv_revenge_list
 							NOT = {has_variable_list = rv_currently_revenging}
 							any_in_list = {
@@ -358,9 +340,9 @@
 									any_killed_character = {
 										save_temporary_scope_as = rv_dead_char
 										OR = {
-											#is_heir_of = scope:attacker 
+											#is_heir_of = scope:attacker
 											#is_spouse_of = scope:attacker #Not working; replaced with memory
-											is_close_or_extended_family_of = scope:attacker							
+											is_close_or_extended_family_of = scope:attacker
 										}
 										scope:defender = {
 											NOR = {
@@ -393,16 +375,16 @@
 										}
 									}
 								}
-							}				
+							}
 						}
 					}
 				}
-	
+
 				AND = {
 					scope:attacker = {
 						is_ai = yes
 						any_owned_story = {
-							story_type = rv_revenge_war_story 
+							story_type = rv_revenge_war_story
 							has_variable_list = rv_revenge_list
 							NOT = {has_variable_list = rv_currently_revenging}
 							any_in_list = {
@@ -421,7 +403,7 @@
 			}
 		}
 	}
-	
+
 	on_declaration = {
 		on_declared_war = yes
 		debug_log = "rv_revenge_war_declared"
@@ -456,7 +438,7 @@
 
 			else = {
 				random_owned_story = {
-					limit = { 
+					limit = {
 						story_type = rv_revenge_war_defender_story
 					}
 					save_scope_as = rv_revenge_defender_story
@@ -537,7 +519,7 @@
 			}
 		}
 	}
-	
+
 	cost = {
 		prestige = {
 			value = 0
@@ -566,7 +548,7 @@
 			desc = revenge_war_victory_desc
 		}
 	}
-	
+
 	on_victory = {
 		scope:attacker = { show_pow_release_message_effect = yes }
 
@@ -599,7 +581,7 @@
 		### Opinion boost and was_revenged marking
 		scope:attacker = {
 			random_owned_story = {
-				limit = { 
+				limit = {
 					story_type = rv_revenge_war_story
 					has_variable_list = rv_currently_revenging
 				}
@@ -607,7 +589,7 @@
 				end_story = yes
 			}
 		}
-		
+
 		# Prestige for the attacker's war allies
 		add_from_contribution_attackers = {
 			prestige = medium_prestige_value
@@ -623,7 +605,7 @@
 				modifier = contributed_in_war
 			}
 		}
-		
+
 		# Truce
 		add_truce_attacker_victory_effect = yes
 	}
@@ -631,7 +613,7 @@
 	on_white_peace_desc = {
 		desc = rv_revenge_war_white_peace_desc
 	}
-	
+
 	on_white_peace = {
 
 		hidden_effect = {
@@ -676,7 +658,7 @@
 	on_defeat_desc = {
 		desc = rv_revenge_war_defeat_desc
 	}
-	
+
 	on_defeat = {
 
 		hidden_effect = {
@@ -730,11 +712,11 @@
 		# Truce
 		add_truce_attacker_defeat_effect = yes
 	}
-	
+
 	should_invalidate = {
 		always = no
 	}
-	
+
 	on_invalidated = {
 		hidden_effect = {
 			debug_log = "rv_revenge_war_invalidated"
@@ -746,24 +728,24 @@
 			remove_attacking_revenger_for_defender = yes
 		}
 	}
-	
+
 	on_invalidated_desc = {
 		desc = rv_revenge_war_invalidated_desc
 	}
 
 	on_primary_attacker_death = invalidate
 	on_primary_defender_death = invalidate
-	
+
 	transfer_behavior = invalidate
-	
+
 	attacker_allies_inherit = no
 	defender_allies_inherit = no
-	
+
 	war_name = "REVENGE_WAR_NAME"
 	cb_name_no_target = "REVENGE_WAR_NAME_FALLBACK"
-	
+
 	interface_priority = 1001
-	
+
 	ticking_war_score_targets_entire_realm = yes
 	attacker_ticking_warscore = 0
 	defender_ticking_warscore = 0.1
@@ -779,21 +761,21 @@
 	defender_capital_gives_war_score = yes
 	imprisonment_by_attacker_give_war_score = yes
 	imprisonment_by_defender_give_war_score = yes
-	
+
 	attacker_score_from_occupation_scale = 150
 	attacker_score_from_battles_scale = 150
 	defender_score_from_battles_scale = 150
 	landless_attacker_needs_armies = yes
 	#full_occupation_by_attacker_gives_victory = yes
 	#full_occupation_by_defender_gives_victory = yes
-	
+
 	#max_ai_diplo_distance_to_title = 500
-	
+
 	should_show_war_goal_subview = no
 
 	#target_de_jure_regions_above = yes
 	ai = yes
-	
+
 	ai_score = {
 	   value = rv_rescue_war_ai_score_value_extreme
 	}

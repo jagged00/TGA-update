@@ -1,0 +1,61 @@
+﻿# From common/religion/doctrines/cultivation_path_tenets.txt
+doctrine_cultivation_tenets = {
+group = "core_tenets"
+    #for now
+    number_of_picks = 1	
+
+
+	# Unorthodox Cultivation Tenet
+
+
+	# Demonic Cultivation Tenet
+
+
+	# Vagrant Cultivation Tenet
+}
+
+# From common/religion/doctrines/zzz_cultivation_core_tenets.txt
+doctrine_core_tenets = {
+group = "core_tenets"
+	number_of_picks = 20
+
+
+	############################
+	# Christian Faith Tenets	#
+	############################
+
+
+	############################
+	#	Muslim Faith Tenets	#
+	############################
+
+
+	#############################
+	# Eastern Faith tenets 		#
+	#############################
+
+
+	############################
+	# Pagan Faith Tenets  		#
+	############################
+
+
+	#############################
+	# Syncretic Faith Tenets	#
+	#############################
+
+
+	#############################
+	# Custom Faith Tenets		#
+	#############################
+
+
+	#############################
+	# FP3 Tenets 		#        
+	#############################
+
+
+	############################
+	# TGP Tenets				#
+	############################
+}

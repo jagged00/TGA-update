@@ -1,4 +1,4 @@
-namespace = xianxia_world
+﻿namespace = xianxia_world
 
 xianxia_world.1000 = {
     type = character_event
@@ -15,11 +15,6 @@ xianxia_world.1000 = {
             xianxia_apply_government_adaptation_effect = yes
             xianxia_non_cultivator_stat_cap_effect = yes
             xianxia_apply_commander_sect_archetype_effect = yes
-            trigger_event = cultivation_character_initialization.0002
-            trigger_event = cultivation_character_initialization.0003
-            trigger_event = cultivation_character_initialization.0004
-            trigger_event = cultivation_character_initialization.0005
-            trigger_event = cultivation_character_initialization.0006
 
             every_courtier = {
                 limit = {
@@ -28,11 +23,6 @@ xianxia_world.1000 = {
                 }
                 xianxia_non_cultivator_stat_cap_effect = yes
                 xianxia_apply_commander_sect_archetype_effect = yes
-                trigger_event = cultivation_character_initialization.0002
-                trigger_event = cultivation_character_initialization.0003
-                trigger_event = cultivation_character_initialization.0004
-                trigger_event = cultivation_character_initialization.0005
-                trigger_event = cultivation_character_initialization.0006
             }
 
             every_vassal = {
@@ -42,11 +32,6 @@ xianxia_world.1000 = {
                 }
                 xianxia_non_cultivator_stat_cap_effect = yes
                 xianxia_apply_commander_sect_archetype_effect = yes
-                trigger_event = cultivation_character_initialization.0002
-                trigger_event = cultivation_character_initialization.0003
-                trigger_event = cultivation_character_initialization.0004
-                trigger_event = cultivation_character_initialization.0005
-                trigger_event = cultivation_character_initialization.0006
             }
         }
 
@@ -318,7 +303,7 @@ xianxia_world.1110 = {
         random = {
             chance = 65
             random_living_character = {
-                limit = { is_adult = yes is_alive = yes NOT = { this = root } has_cultivation_sect_faith = yes }
+                limit = { is_adult = yes is_alive = yes NOT = { this = scope:root } has_cultivation_sect_faith = yes }
                 add_stress = 20
             }
         }
@@ -336,7 +321,7 @@ xianxia_world.1120 = {
         name = xianxia_world.1120.a
         add_prestige = 350
         add_character_modifier = { modifier = sect_resource_surplus days = 730 }
-        add_dynasty_prestige = 120
+        dynasty = { add_dynasty_prestige = 120 }
 
         change_variable = { name = jianghu_tourney_wins_total add = 1 }
         if = {
@@ -642,7 +627,7 @@ xianxia_world.2261 = {
             limit = {
                 is_alive = yes
                 is_adult = yes
-                NOT = { this = root }
+                NOT = { this = scope:root }
                 NOT = { has_character_flag = fox_spirit_awakening_complete }
                 NOR = {
                     faith = { has_doctrine_parameter = demonic_cultivation }

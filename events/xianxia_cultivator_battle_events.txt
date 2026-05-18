@@ -38,7 +38,7 @@ xianxia_cultivator_battle.0002 = {
                     25 = {
                         if = {
                             limit = { exists = root.liege }
-                            root.liege = { imprison = { target = prev } }
+                            root.liege = { imprison = { target = prev type = house_arrest } }
                         }
                         else = { add_trait = wounded_2 }
                     }
@@ -82,10 +82,10 @@ xianxia_cultivator_battle.0004 = {
         if = {
             limit = {
                 exists = var:xianxia_duel_target
-                var:xianxia_duel_target = { add_stress = 20 }
                 xianxia_is_active_cultivator_champion_trigger = yes
                 var:xianxia_duel_target = { xianxia_is_active_cultivator_champion_trigger = yes }
             }
+            var:xianxia_duel_target = { add_stress = 20 }
             trigger_event = { id = xianxia_cultivator_battle.0001 days = 5 }
         }
     }

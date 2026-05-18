@@ -111,7 +111,7 @@ dragatus_PM_imprison_and_reclaim_wife_effect = {
 		}
 		save_temporary_scope_as = dragatus_PM_imprison_target
 		scope:attacker = {
-			imprison = { target = scope:dragatus_PM_imprison_target }
+			imprison = { target = scope:dragatus_PM_imprison_target type = house_arrest }
 		}
 	}
 	every_courtier = {

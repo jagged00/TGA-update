@@ -1,4 +1,4 @@
-# Cultivator champion battle layer: champion protection/collapse + duel chain.
+﻿# Cultivator champion battle layer: champion protection/collapse + duel chain.
 # Root scopes follow vanilla combat on_action conventions.
 
 on_combat_start = {

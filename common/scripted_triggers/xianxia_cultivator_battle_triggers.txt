@@ -1,4 +1,4 @@
-xianxia_is_designated_cultivator_champion_trigger = {
+﻿xianxia_is_designated_cultivator_champion_trigger = {
     is_alive = yes
     is_adult = yes
     is_cultivator = yes

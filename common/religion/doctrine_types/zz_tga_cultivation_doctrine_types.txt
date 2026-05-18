@@ -1,9 +1,7 @@
-﻿
-doctrine_core_tenets = {
-	group = "core_tenets"
-	number_of_picks = 20
+﻿# From common/religion/doctrines/cultivation_path_tenets.txt
+tenet_sect_empty_1 = {
+group = doctrine_cultivation_tenets
 
-	tenet_sect_empty_2 = {
 		icon = core_tenet_empty
 		piety_cost = {
 			value = 0
@@ -16,9 +14,99 @@ doctrine_core_tenets = {
 		can_pick = {
 			always = yes
 		}
-	}
+}
 
-	tenet_sect_empty_3 = {
+# From common/religion/doctrines/cultivation_path_tenets.txt
+tenet_orthodox_cultivation = {
+group = doctrine_cultivation_tenets
+
+		icon = core_tenet_pacifism  # tbf
+				
+		character_modifier = {
+			monthly_prestige = 0.25
+			same_faith_opinion = 5
+			different_faith_opinion = 0
+		}
+		
+		piety_cost = {
+			value = faith_tenet_cost_massive
+			multiply = 5
+		}
+		
+		parameters = {
+			orthodox_cultivation = yes
+		}
+}
+
+# From common/religion/doctrines/cultivation_path_tenets.txt
+tenet_unorthodox_cultivation = {
+group = doctrine_cultivation_tenets
+
+		icon = core_tenet_carnal_exaltation # tbf
+		
+		piety_cost = {
+			value = faith_tenet_cost_massive
+			multiply = 5
+		}		
+		
+		parameters = {
+			unorthodox_cultivation = yes
+		}
+		
+		character_modifier = {
+			monthly_lifestyle_xp_gain_mult = 0.1
+			different_faith_opinion = 0
+		}
+}
+
+# From common/religion/doctrines/cultivation_path_tenets.txt
+tenet_demonic_cultivation = {
+group = doctrine_cultivation_tenets
+
+		icon = core_tenet_warmonger # tbf
+		
+		piety_cost = {
+			value = faith_tenet_cost_massive
+			multiply = 5
+		}		
+		
+		parameters = {
+			demonic_cultivation = yes
+		}
+		
+		character_modifier = {
+			dread_baseline_add = 10
+			monthly_lifestyle_xp_gain_mult = 0.15
+			different_faith_opinion = 0
+		}
+}
+
+# From common/religion/doctrines/cultivation_path_tenets.txt
+tenet_vagrant_cultivation = {
+group = doctrine_cultivation_tenets
+
+		icon = core_tenet_armed_pilgrimages  # tbf
+		
+		piety_cost = {
+			value = faith_tenet_cost_massive
+			multiply = 5
+		}		
+		
+		parameters = {
+			vagrant_cultivation = yes
+		}
+		
+		character_modifier = {
+			stress_loss_mult = 0.1
+			monthly_lifestyle_xp_gain_mult = 0.1
+			different_faith_opinion = 0
+		}
+}
+
+# From common/religion/doctrines/zzz_cultivation_core_tenets.txt
+tenet_sect_empty_2 = {
+group = doctrine_core_tenets
+
 		icon = core_tenet_empty
 		piety_cost = {
 			value = 0
@@ -31,9 +119,12 @@ doctrine_core_tenets = {
 		can_pick = {
 			always = yes
 		}
-	}
+}
 
-	tenet_sect_empty_4 = {
+# From common/religion/doctrines/zzz_cultivation_core_tenets.txt
+tenet_sect_empty_3 = {
+group = doctrine_core_tenets
+
 		icon = core_tenet_empty
 		piety_cost = {
 			value = 0
@@ -46,9 +137,12 @@ doctrine_core_tenets = {
 		can_pick = {
 			always = yes
 		}
-	}
+}
 
-	tenet_sect_empty_5 = {
+# From common/religion/doctrines/zzz_cultivation_core_tenets.txt
+tenet_sect_empty_4 = {
+group = doctrine_core_tenets
+
 		icon = core_tenet_empty
 		piety_cost = {
 			value = 0
@@ -61,9 +155,12 @@ doctrine_core_tenets = {
 		can_pick = {
 			always = yes
 		}
-	}
+}
 
-	tenet_sect_empty_6 = {
+# From common/religion/doctrines/zzz_cultivation_core_tenets.txt
+tenet_sect_empty_5 = {
+group = doctrine_core_tenets
+
 		icon = core_tenet_empty
 		piety_cost = {
 			value = 0
@@ -76,9 +173,12 @@ doctrine_core_tenets = {
 		can_pick = {
 			always = yes
 		}
-	}
+}
 
-	tenet_sect_empty_7 = {
+# From common/religion/doctrines/zzz_cultivation_core_tenets.txt
+tenet_sect_empty_6 = {
+group = doctrine_core_tenets
+
 		icon = core_tenet_empty
 		piety_cost = {
 			value = 0
@@ -91,9 +191,12 @@ doctrine_core_tenets = {
 		can_pick = {
 			always = yes
 		}
-	}
+}
 
-	tenet_sect_empty_8 = {
+# From common/religion/doctrines/zzz_cultivation_core_tenets.txt
+tenet_sect_empty_7 = {
+group = doctrine_core_tenets
+
 		icon = core_tenet_empty
 		piety_cost = {
 			value = 0
@@ -106,9 +209,12 @@ doctrine_core_tenets = {
 		can_pick = {
 			always = yes
 		}
-	}
+}
 
-	tenet_sect_empty_9 = {
+# From common/religion/doctrines/zzz_cultivation_core_tenets.txt
+tenet_sect_empty_8 = {
+group = doctrine_core_tenets
+
 		icon = core_tenet_empty
 		piety_cost = {
 			value = 0
@@ -121,9 +227,12 @@ doctrine_core_tenets = {
 		can_pick = {
 			always = yes
 		}
-	}
+}
 
-	tenet_sect_empty_10 = {
+# From common/religion/doctrines/zzz_cultivation_core_tenets.txt
+tenet_sect_empty_9 = {
+group = doctrine_core_tenets
+
 		icon = core_tenet_empty
 		piety_cost = {
 			value = 0
@@ -136,9 +245,12 @@ doctrine_core_tenets = {
 		can_pick = {
 			always = yes
 		}
-	}
+}
 
-	tenet_sect_empty_11 = {
+# From common/religion/doctrines/zzz_cultivation_core_tenets.txt
+tenet_sect_empty_10 = {
+group = doctrine_core_tenets
+
 		icon = core_tenet_empty
 		piety_cost = {
 			value = 0
@@ -151,9 +263,12 @@ doctrine_core_tenets = {
 		can_pick = {
 			always = yes
 		}
-	}
+}
 
-	tenet_sect_empty_12 = {
+# From common/religion/doctrines/zzz_cultivation_core_tenets.txt
+tenet_sect_empty_11 = {
+group = doctrine_core_tenets
+
 		icon = core_tenet_empty
 		piety_cost = {
 			value = 0
@@ -166,9 +281,12 @@ doctrine_core_tenets = {
 		can_pick = {
 			always = yes
 		}
-	}
+}
 
-	tenet_sect_empty_13 = {
+# From common/religion/doctrines/zzz_cultivation_core_tenets.txt
+tenet_sect_empty_12 = {
+group = doctrine_core_tenets
+
 		icon = core_tenet_empty
 		piety_cost = {
 			value = 0
@@ -181,9 +299,12 @@ doctrine_core_tenets = {
 		can_pick = {
 			always = yes
 		}
-	}
+}
 
-	tenet_sect_empty_14 = {
+# From common/religion/doctrines/zzz_cultivation_core_tenets.txt
+tenet_sect_empty_13 = {
+group = doctrine_core_tenets
+
 		icon = core_tenet_empty
 		piety_cost = {
 			value = 0
@@ -196,9 +317,12 @@ doctrine_core_tenets = {
 		can_pick = {
 			always = yes
 		}
-	}
+}
 
-	tenet_sect_empty_15 = {
+# From common/religion/doctrines/zzz_cultivation_core_tenets.txt
+tenet_sect_empty_14 = {
+group = doctrine_core_tenets
+
 		icon = core_tenet_empty
 		piety_cost = {
 			value = 0
@@ -211,9 +335,12 @@ doctrine_core_tenets = {
 		can_pick = {
 			always = yes
 		}
-	}
+}
 
-	tenet_sect_empty_16 = {
+# From common/religion/doctrines/zzz_cultivation_core_tenets.txt
+tenet_sect_empty_15 = {
+group = doctrine_core_tenets
+
 		icon = core_tenet_empty
 		piety_cost = {
 			value = 0
@@ -226,9 +353,12 @@ doctrine_core_tenets = {
 		can_pick = {
 			always = yes
 		}
-	}
+}
 
-	tenet_sect_empty_17 = {
+# From common/religion/doctrines/zzz_cultivation_core_tenets.txt
+tenet_sect_empty_16 = {
+group = doctrine_core_tenets
+
 		icon = core_tenet_empty
 		piety_cost = {
 			value = 0
@@ -241,13 +371,30 @@ doctrine_core_tenets = {
 		can_pick = {
 			always = yes
 		}
-	}
+}
 
-	############################
-	# Christian Faith Tenets	#
-	############################
+# From common/religion/doctrines/zzz_cultivation_core_tenets.txt
+tenet_sect_empty_17 = {
+group = doctrine_core_tenets
 
-	tenet_aniconism = {
+		icon = core_tenet_empty
+		piety_cost = {
+			value = 0
+		}
+
+		is_shown = {
+			always = yes
+		}
+
+		can_pick = {
+			always = yes
+		}
+}
+
+# From common/religion/doctrines/zzz_cultivation_core_tenets.txt
+tenet_aniconism = {
+group = doctrine_core_tenets
+
 		icon = core_tenet_aniconism
 		piety_cost = {
 			if = {
@@ -293,9 +440,12 @@ doctrine_core_tenets = {
 			reforging_artifacts_costs_piety = yes
 			destroying_artifacts_is_pious = yes
 		}
-	}
+}
 
-	tenet_alexandrian_catechism = {
+# From common/religion/doctrines/zzz_cultivation_core_tenets.txt
+tenet_alexandrian_catechism = {
+group = doctrine_core_tenets
+
 		icon = core_tenet_alexandrian_catechism
 		piety_cost = {
 			value = faith_tenet_cost_mid
@@ -353,9 +503,12 @@ doctrine_core_tenets = {
 		traits = {
 			virtues = { scholar }
 		}
-	}
+}
 
-	tenet_armed_pilgrimages = {
+# From common/religion/doctrines/zzz_cultivation_core_tenets.txt
+tenet_armed_pilgrimages = {
+group = doctrine_core_tenets
+
 		icon = core_tenet_armed_pilgrimages
 		piety_cost = {
 			if = {
@@ -404,9 +557,12 @@ doctrine_core_tenets = {
 		character_modifier = {
 			accolade_glory_gain_mult = 0.1
 		}
-	}
+}
 
-	tenet_carnal_exaltation = {
+# From common/religion/doctrines/zzz_cultivation_core_tenets.txt
+tenet_carnal_exaltation = {
+group = doctrine_core_tenets
+
 		icon = core_tenet_carnal_exaltation
 		piety_cost = {
 			if = {
@@ -452,9 +608,12 @@ doctrine_core_tenets = {
 			virtues = { lustful }
 			sins = { chaste }
 		}
-	}
+}
 
-	tenet_communal_identity = {
+# From common/religion/doctrines/zzz_cultivation_core_tenets.txt
+tenet_communal_identity = {
+group = doctrine_core_tenets
+
 		icon = core_tenet_communal_identity
 		piety_cost = {
 			if = {
@@ -515,9 +674,12 @@ doctrine_core_tenets = {
 			name = "tenet_communal_identity_opinion"
 			same_faith_opinion = 10
 		}
-	}
+}
 
-	tenet_communion = {
+# From common/religion/doctrines/zzz_cultivation_core_tenets.txt
+tenet_communion = {
+group = doctrine_core_tenets
+
 		icon = core_tenet_communion
 		piety_cost = {
 			if = {
@@ -569,9 +731,12 @@ doctrine_core_tenets = {
 			virtues = { honest }
 			sins = { deceitful }
 		}
-	}
+}
 
-	tenet_consolamentum = {
+# From common/religion/doctrines/zzz_cultivation_core_tenets.txt
+tenet_consolamentum = {
+group = doctrine_core_tenets
+
 		icon = core_tenet_consolamentum
 
 		name = {
@@ -640,9 +805,12 @@ doctrine_core_tenets = {
 		character_modifier = {
 			short_reign_duration_mult = -0.5
 		}
-	}
+}
 
-	tenet_divine_marriage = {
+# From common/religion/doctrines/zzz_cultivation_core_tenets.txt
+tenet_divine_marriage = {
+group = doctrine_core_tenets
+
 		icon = core_tenet_divine_marriage
 		name = {
 			first_valid = {
@@ -697,9 +865,12 @@ doctrine_core_tenets = {
 				incestuous
 			}
 		}
-	}
+}
 
-	tenet_gnosticism = {
+# From common/religion/doctrines/zzz_cultivation_core_tenets.txt
+tenet_gnosticism = {
+group = doctrine_core_tenets
+
 		icon = core_tenet_gnosticism
 		piety_cost = {
 			if = {
@@ -761,9 +932,12 @@ doctrine_core_tenets = {
 		is_shown = {
 			NOT = { has_doctrine = special_doctrine_is_gnostic_faith } # Can't be Gnostic if ye already are Gnostic
 		}
-	}
+}
 
-	tenet_mendicant_preachers = {
+# From common/religion/doctrines/zzz_cultivation_core_tenets.txt
+tenet_mendicant_preachers = {
+group = doctrine_core_tenets
+
 		icon = core_tenet_mendicant_preachers
 		piety_cost = {
 			if = {
@@ -814,9 +988,12 @@ doctrine_core_tenets = {
 			virtues = { temperate }
 			sins = { gluttonous }
 		}
-	}
+}
 
-	tenet_monasticism = {
+# From common/religion/doctrines/zzz_cultivation_core_tenets.txt
+tenet_monasticism = {
+group = doctrine_core_tenets
+
 		icon = core_tenet_monasticism
 		piety_cost = {
 			if = {
@@ -864,9 +1041,12 @@ doctrine_core_tenets = {
 			virtues = { temperate }
 			sins = { gluttonous }
 		}
-	}
+}
 
-	tenet_pacifism = {
+# From common/religion/doctrines/zzz_cultivation_core_tenets.txt
+tenet_pacifism = {
+group = doctrine_core_tenets
+
 		icon = core_tenet_pacifism
 		piety_cost = {
 			if = {
@@ -935,9 +1115,12 @@ doctrine_core_tenets = {
 			ai_war_chance = -0.25
 			ai_war_cooldown = 5
 		}
-	}
+}
 
-	tenet_pentarchy = {
+# From common/religion/doctrines/zzz_cultivation_core_tenets.txt
+tenet_pentarchy = {
+group = doctrine_core_tenets
+
 		icon = core_tenet_pentarchy
 		name = {
 			first_valid = {
@@ -984,9 +1167,12 @@ doctrine_core_tenets = {
 			fervor_per_holy_site = 1
 			pilgrimage_decision_active = yes
 		}
-	}
+}
 
-	tenet_unrelenting_faith = {
+# From common/religion/doctrines/zzz_cultivation_core_tenets.txt
+tenet_unrelenting_faith = {
+group = doctrine_core_tenets
+
 		icon = core_tenet_unrelenting_faith
 		piety_cost = {
 			if = {
@@ -1057,9 +1243,12 @@ doctrine_core_tenets = {
 				desc = tenet_unrelenting_faith_desc
 			}
 		}
-	}
+}
 
-	tenet_vows_of_poverty = {
+# From common/religion/doctrines/zzz_cultivation_core_tenets.txt
+tenet_vows_of_poverty = {
+group = doctrine_core_tenets
+
 		icon = core_tenet_vows_of_poverty
 		piety_cost = {
 			if = {
@@ -1106,9 +1295,12 @@ doctrine_core_tenets = {
 			virtues = { generous = 2 }
 			sins = { greedy = 2 }
 		}
-	}
+}
 
-	tenet_pastoral_isolation = {
+# From common/religion/doctrines/zzz_cultivation_core_tenets.txt
+tenet_pastoral_isolation = {
+group = doctrine_core_tenets
+
 		icon = core_tenet_pastoral_isolation
 
 		is_shown = {
@@ -1148,9 +1340,12 @@ doctrine_core_tenets = {
 
 		traits = {
 		}
-	}
+}
 
-	tenet_rite = {
+# From common/religion/doctrines/zzz_cultivation_core_tenets.txt
+tenet_rite = {
+group = doctrine_core_tenets
+
 		icon = core_tenet_rite
 
 		is_shown = {
@@ -1323,13 +1518,12 @@ doctrine_core_tenets = {
 			opinion_of_same_faith = 5
 			religious_head_opinion = -10
 		}
-	}
+}
 
-	############################
-	#	Muslim Faith Tenets	#
-	############################
+# From common/religion/doctrines/zzz_cultivation_core_tenets.txt
+tenet_adaptive = {
+group = doctrine_core_tenets
 
-	tenet_adaptive = {
 		icon = core_tenet_adaptive
 		piety_cost = {
 			if = {
@@ -1383,9 +1577,12 @@ doctrine_core_tenets = {
 			different_faith_liege_opinion = 15
 			opinion_of_different_faith_liege = 15
 		}
-	}
+}
 
-	tenet_esotericism = {
+# From common/religion/doctrines/zzz_cultivation_core_tenets.txt
+tenet_esotericism = {
+group = doctrine_core_tenets
+
 		icon = core_tenet_esotericism
 		piety_cost = {
 			if = {
@@ -1450,9 +1647,12 @@ doctrine_core_tenets = {
 		parameters = {
 			tenet_esotericism_mystic_education = yes
 		}
-	}
+}
 
-	tenet_legalism = {
+# From common/religion/doctrines/zzz_cultivation_core_tenets.txt
+tenet_legalism = {
+group = doctrine_core_tenets
+
 		icon = core_tenet_legalism
 		piety_cost = {
 			if = {
@@ -1498,9 +1698,12 @@ doctrine_core_tenets = {
 			legalism_increased_faction_sins = yes
 			legalism_trust_just_leader_active = yes
 		}
-	}
+}
 
-	tenet_literalism = {
+# From common/religion/doctrines/zzz_cultivation_core_tenets.txt
+tenet_literalism = {
+group = doctrine_core_tenets
+
 		icon = core_tenet_literalism
 		piety_cost = {
 			if = {
@@ -1545,9 +1748,12 @@ doctrine_core_tenets = {
 		parameters = {
 			literalist_debate_enabled = yes
 		}
-	}
+}
 
-	tenet_reincarnation = {
+# From common/religion/doctrines/zzz_cultivation_core_tenets.txt
+tenet_reincarnation = {
+group = doctrine_core_tenets
+
 		icon = core_tenet_reincarnation
 		piety_cost = {
 			if = {
@@ -1617,9 +1823,12 @@ doctrine_core_tenets = {
 				desc = tenet_reincarnation_desc
 			}
 		}
-	}
+}
 
-	tenet_religious_legal_pronouncements = {
+# From common/religion/doctrines/zzz_cultivation_core_tenets.txt
+tenet_religious_legal_pronouncements = {
+group = doctrine_core_tenets
+
 		icon = core_tenet_legal_pronouncements
 		piety_cost = {
 			if = {
@@ -1679,9 +1888,12 @@ doctrine_core_tenets = {
 			temporal_condemnation_enabled = yes
 			religious_legal_pronouncements_law_cost_reduction = yes
 		}
-	}
+}
 
-	tenet_struggle_submission = {
+# From common/religion/doctrines/zzz_cultivation_core_tenets.txt
+tenet_struggle_submission = {
+group = doctrine_core_tenets
+
 		icon = core_tenet_struggle_submission
 		piety_cost = {
 			if = {
@@ -1715,9 +1927,12 @@ doctrine_core_tenets = {
 			pilgrimage_decision_active = yes
 			unlock_voluntary_laampdom_faith = yes
 		}
-	}
+}
 
-	tenet_false_conversion_sanction = {
+# From common/religion/doctrines/zzz_cultivation_core_tenets.txt
+tenet_false_conversion_sanction = {
+group = doctrine_core_tenets
+
 		icon = core_tenet_false_conversion_sanction
 		name = {
 			first_valid = {
@@ -1774,9 +1989,12 @@ doctrine_core_tenets = {
 		character_modifier = {
 			monthly_intrigue_lifestyle_xp_gain_mult = 0.1 #FP3 addition to make this tenet more attractive
 		}
-	}
+}
 
-	tenet_tax_nonbelievers = {
+# From common/religion/doctrines/zzz_cultivation_core_tenets.txt
+tenet_tax_nonbelievers = {
+group = doctrine_core_tenets
+
 		icon = core_tenet_tax_nonbelievers
 		piety_cost = {
 			if = {
@@ -1834,13 +2052,12 @@ doctrine_core_tenets = {
 			NOT = { religion_tag = christianity_religion }
 			NOT = { has_doctrine = special_doctrine_jizya }
 		}
-	}
+}
 
-	#############################
-	# Eastern Faith tenets 		#
-	#############################
+# From common/religion/doctrines/zzz_cultivation_core_tenets.txt
+tenet_asceticism = {
+group = doctrine_core_tenets
 
-	tenet_asceticism = {
 		icon = core_tenet_asceticism
 		piety_cost = {
 			if = {
@@ -1916,9 +2133,12 @@ doctrine_core_tenets = {
 				lifestyle_reveler
 			}
 		}
-	}
+}
 
-	tenet_bhakti = {
+# From common/religion/doctrines/zzz_cultivation_core_tenets.txt
+tenet_bhakti = {
+group = doctrine_core_tenets
+
 		name = {
 			first_valid = {
 				triggered_desc = {
@@ -1946,9 +2166,12 @@ doctrine_core_tenets = {
 		parameters = {
 			select_personal_god_active = yes
 		}
-	}
+}
 
-	tenet_dharmic_pacifism = { #Mix of reincarnation and pacifism rites
+# From common/religion/doctrines/zzz_cultivation_core_tenets.txt
+tenet_dharmic_pacifism = {
+group = doctrine_core_tenets
+ #Mix of reincarnation and pacifism rites
 		icon = core_tenet_dharmic_pacifism
 		is_shown = {
 			has_doctrine = eastern_hostility_doctrine
@@ -2011,9 +2234,12 @@ doctrine_core_tenets = {
 			ai_war_chance = -0.25
 			ai_war_cooldown = 0.25
 		}
-	}
+}
 
-	tenet_inner_journey = {
+# From common/religion/doctrines/zzz_cultivation_core_tenets.txt
+tenet_inner_journey = {
+group = doctrine_core_tenets
+
 		icon = core_tenet_inner_journey
 
 		is_shown = {
@@ -2039,9 +2265,12 @@ doctrine_core_tenets = {
 		parameters = {
 			meditation_mechanics_active = yes
 		}
-	}
+}
 
-	tenet_ritual_hospitality = {
+# From common/religion/doctrines/zzz_cultivation_core_tenets.txt
+tenet_ritual_hospitality = {
+group = doctrine_core_tenets
+
 		icon = core_tenet_ritual_hospitality
 		piety_cost = {
 			if = {
@@ -2099,13 +2328,12 @@ doctrine_core_tenets = {
 		character_modifier = {
 			monthly_piety_gain_per_happy_powerful_vassal_add = 0.3
 		}
-	}
+}
 
-	############################
-	# Pagan Faith Tenets  		#
-	############################
+# From common/religion/doctrines/zzz_cultivation_core_tenets.txt
+tenet_adorcism = {
+group = doctrine_core_tenets
 
-	tenet_adorcism = {
 		icon = core_tenet_adorcism
 
 		piety_cost = {
@@ -2136,9 +2364,12 @@ doctrine_core_tenets = {
 		traits = {
 			virtues = { possessed = 2 }
 		}
-	}
+}
 
-	tenet_ancestor_worship = {
+# From common/religion/doctrines/zzz_cultivation_core_tenets.txt
+tenet_ancestor_worship = {
+group = doctrine_core_tenets
+
 		icon = core_tenet_ancestor_worship
 
 		piety_cost = {
@@ -2165,9 +2396,12 @@ doctrine_core_tenets = {
 		character_modifier = {
 			close_relative_opinion = 5
 		}
-	}
+}
 
-	tenet_astrology = {
+# From common/religion/doctrines/zzz_cultivation_core_tenets.txt
+tenet_astrology = {
+group = doctrine_core_tenets
+
 		icon = core_tenet_astrology
 		name = { #FP3
 			first_valid = {
@@ -2237,9 +2471,12 @@ doctrine_core_tenets = {
 		character_modifier = {
 			naval_movement_speed_mult = 0.25
 		}
-	}
+}
 
-	tenet_hedonistic = {
+# From common/religion/doctrines/zzz_cultivation_core_tenets.txt
+tenet_hedonistic = {
+group = doctrine_core_tenets
+
 		icon = core_tenet_hedonistic
 		piety_cost = {
 			if = {
@@ -2307,9 +2544,12 @@ doctrine_core_tenets = {
 		character_modifier = {
 			stress_loss_mult = 0.2
 		}
-	}
+}
 
-	tenet_human_sacrifice = {
+# From common/religion/doctrines/zzz_cultivation_core_tenets.txt
+tenet_human_sacrifice = {
+group = doctrine_core_tenets
+
 		icon = core_tenet_human_sacrifice
 		piety_cost = {
 			if = {
@@ -2382,9 +2622,12 @@ doctrine_core_tenets = {
 			ai_war_chance = 1
 			ai_war_cooldown = -0.5
 		}
-	}
+}
 
-	tenet_mystical_birthright = {
+# From common/religion/doctrines/zzz_cultivation_core_tenets.txt
+tenet_mystical_birthright = {
+group = doctrine_core_tenets
+
 		icon = core_tenet_mystical_birthright
 
 		piety_cost = {
@@ -2416,9 +2659,12 @@ doctrine_core_tenets = {
 				} 
 			}
 		}
-	}
+}
 
-	tenet_ritual_celebrations = {
+# From common/religion/doctrines/zzz_cultivation_core_tenets.txt
+tenet_ritual_celebrations = {
+group = doctrine_core_tenets
+
 		icon = core_tenet_ritual_celebrations
 
 		piety_cost = {
@@ -2454,9 +2700,12 @@ doctrine_core_tenets = {
 			vassal_opinion = 5
 			courtier_opinion = 5
 		}
-	}
+}
 
-	tenet_sacred_childbirth = {
+# From common/religion/doctrines/zzz_cultivation_core_tenets.txt
+tenet_sacred_childbirth = {
+group = doctrine_core_tenets
+
 		icon = core_tenet_sacred_childbirth
 		name = {
 			first_valid = {
@@ -2493,9 +2742,12 @@ doctrine_core_tenets = {
 		traits = {
 			virtues = { pregnant }
 		}
-	}
+}
 
-	tenet_sanctity_of_nature = {
+# From common/religion/doctrines/zzz_cultivation_core_tenets.txt
+tenet_sanctity_of_nature = {
+group = doctrine_core_tenets
+
 		icon = core_tenet_sanctity_of_nature
 
 		piety_cost = {
@@ -2548,9 +2800,12 @@ doctrine_core_tenets = {
 			holding_build_speed = 0.25
 			county_opinion_add = 5
 		}
-	}
+}
 
-	tenet_sun_worship = {
+# From common/religion/doctrines/zzz_cultivation_core_tenets.txt
+tenet_sun_worship = {
+group = doctrine_core_tenets
+
 		icon = core_tenet_sun_worship
 
 		piety_cost = {
@@ -2586,9 +2841,12 @@ doctrine_core_tenets = {
 		}
 
 		piety_cost = faith_tenet_cost_mid
-	}
+}
 
-	tenet_warmonger = {
+# From common/religion/doctrines/zzz_cultivation_core_tenets.txt
+tenet_warmonger = {
+group = doctrine_core_tenets
+
 		icon = core_tenet_warmonger
 		piety_cost = {
 			if = {
@@ -2645,9 +2903,12 @@ doctrine_core_tenets = {
 			ai_war_cooldown = -0.25
 			accolade_glory_gain_mult = 0.1
 		}
-	}
+}
 
-	tenet_gruesome_festivals = {
+# From common/religion/doctrines/zzz_cultivation_core_tenets.txt
+tenet_gruesome_festivals = {
+group = doctrine_core_tenets
+
 		name = {
 			first_valid = {
 				triggered_desc = {
@@ -2734,9 +2995,12 @@ doctrine_core_tenets = {
 			human_sacrifice_active = yes
 			gruesome_festivals_active = yes
 		}
-	}
+}
 
-	tenet_cthonic_redoubts = {
+# From common/religion/doctrines/zzz_cultivation_core_tenets.txt
+tenet_cthonic_redoubts = {
+group = doctrine_core_tenets
+
 		icon = core_tenet_cthonic_redoubts
 
 		name = {
@@ -2818,9 +3082,12 @@ doctrine_core_tenets = {
 				giant
 			}
 		}
-	}
+}
 
-	tenet_household_gods = {
+# From common/religion/doctrines/zzz_cultivation_core_tenets.txt
+tenet_household_gods = {
+group = doctrine_core_tenets
+
 		icon = core_tenet_household_gods
 
 		name = tenet_household_gods_name
@@ -2856,13 +3123,12 @@ doctrine_core_tenets = {
 		traits = {
 			virtues = { augustus born_in_the_purple }
 		}
-	}
+}
 
-	#############################
-	# Syncretic Faith Tenets	#
-	#############################
+# From common/religion/doctrines/zzz_cultivation_core_tenets.txt
+tenet_sinitic_syncretism = {
+group = doctrine_core_tenets
 
-	tenet_sinitic_syncretism = {
 		icon = core_tenet_harmonious_society
 		piety_cost = {
 			if = {
@@ -2927,9 +3193,12 @@ doctrine_core_tenets = {
 			virtues = { honest }
 			sins = { wrathful }
 		}
-	}
+}
 
-	tenet_eastern_syncretism = {
+# From common/religion/doctrines/zzz_cultivation_core_tenets.txt
+tenet_eastern_syncretism = {
+group = doctrine_core_tenets
+
 		icon = core_tenet_eastern_syncretism
 		piety_cost = {
 			if = {
@@ -2992,9 +3261,12 @@ doctrine_core_tenets = {
 			virtues = { honest }
 			sins = { wrathful }
 		}
-	}
+}
 
-	tenet_unreformed_syncretism = {
+# From common/religion/doctrines/zzz_cultivation_core_tenets.txt
+tenet_unreformed_syncretism = {
+group = doctrine_core_tenets
+
 		icon = core_tenet_unreformed_syncretism 
 		piety_cost = {
 			if = {
@@ -3042,9 +3314,12 @@ doctrine_core_tenets = {
 			virtues = { humble }
 			sins = { arrogant }
 		}
-	}
+}
 
-	tenet_christian_syncretism = {
+# From common/religion/doctrines/zzz_cultivation_core_tenets.txt
+tenet_christian_syncretism = {
+group = doctrine_core_tenets
+
 		icon = core_tenet_christian_syncretism
 
 		piety_cost = {
@@ -3097,9 +3372,12 @@ doctrine_core_tenets = {
 			virtues = { compassionate }
 			sins = { callous sadistic }
 		}
-	}
+}
 
-	tenet_islamic_syncretism = {
+# From common/religion/doctrines/zzz_cultivation_core_tenets.txt
+tenet_islamic_syncretism = {
+group = doctrine_core_tenets
+
 		icon = core_tenet_islamic_syncretism
 
 		piety_cost = {
@@ -3150,9 +3428,12 @@ doctrine_core_tenets = {
 			virtues = { generous }
 			sins = { greedy arbitrary }
 		}
-	}
+}
 
-	tenet_jewish_syncretism = {
+# From common/religion/doctrines/zzz_cultivation_core_tenets.txt
+tenet_jewish_syncretism = {
+group = doctrine_core_tenets
+
 		icon = core_tenet_jewish_syncretism
 
 		piety_cost = {
@@ -3204,13 +3485,12 @@ doctrine_core_tenets = {
 			virtues = { patient }
 			sins = { cynical greedy }
 		}
-	}
+}
 
-	#############################
-	# Custom Faith Tenets		#
-	#############################
+# From common/religion/doctrines/zzz_cultivation_core_tenets.txt
+tenet_exaltation_of_pain = {
+group = doctrine_core_tenets
 
-	tenet_exaltation_of_pain = {
 		icon = core_tenet_human_sacrifice
 
 		is_shown = {}
@@ -3258,9 +3538,12 @@ doctrine_core_tenets = {
 				compassionate
 			}
 		}
-	}
+}
 
-	tenet_natural_primitivism = {
+# From common/religion/doctrines/zzz_cultivation_core_tenets.txt
+tenet_natural_primitivism = {
+group = doctrine_core_tenets
+
 		icon = core_tenet_natural_primitivism
 
 		can_pick = {
@@ -3318,9 +3601,12 @@ doctrine_core_tenets = {
 			stress_gain_mult = -0.25
 			stress_loss_mult = 0.25
 		}
-	}
+}
 
-	tenet_pursuit_of_power = {
+# From common/religion/doctrines/zzz_cultivation_core_tenets.txt
+tenet_pursuit_of_power = {
+group = doctrine_core_tenets
+
 		icon = core_tenet_pursuit_of_power
 
 		piety_cost = {
@@ -3373,9 +3659,12 @@ doctrine_core_tenets = {
 				loyal
 			}
 		}
-	}
+}
 
-	tenet_ritual_cannibalism = {
+# From common/religion/doctrines/zzz_cultivation_core_tenets.txt
+tenet_ritual_cannibalism = {
+group = doctrine_core_tenets
+
 		icon = core_tenet_ritual_cannibalism
 
 		piety_cost = {
@@ -3420,9 +3709,12 @@ doctrine_core_tenets = {
 		parameters = {
 			cannibalism_legal = yes
 		}
-	}
+}
 
-	tenet_sacred_shadows = {
+# From common/religion/doctrines/zzz_cultivation_core_tenets.txt
+tenet_sacred_shadows = {
+group = doctrine_core_tenets
+
 		icon = core_tenet_sacred_shadows
 
 		piety_cost = {
@@ -3472,9 +3764,12 @@ doctrine_core_tenets = {
 			virtues = { deceitful }
 			sins = { honest }
 		}
-	}
+}
 
-	tenet_polyamory = {
+# From common/religion/doctrines/zzz_cultivation_core_tenets.txt
+tenet_polyamory = {
+group = doctrine_core_tenets
+
 		icon = core_tenet_polyamory
 		piety_cost = {
 			if = {
@@ -3521,9 +3816,12 @@ doctrine_core_tenets = {
 		parameters = {
 			no_unfaithfulness_penalty_active = yes
 		}
-	}
-	
-	tenet_sacrificial_ceremonies = {
+}
+
+# From common/religion/doctrines/zzz_cultivation_core_tenets.txt
+tenet_sacrificial_ceremonies = {
+group = doctrine_core_tenets
+
 		icon = core_tenet_human_sacrifice
 
 		name = {
@@ -3597,9 +3895,12 @@ doctrine_core_tenets = {
 			ai_war_chance = 1
 			ai_war_cooldown = -0.5
 		}
-	}
-	
-	tenet_megaliths = {
+}
+
+# From common/religion/doctrines/zzz_cultivation_core_tenets.txt
+tenet_megaliths = {
+group = doctrine_core_tenets
+
 		icon = core_tenet_megaliths
 
 		name = {
@@ -3650,13 +3951,12 @@ doctrine_core_tenets = {
 			hills_levy_size = 0.3
 			hills_advantage = 5
 		}
-	}
+}
 
-	#############################
-	# FP3 Tenets 		#        
-	#############################
+# From common/religion/doctrines/zzz_cultivation_core_tenets.txt
+tenet_fp3_fedayeen = {
+group = doctrine_core_tenets
 
-	tenet_fp3_fedayeen = {
 		icon = core_tenet_assassin
 
 		name = {
@@ -3741,9 +4041,12 @@ doctrine_core_tenets = {
 			virtues = { vengeful = 1 }
 			sins = { craven = 1 }
 		}
-	}
+}
 
-	tenet_communal_possessions = {
+# From common/religion/doctrines/zzz_cultivation_core_tenets.txt
+tenet_communal_possessions = {
+group = doctrine_core_tenets
+
 		icon = core_tenet_communism
 		is_shown = {}
 		can_pick = {
@@ -3788,13 +4091,12 @@ doctrine_core_tenets = {
 			virtues = { peasant_leader = 2 } #because communism! 
 			sins = { arrogant }
 		}
-	}
+}
 
-	############################
-	# TGP Tenets				#
-	############################
+# From common/religion/doctrines/zzz_cultivation_core_tenets.txt
+tenet_pure_land = {
+group = doctrine_core_tenets
 
-	tenet_pure_land = {
 		icon = core_tenet_pure_land
 		piety_cost = {
 			if = {
@@ -3841,9 +4143,12 @@ doctrine_core_tenets = {
 				greedy
 			}
 		}
-	}
+}
 
-	tenet_no_mind = { # Zen
+# From common/religion/doctrines/zzz_cultivation_core_tenets.txt
+tenet_no_mind = {
+group = doctrine_core_tenets
+ # Zen
 		icon = core_tenet_no_mind
 		piety_cost = {
 			if = {
@@ -3880,9 +4185,12 @@ doctrine_core_tenets = {
 			negate_prowess_penalty_add = 5
 			stress_gain_mult = -0.1
 		}
-	}
+}
 
-	tenet_mountain_worship = {
+# From common/religion/doctrines/zzz_cultivation_core_tenets.txt
+tenet_mountain_worship = {
+group = doctrine_core_tenets
+
 		icon = core_tenet_mountain_worship
 		piety_cost = {
 			if = {
@@ -3920,8 +4228,12 @@ doctrine_core_tenets = {
 			mountains_holding_construction_gold_cost = -0.35
 			desert_mountains_holding_construction_gold_cost = -0.35
 		}
-	}
-	tenet_extinction_of_dharma = {
+}
+
+# From common/religion/doctrines/zzz_cultivation_core_tenets.txt
+tenet_extinction_of_dharma = {
+group = doctrine_core_tenets
+
 		icon = core_tenet_extinction_of_dharma
 
 		is_shown = {
@@ -3967,8 +4279,12 @@ doctrine_core_tenets = {
 		character_modifier = {
 			monthly_piety_gain_mult = -1
 		}
-	}
-	tenet_cranial_trophies = {
+}
+
+# From common/religion/doctrines/zzz_cultivation_core_tenets.txt
+tenet_cranial_trophies = {
+group = doctrine_core_tenets
+
 		icon = core_tenet_cranial_trophies
 
 		is_shown = {
@@ -4005,8 +4321,12 @@ doctrine_core_tenets = {
 			monthly_piety_gain_per_dread_add = 0.01
 			prowess = 3
 		}
-	}
- 	tenet_pursuit_of_knowledge = {
+}
+
+# From common/religion/doctrines/zzz_cultivation_core_tenets.txt
+tenet_pursuit_of_knowledge = {
+group = doctrine_core_tenets
+
 		icon = core_tenet_pursuit_of_knowledge
 
 		is_shown = {
@@ -4068,8 +4388,12 @@ doctrine_core_tenets = {
 		character_modifier = {
 			monthly_learning_lifestyle_xp_gain_mult = 0.2
 		}
-	}
- 	tenet_benevolent_governance = {
+}
+
+# From common/religion/doctrines/zzz_cultivation_core_tenets.txt
+tenet_benevolent_governance = {
+group = doctrine_core_tenets
+
 		icon = core_tenet_benevolent_governance
 
 		is_shown = {
@@ -4127,8 +4451,12 @@ doctrine_core_tenets = {
 			virtues = { loyal }
 			sins = { disloyal }
 		}
-	}
-	tenet_filial_piety = {
+}
+
+# From common/religion/doctrines/zzz_cultivation_core_tenets.txt
+tenet_filial_piety = {
+group = doctrine_core_tenets
+
 		icon = core_tenet_filial_piety 
 
 		is_shown = {
@@ -4184,8 +4512,12 @@ doctrine_core_tenets = {
 		character_modifier = {
 			opinion_of_parents = 20
 		}
-	}
-	tenet_harmonious_society = {
+}
+
+# From common/religion/doctrines/zzz_cultivation_core_tenets.txt
+tenet_harmonious_society = {
+group = doctrine_core_tenets
+
 		icon = core_tenet_harmonious_society
 		is_shown = {
 			has_tgp_dlc_trigger = yes
@@ -4242,9 +4574,12 @@ doctrine_core_tenets = {
 			virtues = { temperate }
 			sins = { gluttonous }
 		}
-	}
+}
 
-	tenet_sacred_destruction = {
+# From common/religion/doctrines/zzz_cultivation_core_tenets.txt
+tenet_sacred_destruction = {
+group = doctrine_core_tenets
+
 		icon = core_tenet_sacred_destruction
 
 		piety_cost = {
@@ -4294,9 +4629,12 @@ doctrine_core_tenets = {
 		traits = {
 			virtues = { wrathful }
 		}
-	}
-	
-	tenet_preservation = {
+}
+
+# From common/religion/doctrines/zzz_cultivation_core_tenets.txt
+tenet_preservation = {
+group = doctrine_core_tenets
+
 		icon = core_tenet_preservation
 
 		piety_cost = {
@@ -4341,9 +4679,12 @@ doctrine_core_tenets = {
 		traits = {
 			virtues = { architect }
 		}
-	}
-	
-	tenet_takamin = {
+}
+
+# From common/religion/doctrines/zzz_cultivation_core_tenets.txt
+tenet_takamin = {
+group = doctrine_core_tenets
+
 		icon = core_tenet_bear
 
 		is_shown = {
@@ -4377,49 +4718,4 @@ doctrine_core_tenets = {
 		traits = {
 			virtues = { lifestyle_hunter }
 		}
-	}
 }
-
-	#############################
-	# Empty Template Tenet 		#
-	#############################
-
-	#tenets = {
-	#	is_shown = {
-	#		always = no
-	#	}
-	#	can_pick = {
-	#		always = yes
-	#	}
-
-	#	piety_cost = {
-	#		if = {
-	#			limit = {
-	#				always = no
-	#			}
-	#			value = faith_tenet_cost_low
-	#		}
-	#		else = {
-	#			value = faith_tenet_cost_massive
-	#		}
-
-	#		# Multiplier for keeping same tenet
-	#		if = {
-	#			limit = { has_doctrine = tenets }
-	#			multiply = faith_unchanged_doctrine_cost_mult
-	#		}
-	#	}
-
-	#	parameters = {
-	#		tenets_active = yes
-	#	}
-
-	#	character_modifier = {
-
-	#	}
-
-	#	traits = {
-	#		virtues = { brave = 2}
-	#		sins = { craven = 2}
-	#	}
-	#}

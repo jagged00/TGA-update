@@ -1,4 +1,4 @@
-xianxia_commander_archetype_eligible_trigger = {
+﻿xianxia_commander_archetype_eligible_trigger = {
     is_alive = yes
     is_adult = yes
     is_cultivator = yes

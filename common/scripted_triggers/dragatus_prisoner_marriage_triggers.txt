@@ -1,4 +1,4 @@
-### NEW TRIGGERS ###
+﻿### NEW TRIGGERS ###
 
 dragatus_prisoner_can_marry_actor_trigger = {
 	is_imprisoned_by = scope:actor

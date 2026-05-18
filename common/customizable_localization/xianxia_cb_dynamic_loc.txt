@@ -1,4 +1,4 @@
-attacker_xianxia_reclamation_name = {
+﻿attacker_xianxia_reclamation_name = {
 	type = character
 	text = {
 		trigger = { faith = { has_doctrine_parameter = orthodox_cultivation } }
@@ -16,7 +16,9 @@ attacker_xianxia_reclamation_name = {
 		trigger = { faith = { has_doctrine_parameter = vagrant_cultivation } }
 		localization_key = attacker_xianxia_reclamation_name_vagrant
 	}
-	default = attacker_xianxia_reclamation_name_generic
+	text = {
+		localization_key = attacker_xianxia_reclamation_name_generic
+	}
 }
 
 attacker_xianxia_reclamation_victory_desc = {
@@ -37,7 +39,9 @@ attacker_xianxia_reclamation_victory_desc = {
 		trigger = { faith = { has_doctrine_parameter = vagrant_cultivation } }
 		localization_key = attacker_xianxia_reclamation_victory_desc_vagrant
 	}
-	default = attacker_xianxia_reclamation_victory_desc_generic
+	text = {
+		localization_key = attacker_xianxia_reclamation_victory_desc_generic
+	}
 }
 
 attacker_xianxia_reclamation_defeat_desc = {
@@ -46,7 +50,9 @@ attacker_xianxia_reclamation_defeat_desc = {
 		trigger = { faith = { has_doctrine_parameter = orthodox_cultivation } }
 		localization_key = attacker_xianxia_reclamation_defeat_desc_orthodox
 	}
-	default = attacker_xianxia_reclamation_defeat_desc_generic
+	text = {
+		localization_key = attacker_xianxia_reclamation_defeat_desc_generic
+	}
 }
 
 attacker_xianxia_reclamation_white_peace_desc = {
@@ -55,7 +61,9 @@ attacker_xianxia_reclamation_white_peace_desc = {
 		trigger = { faith = { has_doctrine_parameter = orthodox_cultivation } }
 		localization_key = attacker_xianxia_reclamation_white_peace_desc_orthodox
 	}
-	default = attacker_xianxia_reclamation_white_peace_desc_generic
+	text = {
+		localization_key = attacker_xianxia_reclamation_white_peace_desc_generic
+	}
 }
 
 attacker_xianxia_blood_conquest_name = {
@@ -68,7 +76,9 @@ attacker_xianxia_blood_conquest_name = {
 		trigger = { faith = { has_doctrine_parameter = orthodox_cultivation } }
 		localization_key = attacker_xianxia_blood_conquest_name_orthodox
 	}
-	default = attacker_xianxia_blood_conquest_name_generic
+	text = {
+		localization_key = attacker_xianxia_blood_conquest_name_generic
+	}
 }
 
 attacker_xianxia_blood_conquest_victory_desc = {
@@ -77,7 +87,9 @@ attacker_xianxia_blood_conquest_victory_desc = {
 		trigger = { faith = { has_doctrine_parameter = demonic_cultivation } }
 		localization_key = attacker_xianxia_blood_conquest_victory_desc_demonic
 	}
-	default = attacker_xianxia_blood_conquest_victory_desc_generic
+	text = {
+		localization_key = attacker_xianxia_blood_conquest_victory_desc_generic
+	}
 }
 
 attacker_xianxia_blood_conquest_defeat_desc = {
@@ -86,7 +98,9 @@ attacker_xianxia_blood_conquest_defeat_desc = {
 		trigger = { faith = { has_doctrine_parameter = demonic_cultivation } }
 		localization_key = attacker_xianxia_blood_conquest_defeat_desc_demonic
 	}
-	default = attacker_xianxia_blood_conquest_defeat_desc_generic
+	text = {
+		localization_key = attacker_xianxia_blood_conquest_defeat_desc_generic
+	}
 }
 
 attacker_xianxia_blood_conquest_white_peace_desc = {
@@ -95,7 +109,9 @@ attacker_xianxia_blood_conquest_white_peace_desc = {
 		trigger = { faith = { has_doctrine_parameter = demonic_cultivation } }
 		localization_key = attacker_xianxia_blood_conquest_white_peace_desc_demonic
 	}
-	default = attacker_xianxia_blood_conquest_white_peace_desc_generic
+	text = {
+		localization_key = attacker_xianxia_blood_conquest_white_peace_desc_generic
+	}
 }
 
 attacker_xianxia_usurpation_name = {
@@ -104,7 +120,9 @@ attacker_xianxia_usurpation_name = {
 		trigger = { faith = { has_doctrine_parameter = unorthodox_cultivation } }
 		localization_key = attacker_xianxia_usurpation_name_unorthodox
 	}
-	default = attacker_xianxia_usurpation_name_generic
+	text = {
+		localization_key = attacker_xianxia_usurpation_name_generic
+	}
 }
 
 attacker_xianxia_usurpation_victory_desc = {
@@ -113,7 +131,9 @@ attacker_xianxia_usurpation_victory_desc = {
 		trigger = { faith = { has_doctrine_parameter = unorthodox_cultivation } }
 		localization_key = attacker_xianxia_usurpation_victory_desc_unorthodox
 	}
-	default = attacker_xianxia_usurpation_victory_desc_generic
+	text = {
+		localization_key = attacker_xianxia_usurpation_victory_desc_generic
+	}
 }
 
 attacker_xianxia_usurpation_defeat_desc = {
@@ -122,7 +142,9 @@ attacker_xianxia_usurpation_defeat_desc = {
 		trigger = { faith = { has_doctrine_parameter = unorthodox_cultivation } }
 		localization_key = attacker_xianxia_usurpation_defeat_desc_unorthodox
 	}
-	default = attacker_xianxia_usurpation_defeat_desc_generic
+	text = {
+		localization_key = attacker_xianxia_usurpation_defeat_desc_generic
+	}
 }
 
 attacker_xianxia_usurpation_white_peace_desc = {
@@ -131,7 +153,9 @@ attacker_xianxia_usurpation_white_peace_desc = {
 		trigger = { faith = { has_doctrine_parameter = unorthodox_cultivation } }
 		localization_key = attacker_xianxia_usurpation_white_peace_desc_unorthodox
 	}
-	default = attacker_xianxia_usurpation_white_peace_desc_generic
+	text = {
+		localization_key = attacker_xianxia_usurpation_white_peace_desc_generic
+	}
 }
 
 attacker_xianxia_branch_hall_name = {
@@ -140,7 +164,9 @@ attacker_xianxia_branch_hall_name = {
 		trigger = { faith = { has_doctrine_parameter = vagrant_cultivation } }
 		localization_key = attacker_xianxia_branch_hall_name_vagrant
 	}
-	default = attacker_xianxia_branch_hall_name_generic
+	text = {
+		localization_key = attacker_xianxia_branch_hall_name_generic
+	}
 }
 
 attacker_xianxia_branch_hall_victory_desc = {
@@ -149,7 +175,9 @@ attacker_xianxia_branch_hall_victory_desc = {
 		trigger = { faith = { has_doctrine_parameter = vagrant_cultivation } }
 		localization_key = attacker_xianxia_branch_hall_victory_desc_vagrant
 	}
-	default = attacker_xianxia_branch_hall_victory_desc_generic
+	text = {
+		localization_key = attacker_xianxia_branch_hall_victory_desc_generic
+	}
 }
 
 attacker_xianxia_branch_hall_defeat_desc = {
@@ -158,7 +186,9 @@ attacker_xianxia_branch_hall_defeat_desc = {
 		trigger = { faith = { has_doctrine_parameter = vagrant_cultivation } }
 		localization_key = attacker_xianxia_branch_hall_defeat_desc_vagrant
 	}
-	default = attacker_xianxia_branch_hall_defeat_desc_generic
+	text = {
+		localization_key = attacker_xianxia_branch_hall_defeat_desc_generic
+	}
 }
 
 attacker_xianxia_branch_hall_white_peace_desc = {
@@ -167,5 +197,7 @@ attacker_xianxia_branch_hall_white_peace_desc = {
 		trigger = { faith = { has_doctrine_parameter = vagrant_cultivation } }
 		localization_key = attacker_xianxia_branch_hall_white_peace_desc_vagrant
 	}
-	default = attacker_xianxia_branch_hall_white_peace_desc_generic
+	text = {
+		localization_key = attacker_xianxia_branch_hall_white_peace_desc_generic
+	}
 }

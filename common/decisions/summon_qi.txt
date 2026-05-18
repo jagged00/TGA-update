@@ -33,7 +33,7 @@ summon_thousand_qi_needles_decision = {
     ai_will_do = { base = 100 }
 
     effect = {
-        add_character_flag = active_qi_army
+        add_character_flag = { flag = active_qi_army days = 730 }
         add_character_flag = { flag = summon_thousand_qi_needles_cooldown days = 730 }
         add_prestige = 50
         add_stress = 80
@@ -47,13 +47,6 @@ summon_thousand_qi_needles_decision = {
             uses_supply = no
             location = capital_province
             save_scope_as = last_spawned_qi_army
-        }
-        scope:last_spawned_qi_army = {
-            on_destroyed = {
-                root = {
-                    remove_character_flag = active_qi_army
-                }
-            }
         }
     }
 }
@@ -82,7 +75,7 @@ summon_nine_heavens_sword_intent_decision = {
     ai_will_do = { base = 100 }
 
     effect = {
-        add_character_flag = active_qi_army
+        add_character_flag = { flag = active_qi_army days = 730 }
         add_character_flag = { flag = summon_nine_heavens_sword_intent_cooldown days = 730 }
         add_prestige = 80
         add_stress = 150
@@ -96,13 +89,6 @@ summon_nine_heavens_sword_intent_decision = {
             uses_supply = no
             location = capital_province
             save_scope_as = last_spawned_qi_army
-        }
-        scope:last_spawned_qi_army = {
-            on_destroyed = {
-                root = {
-                    remove_character_flag = active_qi_army
-                }
-            }
         }
     }
 }
@@ -131,7 +117,7 @@ summon_golden_core_flame_lotus_decision = {
     ai_will_do = { base = 100 }
 
     effect = {
-        add_character_flag = active_qi_army
+        add_character_flag = { flag = active_qi_army days = 730 }
         add_character_flag = { flag = summon_golden_core_flame_lotus_cooldown days = 730 }
         add_prestige = 120
         add_stress = 250
@@ -145,13 +131,6 @@ summon_golden_core_flame_lotus_decision = {
             uses_supply = no
             location = capital_province
             save_scope_as = last_spawned_qi_army
-        }
-        scope:last_spawned_qi_army = {
-            on_destroyed = {
-                root = {
-                    remove_character_flag = active_qi_army
-                }
-            }
         }
     }
 }
@@ -180,7 +159,7 @@ summon_nascent_soul_phantom_decision = {
     ai_will_do = { base = 100 }
 
     effect = {
-        add_character_flag = active_qi_army
+        add_character_flag = { flag = active_qi_army days = 730 }
         add_character_flag = { flag = summon_nascent_soul_phantom_cooldown days = 730 }
         add_prestige = 180
         add_stress = 400
@@ -194,13 +173,6 @@ summon_nascent_soul_phantom_decision = {
             uses_supply = no
             location = capital_province
             save_scope_as = last_spawned_qi_army
-        }
-        scope:last_spawned_qi_army = {
-            on_destroyed = {
-                root = {
-                    remove_character_flag = active_qi_army
-                }
-            }
         }
     }
 }
@@ -229,7 +201,7 @@ summon_heaven_severing_blade_decision = {
     ai_will_do = { base = 100 }
 
     effect = {
-        add_character_flag = active_qi_army
+        add_character_flag = { flag = active_qi_army days = 730 }
         add_character_flag = { flag = summon_heaven_severing_blade_cooldown days = 730 }
         add_prestige = 250
         add_stress = 600
@@ -243,13 +215,6 @@ summon_heaven_severing_blade_decision = {
             uses_supply = no
             location = capital_province
             save_scope_as = last_spawned_qi_army
-        }
-        scope:last_spawned_qi_army = {
-            on_destroyed = {
-                root = {
-                    remove_character_flag = active_qi_army
-                }
-            }
         }
     }
 }
@@ -278,7 +243,7 @@ summon_myriad_dao_suppression_domain_decision = {
     ai_will_do = { base = 100 }
 
     effect = {
-        add_character_flag = active_qi_army
+        add_character_flag = { flag = active_qi_army days = 730 }
         add_character_flag = { flag = summon_myriad_dao_suppression_domain_cooldown days = 730 }
         add_prestige = 350
         add_stress = 900
@@ -292,13 +257,6 @@ summon_myriad_dao_suppression_domain_decision = {
             uses_supply = no
             location = capital_province
             save_scope_as = last_spawned_qi_army
-        }
-        scope:last_spawned_qi_army = {
-            on_destroyed = {
-                root = {
-                    remove_character_flag = active_qi_army
-                }
-            }
         }
     }
 }
@@ -327,7 +285,7 @@ summon_heavenly_tribulation_descent_decision = {
     ai_will_do = { base = 100 }
 
     effect = {
-        add_character_flag = active_qi_army
+        add_character_flag = { flag = active_qi_army days = 730 }
         add_character_flag = { flag = summon_heavenly_tribulation_descent_cooldown days = 730 }
         add_prestige = 500
         add_stress = 1500
@@ -341,13 +299,6 @@ summon_heavenly_tribulation_descent_decision = {
             uses_supply = no
             location = capital_province
             save_scope_as = last_spawned_qi_army
-        }
-        scope:last_spawned_qi_army = {
-            on_destroyed = {
-                root = {
-                    remove_character_flag = active_qi_army
-                }
-            }
         }
     }
 }

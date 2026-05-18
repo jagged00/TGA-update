@@ -1,4 +1,4 @@
-sect_disciple = {
+﻿sect_disciple = {
     category = lifestyle
     icon = first_rate.dds
     desc = trait_sect_disciple_desc
@@ -310,7 +310,7 @@ magic_treasure_crafter_2 = {
     learning = 2
     stewardship = 2
     monthly_lifestyle_xp_gain_mult = 0.02
-    men_at_arms_maintenance_mult = -0.05
+    men_at_arms_maintenance = -0.05
 }
 
 magic_treasure_crafter_3 = {
@@ -322,5 +322,5 @@ magic_treasure_crafter_3 = {
     learning = 3
     stewardship = 3
     monthly_lifestyle_xp_gain_mult = 0.03
-    men_at_arms_maintenance_mult = -0.1
+    men_at_arms_maintenance = -0.1
 }

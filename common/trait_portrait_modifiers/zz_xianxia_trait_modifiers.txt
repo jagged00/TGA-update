@@ -1,4 +1,4 @@
-xianxia_realm_transformation = {
+﻿xianxia_realm_transformation = {
 	heavenly_being_transformation = {
 		traits = { cultivation_heavenly_being }
 		dna_modifiers = {
