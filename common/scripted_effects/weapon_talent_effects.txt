@@ -1,4 +1,4 @@
-xianxia_apply_weapon_talent_lottery_effect = {
+﻿xianxia_apply_weapon_talent_lottery_effect = {
 	remove_trait = weapon_combat_talent_1
 	remove_trait = weapon_combat_talent_2
 	remove_trait = weapon_combat_talent_3

@@ -8,7 +8,7 @@ dragatus_prisoner_marriage_interaction = {
 	desc = dragatus_prisoner_marriage_interaction_desc
 
 	interface = marriage #concubine_list #
-	
+
 	ai_targets = {
 		ai_recipients = prisoners
 	}
@@ -116,7 +116,7 @@ dragatus_prisoner_marriage_interaction = {
 			add_to_list = characters
 		}
 	}
-	
+
 	is_shown = {
 		scope:actor = {
 			is_adult = yes
@@ -136,12 +136,11 @@ dragatus_prisoner_marriage_interaction = {
 		#	}
 		#}
 		scope:recipient = {
-			is_diplomatically_available = yes
 			is_imprisoned_by = scope:actor
 			is_landed = no
 		}
 	}
-	
+
 	ai_potential = {
 		is_landed = yes
 		is_adult = yes
@@ -155,16 +154,16 @@ dragatus_prisoner_marriage_interaction = {
 			has_sexuality = homosexual
         }
 	}
-	
+
 	on_accept = {
 		dragatus_prisoner_marriage_interaction_effect = yes #marriage_interaction_on_accept_effect #
 	}
-	
+
 	auto_accept = yes
-	
+
 	ai_will_do = {
 		base = 0
-		
+
 		modifier = {
 			add = 50
 			scope:recipient = {
@@ -180,7 +179,7 @@ dragatus_prisoner_marriage_interaction = {
 				}
 			}
 		}
-		
+
 		modifier = {
 			add = 50
 			scope:recipient = {
@@ -196,13 +195,13 @@ dragatus_prisoner_marriage_interaction = {
 				}
 			}
 		}
-		
+
 		modifier = {
 			add = 25
 			scope:recipient = {
 				is_imprisoned_by = scope:actor
 				sex_opposite_of = scope:actor
-				fertility > 0.4				
+				fertility > 0.4
 				num_of_good_genetic_traits > 0
 				trigger_if = {
 					limit = {
@@ -212,13 +211,13 @@ dragatus_prisoner_marriage_interaction = {
 				}
 			}
 		}
-		
+
 		modifier = {
 			add = 25
 			scope:recipient = {
 				is_imprisoned_by = scope:actor
 				sex_opposite_of = scope:actor
-				fertility > 0.4				
+				fertility > 0.4
 				num_of_good_genetic_traits > 1
 				trigger_if = {
 					limit = {
@@ -228,13 +227,13 @@ dragatus_prisoner_marriage_interaction = {
 				}
 			}
 		}
-		
+
 		modifier = {
 			add = 25
 			scope:recipient = {
 				is_imprisoned_by = scope:actor
 				sex_opposite_of = scope:actor
-				fertility > 0.4				
+				fertility > 0.4
 				num_of_good_genetic_traits > 2
 				trigger_if = {
 					limit = {
@@ -244,7 +243,7 @@ dragatus_prisoner_marriage_interaction = {
 				}
 			}
 		}
-		
+
 		modifier = {
 			add = 25
 			scope:recipient = {
@@ -257,7 +256,7 @@ dragatus_prisoner_marriage_interaction = {
 				}
 			}
 		}
-		
+
 		modifier = {
 			add = -1000
 			scope:recipient = {
@@ -266,7 +265,7 @@ dragatus_prisoner_marriage_interaction = {
 		}
 
 		# Actor trait triggers
-		
+
 		modifier = {
 			add = -50
 			scope:actor = {

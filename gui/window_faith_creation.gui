@@ -1,4 +1,4 @@
-######################################################
+﻿######################################################
 ################## FAITH CREATION ####################
 ######################################################
 
@@ -185,7 +185,7 @@ window = {
 							maximumsize = { -1 300 }
 
 							blockoverride "scrollbox_content" {
-								dynamicgridbox = {						
+								dynamicgridbox = {
 									name = "tenets_grid"
 									datamodel = "[FaithCreationWindow.GetGroupingHelper( 'core_tenets' ).GetGrouping]"
 									datamodel_wrap = 5
@@ -193,15 +193,15 @@ window = {
 
 									item = {
 										button_group = {
-											datacontext = "[GuiFaithCreationDoctrineItem.GetGuiFaithDoctrineItem]"
-											datacontext = "[GuiFaithDoctrineItem.GetDoctrine]"
-											datacontext = "[GuiFaithDoctrineItem.GetFaith]"
+											datacontext = "[GetGuiFaithDoctrineItem]"
+											datacontext = "[GetDoctrine]"
+											datacontext = "[GetFaith]"
 
 											icon = {
 												size = { 130 160 }
 												scale = 1.5
 												parentanchor = center
-												visible = "[EqualTo_int32( GuiFaithCreationDoctrineItem.GetSlotIndex, GuiFaithCreationDoctrineItem.GetFaithCreationWindow.GetDoctrineGroupWindow.GetSlotIndex ) ]"
+												visible = "[EqualTo_int32( GetSlotIndex, GetFaithCreationWindow.GetDoctrineGroupWindow.GetSlotIndex ) ]"
 												texture = "gfx/portraits/portrait_glow.dds"
 												using = Color_Orange
 											}
@@ -210,9 +210,9 @@ window = {
 												tooltip = "FAITH_WINDOW_DOCTRINE_CHANGE_TOOLTIP"
 											}
 
-											onclick = "[GuiFaithCreationDoctrineItem.GetFaithCreationWindow.GetDoctrineGroupWindow.ShowWindowSortList( GuiFaithCreationDoctrineItem.GetSlotIndex )]"
+											onclick = "[GetFaithCreationWindow.GetDoctrineGroupWindow.ShowWindowSortList( GetSlotIndex )]"
 											onclick = "[GetVariableSystem.Set( 'faith_creation_right_view', 'doctrine_selection' )]"
-											onclick = "[GetVariableSystem.Set( 'doctrine_group_name', FaithDoctrine.GetGroup.GetName( GuiFaithDoctrineItem.GetFaith ) )]"
+											onclick = "[GetVariableSystem.Set( 'doctrine_group_name', FaithDoctrine.GetGroup.GetName( GetFaith ) )]"
 										}
 									}
 								}
@@ -1002,17 +1002,17 @@ window = {
 										button_standard_hover = {
 											name = "faith_list_item"
 											layoutpolicy_horizontal = expanding
-											datacontext = "[GuiFaithCreationDoctrineItem.GetGuiFaithDoctrineItem]"
-											datacontext = "[GuiFaithDoctrineItem.GetDoctrine]"
-											datacontext = "[GuiFaithDoctrineItem.GetFaith]"
+											datacontext = "[GetGuiFaithDoctrineItem]"
+											datacontext = "[GetDoctrine]"
+											datacontext = "[GetFaith]"
 											datacontext = "[GetVariableSystem]"
 											size = { 430 80 }
 
-											onclick = "[GuiFaithCreationDoctrineItem.GetFaithCreationWindow.SelectDoctrine( GuiFaithCreationDoctrineItem.Self )]"
+											onclick = "[GetFaithCreationWindow.SelectDoctrine( Self )]"
 											onclick = "[VariableSystem.Clear( 'faith_creation_right_view' )]"
-											visible = "[GuiFaithCreationDoctrineItem.ShouldDisplay]"
-											enabled = "[GuiFaithCreationDoctrineItem.CanPick]"
-											down = "[GuiFaithCreationDoctrineItem.IsSelected]"
+											visible = "[ShouldDisplay]"
+											enabled = "[CanPick]"
+											down = "[IsSelected]"
 											tooltip = "FAITH_WINDOW_DOCTRINE_SELECT_TOOLTIP"
 
 											icon_doctrine = {
@@ -1055,7 +1055,7 @@ window = {
 											text_single = {
 												name = "doctrine_name"
 												position = { 75 25 }
-												text = "[FaithDoctrine.GetNameNoTooltip( GuiFaithDoctrineItem.GetFaith )]"
+												text = "[FaithDoctrine.GetNameNoTooltip( GetFaith )]"
 												default_format = "#high"
 												using = Font_Size_Medium
 												max_width = 270
@@ -1064,7 +1064,7 @@ window = {
 											text_single = {
 												name = "piety_cost"
 												position = { 350 23 }
-												text = "[piety_i][FaithDoctrine.CalcPietyCostWithFervorDiscount( GuiFaithDoctrineItem.GetFaith )]"
+												text = "[piety_i][FaithDoctrine.CalcPietyCostWithFervorDiscount( GetFaith )]"
 												using = Font_Size_Medium
 											}
 										}
@@ -1169,18 +1169,18 @@ template faith_creation_doctrine_grid
 		button_group = {
 			name = "doctrine_list_item"
 			tooltip = "FAITH_WINDOW_DOCTRINE_CHANGE_TOOLTIP"
-			datacontext = "[GuiFaithCreationDoctrineItem.GetGuiFaithDoctrineItem]"
-			datacontext = "[GuiFaithDoctrineItem.GetDoctrine]"
-			onclick = "[GuiFaithCreationDoctrineItem.GetFaithCreationWindow.GetDoctrineGroupWindow.ShowWindow( GuiFaithCreationDoctrineItem.GetSlotIndex )]"
+			datacontext = "[GetGuiFaithDoctrineItem]"
+			datacontext = "[GetDoctrine]"
+			onclick = "[GetFaithCreationWindow.GetDoctrineGroupWindow.ShowWindow( GetSlotIndex )]"
 			onclick = "[GetVariableSystem.Set( 'faith_creation_right_view', 'doctrine_selection' )]"
-			onclick = "[GetVariableSystem.Set( 'doctrine_group_name', FaithDoctrine.GetGroup.GetName( GuiFaithDoctrineItem.GetFaith ) )]"
+			onclick = "[GetVariableSystem.Set( 'doctrine_group_name', FaithDoctrine.GetGroup.GetName( GetFaith ) )]"
 			down = "[GetVariableSystem.HasValue( 'faith_creation_right_view', 'doctrine_selection' )]"
 
 			button_standard_hover = {
 				position = { 0 0 }
 				size = { 350 80 }
 				name = "select_doctrine"
-				down = "[And(GetVariableSystem.HasValue( 'doctrine_group_name', FaithDoctrine.GetGroup.GetName( GuiFaithDoctrineItem.GetFaith ) ), GetVariableSystem.HasValue( 'faith_creation_right_view', 'doctrine_selection' ))]"
+				down = "[And(GetVariableSystem.HasValue( 'doctrine_group_name', FaithDoctrine.GetGroup.GetName( GetFaith ) ), GetVariableSystem.HasValue( 'faith_creation_right_view', 'doctrine_selection' ))]"
 			}
 
 			icon = {
@@ -1195,14 +1195,14 @@ template faith_creation_doctrine_grid
 				autoresize = yes
 				position = { 80 7 }
 				align = left
-				text = "[FaithDoctrine.GetGroup.GetName( GuiFaithDoctrineItem.GetFaith )]"
+				text = "[FaithDoctrine.GetGroup.GetName( GetFaith )]"
 			}
 
 			text_single = {
 				name = "doctrine_name"
 				position = { 80 33 }
 				align = left
-				text = "[FaithDoctrine.GetName( GuiFaithDoctrineItem.GetFaith )]"
+				text = "[FaithDoctrine.GetName( GetFaith )]"
 			}
 		}
 	}
@@ -1243,12 +1243,12 @@ types "FaithCreation"
 	type widget_doctrine_selection_item = button_standard_hover {
 		size = { 240 53 }
 		tooltip = "FAITH_WINDOW_DOCTRINE_CHANGE_TOOLTIP"
-		datacontext = "[GuiFaithCreationDoctrineItem.GetGuiFaithDoctrineItem]"
-		datacontext = "[GuiFaithDoctrineItem.GetDoctrine]"
-		onclick = "[GuiFaithCreationDoctrineItem.GetFaithCreationWindow.GetDoctrineGroupWindow.ShowWindow( GuiFaithCreationDoctrineItem.GetSlotIndex )]"
+		datacontext = "[GetGuiFaithDoctrineItem]"
+		datacontext = "[GetDoctrine]"
+		onclick = "[GetFaithCreationWindow.GetDoctrineGroupWindow.ShowWindow( GetSlotIndex )]"
 		onclick = "[GetVariableSystem.Set( 'faith_creation_right_view', 'doctrine_selection' )]"
-		onclick = "[GetVariableSystem.Set( 'doctrine_group_name', FaithDoctrine.GetGroup.GetName( GuiFaithDoctrineItem.GetFaith ) )]"
-		down = "[And(GetVariableSystem.HasValue( 'doctrine_group_name', FaithDoctrine.GetGroup.GetName( GuiFaithDoctrineItem.GetFaith ) ), GetVariableSystem.HasValue( 'faith_creation_right_view', 'doctrine_selection' ))]"
+		onclick = "[GetVariableSystem.Set( 'doctrine_group_name', FaithDoctrine.GetGroup.GetName( GetFaith ) )]"
+		down = "[And(GetVariableSystem.HasValue( 'doctrine_group_name', FaithDoctrine.GetGroup.GetName( GetFaith ) ), GetVariableSystem.HasValue( 'faith_creation_right_view', 'doctrine_selection' ))]"
 
 		background = {
 			using = Background_Area
@@ -1257,7 +1257,7 @@ types "FaithCreation"
 
 		hbox = {
 			name = "faith_list_item"
-			datacontext = "[GuiFaithDoctrineItem.GetDoctrine]"
+			datacontext = "[GetDoctrine]"
 			spacing = 5
 			using = tooltip_nw
 			tooltip = "FAITH_WINDOW_DOCTRINE_TOOLTIP"
@@ -1270,7 +1270,7 @@ types "FaithCreation"
 					texture = "[FaithDoctrine.GetGroup.GetIcon]"
 				}
 
-				alpha = "[Select_float( GetPlayer.GetFaith.HasDoctrine( GuiFaithDoctrineItem.GetDoctrine ), '(float)0.4', '(float)1.0' )]"
+				alpha = "[Select_float( GetPlayer.GetFaith.HasDoctrine( GetDoctrine ), '(float)0.4', '(float)1.0' )]"
 			}
 
 			vbox = {
@@ -1278,7 +1278,7 @@ types "FaithCreation"
 
 				text_single = {
 					name = "doctrine_group_name"
-					text = "[FaithDoctrine.GetGroup.GetName( GuiFaithDoctrineItem.GetFaith )]"
+					text = "[FaithDoctrine.GetGroup.GetName( GetFaith )]"
 					align = left
 					default_format = "#low"
 					layoutpolicy_horizontal = expanding
@@ -1288,8 +1288,8 @@ types "FaithCreation"
 
 				text_single = {
 					name = "faith_name"
-					text = "[FaithDoctrine.GetNameNoTooltip( GuiFaithDoctrineItem.GetFaith )]"
-					datacontext = "[GuiFaithDoctrineItem.GetFaith]"
+					text = "[FaithDoctrine.GetNameNoTooltip( GetFaith )]"
+					datacontext = "[GetFaith]"
 					layoutpolicy_horizontal = expanding
 					elide = right
 					autoresize = no

@@ -989,7 +989,7 @@ xianxia_world.2261.a:0 "Let fear feed my path."
 
  # Success Event
  xianxia_world.9651.t:0 "Perfect Integration Achieved!"
- xianxia_world.9651.desc:0 "Blissful unity washes over you. The human's memories, cultivation, and body are now yours. Your new form radiates irresistible allure — mortals will fall to their knees at a single glance, begging to offer their essence in dual cultivation.\n\. You are the perfect predator in human skin."
+ xianxia_world.9651.desc:0 "Blissful unity washes over you. The human's memories, cultivation, and body are now yours. Your new form radiates irresistible allure — mortals will fall to their knees at a single glance, begging to offer their essence in dual cultivation.\n\nYou are the perfect predator in human skin."
  xianxia_world.9651.a:0 "This vessel is exquisite...."
 
  # Failure Event

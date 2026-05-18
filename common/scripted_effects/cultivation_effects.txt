@@ -7,7 +7,7 @@ cultivation_convert_direct_domain_faith_effect = {
 		# Convert only personally-held county titles (never vassal-held counties).
 		every_held_title = {
 			limit = { tier = tier_county }
-			set_county_faith = root.faith
+			set_county_faith = scope:root.faith
 		}
 	}
 }
@@ -911,13 +911,13 @@ cultivation_form_sect_defensive_pacts_effect = {
                 is_adult = yes
                 is_cultivator = yes
                 has_cultivation_sect_faith = yes
-                faith = root.faith
-                NOT = { this = root }
-                NOT = { is_allied_to = root }
+                faith = scope:root.faith
+                NOT = { this = scope:root }
+                NOT = { is_allied_to = scope:root }
                 OR = {
-                    is_within_diplo_range = root
+                    is_within_diplo_range = scope:root
                     AND = {
-                        root = {
+                        scope:root = {
                             NOT = { has_trait = cultivation_qi_gathering }
                         }
                         NOT = { has_trait = cultivation_qi_gathering }
@@ -947,12 +947,12 @@ cultivation_form_path_confederation_pacts_effect = {
                 is_adult = yes
                 is_cultivator = yes
                 has_cultivation_sect_faith = yes
-                NOT = { this = root }
-                NOT = { is_allied_to = root }
+                NOT = { this = scope:root }
+                NOT = { is_allied_to = scope:root }
                 OR = {
-                    is_within_diplo_range = root
+                    is_within_diplo_range = scope:root
                     AND = {
-                        root = { NOT = { has_trait = cultivation_qi_gathering } }
+                        scope:root = { NOT = { has_trait = cultivation_qi_gathering } }
                         NOT = { has_trait = cultivation_qi_gathering }
                     }
                 }

@@ -1,4 +1,4 @@
-xianxia_clear_commander_archetype_modifiers_effect = {
+﻿xianxia_clear_commander_archetype_modifiers_effect = {
     remove_character_modifier = xianxia_commander_orthodox_guardian
     remove_character_modifier = xianxia_commander_demonic_reaper
     remove_character_modifier = xianxia_commander_formation_warden

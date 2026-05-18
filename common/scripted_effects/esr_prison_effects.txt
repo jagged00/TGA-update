@@ -1,4 +1,4 @@
-# the effect used in all ransom interactions
+﻿# the effect used in all ransom interactions
 ransom_interaction_effect = {
 	# For mass actions where an option is not selected manually
 	if = {
