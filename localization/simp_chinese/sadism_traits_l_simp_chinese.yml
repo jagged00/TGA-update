@@ -1,0 +1,4 @@
+l_simp_chinese:
+ trait_spayed:0 "已绝育"
+ trait_spayed_desc:0 "这个角色已被故意绝育。"
+ trait_spayed_character_desc:0 "[ROOT.GetCharacter.GetFirstNameNoTooltip]已被故意绝育。"

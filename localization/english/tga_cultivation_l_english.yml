@@ -1,0 +1,82 @@
+﻿l_english:
+
+  XIANXIA_ORTHODOX_RIGHTEOUS_RECLAMATION_WAR_NAME:0 "$ORDER$ [ATTACKER.GetPrimaryTitle.GetAdjective] [attacker_xianxia_reclamation_name] of [DEFENDER.GetPrimaryTitle.GetNameNoTier]"
+  XIANXIA_ORTHODOX_RIGHTEOUS_RECLAMATION_WAR_NAME_BASE:0 "[attacker_xianxia_reclamation_name]"
+  xianxia_orthodox_righteous_reclamation_victory_desc:0 "[attacker_xianxia_reclamation_victory_desc]"
+  xianxia_orthodox_righteous_reclamation_defeat_desc:0 "[attacker_xianxia_reclamation_defeat_desc]"
+  xianxia_orthodox_righteous_reclamation_white_peace_desc:0 "[attacker_xianxia_reclamation_white_peace_desc]"
+
+  XIANXIA_DEMONIC_BLOOD_CONQUEST_WAR_NAME:0 "$ORDER$ [ATTACKER.GetPrimaryTitle.GetAdjective] [attacker_xianxia_blood_conquest_name] of [DEFENDER.GetPrimaryTitle.GetNameNoTier]"
+  XIANXIA_DEMONIC_BLOOD_CONQUEST_WAR_NAME_BASE:0 "[attacker_xianxia_blood_conquest_name]"
+  xianxia_demonic_blood_conquest_victory_desc:0 "[attacker_xianxia_blood_conquest_victory_desc]"
+  xianxia_demonic_blood_conquest_defeat_desc:0 "[attacker_xianxia_blood_conquest_defeat_desc]"
+  xianxia_demonic_blood_conquest_white_peace_desc:0 "[attacker_xianxia_blood_conquest_white_peace_desc]"
+
+  XIANXIA_UNORTHODOX_PATH_USURPATION_WAR_NAME:0 "$ORDER$ [ATTACKER.GetPrimaryTitle.GetAdjective] [attacker_xianxia_usurpation_name] of [DEFENDER.GetPrimaryTitle.GetNameNoTier]"
+  XIANXIA_UNORTHODOX_PATH_USURPATION_WAR_NAME_BASE:0 "[attacker_xianxia_usurpation_name]"
+  xianxia_unorthodox_path_usurpation_victory_desc:0 "[attacker_xianxia_usurpation_victory_desc]"
+  xianxia_unorthodox_path_usurpation_defeat_desc:0 "[attacker_xianxia_usurpation_defeat_desc]"
+  xianxia_unorthodox_path_usurpation_white_peace_desc:0 "[attacker_xianxia_usurpation_white_peace_desc]"
+
+  XIANXIA_VAGRANT_FOUND_BRANCH_HALL_WAR_NAME:0 "$ORDER$ [ATTACKER.GetPrimaryTitle.GetAdjective] [attacker_xianxia_branch_hall_name] in [DEFENDER.GetPrimaryTitle.GetNameNoTier]"
+  XIANXIA_VAGRANT_FOUND_BRANCH_HALL_WAR_NAME_BASE:0 "[attacker_xianxia_branch_hall_name]"
+  xianxia_vagrant_found_branch_hall_victory_desc:0 "[attacker_xianxia_branch_hall_victory_desc]"
+  xianxia_vagrant_found_branch_hall_defeat_desc:0 "[attacker_xianxia_branch_hall_defeat_desc]"
+  xianxia_vagrant_found_branch_hall_white_peace_desc:0 "[attacker_xianxia_branch_hall_white_peace_desc]"
+  
+  l_english:
+
+  attacker_xianxia_reclamation_name_orthodox:0 "Righteous Reclamation"
+  attacker_xianxia_reclamation_name_demonic:0 "Profane Subjugation"
+  attacker_xianxia_reclamation_name_unorthodox:0 "Veiled Reversal"
+  attacker_xianxia_reclamation_name_vagrant:0 "Wandering Seizure"
+  attacker_xianxia_reclamation_name_generic:0 "Sect Reclamation"
+
+  attacker_xianxia_reclamation_victory_desc_orthodox:0 "The righteous path triumphs, purging deviant influence and restoring the conquered sect beneath orthodox order."
+  attacker_xianxia_reclamation_victory_desc_demonic:0 "The victor tramples rival doctrine beneath ruthless domination, reshaping the conquered seat through fear and blood."
+  attacker_xianxia_reclamation_victory_desc_unorthodox:0 "The victor overturns the old order through cunning and flexible doctrine, replacing stagnation with a new path."
+  attacker_xianxia_reclamation_victory_desc_vagrant:0 "The victor tears loose a spiritual seat from settled hands and binds it to a wandering inheritance."
+  attacker_xianxia_reclamation_victory_desc_generic:0 "The conquered sect is forced beneath the victor's path and authority."
+
+  attacker_xianxia_reclamation_defeat_desc_orthodox:0 "The righteous expedition fails, emboldening deviant sects across the jianghu."
+  attacker_xianxia_reclamation_defeat_desc_generic:0 "The attacker fails to impose their will upon the conquered seat."
+
+  attacker_xianxia_reclamation_white_peace_desc_orthodox:0 "The unrighteous remain unpurged, and balance lingers in uneasy tension."
+  attacker_xianxia_reclamation_white_peace_desc_generic:0 "Neither side secures dominion over the contested sect seat."
+
+  attacker_xianxia_blood_conquest_name_demonic:0 "Blood Conquest"
+  attacker_xianxia_blood_conquest_name_orthodox:0 "Punitive Crusade"
+  attacker_xianxia_blood_conquest_name_generic:0 "Sect Conquest"
+
+  attacker_xianxia_blood_conquest_victory_desc_demonic:0 "The victor drowns the enemy sect in blood and terror, installing a new master beneath the shadow of the demonic path."
+  attacker_xianxia_blood_conquest_victory_desc_generic:0 "The conquered sect falls, and a new ruler rises under the victor’s authority."
+
+  attacker_xianxia_blood_conquest_defeat_desc_demonic:0 "The demonic conqueror is repelled, suffering a rare and humiliating defeat."
+  attacker_xianxia_blood_conquest_defeat_desc_generic:0 "The conquest fails, and the attacker is cast back in disgrace."
+
+  attacker_xianxia_blood_conquest_white_peace_desc_demonic:0 "The conquest falters, leaving only slaughter and unresolved hatred behind."
+  attacker_xianxia_blood_conquest_white_peace_desc_generic:0 "The conquest fails to fully ripen, and the struggle remains unresolved."
+
+  attacker_xianxia_usurpation_name_unorthodox:0 "Path Usurpation"
+  attacker_xianxia_usurpation_name_generic:0 "Path Seizure"
+
+  attacker_xianxia_usurpation_victory_desc_unorthodox:0 "Through cunning and defiance of convention, the victor overturns the old order and installs a new master of the unorthodox path."
+  attacker_xianxia_usurpation_victory_desc_generic:0 "The victor seizes the path-seat and installs a ruler loyal to their doctrine."
+
+  attacker_xianxia_usurpation_defeat_desc_unorthodox:0 "The usurper fails, their schemes collapsing under the weight of established power."
+  attacker_xianxia_usurpation_defeat_desc_generic:0 "The usurpation collapses, and the attacker loses face."
+
+  attacker_xianxia_usurpation_white_peace_desc_unorthodox:0 "Neither side secures control, and the path remains contested."
+  attacker_xianxia_usurpation_white_peace_desc_generic:0 "The path remains unresolved, with no clear victor."
+
+  attacker_xianxia_branch_hall_name_vagrant:0 "Found Branch Hall"
+  attacker_xianxia_branch_hall_name_generic:0 "Found New Hall"
+
+  attacker_xianxia_branch_hall_victory_desc_vagrant:0 "The victor establishes a new branch hall, anchoring wandering cultivators to a newly claimed spiritual domain."
+  attacker_xianxia_branch_hall_victory_desc_generic:0 "A new branch hall is founded upon the conquered seat."
+
+  attacker_xianxia_branch_hall_defeat_desc_vagrant:0 "The attempt to establish a foothold fails, and the wandering sect is driven away."
+  attacker_xianxia_branch_hall_defeat_desc_generic:0 "The attempt to found a new hall fails."
+
+  attacker_xianxia_branch_hall_white_peace_desc_vagrant:0 "No branch hall is founded, and the land remains without a new master."
+  attacker_xianxia_branch_hall_white_peace_desc_generic:0 "No new hall takes root in the contested land."

@@ -1,0 +1,74 @@
+l_simp_chinese:
+ #DECISION_ON_COOLDOWN: "@warning_icon! #X $DECISION_NAME$ unavailable until [DATE.GetStringLong]#!"
+ PORTRAIT_MODIFIER_custom_ksmod: "Fox Spirit MOD Added"
+ PORTRAIT_MODIFIER_custom_ksmod_male_empty: "None"
+ PORTRAIT_MODIFIER_custom_ksmod_fox_ears_m_01: "Male Fox Spirit Ears"
+ PORTRAIT_MODIFIER_custom_ksmod_female_empty: "None"
+ PORTRAIT_MODIFIER_custom_ksmod_fox_ears_01: "Female Fox Spirit Ears"
+ ks_night_cultivation_modifier: "Nightlong Cultivation"
+ ks_night_cultivation_modifier_desc: "Tired from nightlong cultivation, physically unwell"
+ ks_human_like_fox_modifier: "Blending with Humans"
+ ks_human_like_fox_modifier_desc: "As a Fox Spirit, you are skilled in transformation, able to blend with humans undetected"
+ ks_good_sexual_dream_modifier: "Seamless Erotic Dream"
+ ks_good_sexual_dream_modifier_desc: "In your dream, you were intimate with a Fox Spirit"
+ ks_possessed_by_a_huxian_modifier: "Possessed by a Fox Spirit"
+ ks_possessed_by_a_huxian_modifier_desc: "You were possessed by a Fox Spirit and had your life force drained"
+ ks_amulet_modifier: "Wearing an Amulet"
+ ks_amulet_modifier_desc: "Conceals the effects of Fox Spirit blood; clergy see you as a walking purse"
+ ks_ritual_modifier: "Performed Exorcism Ritual"
+ ks_ritual_modifier_desc: "Almost removed the effects of Fox Spirit blood; clergy see you as a gullible target"
+ 
+ l_simp_chinese:
+ # ============================================================================
+ # CULTIVATION & JIANGHU OPINION MODIFIERS - LOCALIZATION
+ # ============================================================================
+
+ opinion_remnant_sect_purged_desc:0 "此人幸免于我们教派的清洗。"
+ opinion_despises_weak_liege_cultivation_desc:0 "他鄙视我，因为我是一个软弱的君主。"
+ opinion_cultivation_views_me_as_future_threat_desc:0 "视我为未来的威胁"
+ opinion_cultivation_invests_in_my_talent_desc:0 "投资于我的才能和潜力"
+ opinion_mentor_guidance_desc:0 "从这位导师那里获得了宝贵的指导。"
+ opinion_lineage_betrayal_desc:0 "背叛了我们共同的血脉"
+
+ # Fox Spirit Opinions
+ opinion_fox_spirit_orthodox_hate_desc:0 "憎恨狐妖，视其为奸诈的妖魔。"
+ opinion_fox_spirit_order_hate_desc:0 "非常讨厌这只狐狸精"
+ opinion_fox_spirit_unorthodox_wary_desc:0 "警惕这只狐妖的诡计"
+ opinion_fox_spirit_vagrant_swing_desc:0 "对这只狐狸精的态度是中立的，但时好时坏。"
+ opinion_fox_spirit_demonic_ally_desc:0 "视这只狐狸精为一位宝贵的恶魔盟友。"
+ opinion_fox_spirit_yin_affinity_desc:0 "感觉与这只狐狸精有强烈的阴柔亲和力。"
+ opinion_fox_spirit_accepted_child_desc:0 "接纳这只狐狸精为己方的一员。"
+ opinion_fox_spirit_mortal_hunter_desc:0 "将此狐狸精视为危险的凡人猎手。"
+
+ # Path & Jianghu Social Opinions
+ opinion_cultivation_path_peer_desc:0 "他视我为同路修行者。"
+ opinion_cultivation_path_rival_desc:0 "他视我为修炼道路上的竞争对手。"
+ opinion_jianghu_public_humiliation_desc:0 "在江湖中当众受辱"
+ opinion_jianghu_face_grudge_desc:0 "他对我怀有深深的怨恨。"
+ opinion_jianghu_ambushed_me_desc:0 "我在江湖伏击了他们。"
+ opinion_jianghu_forced_rescue_desc:0 "被迫救了我"
+ opinion_jianghu_blood_vengeance_desc:0 "誓言以血债血偿，向我复仇"
+ opinion_jianghu_inherited_friendship_desc:0 "传承自祖先的友谊"
+ opinion_jianghu_inherited_rivalry_desc:0 "从祖先那里继承来的竞争"
+
+ # Sect Internal Politics
+ opinion_sect_leader_appeased_elders_desc:0 "成功安抚了宗门长老"
+ opinion_sect_leader_purged_elders_desc:0 "清洗了宗派长老"
+ opinion_sect_leader_crushed_dissent_desc:0 "镇压内部异议"
+ opinion_sect_challenger_usurped_leadership_desc:0 "篡夺了教派领导权"
+ opinion_sect_schism_allowed_desc:0 "任由该教派分裂"
+ opinion_high_realm_submission_desc:0 "被迫臣服于一位高阶修士"
+
+ # Optional extra flavor (you can remove if not needed)
+ opinion_remnant_sect_purged_desc:1 "在大宗门清洗中幸存下来"
+ opinion_despises_weak_liege_cultivation_desc:1 "认为他们的君主太过软弱，不足以驾驭道。"
+ opinion_cultivation_views_me_as_future_threat_desc:1 "预见到我未来发展的巨大危险"
+ opinion_cultivation_invests_in_my_talent_desc:1 "寄希望于我的修炼天赋。"
+ opinion_mentor_guidance_desc:1 "指引我走上修行之路。"
+ opinion_lineage_betrayal_desc:1 "背叛了神圣的血脉纽带"
+
+ opinion_fox_spirit_orthodox_hate_desc:1 "正统观点认为狐狸精是邪恶的诱惑者。"
+ opinion_fox_spirit_demonic_ally_desc:1 "认为这只狐狸精是一个有用的恶魔伙伴"
+ opinion_fox_spirit_yin_affinity_desc:1 "与这只狐狸精有着深沉的阴性共鸣。"
+ opinion_jianghu_blood_vengeance_desc:1 "唯有死亡才能偿还的血债"
+ opinion_jianghu_public_humiliation_desc:1 "在武术界颜面尽失"

@@ -1,0 +1,108 @@
+l_simp_chinese:
+
+  ### Declare Private War
+  rv_declare_private_war_interaction:0 "宣战"
+  rv_declare_private_war_desc:0 "使用[casus_belli|E]声明[war|E] 在 [recipient.GetShortUINameNoTooltip]"
+  rv_liege_warning:0 "捍卫者的[liege|E]将加入战争"
+  ### Rescue CB
+  RESCUE_WAR_NAME:0 "释放俘虏"
+  RESCUE_WAR_NAME_FALLBACK:0 "释放俘虏"
+  rv_rescue_war:0 "为解放俘虏而战"
+  CB_RESCUE_COST:0 "目标俘虏人数"
+  CB_RESCUE_CRIMINAL_COST:0 "目标罪犯人数"
+  rv_release_effect:0 "• [Scope.GetCharacter.GetShortUIName|U]将被释放"
+  rv_transfer_effect:0 "• [Scope.GetCharacter.GetShortUIName|U]将被你囚禁"
+  rv_other_effect:0 "• 你的盟友分享[prestige_i][EmptyScope.ScriptValue('medium_prestige_value')|+0]基于他们的贡献\n• [Scope.GetCharacter.GetImprisonedBy.GetUIName|U]:\n• 盟军共享[prestige_i][EmptyScope.ScriptValue('medium_prestige_value')|V0]基于他们的贡献\n• 增加[Scope.GetCharacter.GetImprisonedBy.GetHerHis]意见[Scope.GetCharacter.GetImprisonedBy.GetHerHis]根据盟友的贡献"
+  rescue_war_victory_desc:0 "您可自由选择所有选项[prisoners|E] 和 [concubines|E]被……持有[defender.GetShortUINamePossessive]."
+  rv_house_effect:0 "• [house|E] [Scope.GetCharacter.GetDynastyHouseName|V] [house_unity|E]变化[EmptyScope.ScriptValue('medium_unity_gain')|+0] @dynasty_house_unity!"
+  rescue_war_victory_desc_defender:0 "[attacker.GetShortUIName|U]所有列出的免费[prisoners|E]在你的地牢里。"
+  rv_failed_rescue:0 "救援失败"
+  rv_rescue_war_invalidated_desc:0 "解放俘虏的战争无效！"
+  rv_rescue_war_white_peace_desc:0 "不 [prisoner|E]被释放。"
+  rv_rescue_war_defeat_desc:0 "$rv_rescue_war_white_peace_desc$"
+  rv_failed_rescue_desc_1:0 "我未能成功营救[rescue_target_dead.GetName]被杀害的人[rescue_target_killer.GetName]"
+  rv_failed_rescue_desc_second_perspective_1:0 "[owner.GetName]救援失败[rescue_target_dead.GetName]被杀害的人[rescue_target_killer.GetName]"
+  rv_failed_rescue_desc_third_perspective_1:0 "[owner.GetName]救援失败[rescue_target_dead.GetName]谁被杀害了[rescue_target_killer.GetName]"
+  RV_IS_CRIMINAL:0 "这个角色是[imprisoned|E]因为他们[crime|E]营救他们将产生额外费用。[prestige|E]成本并推动你和他们的囚徒走向成为[rivals|E]."
+
+  ### Rescue_Opinions
+  rv_rescued_me:0 "救了我"
+  rv_rescued_family:0 "获救[family_member|E]"
+  rv_rescued_former_spouse:0 "把我从[concubinage|E]前任[spouse|E]"
+  rv_rescued_close_relation:0 "获救的近亲"
+  rv_rescued_very_close:0 "获救[best_friend|E] 或者 [soulmate|E]"
+  rv_rescued_rival:0 "获救[rival|E]"
+  rv_rescued_nemesis:0 "获救[nemesis|E]"
+  rv_attempt_free_my_criminal:0 "试图营救[criminal|E]"
+  rv_attempted_rescuing_me:0 "试图营救我"
+  rv_attempted_rescuing_family:0 "试图营救[family_member|E]"
+  rv_attempted_rescuing_close_relation:0 "试图营救近亲"
+  rv_attempted_rescuing_very_close:0 "试图营救[best_friend|E] 或者 [soulmate|E]"
+  rv_attempted_rescuing_rival:0 "试图营救[rival|E]"
+  rv_attempted_rescuing_nemesis:0 "试图营救[nemesis|E]"
+  rv_avenged_family:0 "复仇者[family_member|E]"
+  rv_avenged_close_relation:0 "复仇的近亲"
+  rv_avenged_very_close:0 "复仇者[best_friend|E] 或者 [soulmate|E]"
+
+  ### Revenge CB
+  REVENGE_WAR_NAME:0 "复仇之战"
+  REVENGE_WAR_NAME_FALLBACK:0 "复仇之战"
+  rv_revenge_war:0 "复仇之战"
+  CB_REVENGE_COST:0 "受害者需要复仇"
+  REVENGE_LABEL:0 "受害者需要复仇"
+  rv_no_revenge_target:0 "没有人需要复仇"
+  revenge_war_victory_desc:0 "你为他报了仇[defender.GetShortUINamePossessive]针对你身边亲近之人的犯罪。"
+  revenge_war_victory_desc_defender:0 "[attacker.GetShortUIName|U]为你的罪行向亲近之人复仇[attacker.GetHerHim]."
+  rv_revenge_war_white_peace_desc:0 "犯罪行为[defender.GetShortUIName|U]复仇并未得到伸张。"
+  rv_revenge_war_defeat_desc:0 "$rv_revenge_war_white_peace_desc$"
+  rv_revenge_war_invalidated_desc:0 "复仇战争无效！"
+
+  # Successfule revenge memory
+  rv_successful_revenged_lover:0 "复仇成功"
+  rv_revenged_lover_desc_1:0 "我为我的爱人报了仇[target_revenged.GetName]被杀害的人的死亡[target_killer.GetName]"
+  rv_revenged_lover_desc_second_perspective_1:0 "你为你的情人报了仇[target_revenged.GetName]被杀害的人的死亡[target_killer.GetName]"
+  rv_revenged_lover_desc_third_perspective_1:0 "[owner.GetName]为……进行报复[owner.GetHerHis]恋人[target_revenged.GetName]被杀害的人的死亡[target_killer.GetName]"
+
+  rv_successful_revenged_soulmate:0 "复仇成功"
+  rv_revenged_soulmate_desc_1:0 "我为我的灵魂伴侣报了仇[target_revenged.GetName]被杀害的人的死亡[target_killer.GetName]"
+  rv_revenged_soulmate_desc_second_perspective_1:0 "你为你的灵魂伴侣报了仇[target_revenged.GetName]被杀害的人的死亡[target_killer.GetName]"
+  rv_revenged_soulmate_desc_third_perspective_1:0 "[owner.GetName]为……进行报复[owner.GetHerHis]灵魂伴侣[target_revenged.GetName]被杀害的人的死亡[target_killer.GetName]"
+
+  rv_successful_revenged_friend:0 "复仇成功"
+  rv_revenged_friend_desc_1:0 "我为我的朋友报了仇。[target_revenged.GetName]被杀害的人的死亡[target_killer.GetName]"
+  rv_revenged_friend_desc_second_perspective_1:0 "你为你的朋友报了仇。[target_revenged.GetName]被杀害的人的死亡[target_killer.GetName]"
+  rv_revenged_friend_desc_third_perspective_1:0 "[owner.GetName]为……进行报复[owner.GetHerHis]朋友[target_revenged.GetName]被杀害的人的死亡[target_killer.GetName]"
+
+  rv_successful_revenged_best_friend:0 "复仇成功"
+  rv_revenged_best_friend_desc_1:0 "我为我最好的朋友报了仇。[target_revenged.GetName]被杀害的人的死亡[target_killer.GetName]"
+  rv_revenged_best_friend_desc_second_perspective_1:0 "你为你的挚友报了仇[target_revenged.GetName]被杀害的人的死亡[target_killer.GetName]"
+  rv_revenged_best_friend_desc_third_perspective_1:0 "[owner.GetName]为……进行报复[owner.GetHerHis]最好的朋友[target_revenged.GetName]被杀害的人的死亡[target_killer.GetName]"
+
+  rv_successful_revenged_spouse:0 "复仇成功"
+  rv_revenged_spouse_desc_1:0 "我为我的配偶进行了报复。[target_revenged.GetName]被杀害的人的死亡[target_killer.GetName]"
+  rv_revenged_spouse_desc_second_perspective_1:0 "你为你的配偶进行了报复[target_revenged.GetName]被杀害的人的死亡[target_killer.GetName]"
+  rv_revenged_spouse_desc_third_perspective_1:0 "[owner.GetName]为……进行报复[owner.GetHerHis] 配偶 [target_revenged.GetName]被杀害的人的死亡[target_killer.GetName]"
+
+  rv_successful_revenged_family:0 "复仇成功"
+  rv_revenged_family_desc_1:0 "我为我的家人报了仇[target_revenged.GetName]被杀害的人的死亡[target_killer.GetName]"
+  rv_revenged_family_desc_second_perspective_1:0 "你为你的家人报了仇[target_revenged.GetName]被杀害的人的死亡[target_killer.GetName]"
+  rv_revenged_family_desc_third_perspective_1:0 "[owner.GetName]为……进行报复[owner.GetHerHis]家庭成员[target_revenged.GetName]被杀害的人的死亡[target_killer.GetName]"
+
+  rv_was_revenged:0 "复仇成功"
+  rv_was_revenged_desc_1:0 "我的死因[target_killer.GetName]复仇成功[target_revenger.GetName]（尸检）"
+  rv_was_revenged_desc_second_perspective_1:0 "你的死亡是由[target_killer.GetName]复仇成功[target_revenger.GetName]（尸检）"
+  rv_was_revenged_desc_third_perspective_1:0 "[owner.GetName]的死亡是由[target_killer.GetName]复仇成功[target_revenger.GetName]（尸检）"
+
+ #Failed Revenge Story
+  rv_failed_revenge_desc_1:0 "我未能成功报复[target_killer.GetName]."
+  rv_failed_revenge_desc_second_perspective_1:0 "你未能成功复仇[target_killer.GetName]."
+  rv_failed_revenge_desc_third_perspective_1:0 "[owner.GetName]未能成功复仇[target_killer.GetName]."
+  rv_failed_revenge:0 "复仇失败"
+
+ #Tooltip
+  rv_is_your_family_member:0 "这个角色是你的家人"
+
+ #gui texts
+  rv_lover_header:0 "情人"
+
+  rv_error_suppression:0 "错误抑制"

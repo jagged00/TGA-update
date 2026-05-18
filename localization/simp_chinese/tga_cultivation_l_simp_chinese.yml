@@ -1,0 +1,82 @@
+l_simp_chinese:
+
+  XIANXIA_ORTHODOX_RIGHTEOUS_RECLAMATION_WAR_NAME:0 "$ORDER$ [ATTACKER.GetPrimaryTitle.GetAdjective] [attacker_xianxia_reclamation_name] 的 [DEFENDER.GetPrimaryTitle.GetNameNoTier]"
+  XIANXIA_ORTHODOX_RIGHTEOUS_RECLAMATION_WAR_NAME_BASE:0 "[attacker_xianxia_reclamation_name]"
+  xianxia_orthodox_righteous_reclamation_victory_desc:0 "[attacker_xianxia_reclamation_victory_desc]"
+  xianxia_orthodox_righteous_reclamation_defeat_desc:0 "[attacker_xianxia_reclamation_defeat_desc]"
+  xianxia_orthodox_righteous_reclamation_white_peace_desc:0 "[attacker_xianxia_reclamation_white_peace_desc]"
+
+  XIANXIA_DEMONIC_BLOOD_CONQUEST_WAR_NAME:0 "$ORDER$ [ATTACKER.GetPrimaryTitle.GetAdjective] [attacker_xianxia_blood_conquest_name] 的 [DEFENDER.GetPrimaryTitle.GetNameNoTier]"
+  XIANXIA_DEMONIC_BLOOD_CONQUEST_WAR_NAME_BASE:0 "[attacker_xianxia_blood_conquest_name]"
+  xianxia_demonic_blood_conquest_victory_desc:0 "[attacker_xianxia_blood_conquest_victory_desc]"
+  xianxia_demonic_blood_conquest_defeat_desc:0 "[attacker_xianxia_blood_conquest_defeat_desc]"
+  xianxia_demonic_blood_conquest_white_peace_desc:0 "[attacker_xianxia_blood_conquest_white_peace_desc]"
+
+  XIANXIA_UNORTHODOX_PATH_USURPATION_WAR_NAME:0 "$ORDER$ [ATTACKER.GetPrimaryTitle.GetAdjective] [attacker_xianxia_usurpation_name] 的 [DEFENDER.GetPrimaryTitle.GetNameNoTier]"
+  XIANXIA_UNORTHODOX_PATH_USURPATION_WAR_NAME_BASE:0 "[attacker_xianxia_usurpation_name]"
+  xianxia_unorthodox_path_usurpation_victory_desc:0 "[attacker_xianxia_usurpation_victory_desc]"
+  xianxia_unorthodox_path_usurpation_defeat_desc:0 "[attacker_xianxia_usurpation_defeat_desc]"
+  xianxia_unorthodox_path_usurpation_white_peace_desc:0 "[attacker_xianxia_usurpation_white_peace_desc]"
+
+  XIANXIA_VAGRANT_FOUND_BRANCH_HALL_WAR_NAME:0 "$ORDER$ [ATTACKER.GetPrimaryTitle.GetAdjective] [attacker_xianxia_branch_hall_name] 在 [DEFENDER.GetPrimaryTitle.GetNameNoTier]"
+  XIANXIA_VAGRANT_FOUND_BRANCH_HALL_WAR_NAME_BASE:0 "[attacker_xianxia_branch_hall_name]"
+  xianxia_vagrant_found_branch_hall_victory_desc:0 "[attacker_xianxia_branch_hall_victory_desc]"
+  xianxia_vagrant_found_branch_hall_defeat_desc:0 "[attacker_xianxia_branch_hall_defeat_desc]"
+  xianxia_vagrant_found_branch_hall_white_peace_desc:0 "[attacker_xianxia_branch_hall_white_peace_desc]"
+  
+  l_simp_chinese:
+
+  attacker_xianxia_reclamation_name_orthodox:0 "正义的复兴"
+  attacker_xianxia_reclamation_name_demonic:0 "亵渎的征服"
+  attacker_xianxia_reclamation_name_unorthodox:0 "隐晦的逆转"
+  attacker_xianxia_reclamation_name_vagrant:0 "游走性癫痫发作"
+  attacker_xianxia_reclamation_name_generic:0 "教派复兴"
+
+  attacker_xianxia_reclamation_victory_desc_orthodox:0 "正义之路终将胜利，清除异端影响，使被征服的教派恢复正统秩序。"
+  attacker_xianxia_reclamation_victory_desc_demonic:0 "胜利者以残酷的统治践踏对手的教条，用恐惧和鲜血重塑被征服的领土。"
+  attacker_xianxia_reclamation_victory_desc_unorthodox:0 "胜利者通过狡猾灵活的理论推翻旧秩序，以新道路取代停滞不前。"
+  attacker_xianxia_reclamation_victory_desc_vagrant:0 "胜利者从安稳的人手中夺走精神宝座，并将其束缚在漂泊的遗产上。"
+  attacker_xianxia_reclamation_victory_desc_generic:0 "被征服的教派被迫臣服于胜利者的道路和权威之下。"
+
+  attacker_xianxia_reclamation_defeat_desc_orthodox:0 "正义之举失败，反而壮大了江湖各地异端邪说的气焰。"
+  attacker_xianxia_reclamation_defeat_desc_generic:0 "攻击者未能将自己的意志强加于被征服的阵地。"
+
+  attacker_xianxia_reclamation_white_peace_desc_orthodox:0 "不义之人仍未被清除，社会平衡在不安的紧张状态中苟延残喘。"
+  attacker_xianxia_reclamation_white_peace_desc_generic:0 "双方均未能掌控争议的教派席位。"
+
+  attacker_xianxia_blood_conquest_name_demonic:0 "血之征服"
+  attacker_xianxia_blood_conquest_name_orthodox:0 "惩罚性十字军东征"
+  attacker_xianxia_blood_conquest_name_generic:0 "宗门征服"
+
+  attacker_xianxia_blood_conquest_victory_desc_demonic:0 "胜利者将敌方教派淹没在鲜血和恐惧之中，在魔道的阴影下扶植新的主人。"
+  attacker_xianxia_blood_conquest_victory_desc_generic:0 "被征服的教派覆灭，新的统治者在胜利者的统治下崛起。"
+
+  attacker_xianxia_blood_conquest_defeat_desc_demonic:0 "恶魔征服者被击退，遭受了一场罕见而屈辱的失败。"
+  attacker_xianxia_blood_conquest_defeat_desc_generic:0 "征服失败，攻击者狼狈地被驱逐出去。"
+
+  attacker_xianxia_blood_conquest_white_peace_desc_demonic:0 "征服失败了，留下的只有屠杀和无法化解的仇恨。"
+  attacker_xianxia_blood_conquest_white_peace_desc_generic:0 "征服未能完全成熟，斗争仍未解决。"
+
+  attacker_xianxia_usurpation_name_unorthodox:0 "路径篡夺"
+  attacker_xianxia_usurpation_name_generic:0 "路径癫痫"
+
+  attacker_xianxia_usurpation_victory_desc_unorthodox:0 "胜利者凭借狡诈和对传统的蔑视，推翻了旧秩序，建立了一个走非正统道路的新主人。"
+  attacker_xianxia_usurpation_victory_desc_generic:0 "胜利者夺取统治权，并扶植一位忠于其教义的统治者。"
+
+  attacker_xianxia_usurpation_defeat_desc_unorthodox:0 "篡位者失败了，他们的阴谋在既有权力的重压下土崩瓦解。"
+  attacker_xianxia_usurpation_defeat_desc_generic:0 "篡位失败，攻击者颜面尽失。"
+
+  attacker_xianxia_usurpation_white_peace_desc_unorthodox:0 "双方均未能取得控制权，道路依然充满争议。"
+  attacker_xianxia_usurpation_white_peace_desc_generic:0 "这条道路仍然悬而未决，没有明显的赢家。"
+
+  attacker_xianxia_branch_hall_name_vagrant:0 "找到分会大厅"
+  attacker_xianxia_branch_hall_name_generic:0 "发现新大厅"
+
+  attacker_xianxia_branch_hall_victory_desc_vagrant:0 "胜利者建立新的分殿，将游方修士聚集到新占领的精神领域。"
+  attacker_xianxia_branch_hall_victory_desc_generic:0 "在攻占的城址上，建立了一个新的分会。"
+
+  attacker_xianxia_branch_hall_defeat_desc_vagrant:0 "试图站稳脚跟的尝试失败了，流浪的宗派被驱逐了。"
+  attacker_xianxia_branch_hall_defeat_desc_generic:0 "建立新会馆的尝试失败了。"
+
+  attacker_xianxia_branch_hall_white_peace_desc_vagrant:0 "没有建立任何分殿，这片土地仍然没有新的主人。"
+  attacker_xianxia_branch_hall_white_peace_desc_generic:0 "在这片争议之地，没有一座新的会馆能够扎根。"

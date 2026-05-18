@@ -1,0 +1,17 @@
+l_simp_chinese:
+
+ dragatus_prisoner_marriage_interaction:0 "为囚犯安排婚姻"
+ dragatus_prisoner_marriage_interaction_desc:0 "结婚[recipient.GetShortUINameNoTooltip]对你法庭上的某人。"
+ actor_secondary_dragatus_prisoner_marriage_interaction:0 "发件人"
+ dragatus_has_max_spouses:0 "我不能再承受更多了[recipient.Custom('WifeHusband')|U]秒。"
+ msg_dragatus_prisoner_marriage_title:0 "已采取[actor.Custom('WifeHusbandOpp')|U]"
+
+ dragatus_rightful_spouse_opinion:0 "合法配偶"
+ dragatus_stole_my_wife_opinion:0 "抢人妻者"
+ dragatus_stole_my_husband_opinion:0 "抢走丈夫的人"
+
+ dragatus_prisoner_marriage_reclaim_wife_war:0 "追回配偶"
+ DRAGATUS_PM_RECLAIM_WIFE_WAR_NAME:0 "夺回合法配偶之战"
+ dragatus_prisoner_marriage_reclaim_wife_war_victory_desc:0 "[defender.GetShortUIName|U]被迫归还所有被掳走的配偶。"
+ dragatus_prisoner_marriage_reclaim_wife_war_white_peace_desc:0 "战争以无果而终，没有配偶返回。"
+ dragatus_prisoner_marriage_reclaim_wife_war_defeat_desc:0 "[defender.GetShortUIName|U]监狱[attacker.GetShortUIName|U]."

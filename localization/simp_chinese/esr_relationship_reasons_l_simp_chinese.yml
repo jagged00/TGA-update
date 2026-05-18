@@ -1,0 +1,17 @@
+l_simp_chinese:
+ esr_rival_declared_war_vengeful:0 "[TARGET_CHARACTER.GetShortUIName|U]宣战[Select_CString(TARGET_CHARACTER.IsLocalPlayer, 'your', TARGET_CHARACTER.GetHerHis )] 竞争对手， [CHARACTER.GetShortUIName|U]."
+ esr_rival_declared_war_vengeful_corresponding:0 "[TARGET_CHARACTER.GetShortUINamePossessive] 竞争对手， [CHARACTER.GetShortUIName|U]向……宣战[Select_CString(TARGET_CHARACTER.IsLocalPlayer, 'you', TARGET_CHARACTER.GetHerHim )]."
+
+ esr_rival_attempted_murder_vengeful:0 "[TARGET_CHARACTER.GetShortUINamePossessive]谋杀未遂[CHARACTER.GetShortUIName|U]被发现了。"
+ esr_rival_attempted_murder_vengeful_corresponding:0 "[TARGET_CHARACTER.GetShortUIName|U]发现[CHARACTER.GetShortUINamePossessive]谋杀未遂[Select_CString(TARGET_CHARACTER.IsLocalPlayer, 'you', TARGET_CHARACTER.GetHerHim )]."
+
+ esr_rival_divorced_soulmate_vengeful:0 "[TARGET_CHARACTER.GetShortUIName|U]离婚[Select_CString(TARGET_CHARACTER.IsLocalPlayer, 'your', TARGET_CHARACTER.GetHerHis )]灵魂伴侣，[CHARACTER.GetShortUIName|U]."
+ esr_rival_divorced_soulmate_vengeful_corresponding:0 "[TARGET_CHARACTER.GetShortUIName|U], [CHARACTER.GetShortUINamePossessive]灵魂伴侣，怨恨[Select_CString(CHARACTER.IsLocalPlayer, 'you', CHARACTER.GetHerHim )]离婚[Select_CString(TARGET_CHARACTER.IsLocalPlayer, 'you', TARGET_CHARACTER.GetHerHim )]."
+
+ esr_rival_divorced_lover_vengeful:0 "[TARGET_CHARACTER.GetShortUIName|U]离婚[Select_CString(TARGET_CHARACTER.IsLocalPlayer, 'your', TARGET_CHARACTER.GetHerHis )]爱人，[CHARACTER.GetShortUIName|U]."
+ esr_rival_divorced_lover_vengeful_corresponding:0 "[TARGET_CHARACTER.GetShortUIName|U], [CHARACTER.GetShortUINamePossessive]情人，怨恨[Select_CString(CHARACTER.IsLocalPlayer, 'you', CHARACTER.GetHerHim )]离婚[Select_CString(TARGET_CHARACTER.IsLocalPlayer, 'you', TARGET_CHARACTER.GetHerHim )]."
+
+ esr_rival_retracted_vassal_reversed:0 "[TARGET_CHARACTER.GetShortUIName|U]撤回[CHARACTER.GetShortUINamePossessiveNoTooltip]附庸。"
+ esr_rival_retracted_vassal_reversed_corresponding:0 "[CHARACTER.GetShortUIName|U]撤回[TARGET_CHARACTER.GetShortUINamePossessiveNoTooltip]附庸。"
+
+

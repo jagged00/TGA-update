@@ -1,0 +1,19 @@
+l_simp_chinese:
+ jianghu_face_slap_interaction:0 "当众扇耳光"
+ jianghu_face_slap_interaction_desc:0 "公开羞辱[recipient.GetShortUINameNoTooltip]，在江湖中粉碎了面子和势头。"
+ jianghu_set_ambush_interaction:0 "安排耕耘者伏击"
+ jianghu_set_ambush_interaction_desc:0 "设下埋伏[recipient.GetShortUINameNoTooltip]在城墙外和宗门道外，以隐秘的力量惩罚较弱的敌人。"
+ jianghu_demand_prisoner_release_interaction:0 "需求自保释放"
+ jianghu_demand_prisoner_release_interaction_desc:0 "诉诸宗门荣誉和武力胁迫[recipient.GetShortUINameNoTooltip]释放你被俘的亲属或结拜伙伴。"
+ jianghu_swear_blood_vengeance_interaction:0 "誓血复仇"
+ jianghu_swear_blood_vengeance_interaction_desc:0 "立下江湖血誓[recipient.GetShortUINameNoTooltip]对于被杀害的亲人来说，悲痛变成了持久的仇恨。"
+
+ jianghu_face_loss:0 "在江湖面前颜面尽失"
+ jianghu_face_loss_desc:0 "公开羞辱损害了这位修仙者的名誉，也打乱了他的修炼节奏。"
+
+ xianxia_jianghu_letters.1000.opening:0 "一枚玉奚送来，上面的气印冰冷而嘲讽。"
+ xianxia_jianghu_letters.1000.desc:0 "[sender.GetFirstName]把消息传遍客栈、市场和宗门，说你被当众扇耳光，在江湖面前丢尽了尊严。"
+ xianxia_jianghu_letters.1000.desc_rival:0 "你的对手[sender.GetFirstName]他公开嘲笑你的失败，宣称你的道心太过脆弱，连在众人面前挨一巴掌都经不起。"
+ xianxia_jianghu_letters.1000.desc_family:0 "即使在你自己的血脉中，[sender.GetFirstName]散布了这种羞辱，说你们分部颜面尽失。"
+ xianxia_jianghu_letters.1000.a:0 "暂时忍住这份屈辱吧。"
+ xianxia_jianghu_letters.1000.b:0 "这场世仇将被世人铭记数百年。"

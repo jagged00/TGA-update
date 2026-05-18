@@ -1,0 +1,12 @@
+l_simp_chinese:
+ spay_interaction:0 "绝育"
+ spay_interaction_desc:0 "绝育[recipient.GetShortUINameNoTooltip]"
+
+ deleg_interaction:0 "截肢腿"
+ deleg_interaction_desc:0 "砍掉一条腿[recipient.GetShortUINameNoTooltip]"
+
+ dearm_interaction:0 "伤残"
+ dearm_interaction_desc:0 "伤残[recipient.GetShortUINameNoTooltip]"
+
+ forced_copulation_interaction:0 "强奸"
+ forced_copulation_interaction_desc:0 "充分利用[recipient.GetShortUINameNoTooltip]"

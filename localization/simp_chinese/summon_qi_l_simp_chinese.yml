@@ -1,0 +1,56 @@
+l_simp_chinese:
+ # Thousand Qi Needles
+ summon_thousand_qi_needles_decision:0 "释放千针"
+ summon_thousand_qi_needles_decision_desc:0 "无数闪耀的纯净气针从你的经络中迸发而出，如同银色的暴雨般刺破苍穹，撕裂沿途的一切。"
+ summon_thousand_qi_needles_decision_confirm:0 "让针飞起来吧！"
+ summon_thousand_qi_needles_decision_tooltip:0 "这股气针风暴将如纸片般穿透凡人军队，不留任何幸存者。"
+ summon_thousand_qi_needles_decision_effect1:0 "我曾撒下几根气针猎杀野兽，如今我将释放千根气针讨伐敌人。"
+ summon_thousand_qi_needles_decision_effect2:0 "#帮助 此法术可在修炼恢复期后再次施展。"
+
+ # Nine Heavens Sword Intent
+ summon_nine_heavens_sword_intent_decision:0 "显现九重天剑意"
+ summon_nine_heavens_sword_intent_decision_desc:0 "九把剑气从九重天降临，每一把剑都劈开山岳，撕裂虚空。"
+ summon_nine_heavens_sword_intent_decision_confirm:0 "老天爷啊，请听从我的呼唤！"
+ summon_nine_heavens_sword_intent_decision_tooltip:0 "九重天之剑意将劈开帝国，势不可挡，神力无比。"
+ summon_nine_heavens_sword_intent_decision_effect1:0 "我曾凝聚一剑之气，斩断磐石；如今九重天将为我锻造利刃。"
+ summon_nine_heavens_sword_intent_decision_effect2:0 "#帮助 此法术可在修炼恢复期后再次施展。"
+
+ # Golden Core Flame Lotus
+ summon_golden_core_flame_lotus_decision:0 "绽放金核火焰莲花"
+ summon_golden_core_flame_lotus_decision_desc:0 "一朵光芒四射的金色莲花，带着炽热的内核火焰，从你的丹田中绽放，它的花瓣在纯净的气火中焚烧一切物质。"
+ summon_golden_core_flame_lotus_decision_confirm:0 "让莲花永燃不灭！"
+ summon_golden_core_flame_lotus_decision_tooltip:0 "这朵火焰莲花能将庞大的军队化为灰烬，它的金色火焰甚至能吞噬不死之身。"
+ summon_golden_core_flame_lotus_decision_effect1:0 "我曾从正在形成的核心中点燃一丝火花，温暖我的修炼洞穴。如今，它却绽放成毁灭之花。"
+ summon_golden_core_flame_lotus_decision_effect2:0 "#帮助 此法术可在修炼恢复期后再次施展。"
+
+ # Nascent Soul Phantom
+ summon_nascent_soul_phantom_decision:0 "召唤新生魂魄"
+ summon_nascent_soul_phantom_decision_desc:0 "你新生的灵魂显现为一个巨大的幻影，它虚幻的形态以从灵魂之海汲取的虚幻力量摧毁着各个领域。"
+ summon_nascent_soul_phantom_decision_confirm:0 "灵魂，降临并主宰一切！"
+ summon_nascent_soul_phantom_decision_tooltip:0 "初生魂魄遮蔽了太阳，其力量粉碎了宗门，颠覆了天劫。"
+ summon_nascent_soul_phantom_decision_effect1:0 "我曾瞥见我初生的灵魂，它如一缕微光。如今，它化作幻影，征服世界。"
+ summon_nascent_soul_phantom_decision_effect2:0 "#帮助 此法术可在修炼恢复期后再次施展。"
+
+ # Heaven Severing Blade
+ summon_heaven_severing_blade_decision:0 "执行天灭之刃"
+ summon_heaven_severing_blade_decision_desc:0 "一道斩断的气刃划破苍穹，劈开天地，断绝其下所有道道。"
+ summon_heaven_severing_blade_decision_confirm:0 "撕裂苍穹！"
+ summon_heaven_severing_blade_decision_tooltip:0 "这道斩天绝技违背天界秩序，一击便歼灭了神军。"
+ summon_heaven_severing_blade_decision_effect1:0 "我曾以微弱的气刃斩断轻微的劫难，如今我要斩断苍穹本身。"
+ summon_heaven_severing_blade_decision_effect2:0 "#帮助 此法术可在修炼恢复期后再次施展。"
+
+ # Myriad Dao Suppression Domain
+ summon_myriad_dao_suppression_domain_decision:0 "部署万道压制域"
+ summon_myriad_dao_suppression_domain_decision_desc:0 "一片无垠的领域展开，压制了天地万道，使其绝对领域内的一切技艺都失效。"
+ summon_myriad_dao_suppression_domain_decision_confirm:0 "领域，压制所有道！"
+ summon_myriad_dao_suppression_domain_decision_tooltip:0 "万千道系压制领域令所有敌人无力反抗，在其重压之下粉碎了无数道路。"
+ summon_myriad_dao_suppression_domain_decision_effect1:0 "我曾于禅定中压制了一丝道念波动，如今我的领域却能吞噬万千波动。"
+ summon_myriad_dao_suppression_domain_decision_effect2:0 "#帮助 此法术可在修炼恢复期后再次施展。"
+
+ # Heavenly Tribulation Descent
+ summon_heavenly_tribulation_descent_decision:0 "祈求天劫降临"
+ summon_heavenly_tribulation_descent_decision_desc:0 "终极灾难将在你的命令下降临，雷霆万钧的天谴将毁灭一切存在，带来末日般的狂怒。"
+ summon_heavenly_tribulation_descent_decision_confirm:0 "灾难，降临到我的敌人身上！"
+ summon_heavenly_tribulation_descent_decision_tooltip:0 "天劫本身就成了你的武器，可以抹杀诸界和神仙。"
+ summon_heavenly_tribulation_descent_decision_effect1:0 "我曾历经些许磨难才得以攀升，如今我将以全部力量降伏于不配之人。"
+ summon_heavenly_tribulation_descent_decision_effect2:0 "#帮助 此法术可在修炼恢复期后再次施展。"

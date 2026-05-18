@@ -1,0 +1,18 @@
+l_simp_chinese:
+ teach_cultivation_interaction:0 "教导修炼"
+ teach_cultivation_interaction_desc:0 "指导 [recipient.GetShortUINameNoTooltip]走上修炼之路。"
+ taught_me_cultivation_opinion:0 "引导我的修炼"
+ taught_them_cultivation_opinion:0 "引导他们的培养"
+
+ cripple_cultivator_interaction:0 "破碎修炼"
+ cripple_cultivator_interaction_desc:0 "残疾人[recipient.GetShortUINameNoTooltip]他的经络被切断，剥夺了他所有的修炼境界和特权，使他变成了一个无能的凡人。"
+ request_disciple_under_master_interaction:0 "请求导师指导"
+ request_disciple_under_master_interaction_desc:0 "请愿书[recipient.GetShortUINameNoTooltip]收你为弟子。这一生只有一次机会。"
+ take_disciple_interaction:0 "以门徒身份"
+ take_disciple_interaction_desc:0 "邀请 [recipient.GetShortUINameNoTooltip]作为弟子，进入你的个人传承。"
+ teach_technique_interaction:0 "教学技巧"
+ teach_technique_interaction_desc:0 "将你掌握的一项技能传授给他人[recipient.GetShortUINameNoTooltip]加速它们的增长。"
+ inherit_manuals_interaction:0 "传承手册"
+ inherit_manuals_interaction_desc:0 "选择 [recipient.GetShortUINameNoTooltip]作为血脉继承人，传承珍贵的秘籍。"
+ expel_or_betray_disciple_interaction:0 "驱逐/背叛门徒"
+ expel_or_betray_disciple_interaction_desc:0 "投掷 [recipient.GetShortUINameNoTooltip]脱离教派界限，冒着日后招致仇恨的风险。"

@@ -1,0 +1,6 @@
+l_simp_chinese:
+  esr_rivals:0 "全部 [rivals|E] 的 [victim.GetShortUIName]"
+  esr_all_friends_and_lovers:0 "全部 [friends|E] 和 [lovers|E] 的 [victim.GetShortUIName]"
+  esr_rivals_attempted:0 "全部 [rivals|E] 的 [target.GetShortUIName]"
+  esr_rivals_execution:0 "全部 [rivals|E] 的 [THIS.GetCharacter.GetShortUIName]"
+  esr_extended_family_members:0 "全部 [extended_family|E] 的 [THIS.GetCharacter.GetShortUIName]"

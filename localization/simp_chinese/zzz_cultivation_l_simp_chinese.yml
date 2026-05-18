@@ -1,0 +1,2295 @@
+l_simp_chinese:
+
+ ##Martial Arts Men-at-Arms
+ martial_artist_cultivator:0 "耕耘机"
+ martial_artist_army_1:0 "武术家"
+ martial_artist_army_2:0 "武术大师"
+ martial_artist_army_3:0 "武术大师"
+ zombie_army_1:0 "僵尸"
+ zombie_army_2:0 "不死族"
+ zombie_army_3:0 "蒋石"
+ zombie_army_4:0 "复活"
+ zombie_army_5:0 "死亡领主"
+ immortal_army_1:0 "玉武士"
+ immortal_army_2:0 "不朽战士"
+
+ ##Martial Arts Men-at-Arms Descriptions
+ martial_artist_cultivator_flavor:0 "刚刚踏上长生不老之路的修仙者"
+ martial_artist_army_1_flavor:0 "新晋武术家。"
+ martial_artist_army_2_flavor:0 "精通武艺的武术家。训练有素的战士。"
+ martial_artist_army_3_flavor:0 "超越人类极限的武术家，能运用剑气。"
+ zombie_army_1_flavor:0 "由尸体蜕皮而成的丧尸。无法思考或耕作。前线肉盾。"
+ zombie_army_2_flavor:0 "第一次尝试复活。他无法独立思考，但可以运用一些气。"
+ zombie_army_3_flavor:0 "广为人知且被广泛接受的复活之法。僵尸之法是某些宗门修炼方法的必备之物。能够理解并运用此法。忠于创造者。"
+ zombie_army_4_flavor:0 "近乎完美复活。保留了一些前世记忆和修为。能够独立思考和行动。与创造者之间存在着一丝联系。"
+ zombie_army_5_flavor:0 "死神是修炼死气并达到仙境的复活之人。"
+ immortal_army_1_flavor:0 "玉武士已臻化境，体内流淌着皇室血脉。他们是孤傲而尊贵的真仙。"
+ immortal_army_2_flavor:0 "他们凭借强大的力量达到了仙境。他们唯一的愿望就是战斗。"
+
+ ##############
+ ##Bloodline Men-at-Arms
+ ##############
+ yin_cultivator_1:0 "阴修者"
+ yin_cultivator_1_flavor:0 "阴修者"
+ yin_cultivator_2:0 "阴修大师"
+ yin_cultivator_2_flavor:0 "阴修大师"
+ yin_cultivator_3:0 "尹氏修士大师"
+ yin_cultivator_3_flavor:0 "尹氏修士大师"
+
+ yang_cultivator_1:0 "杨氏修士"
+ yang_cultivator_1_flavor:0 "杨氏修士"
+ yang_cultivator_2:0 "杨大师"
+ yang_cultivator_2_flavor:0 "杨氏修士"
+ yang_cultivator_3:0 "杨氏修士大师"
+ yang_cultivator_3_flavor:0 "杨氏修士"
+
+ primal_cultivator_1:0 "原始修炼者"
+ primal_cultivator_1_flavor:0 "原始修炼者"
+ primal_cultivator_2:0 "原始修真大师"
+ primal_cultivator_2_flavor:0 "原始修炼者"
+ primal_cultivator_3:0 "原始修真宗师"
+ primal_cultivator_3_flavor:0 "原始修炼者"
+
+ sun_cultivator_1:0 "沙战士"
+ sun_cultivator_1_flavor:0 "沙战士"
+ sun_cultivator_2:0 "沙之大师"
+ sun_cultivator_2_flavor:0 "沙战士"
+ sun_cultivator_3:0 "沙之战士大师"
+ sun_cultivator_3_flavor:0 "沙战士"
+
+ ##############
+ ##Dynasty
+ ##############
+ cultivation_legacy_track_name:0 "不朽之血"
+ cultivation_legacy_track_desc:0 "修仙家族走出自己的道路"
+ cultivation_legacy_1_name:0 "觉醒血脉"
+ cultivation_legacy_2_name:0 "教学"
+ cultivation_legacy_3_name:0 "军队"
+ cultivation_legacy_4_name:0 "传统"
+ cultivation_legacy_5_name:0 "升华血统"
+
+ cultivation_1_effect:0 ""
+ cultivation_1_unlock_effect:0 ""
+ cultivation_2_effect:0 ""
+ cultivation_2_unlock_effect:0 ""
+ cultivation_3_effect:0 ""
+ cultivation_3_unlock_effect:0 ""
+ cultivation_4_effect:0 ""
+ cultivation_4_unlock_effect:0 ""
+ cultivation_5_effect:0 ""
+ cultivation_5_unlock_effect:0 ""
+
+ IMMORTAL_CULTIVATOR_UNLOCK_DESCRIPTION:0 "可以招聘[GetMaA('immortal_army_1').GetName] 和 [GetMaA('immortal_army_2').GetName] 作为 [men_at_arms|E]"
+ IMMORTAL_CULTIVATOR_DESCRIPTION:0 "#weak [GetMaA('immortal_army_1').GetName] and [GetMaA('immortal_army_2').GetName] Requires: Immortal Realm#!"
+
+ ZOMBIE_UNLOCK_DESCRIPTION:0 "可以招聘[GetMaA('zombie_army_4').GetName] 和 [GetMaA('zombie_army_5').GetName] 作为 [men_at_arms|E]"
+ ZOMBIE_DESCRIPTION:0 "#weak [GetMaA('zombie_army_1').GetName], Requieres: Qi Gathering and up, \n[GetMaA('zombie_army_2').GetName], Requires: Golden Core and up, \n[GetMaA('zombie_army_3').GetName], Requires: Peak Realm and up, \n[GetMaA('zombie_army_4').GetName], Requires: Unrestrained Realm and up, \n[GetMaA('zombie_army_5').GetName], Requires: Immortal Realm#!"
+
+ SEDUCER_UNLOCK_DESCRIPTION:0 ""
+ SEDUCER_DESCRIPTION:0 ""
+
+ MARTIAL_ARTIST_UNLOCK_DESCRIPTION:0 "可以招聘[GetMaA('martial_artist_army_1').GetName], [GetMaA('martial_artist_army_2').GetName] 和 [GetMaA('martial_artist_army_3').GetName] 作为 [men_at_arms|E]"
+ MARTIAL_ARTIST_DESCRIPTION:0 "#weak [GetMaA('martial_artist_army_1').GetName], Requieres: Qi Gathering and up, \n[GetMaA('martial_artist_army_2').GetName], Requires: Peak Realm and up, \n[GetMaA('martial_artist_army_3').GetName] Requires: Unrestrained Realm and up#!"
+
+ CULTIVATOR_UNLOCK_DESCRIPTION:0 ""
+ CULTIVATOR_DESCRIPTION:0 ""
+
+ DUAL_CULTIVATION_SEX_EFFECT_DESCRIPTION:0 "你已经学会了双修，调和阴阳精华，以加快你在道家道路上的进步。"
+
+ ##################################################
+ # SECT SPAR EVENTS - With Variable Display
+ ##################################################
+
+ # Event 1000 - Invitation
+ cultivation_sect_spar.1000.t:0 "教派切磋邀请"
+ cultivation_sect_spar.1000.desc:0 "[sparring_partner.GetTitledFirstName]在宗门庭院里，他向你走来，挑战的光芒闪耀着。[sparring_partner.GetHerHis]眼睛。\n\n“同道中人，让我们切磋技艺。友好的切磋能使刀锋更锋利！”\n\n#bold Your Record:#! \nSpar 获胜：#P[ROOT.Var('sect_spars_won').GetValue] #! \n   Spar Lost: #N[ROOT.Var('sect_spars_lost').GetValue] #! \n总长度：[ROOT.Var('sect_spars_total').GetValue]"
+ cultivation_sect_spar.1000.a:0 "接受挑战！"
+ cultivation_sect_spar.1000.b:0 "请礼貌地拒绝。"
+
+ ##################################################
+ # SECT SPAR INTERACTION
+ ##################################################
+
+ actor_secondary_sect_spar_interaction:0 "挑战者"
+
+ SECT_SPAR_INTERACTION_TITLE:0 "挑战教派"
+ sect_spar_interaction_desc:0 "向其他修仙者发起友谊赛挑战，检验你的技能并积累经验。"
+
+ YOUR_SPAR_RECORD:0 "你的陪练记录"
+ OPPONENT_SPAR_RECORD:0 "对手战绩"
+
+ CHALLENGE_TO_SPAR:0 "挑战斯帕"
+
+ # Interaction descriptions
+ sect_spar_interaction_desc_own_court:0 "安排你的朝臣进行一场切磋，以检验他们的技能并积累经验。"
+ sect_spar_interaction_desc_other_court:0 "安排你朝廷中的一名成员与对方进行一场教派切磋。[recipient.GetTitledFirstNamePossessive] 法庭。"
+
+ # GUI labels
+ YOUR_FIGHTER:0 "你的战士"
+ OPPONENT_FIGHTER:0 "对手"
+ CLEAR_SPAR_CHARACTERS:0 "清除选定的战士"
+
+ # Send options
+ SECT_SPAR_SEND_OWN_COURT:0 "安排 Spar（自家球场）"
+ SECT_SPAR_SEND_OTHER_COURT:0 "提议 Spar"
+ SECT_SPAR_SEND:0 "安排 Spar"
+
+ # Validation messages
+ cannot_spar_yourself:0 "无法与自己对练"
+
+ # AI reasons
+ AI_PROWESS_REASON:0 "根据战士的实力"
+
+ sect_spar_interaction:0 "挑战教派成员"
+ recipient_secondary_sect_spar_interaction:0 "教派成员"
+
+ challenge_to_sect_spar:0 "挑战教派"
+ challenge_to_sect_spar_desc:0 "挑战 [recipient.GetTitledFirstName]在宗门院子里与一位友好的修炼者切磋。\n\n#bold Your Record:#! [actor.Var('sect_spars_won').GetValue]W -[actor.Var('sect_spars_lost').GetValue]L（[actor.Var('sect_spars_total').GetValue] 全部的）\n#bold Their Record:#! [recipient.Var('sect_spars_won').GetValue]W -[recipient.Var('sect_spars_lost').GetValue]L（[recipient.Var('sect_spars_total').GetValue] 全部的）"
+
+ cultivation_spar_effect.tt:0 "可以获得 #P[GetLifestyle('cultivation_lifestyle').GetName]#!体验"
+ cultivation_spar_effect.ttt:0 "可以获得 #P[GetLifestyle('cultivation_lifestyle').GetName]#!体验"
+
+ ##################################################
+ # MODIFIERS
+ ##################################################
+
+ sect_spar_victory:0 "最近的陪练胜利"
+ sect_spar_victory_desc:0 "这位修士最近赢得了一场宗门切磋，信心大增。\n\n#bold Career Wins:#! [Character.Var('sect_spars_won').GetValue]"
+
+ sect_spar_defeat:0 "最近的Spar失败"
+ sect_spar_defeat_desc:0 "最近一次宗门切磋的失败，至今仍让他感到刺痛。\n\n#bold Career Losses:#! [Character.Var('sect_spars_lost').GetValue]"
+
+ ##################################################
+ # SECT JOINING DECISION TOOLTIPS
+ ##################################################
+
+ join_elite_sect_decision:0 "加入精英教派"
+ join_elite_sect_decision_desc:0 "加入声名显赫的铁拳教派的申请。\n\n他们只招收拥有卓越战斗力的战士。\n\n#bold Your Sparring Record:#!\n胜场：#P[Character.Var('sect_spars_won').GetValue]#!\nLosses: #N[Character.Var('sect_spars_lost').GetValue]#!\n全部的： [Character.Var('sect_spars_total').GetValue]"
+ join_elite_sect_decision_tooltip:0 "加入铁拳教派的申请"
+ join_elite_sect_decision_confirm:0 "提交请愿书"
+
+ # Custom tooltip for requirements
+ elite_sect_needs_wins:0 "实战胜利不够多（[Character.Var('sect_spars_won').GetValue]/10（需要）"
+ elite_sect_needs_positive_ratio:0 "负胜率（#P）[Character.Var('sect_spars_won').GetValue]#! wins vs #N[Character.Var('sect_spars_lost').GetValue]#! 损失)"
+ elite_sect_requirements_met:0 "实战记录合格！[Character.Var('sect_spars_won').GetValue]胜利，[Character.Var('sect_spars_lost').GetValue]损失）"
+
+ ##################################################
+ # CHARACTER TOOLTIP ADDITIONS
+ ##################################################
+
+ # This can be used in character info panels
+ sect_sparring_record_header:0 "教派切磋记录"
+ sect_sparring_record_details:0 "#bold Total Spars:#! [Character.Var('sect_spars_total').GetValue]\n#P 获胜：#! [Character.Var('sect_spars_won').GetValue]\n#N 损失:#![Character.Var('sect_spars_lost').GetValue]"
+
+ ##################################################
+ # REPUTATION TITLES
+ ##################################################
+
+ undefeated_sparring_champion:0 "不败陪练冠军"
+ undefeated_sparring_champion_desc:0 "[Character.GetFirstName]已经获胜#bold [Character.Var('sect_spars_won').GetValue]#宗门对决未尝败绩！"
+
+ sparring_champion:0 "陪练冠军"
+ sparring_champion_desc:0 "带 #P[Character.Var('sect_spars_won').GetValue]#！宗派切磋中的胜利，[Character.GetFirstName]是一位著名的优秀种植者。"
+
+ sparring_expert:0 "陪练专家"
+ sparring_expert_desc:0 "[Character.GetFirstName]已赢得 #P[Character.Var('sect_spars_won').GetValue]#! 教派切磋，展现出相当的技巧。"
+
+ sparring_veteran:0 "陪练老手"
+ sparring_veteran_desc:0 "通过 #bold [Character.Var('sect_spars_total').GetValue]#！教派的枝条，[Character.GetFirstName]积累了宝贵的经验。"
+
+ struggling_sparrer:0 "在搏击中挣扎"
+ struggling_sparrer_desc:0 "尽管 #bold [Character.Var('sect_spars_total').GetValue]#尝试！[Character.GetFirstName]只赢过 #P[Character.Var('sect_spars_won').GetValue]#! 稀疏。"
+
+ ##################################################
+ # AI ACCEPTANCE MODIFIERS
+ ##################################################
+
+ spar_target_is_champion:0 "[recipient.GetFirstName]是一位久经考验的陪练冠军（[recipient.Var('sect_spars_won').GetValue]获胜）"
+ spar_target_is_weak:0 "[recipient.GetFirstName]陪练记录很差（[recipient.Var('sect_spars_lost').GetValue]损失）"
+ spar_actor_is_renowned:0 "你是一位著名的陪练冠军（[actor.Var('sect_spars_won').GetValue]获胜）"
+ spar_actor_is_inexperienced:0 "你的实战经验有限（[actor.Var('sect_spars_total').GetValue]总桁架数）"
+
+ sect_spar_option_tooltip:0 "你的记录：#P[Character.Var('sect_spars_won').GetValue]W#! - #N[Character.Var('sect_spars_lost').GetValue]L#！（[Character.Var('sect_spars_total').GetValue] 全部的）"
+ sect_join_is_cultivator_desc:0 "你是耕耘者。"
+ sect_join_isnt_cultivator_desc:0 "你不是耕耘者。"
+ FIND_LEFT_PARTNER_TOOLTIP:0 "寻找左侧双修伙伴。"
+ FIND_RIGHT_PARTNER_TOOLTIP:0 "寻找合适的双耕伙伴。"
+ BREAKTHROUGH:0 "突破"
+ CULTIVATION_GUI_SECT_LABEL:0 "教派："
+ CULTIVATION_GUI_PROWESS_LABEL:0 "能力："
+ CULTIVATION_GUI_REALM_LABEL:0 "领域："
+ CULTIVATION_GUI_MORTAL_LABEL:0 "凡人"
+ cultivation_ai.0001.desc:0 "耕耘之轮在群众中悄然转动。"
+ cultivation_ai.0002.desc:0 "一个漂泊的灵魂寻找一个与自己命运相符的教派。"
+
+ ##################################################
+ # LIFESTYLE
+ ##################################################
+
+ cultivation_lifestyle:0 "栽培"
+ cultivation_lifestyle_name:0 "栽培"
+ cultivation_lifestyle_desc:0 "通过修炼气、炼体、淬炼魂魄而达到长生不老的境界。"
+ cultivation_lifestyle_highlight_desc:0 "开启一种全新的生活方式"
+ cultivation_path_name:0 "修炼之路"
+
+ ##################################################
+ # FOCUSES
+ ##################################################
+
+ ## CULTIVATION FOCUSES
+ cultivation_orthodox_focus:0 "正统教养"
+ cultivation_orthodox_focus_name:0 "正统教养"
+ cultivation_orthodox_focus_desc:0 "注重正统的修炼方法，强调道德品质和传统技艺。"
+ cultivation_orthodox_focus_effect_desc:0 ""
+
+ cultivation_unorthodox_focus:0 "非正统的耕作方式"
+ cultivation_unorthodox_focus_name:0 "非正统的耕作方式"
+ cultivation_unorthodox_focus_desc:0 "追求介于正统与邪道之间的非常规修炼方法。"
+ cultivation_unorthodox_focus_effect_desc:0 ""
+
+ cultivation_demonic_focus:0 "魔道修炼"
+ cultivation_demonic_focus_name:0 "魔道修炼"
+ cultivation_demonic_focus_desc:0 "修炼禁忌的魔族功法，通过黑暗手段获得强大的力量。"
+ cultivation_demonic_focus_effect_desc:0 ""
+
+ cultivation_vagrant_focus:0 "流浪栽培"
+ cultivation_vagrant_focus_name:0 "流浪栽培"
+ cultivation_rogue_focus_name:0 "流浪栽培"
+ cultivation_vagrant_focus_desc:0 "走自己的修行之路，不受任何宗派或传统的束缚。"
+ cultivation_vagrant_focus_effect_desc:0 ""
+
+ # Focus modifier localization (shown in character modifier list while a focus is active)
+ cultivation_orthodox_focus_modifier:0 "正统教养重点"
+ cultivation_orthodox_focus_modifier_desc:0 "这个人物注重正统方法：严谨的修炼、正直的行为和稳步的进步。"
+ cultivation_unorthodox_focus_modifier:0 "非正统的修炼重点"
+ cultivation_unorthodox_focus_modifier_desc:0 "这个角色专注于非正统的方法：适应性技巧、竞争驱动型成长和务实的洞察力。"
+ cultivation_demonic_focus_modifier:0 "魔道修炼焦点"
+ cultivation_demonic_focus_modifier_desc:0 "这个角色专注于恶魔般的手段：无情的力量、危险的势头和恐惧驱动的统治。"
+ cultivation_vagrant_focus_modifier:0 "流浪者培育重点"
+ cultivation_vagrant_focus_modifier_desc:0 "这个人物专注于一条独立的游历之路：灵活的洞察力和不受宗派正统观念的束缚。"
+
+ ##################################################
+ # PERK TREES (REALMS)
+ ##################################################
+
+ mortal_realm:0 "凡世领域"
+ mortal_realm_name:0 "凡世领域"
+
+ qi_refining_realm:0 "炼气境"
+ qi_refining_realm_name:0 "炼气境"
+
+ foundation_realm:0 "基金会成立"
+ foundation_realm_name:0 "基金会成立"
+
+ golden_core_realm:0 "金丹境"
+ golden_core_realm_name:0 "金丹境"
+
+ nascent_soul_realm:0 "新生魂境"
+ nascent_soul_realm_name:0 "新生魂境"
+
+ soul_severing_realm:0 "断魂境"
+ soul_severing_realm_name:0 "断魂境"
+
+ tribulation_realm:0 "苦难超越"
+ tribulation_realm_name:0 "苦难超越"
+
+ mahayana_realm:0 "大乘界"
+ mahayana_realm_name:0 "大乘界"
+
+ ##################################################
+ # TRAITS
+ ##################################################
+
+ trait_cultivation_mortal:0 "凡人"
+ trait_cultivation_mortal_name:0 "凡人"
+ trait_cultivation_mortal_desc:0 "凡人开始修炼之旅。寿命：60-80年。"
+ trait_cultivation_mortal_character_desc:0 "[ROOT.Char.GetFirstName]是一位凡人修仙者，迈出了通往永生之路的第一步。"
+
+ trait_cultivation_qi_gathering:0 "气聚集"
+ trait_cultivation_qi_gathering_name:0 "气聚集"
+ trait_cultivation_qi_gathering_desc:0 "疏通经络，汇聚气血。寿命：60-80年。"
+ trait_cultivation_qi_gathering_character_desc:0 "[ROOT.Char.GetFirstName]正在聚集气，疏通经络。"
+
+ trait_cultivation_qi_refining:0 "气精炼"
+ trait_cultivation_qi_refining_name:0 "气精炼"
+ trait_cultivation_qi_refining_desc:0 "通过多颗星辰炼化气。寿命：60-80年。"
+ trait_cultivation_qi_refining_character_desc:0 "[ROOT.Char.GetFirstName]他们正在精进自己的气，穿越星辰。"
+
+ trait_cultivation_qi_building:0 "齐大厦"
+ trait_cultivation_qi_building_name:0 "齐大厦"
+ trait_cultivation_qi_building_desc:0 "夯实气功基础。寿命：60-80年。"
+ trait_cultivation_qi_building_character_desc:0 "[ROOT.Char.GetFirstName]正在为核心形成奠定气的基础。"
+
+ trait_cultivation_core_formation:0 "核心形成"
+ trait_cultivation_core_formation_name:0 "核心形成"
+ trait_cultivation_core_formation_desc:0 "形成了一个培育核心。寿命：75-95年（+15年）。"
+ trait_cultivation_core_formation_character_desc:0 "[ROOT.Char.GetFirstName]已形成它们的核心，延长了它们的寿命。"
+
+ trait_cultivation_nascent_soul:0 "新生灵魂"
+ trait_cultivation_nascent_soul_name:0 "新生灵魂"
+ trait_cultivation_nascent_soul_desc:0 "孕育出一个初生的灵魂。寿命：115-135岁（+40年）。"
+ trait_cultivation_nascent_soul_character_desc:0 "[ROOT.Char.GetFirstName]它孕育了他们的初生灵魂，并大大延长了他们的寿命。"
+
+ trait_cultivation_heavenly_being:0 "天上的存在"
+ trait_cultivation_heavenly_being_name:0 "天上的存在"
+ trait_cultivation_heavenly_being_desc:0 "升天。寿命：185-205岁（+70年）。"
+ trait_cultivation_heavenly_being_character_desc:0 "[ROOT.Char.GetFirstName]已成为天界存在，超越了凡人的界限。"
+
+ trait_cultivation_four_axis:0 "四轴"
+ trait_cultivation_four_axis_name:0 "四轴"
+ trait_cultivation_four_axis_desc:0 "精通四轴之力。寿命：285-305年（+100年）。"
+ trait_cultivation_four_axis_character_desc:0 "[ROOT.Char.GetFirstName]精通四轴之力，可活数百年。"
+
+ trait_cultivation_integration:0 "一体化"
+ trait_cultivation_integration_name:0 "一体化"
+ trait_cultivation_integration_desc:0 "实现了融合与复活。寿命：435-455年（+150年）。"
+ trait_cultivation_integration_character_desc:0 "[ROOT.Char.GetFirstName]已经达到融合状态。他们可以死而复生！"
+
+ trait_cultivation_star_shattering:0 "星辰破碎"
+ trait_cultivation_star_shattering_name:0 "星辰破碎"
+ trait_cultivation_star_shattering_desc:0 "粉碎了星辰。寿命：635-655年（+200年）。"
+ trait_cultivation_star_shattering_character_desc:0 "[ROOT.Char.GetFirstName]它粉碎了星辰，拥有宇宙之力。"
+
+ trait_cultivation_sacred_vessel:0 "圣器"
+ trait_cultivation_sacred_vessel_name:0 "圣器"
+ trait_cultivation_sacred_vessel_desc:0 "成为圣器。寿命：915-935年（+280年）。"
+ trait_cultivation_sacred_vessel_character_desc:0 "[ROOT.Char.GetFirstName]已成为一件盛放神圣精华的圣器。"
+
+ trait_cultivation_entering_nirvana:0 "进入涅槃"
+ trait_cultivation_entering_nirvana_name:0 "进入涅槃"
+ trait_cultivation_entering_nirvana_desc:0 "进入涅槃境界。寿命：1265-1285年（+350年）。"
+ trait_cultivation_entering_nirvana_character_desc:0 "[ROOT.Char.GetFirstName]进入涅槃，超越生死。"
+
+ trait_cultivation_true_immortal:0 "真仙"
+ trait_cultivation_true_immortal_name:0 "真仙"
+ trait_cultivation_true_immortal_desc:0 "获得真正的永生。寿命：永生（+500年）。"
+ trait_cultivation_true_immortal_character_desc:0 "[ROOT.Char.GetFirstName]已证得真正的永生。不老不朽！"
+
+ ##################################################
+ # BLOODLINES
+ ##################################################
+
+ trait_yin_bloodline:0 "月阴传承"
+ trait_yin_bloodline_1:0 "沉睡的阴"
+ trait_yin_bloodline_2:0 "纯月阴"
+ trait_yin_bloodline_3:0 "觉醒的月阴"
+ trait_yang_bloodline:0 "太阳阳系"
+ trait_yang_bloodline_1:0 "休眠的太阳"
+ trait_yang_bloodline_2:0 "纯阳阳"
+ trait_yang_bloodline_3:0 "觉醒的太阳阳"
+ trait_dragon_bloodline:0 "真龙血统"
+ trait_dragon_bloodline_1:0 "沉睡的龙血"
+ trait_dragon_bloodline_2:0 "纯龙血"
+ trait_dragon_bloodline_3:0 "觉醒龙魂血"
+ trait_phoenix_bloodline:0 "朱红凤凰血统"
+ trait_phoenix_bloodline_1:0 "沉睡的凤凰血"
+ trait_phoenix_bloodline_2:0 "纯凤凰血"
+ trait_phoenix_bloodline_3:0 "觉醒凤凰魂焰"
+ trait_anchestor_bloodline:0 "先祖圣贤血统"
+ trait_anchestor_bloodline_1:0 "休眠的祖先血统"
+ trait_anchestor_bloodline_2:0 "纯正祖先血统"
+ trait_anchestor_bloodline_3:0 "觉醒的祖先回响"
+ trait_poison_bloodline:0 "万毒血统"
+ trait_poison_bloodline_1:0 "休眠毒血"
+ trait_poison_bloodline_2:0 "纯毒血"
+ trait_poison_bloodline_3:0 "觉醒的毒心血"
+ trait_cursed_bloodline:0 "灾祸血统"
+ trait_cursed_bloodline_1:0 "沉睡的灾厄之血"
+ trait_cursed_bloodline_2:0 "纯灾厄之血"
+ trait_cursed_bloodline_3:0 "觉醒灾厄印记"
+ trait_demon_bloodline:0 "深渊恶魔血统"
+ trait_demon_bloodline_1:0 "沉睡的恶魔之血"
+ trait_demon_bloodline_2:0 "纯魔血"
+ trait_demon_bloodline_3:0 "觉醒的恶魔之心"
+ trait_primal_bloodline:0 "原始混沌血统"
+ trait_primal_bloodline_1:0 "休眠的原始血"
+ trait_primal_bloodline_2:0 "纯原始血"
+ trait_primal_bloodline_3:0 "觉醒的原始起源"
+ trait_sun_bloodline:0 "伟大的太阳血统"
+ trait_sun_bloodline_1:0 "休眠的大太阳血"
+ trait_sun_bloodline_2:0 "纯正大太阳血"
+ trait_sun_bloodline_3:0 "觉醒的伟大太阳精华"
+ trait_spirit_bloodline:0 "天灵血统"
+ trait_spirit_bloodline_1:0 "沉睡的灵魂之血"
+ trait_spirit_bloodline_2:0 "纯灵血"
+ trait_spirit_bloodline_3:0 "觉醒之灵起源"
+
+ ##################################################
+ # BLOODLINES Desc
+ ##################################################
+
+ trait_yin_bloodline_desc:0 "天生寒性，与月亮相合的血统。阴性血统擅长精微的气血运行、魂术和长功法修炼。"
+ trait_yin_bloodline_character_desc:0 "[ROOT.Char.GetFirstName]拥有阴血，经络平静，适合月光和精神修炼。"
+ trait_yang_bloodline_desc:0 "炽热如日的血脉。阳血赋予其旺盛的生命力、爆发性的突破能力和霸道的进攻气。"
+ trait_yang_bloodline_character_desc:0 "[ROOT.Char.GetFirstName]体内蕴含阳血，散发着热血活力和强烈的修炼意念。"
+ trait_dragon_bloodline_desc:0 "一条与龙族意志紧密相连的古老王室血脉。龙血能够增强体魄、权威和战场威慑力。"
+ trait_dragon_bloodline_character_desc:0 "[ROOT.Char.GetFirstName]身负龙血，散发着专横跋扈的气息，足以压制意志薄弱之人。"
+ trait_phoenix_bloodline_desc:0 "凤凰血脉，象征着重生与净化，蕴含着高贵的火焰血统。凤凰之血赋予人坚韧不拔的精神，使其在苦难后得以恢复。"
+ trait_phoenix_bloodline_character_desc:0 "[ROOT.Char.GetFirstName]拥有凤凰之血，以不屈的生命力经受住灾难。"
+ trait_anchestor_bloodline_desc:0 "受先祖庇佑的血脉。这条血脉传承了技艺，稳定了世代相传的修炼。"
+ trait_anchestor_bloodline_character_desc:0 "[ROOT.Char.GetFirstName]拥有祖先血脉，精神根基与氏族传承紧密相连。"
+ trait_poison_bloodline_desc:0 "危险的血脉，蕴含着剧毒的精华。毒血会将气转化为腐蚀、毒素和阴险的杀戮手段。"
+ trait_poison_bloodline_character_desc:0 "[ROOT.Char.GetFirstName]他们体内蕴藏着毒血，甚至他们的气也能从内部侵蚀敌人。"
+ trait_cursed_bloodline_desc:0 "背负着沉重命运的血脉。诅咒之血赋予人禁忌的力量，但代价是可怕的业力后果。"
+ trait_cursed_bloodline_character_desc:0 "[ROOT.Char.GetFirstName]身负诅咒之血，行走在一条充满力量却又笼罩着厄运的道路上。"
+ trait_demon_bloodline_desc:0 "嗜杀成性的血脉，天生嗜血成性。恶魔之血造就了其残酷的成长和令人胆寒的压迫力。"
+ trait_demon_bloodline_character_desc:0 "[ROOT.Char.GetFirstName]它体内流淌着魔血，散发着令人毛骨悚然的邪恶气息，即使是经验丰富的修士也会感到不安。"
+ trait_primal_bloodline_desc:0 "源自天地之源的原始血脉，与道家基本法则有着天然的契合度。"
+ trait_primal_bloodline_character_desc:0 "[ROOT.Char.GetFirstName]蕴含原始之血，与古老而未驯服的世界之气产生共鸣。"
+ trait_spirit_bloodline_desc:0 "受神灵眷顾的清明血脉。神血能提升感知力、亲和力和对精妙气功的控制力。"
+ trait_spirit_bloodline_character_desc:0 "[ROOT.Char.GetFirstName]身负灵血，天生能感知天地间的细微变化。"
+ trait_sun_bloodline_desc:0 "源自纯粹太阳精华的耀眼血脉。太阳之血赋予火焰术、净化术和强悍的日间修炼力量。"
+ trait_sun_bloodline_character_desc:0 "[ROOT.Char.GetFirstName]蕴含太阳之血，闪耀着强烈的阳刚之光。"
+
+ ##################################################
+ # MORTAL REALM PERKS (Y: 0-3)
+ ##################################################
+
+ mortal_realm_tree_name:0 "凡世领域"
+
+ mortal_internal_reconstruction_perk:0 "内部重建"
+ mortal_internal_reconstruction_perk_name:0 "内部重建"
+ mortal_internal_reconstruction_perk_desc:0 "重塑你的内部渠道，以建立更强大的培育基础。"
+
+ mortal_external_reconstruction_perk:0 "外部重建"
+ mortal_external_reconstruction_perk_name:0 "外部重建"
+ mortal_external_reconstruction_perk_desc:0 "增强你的体魄，以承受更严苛的训练。"
+
+ mortal_muscle_reconstruction_perk:0 "肌肉重建"
+ mortal_muscle_reconstruction_perk_name:0 "肌肉重建"
+ mortal_muscle_reconstruction_perk_desc:0 "重塑肌肉，增强力量。"
+
+ mortal_bone_reconstruction_perk:0 "骨骼重建"
+ mortal_bone_reconstruction_perk_name:0 "骨骼重建"
+ mortal_bone_reconstruction_perk_desc:0 "通过修炼强健骨骼。"
+
+ mortal_body_reconstruction_perk:0 "身体重建"
+ mortal_body_reconstruction_perk_name:0 "身体重建"
+ mortal_body_reconstruction_perk_desc:0 "完全按照凡人标准进行人体重建。"
+
+ mortal_qi_gathering_breakthrough_perk:0 "突破：气聚集"
+ mortal_qi_gathering_breakthrough_perk_name:0 "突破：气聚集"
+ mortal_qi_gathering_breakthrough_perk_desc:0 "突破进入聚气境！"
+
+ ##################################################
+ # QI GATHERING REALM PERKS (Y: 4-9)
+ ##################################################
+
+ qi_gathering_tree_name:0 "聚气境"
+
+ qi_gathering_meridian_1_perk:0 "气聚集"
+ qi_gathering_meridian_1_perk_name:0 "气聚集"
+ qi_gathering_meridian_1_perk_desc:0 "开启第一经络。"
+
+ qi_gathering_meridian_2_perk:0 "气聚集"
+ qi_gathering_meridian_2_perk_name:0 "气聚集"
+ qi_gathering_meridian_2_perk_desc:0 "打开第二经络。"
+
+ qi_gathering_meridian_3a_perk:0 "下丹田"
+ qi_gathering_meridian_3a_perk_name:0 "下丹田"
+ qi_gathering_meridian_3a_perk_desc:0 "遵循学术的脉络。"
+
+ qi_gathering_meridian_3b_perk:0 "上丹田"
+ qi_gathering_meridian_3b_perk_name:0 "上丹田"
+ qi_gathering_meridian_3b_perk_desc:0 "遵循武经之道。"
+
+ qi_gathering_meridian_4_perk:0 "中丹田"
+ qi_gathering_meridian_4_perk_name:0 "中丹田"
+ qi_gathering_meridian_4_perk_desc:0 "开启第四经脉，汇合各条路径。"
+
+ qi_gathering_qi_refining_breakthrough_perk:0 "突破：气精炼"
+ qi_gathering_qi_refining_breakthrough_perk_name:0 "突破：气精炼"
+ qi_gathering_qi_refining_breakthrough_perk_desc:0 "突破进入炼气境界！"
+
+ ##################################################
+ # QI REFINING REALM PERKS (Y: 9-20)
+ ##################################################
+
+ qi_refining_tree_name:0 "炼气境"
+
+ qi_refining_1a_star_perk:0 "1星"
+ qi_refining_1a_star_perk_name:0 "1星"
+ qi_refining_1a_star_perk_desc:0 "取得第一颗星，走学术之路。"
+
+ qi_refining_1b_star_perk:0 "二星级"
+ qi_refining_1b_star_perk_name:0 "二星级"
+ qi_refining_1b_star_perk_desc:0 "达成武道第一星。"
+
+ qi_refining_middle_perk:0 "中气精炼"
+ qi_refining_middle_perk_name:0 "中气精炼"
+ qi_refining_middle_perk_desc:0 "达到炼气的中期阶段。"
+
+ qi_refining_2a_star_perk:0 "三星级"
+ qi_refining_2a_star_perk_name:0 "三星级"
+ qi_refining_2a_star_perk_desc:0 "第三颗星，专精于技巧。"
+
+ qi_refining_2b_star_perk:0 "四星级"
+ qi_refining_2b_star_perk_name:0 "四星级"
+ qi_refining_2b_star_perk_desc:0 "三颗星，武术专精。"
+
+ qi_refining_2c_star_perk:0 "五星级"
+ qi_refining_2c_star_perk_name:0 "五星级"
+ qi_refining_2c_star_perk_desc:0 "第三颗星，学习专业化。"
+
+ qi_refining_2d_star_perk:0 "六星级"
+ qi_refining_2d_star_perk_name:0 "六星级"
+ qi_refining_2d_star_perk_desc:0 "第三颗星，生命力专精。"
+
+ qi_refining_higher_perk:0 "更高层次的精炼"
+ qi_refining_higher_perk_name:0 "更高层次的精炼"
+ qi_refining_higher_perk_desc:0 "达到炼气更高阶段。"
+
+ qi_refining_3a_star_perk:0 "七星级"
+ qi_refining_3a_star_perk_name:0 "七星级"
+ qi_refining_3a_star_perk_desc:0 "第七颗星，技艺精湛。"
+
+ qi_refining_3b_star_perk:0 "8星级"
+ qi_refining_3b_star_perk_name:0 "8星级"
+ qi_refining_3b_star_perk_desc:0 "第七颗星，武艺精湛。"
+
+ qi_refining_3c_star_perk:0 "九星级"
+ qi_refining_3c_star_perk_name:0 "九星级"
+ qi_refining_3c_star_perk_desc:0 "第七颗星，学习精通。"
+
+ qi_refining_peak_perk:0 "巅峰气精炼"
+ qi_refining_peak_perk_name:0 "巅峰气精炼"
+ qi_refining_peak_perk_desc:0 "达到炼气境界的巅峰。"
+
+ qi_refining_qi_building_breakthrough_perk:0 "突破：气建筑"
+ qi_refining_qi_building_breakthrough_perk_name:0 "突破：气建筑"
+ qi_refining_qi_building_breakthrough_perk_desc:0 "突破进入筑气境界！"
+
+ ##################################################
+ # QI BUILDING REALM PERKS (Y: 16-20)
+ ##################################################
+
+ qi_building_tree_name:0 "气建筑领域"
+
+ qi_building_1_perk:0 "气聚集"
+ qi_building_1_perk_name:0 "气聚集"
+ qi_building_1_perk_desc:0 "开始打好你的气功基础。"
+
+ qi_building_2_perk:0 "气聚集"
+ qi_building_2_perk_name:0 "气聚集"
+ qi_building_2_perk_desc:0 "开始打好你的气功基础。"
+
+ qi_building_3_perk:0 "气聚集"
+ qi_building_3_perk_name:0 "气聚集"
+ qi_building_3_perk_desc:0 "开始打好你的气功基础。"
+
+ qi_building_4_perk:0 "气聚集"
+ qi_building_4_perk_name:0 "气聚集"
+ qi_building_4_perk_desc:0 "开始打好你的气功基础。"
+
+ qi_building_5_perk:0 "气聚集"
+ qi_building_5_perk_name:0 "气聚集"
+ qi_building_5_perk_desc:0 "开始打好你的气功基础。"
+
+ qi_building_early_perk:0 "早期气建筑"
+ qi_building_early_perk_name:0 "早期气建筑"
+ qi_building_early_perk_desc:0 "开始打好你的气功基础。"
+
+ qi_building_mid_perk:0 "中齐楼"
+ qi_building_mid_perk_name:0 "中齐楼"
+ qi_building_mid_perk_desc:0 "继续夯实基础。"
+
+ qi_building_late_perk:0 "晚齐大厦"
+ qi_building_late_perk_name:0 "晚齐大厦"
+ qi_building_late_perk_desc:0 "齐大厦即将竣工。"
+
+ qi_building_peak_perk:0 "峰齐大厦"
+ qi_building_peak_perk_name:0 "峰齐大厦"
+ qi_building_peak_perk_desc:0 "完善你的积气阶段，准备形成核心。"
+
+ qi_building_core_formation_breakthrough_perk:0 "突破：核心形成"
+ qi_building_core_formation_breakthrough_perk_name:0 "突破：核心形成"
+ qi_building_core_formation_breakthrough_perk_desc:0 "塑造你的核心肌群！寿命延长15年！"
+
+ ##################################################
+ # CORE FORMATION REALM PERKS (Y: 21-25) +15 YEARS
+ ##################################################
+
+ core_formation_tree_name:0 "核心形成领域"
+
+ core_formation_qi1_perk:0 "气聚集"
+ core_formation_qi1_perk_name:0 "气聚集"
+ core_formation_qi1_perk_desc:0 "开始打好你的气功基础。"
+
+ core_formation_qi2_perk:0 "气聚集"
+ core_formation_qi2_perk_name:0 "气聚集"
+ core_formation_qi2_perk_desc:0 "开始打好你的气功基础。"
+
+ core_formation_qi3_perk:0 "气聚集"
+ core_formation_qi3_perk_name:0 "气聚集"
+ core_formation_qi3_perk_desc:0 "开始打好你的气功基础。"
+
+ core_formation_qi4_perk:0 "气聚集"
+ core_formation_qi4_perk_name:0 "气聚集"
+ core_formation_qi4_perk_desc:0 "开始打好你的气功基础。"
+
+ core_formation_qi5_perk:0 "气聚集"
+ core_formation_qi5_perk_name:0 "气聚集"
+ core_formation_qi5_perk_desc:0 "开始打好你的气功基础。"
+
+ core_formation_early_perk:0 "早期地核形成"
+ core_formation_early_perk_name:0 "早期地核形成"
+ core_formation_early_perk_desc:0 "稳定你新形成的核心。"
+
+ core_formation_mid_perk:0 "中核形成"
+ core_formation_mid_perk_name:0 "中核形成"
+ core_formation_mid_perk_desc:0 "强化你的修炼核心。"
+
+ core_formation_late_perk:0 "晚期地核形成"
+ core_formation_late_perk_name:0 "晚期地核形成"
+ core_formation_late_perk_desc:0 "完善你的核心肌群结构。"
+
+ core_formation_peak_perk:0 "峰核形成"
+ core_formation_peak_perk_name:0 "峰核形成"
+ core_formation_peak_perk_desc:0 "达到地核形成的顶峰。"
+
+ core_formation_nascent_soul_breakthrough_perk:0 "突破：初生的灵魂"
+ core_formation_nascent_soul_breakthrough_perk_name:0 "突破：初生的灵魂"
+ core_formation_nascent_soul_breakthrough_perk_desc:0 "孕育你的新生灵魂！寿命延长40年以上！"
+
+ ##################################################
+ # NASCENT SOUL REALM PERKS (Y: 26-30) +40 YEARS
+ ##################################################
+
+ nascent_soul_tree_name:0 "新生魂境"
+
+ nascent_soul_early_perk:0 "早期萌芽灵魂"
+ nascent_soul_early_perk_name:0 "早期萌芽灵魂"
+ nascent_soul_early_perk_desc:0 "滋养你初生的灵魂。"
+
+ nascent_soul_mid_perk:0 "初生灵魂"
+ nascent_soul_mid_perk_name:0 "初生灵魂"
+ nascent_soul_mid_perk_desc:0 "磨砺你的灵魂。"
+
+ nascent_soul_late_perk:0 "晚期新生灵魂"
+ nascent_soul_late_perk_name:0 "晚期新生灵魂"
+ nascent_soul_late_perk_desc:0 "完善你的灵魂修炼。"
+
+ nascent_soul_peak_perk:0 "初生之巅灵魂"
+ nascent_soul_peak_perk_name:0 "初生之巅灵魂"
+ nascent_soul_peak_perk_desc:0 "巅峰新生灵魂之力。"
+
+ nascent_soul_heavenly_being_breakthrough_perk:0 "突破：天上的存在"
+ nascent_soul_heavenly_being_breakthrough_perk_name:0 "突破：天上的存在"
+ nascent_soul_heavenly_being_breakthrough_perk_desc:0 "升天！寿命延长70年！"
+
+ ##################################################
+ # HEAVENLY BEING REALM PERKS (Y: 31-35) +70 YEARS
+ ##################################################
+
+ heavenly_being_tree_name:0 "天界"
+
+ heavenly_being_1_perk:0 "气聚集"
+ heavenly_being_1_perk_name:0 "气聚集"
+ heavenly_being_1_perk_desc:0 "开始打好你的气功基础。"
+
+ heavenly_being_2_perk:0 "气聚集"
+ heavenly_being_2_perk_name:0 "气聚集"
+ heavenly_being_2_perk_desc:0 "开始打好你的气功基础。"
+
+ heavenly_being_3_perk:0 "气聚集"
+ heavenly_being_3_perk_name:0 "气聚集"
+ heavenly_being_3_perk_desc:0 "开始打好你的气功基础。"
+
+ heavenly_being_4_perk:0 "气聚集"
+ heavenly_being_4_perk_name:0 "气聚集"
+ heavenly_being_4_perk_desc:0 "开始打好你的气功基础。"
+
+ heavenly_being_5_perk:0 "气聚集"
+ heavenly_being_5_perk_name:0 "气聚集"
+ heavenly_being_5_perk_desc:0 "开始打好你的气功基础。"
+
+ heavenly_being_early_perk:0 "早期天体"
+ heavenly_being_early_perk_name:0 "早期天体"
+ heavenly_being_early_perk_desc:0 "进入天界。"
+
+ heavenly_being_mid_perk:0 "中天人"
+ heavenly_being_mid_perk_name:0 "中天人"
+ heavenly_being_mid_perk_desc:0 "巩固天神之力。"
+
+ heavenly_being_late_perk:0 "晚年的天神"
+ heavenly_being_late_perk_name:0 "晚年的天神"
+ heavenly_being_late_perk_desc:0 "接近天人之巅。"
+
+ heavenly_being_peak_perk:0 "天巅"
+ heavenly_being_peak_perk_name:0 "天巅"
+ heavenly_being_peak_perk_desc:0 "天人巅峰修为。"
+
+ heavenly_being_four_axis_breakthrough_perk:0 "突破：四轴"
+ heavenly_being_four_axis_breakthrough_perk_name:0 "突破：四轴"
+ heavenly_being_four_axis_breakthrough_perk_desc:0 "掌握四轴之力！寿命延长100年！"
+
+ ##################################################
+ # FOUR-AXIS REALM PERKS (Y: 36-41) +100 YEARS
+ ##################################################
+
+ four_axis_tree_name:0 "四轴领域"
+
+ four_axis_axis_1a_perk:0 "长寿轴"
+ four_axis_axis_1a_perk_name:0 "长寿轴"
+ four_axis_axis_1a_perk_desc:0 "掌握实力轴心。"
+
+ four_axis_axis_1b_perk:0 "财富轴心"
+ four_axis_axis_1b_perk_name:0 "财富轴心"
+ four_axis_axis_1b_perk_desc:0 "掌握武道轴线。"
+
+ four_axis_axis_1c_perk:0 "爱德轴心"
+ four_axis_axis_1c_perk_name:0 "爱德轴心"
+ four_axis_axis_1c_perk_desc:0 "掌握学习轴心。"
+
+ four_axis_axis_1d_perk:0 "健康轴"
+ four_axis_axis_1d_perk_name:0 "健康轴"
+ four_axis_axis_1d_perk_desc:0 "掌握生命轴。"
+
+ four_axis_axis_2_perk:0 "地球轴"
+ four_axis_axis_2_perk_name:0 "地球轴"
+ four_axis_axis_2_perk_desc:0 "将四个轴合并为一个轴。"
+
+ four_axis_integration_breakthrough_perk:0 "突破：整合"
+ four_axis_integration_breakthrough_perk_name:0 "突破：整合"
+ four_axis_integration_breakthrough_perk_desc:0 "实现融合！复活！寿命延长150年以上！"
+
+ ##################################################
+ # INTEGRATION REALM PERKS (Y: 39-41) +150 YEARS + RESURRECTION!
+ ##################################################
+
+ integration_tree_name:0 "集成领域"
+
+ integration_1a_perk:0 "雨"
+ integration_1a_perk_name:0 "雨"
+ integration_1a_perk_desc:0 "第一条集成路径。"
+
+ integration_1b_perk:0 "太阳"
+ integration_1b_perk_name:0 "太阳"
+ integration_1b_perk_desc:0 "第一条集成路径。"
+
+ integration_1c_perk:0 "热"
+ integration_1c_perk_name:0 "热"
+ integration_1c_perk_desc:0 "第一条集成路径。"
+
+ integration_1d_perk:0 "寒冷的"
+ integration_1d_perk_name:0 "寒冷的"
+ integration_1d_perk_desc:0 "第一条集成路径。"
+
+ integration_1e_perk:0 "风"
+ integration_1e_perk_name:0 "风"
+ integration_1e_perk_desc:0 "第一条集成路径。"
+
+ integration_2a_perk:0 "浑浊"
+ integration_2a_perk_name:0 "浑浊"
+ integration_2a_perk_desc:0 "第二条整合路径。"
+
+ integration_2b_perk:0 "时间"
+ integration_2b_perk_name:0 "时间"
+ integration_2b_perk_desc:0 "第二条整合路径。"
+
+ integration_2c_perk:0 "温暖"
+ integration_2c_perk_name:0 "温暖"
+ integration_2c_perk_desc:0 "第二条整合路径。"
+
+ integration_2d_perk:0 "寒冷"
+ integration_2d_perk_name:0 "寒冷"
+ integration_2d_perk_desc:0 "第二条整合路径。"
+
+ integration_2e_perk:0 "清晰度"
+ integration_2e_perk_name:0 "清晰度"
+ integration_2e_perk_desc:0 "第二条整合路径。"
+
+ integration_star_shattering_breakthrough_perk:0 "突破：星辰破碎"
+ integration_star_shattering_breakthrough_perk_name:0 "突破：星辰破碎"
+ integration_star_shattering_breakthrough_perk_desc:0 "粉碎星辰！寿命延长200年！"
+
+ ##################################################
+ # STAR SHATTERING REALM PERKS (Y: 42-48) +200 YEARS
+ ##################################################
+
+ star_shattering_tree_name:0 "星辰破碎领域"
+
+ star_shattering_explode_perk:0 "爆炸"
+ star_shattering_explode_perk_name:0 "爆炸"
+ star_shattering_explode_perk_desc:0 "释放你内心的光芒。"
+
+ star_shattering_1a_perk:0 "第一颗星碎片"
+ star_shattering_1a_perk_name:0 "第一颗星碎片"
+ star_shattering_1a_perk_desc:0 "收集星之碎片。"
+
+ star_shattering_1b_perk:0 "第二颗星碎片"
+ star_shattering_1b_perk_name:0 "第二颗星碎片"
+ star_shattering_1b_perk_desc:0 "收集星之碎片。"
+
+ star_shattering_1c_perk:0 "最后一颗星的碎片"
+ star_shattering_1c_perk_name:0 "最后一颗星的碎片"
+ star_shattering_1c_perk_desc:0 "收集星之碎片。"
+
+ star_shattering_1d_perk:0 "第四颗星碎片"
+ star_shattering_1d_perk_name:0 "第四颗星碎片"
+ star_shattering_1d_perk_desc:0 "收集星之碎片。"
+
+ star_shattering_1e_perk:0 "第三颗星碎片"
+ star_shattering_1e_perk_name:0 "第三颗星碎片"
+ star_shattering_1e_perk_desc:0 "收集星之碎片。"
+
+ star_shattering_becoming_star_perk:0 "成为明星"
+ star_shattering_becoming_star_perk_name:0 "成为明星"
+ star_shattering_becoming_star_perk_desc:0 "改革如同一颗活生生的明星。"
+
+ star_shattering_sacred_vessel_breakthrough_perk:0 "突破：圣器"
+ star_shattering_sacred_vessel_breakthrough_perk_name:0 "突破：圣器"
+ star_shattering_sacred_vessel_breakthrough_perk_desc:0 "成为神圣容器！寿命延长280年！"
+
+ ##################################################
+ # SACRED VESSEL REALM PERKS (Y: 46-54) +280 YEARS
+ ##################################################
+
+ sacred_vessel_tree_name:0 "圣器领域"
+
+ sacred_vessel_hour_perk:0 "小时"
+ sacred_vessel_hour_perk_name:0 "小时"
+ sacred_vessel_hour_perk_desc:0 "把握好这一小时。"
+
+ sacred_vessel_day_perk:0 "天"
+ sacred_vessel_day_perk_name:0 "天"
+ sacred_vessel_day_perk_desc:0 "掌控每一天。"
+
+ sacred_vessel_month_perk:0 "月"
+ sacred_vessel_month_perk_name:0 "月"
+ sacred_vessel_month_perk_desc:0 "掌控本月。"
+
+ sacred_vessel_year_perk:0 "年"
+ sacred_vessel_year_perk_name:0 "年"
+ sacred_vessel_year_perk_desc:0 "掌控这一年。"
+
+ sacred_vessel_calendar_perk:0 "日历"
+ sacred_vessel_calendar_perk_name:0 "日历"
+ sacred_vessel_calendar_perk_desc:0 "掌握日历的使用。"
+
+ sacred_vessel_fixed_star_perk:0 "恒星"
+ sacred_vessel_fixed_star_perk_name:0 "恒星"
+ sacred_vessel_fixed_star_perk_desc:0 "成为一颗恒星。"
+
+ sacred_vessel_correctness_perk:0 "正确性"
+ sacred_vessel_correctness_perk_name:0 "正确性"
+ sacred_vessel_correctness_perk_desc:0 "体现正义秩序。"
+
+ sacred_vessel_strongness_perk:0 "力量"
+ sacred_vessel_strongness_perk_name:0 "力量"
+ sacred_vessel_strongness_perk_desc:0 "展现力量。"
+
+ sacred_vessel_mildness_perk:0 "温和"
+ sacred_vessel_mildness_perk_name:0 "温和"
+ sacred_vessel_mildness_perk_desc:0 "体现温和的克制。"
+
+ sacred_vessel_entering_nirvana_breakthrough_perk:0 "突破：进入涅槃"
+ sacred_vessel_entering_nirvana_breakthrough_perk_name:0 "突破：进入涅槃"
+ sacred_vessel_entering_nirvana_breakthrough_perk_desc:0 "进入涅槃！寿命延长350年以上！"
+
+ ##################################################
+ # ENTERING NIRVANA REALM PERKS (Y: 54-57) +350 YEARS
+ ##################################################
+
+ entering_nirvana_tree_name:0 "进入涅槃境界"
+
+ entering_nirvana_life_perk:0 "生活"
+ entering_nirvana_life_perk_name:0 "生活"
+ entering_nirvana_life_perk_desc:0 "理解生活。"
+
+ entering_nirvana_death_perk:0 "死亡"
+ entering_nirvana_death_perk_name:0 "死亡"
+ entering_nirvana_death_perk_desc:0 "了解死亡。"
+
+ entering_nirvana_reborn_perk:0 "重生"
+ entering_nirvana_reborn_perk_name:0 "重生"
+ entering_nirvana_reborn_perk_desc:0 "涅槃重生。"
+
+ true_immortal_final_perk:0 "突破：不朽"
+ true_immortal_final_perk_name:0 "突破：真正的不朽"
+ true_immortal_final_perk_desc:0 "实现真正的永生！寿命延长500年以上！永生！"
+
+ ## RELIGION FAMILIES
+ rf_cultivation_orthodox:0 "正统教养"
+ rf_cultivation_orthodox_adj:0 "正统"
+ rf_cultivation_unorthodox:0 "非正统的耕作方式"
+ rf_cultivation_unorthodox_adj:0 "非正统"
+ rf_cultivation_demonic:0 "魔道修炼"
+ rf_cultivation_demonic_adj:0 "恶魔"
+ rf_cultivation_vagrant:0 "流浪栽培"
+ rf_cultivation_vagrant_adj:0 "流浪汉"
+
+ ## CULTIVATION PATH DOCTRINES
+ doctrine_orthodox_cultivation_name:0 "正统修炼之路"
+ doctrine_orthodox_cultivation_desc:0 "该教派遵循正统的修行之道，强调正义和正确的方法。"
+ doctrine_parameter_orthodox_cultivation:0 "遵循正统教规"
+ doctrine_unorthodox_cultivation_name:0 "非正统修炼之路"
+ doctrine_unorthodox_cultivation_desc:0 "这个教派奉行非正统的做法，以非常规手段追求权力。"
+ doctrine_parameter_unorthodox_cultivation:0 "遵循非正统修炼方法"
+ doctrine_demonic_cultivation_name:0 "魔道修炼之路"
+ doctrine_demonic_cultivation_desc:0 "这个教派修炼魔道，通过黑暗禁忌的手段获得力量。"
+ doctrine_parameter_demonic_cultivation:0 "接续《魔道祖师》"
+ doctrine_vagrant_cultivation_name:0 "流浪者修炼之路"
+ doctrine_vagrant_cultivation_desc:0 "这个宗派由一群各自为政、走着自己独特修行道路的修士组成。"
+ doctrine_parameter_vagrant_cultivation:0 "跟随流浪者的耕作"
+
+ ## RELIGION/PATH LOCALIZATIONS - ALL 16 PATHS
+ ## Copy these into your localization file
+
+ # ============================================================================
+ # ORTHODOX FAMILY RELIGIONS (4)
+ # ============================================================================
+
+ cultivation_orthodox:0 "修行：东正教"
+ cultivation_orthodox_adj:0 "正统"
+ cultivation_orthodox_adherent:0 "正统耕耘者"
+ cultivation_orthodox_adherent_plural:0 "正统耕耘者"
+ cultivation_orthodox_desc:0 "守法宗派的正道：先淬炼内心，再斩刀；尊重师徒情谊；以德报德；斩妖除魔而不玷污道心。"
+
+ # ============================================================================
+ # UNORTHODOX FAMILY RELIGIONS (4)
+ # ============================================================================
+
+ cultivation_unorthodox:0 "培养：非正统"
+ cultivation_unorthodox_adj:0 "非正统"
+ cultivation_unorthodox_adherent:0 "非正统耕耘者"
+ cultivation_unorthodox_adherent_plural:0 "非正统耕耘者"
+ cultivation_unorthodox_desc:0 "一条充满隐秘传承和非常规方法的灰色道路。非正统教派摒弃陈旧的教条，寻求通过冒险、计谋和被各大教派视为异端的技艺来取得突破。"
+
+ # ============================================================================
+ # DEMONIC FAMILY RELIGIONS (4)
+ # ============================================================================
+
+ cultivation_demonic:0 "修仙：魔族"
+ cultivation_demonic_adj:0 "恶魔"
+ cultivation_demonic_adherent:0 "恶魔"
+ cultivation_demonic_adherent_plural:0 "恶魔"
+ cultivation_demonic_desc:0 "禁忌的血祭之道，邪气，尸术，夺魂。魔道修士挑战天庭，以恐怖、执念和对命运的残酷攫取一路高歌猛进。"
+
+ # ============================================================================
+ # VAGRANT FAMILY RELIGIONS (4)
+ # ============================================================================
+
+ cultivation_vagrant:0 "栽培：流浪者"
+ cultivation_vagrant_adj:0 "流浪汉"
+ cultivation_vagrant_adherent:0 "流浪汉"
+ cultivation_vagrant_adherent_plural:0 "流浪汉"
+ cultivation_vagrant_desc:0 "这是无根游民和流亡者的道路。流浪的修仙者不守山门，在废墟、决斗和无情的江河湖泊中汲取智慧，用自由换取安稳。"
+
+ # ============================================================================
+ # TOTAL: 16 RELIGIONS x 5 KEYS = 80 LOCALIZATION ENTRIES
+ # ============================================================================
+
+ ## ALL CULTIVATION SECTS (67)
+ mount_hua_sect:0 "华山宗"
+ mount_hua_sect_adj:0 "华山"
+ mount_hua_sect_adherent:0 "华山修士"
+ mount_hua_sect_adherent_plural:0 "华山修士"
+ mount_hua_sect_desc:0 "一处著名的正义山门，其弟子们精进严谨的剑意和严格的门派纪律，重视名誉、责任和干净利落的胜利。"
+
+ heavenly_sword_pavilion:0 "天剑阁"
+ heavenly_sword_pavilion_adj:0 "天剑"
+ heavenly_sword_pavilion_adherent:0 "天剑修士"
+ heavenly_sword_pavilion_adherent_plural:0 "天剑修士"
+ heavenly_sword_pavilion_desc:0 "一个崇高的血统，研究星图和天象以磨砺剑意，追求天道与人间技艺的统一。"
+
+ azure_edge_sect:0 "Azure Edge 部门"
+ azure_edge_sect_adj:0 "Azure Edge"
+ azure_edge_sect_adherent:0 "Azure Edge Cultivator"
+ azure_edge_sect_adherent_plural:0 "Azure Edge Cultivators"
+ azure_edge_sect_desc:0 "迅捷青刃的修炼者，将速度与精准结合于剑道之中。"
+
+ ten_thousand_swords_valley:0 "万剑谷"
+ ten_thousand_swords_valley_adj:0 "万剑"
+ ten_thousand_swords_valley_adherent:0 "万剑修士"
+ ten_thousand_swords_valley_adherent_plural:0 "万剑修士"
+ ten_thousand_swords_valley_desc:0 "这是一个充满无数剑术的山谷，弟子们在这里学习上千种剑法。"
+
+ violet_thunder_blade_sect:0 "紫雷刃宗"
+ violet_thunder_blade_sect_adj:0 "紫雷"
+ violet_thunder_blade_sect_adherent:0 "紫雷修士"
+ violet_thunder_blade_sect_adherent_plural:0 "紫雷修士"
+ violet_thunder_blade_sect_desc:0 "挥舞着注入雷电之力的利剑，将雷霆的怒火注入剑刃之中。"
+
+ eight_trigrams_palace:0 "八卦宫"
+ eight_trigrams_palace_adj:0 "八卦"
+ eight_trigrams_palace_adherent:0 "八卦修炼者"
+ eight_trigrams_palace_adherent_plural:0 "八卦修炼者"
+ eight_trigrams_palace_desc:0 "精通根据古代八卦设计的阵法，通过几何图案操纵现实。"
+
+ celestial_talisman_hall:0 "天界护符大厅"
+ celestial_talisman_hall_adj:0 "天界护符"
+ celestial_talisman_hall_adherent:0 "天界符咒修炼者"
+ celestial_talisman_hall_adherent_plural:0 "天界符咒修炼者"
+ celestial_talisman_hall_desc:0 "擅长制作能驾驭天体能量的强大护身符的专家。"
+
+ nine_star_formation_sect:0 "九星阵派"
+ nine_star_formation_sect_adj:0 "九星"
+ nine_star_formation_sect_adherent:0 "九星修士"
+ nine_star_formation_sect_adherent_plural:0 "九星修士"
+ nine_star_formation_sect_desc:0 "根据九星排列阵法的阵法大师。"
+
+ mystic_seal_pavilion:0 "神秘封印亭"
+ mystic_seal_pavilion_adj:0 "神秘封印"
+ mystic_seal_pavilion_adherent:0 "神秘封印修炼者"
+ mystic_seal_pavilion_adherent_plural:0 "神秘封印修士"
+ mystic_seal_pavilion_desc:0 "精通密封技术和防护屏障，可抵御一切威胁。"
+
+ heavens_array_manor:0 "天阵庄园"
+ heavens_array_manor_adj:0 "天象"
+ heavens_array_manor_adherent:0 "天阵修仙者"
+ heavens_array_manor_adherent_plural:0 "天阵修士"
+ heavens_array_manor_desc:0 "擅长构筑天降神兵的防御阵型专家。"
+
+ wudang_sect:0 "武当派"
+ wudang_sect_adj:0 "武当"
+ wudang_sect_adherent:0 "武当修士"
+ wudang_sect_adherent_plural:0 "武当耕耘者"
+ wudang_sect_desc:0 "道教山岳传统崇尚静柔克刚，通过内丹术、有节奏的剑术和呼吸调节来调和阴阳。"
+
+ shaolin_temple:0 "少林寺"
+ shaolin_temple_adj:0 "少林寺"
+ shaolin_temple_adherent:0 "少林修士"
+ shaolin_temple_adherent_plural:0 "少林修士"
+ shaolin_temple_desc:0 "一个将拳头、棍棒和思想融为一体的僧侣传承；其弟子追求慈悲、克制和通过苦行训练铸就的牢不可破的基础。"
+
+ eternal_harmony_pavilion:0 "永恒和谐亭"
+ eternal_harmony_pavilion_adj:0 "永恒的和谐"
+ eternal_harmony_pavilion_adherent:0 "永恒和谐修炼者"
+ eternal_harmony_pavilion_adherent_plural:0 "永恒和谐修士"
+ eternal_harmony_pavilion_desc:0 "奉行正二修之人，追求伴侣间完美的精神和谐。"
+
+ jade_lotus_temple:0 "玉莲寺"
+ jade_lotus_temple_adj:0 "玉莲"
+ jade_lotus_temple_adherent:0 "玉莲栽培器"
+ jade_lotus_temple_adherent_plural:0 "玉莲栽培者"
+ jade_lotus_temple_desc:0 "纯粹的阴阳修炼者，相信互补能量的神圣结合。"
+
+ supreme_balance_sect:0 "至尊平衡宗"
+ supreme_balance_sect_adj:0 "至尊平衡"
+ supreme_balance_sect_adherent:0 "至尊平衡修炼者"
+ supreme_balance_sect_adherent_plural:0 "至尊平衡修炼者"
+ supreme_balance_sect_desc:0 "追求修行和生活各方面绝对平衡的人。"
+
+ divine_beast_mountain:0 "神兽山"
+ divine_beast_mountain_adj:0 "神兽"
+ divine_beast_mountain_adherent:0 "神兽修仙者"
+ divine_beast_mountain_adherent_plural:0 "神兽修士"
+ divine_beast_mountain_desc:0 "与神圣的天兽缔结契约，与拥有强大精神力量的生物建立联系。"
+
+ celestial_phoenix_pavilion:0 "天凤阁"
+ celestial_phoenix_pavilion_adj:0 "天凤凰"
+ celestial_phoenix_pavilion_adherent:0 "天凤修士"
+ celestial_phoenix_pavilion_adherent_plural:0 "天凤修士"
+ celestial_phoenix_pavilion_desc:0 "擅长与鸟型神灵签订契约，尤其是传说中的凤凰。"
+
+ dragon_whisper_sect:0 "龙语宗"
+ dragon_whisper_sect_adj:0 "龙语"
+ dragon_whisper_sect_adherent:0 "龙语修仙者"
+ dragon_whisper_sect_adherent_plural:0 "龙语修仙者"
+ dragon_whisper_sect_desc:0 "与龙族神兽沟通并驾驭其远古力量的人。"
+
+ spirit_communion_temple:0 "圣灵相通圣殿"
+ spirit_communion_temple_adj:0 "圣灵交通"
+ spirit_communion_temple_adherent:0 "灵性交流培养者"
+ spirit_communion_temple_adherent_plural:0 "灵性交流培育者"
+ spirit_communion_temple_desc:0 "人兽之间的调解者，促进相互理解和发展。"
+
+ thousand_beast_valley:0 "千兽谷"
+ thousand_beast_valley_adj:0 "千兽"
+ thousand_beast_valley_adherent:0 "千兽修士"
+ thousand_beast_valley_adherent_plural:0 "千兽修士"
+ thousand_beast_valley_desc:0 "能够同时与多只灵兽缔结契约的高手。"
+
+ crimson_moon_blade_hall:0 "绯红之月刃殿"
+ crimson_moon_blade_hall_adj:0 "绯红之月"
+ crimson_moon_blade_hall_adherent:0 "赤月修士"
+ crimson_moon_blade_hall_adherent_plural:0 "赤月修士"
+ crimson_moon_blade_hall_desc:0 "夜间战斗的剑术专家，他们的剑刃在月光下闪耀着猩红的光芒。"
+
+ tyrant_saber_palace:0 "暴君剑宫"
+ tyrant_saber_palace_adj:0 "暴君剑"
+ tyrant_saber_palace_adherent:0 "暴君刀修士"
+ tyrant_saber_palace_adherent_plural:0 "暴君刀修士"
+ tyrant_saber_palace_desc:0 "擅长运用压倒性剑术，压制一切对手的武士。"
+
+ howling_wind_saber_sect:0 "啸风剑宗"
+ howling_wind_saber_sect_adj:0 "呼啸的风"
+ howling_wind_saber_sect_adherent:0 "咆哮之风耕耘机"
+ howling_wind_saber_sect_adherent_plural:0 "呼啸之风耕耘者"
+ howling_wind_saber_sect_desc:0 "速度型剑术大师，他们的攻击如同疾风般迅捷莫测。"
+
+ demon_suppressing_blade_clan:0 "灭魔刀族"
+ demon_suppressing_blade_clan_adj:0 "灭魔"
+ demon_suppressing_blade_clan_adherent:0 "灭魔修士"
+ demon_suppressing_blade_clan_adherent_plural:0 "灭魔修士"
+ demon_suppressing_blade_clan_desc:0 "以残酷效率猎杀魔道修士的非正统修炼者。"
+
+ black_iron_saber_sect:0 "黑铁剑教"
+ black_iron_saber_sect_adj:0 "黑铁"
+ black_iron_saber_sect_adherent:0 "黑铁耕耘机"
+ black_iron_saber_sect_adherent_plural:0 "黑铁耕耘者"
+ black_iron_saber_sect_desc:0 "使用重型光剑的战士，以压倒性的蛮力击溃敌人。"
+
+ jade_cauldron_sect:0 "玉鼎宗"
+ jade_cauldron_sect_adj:0 "翡翠坩埚"
+ jade_cauldron_sect_adherent:0 "玉鼎栽培者"
+ jade_cauldron_sect_adherent_plural:0 "玉鼎栽培者"
+ jade_cauldron_sect_desc:0 "在古老的玉鼎中炼制传奇丹药的炼丹师。"
+
+ medicine_king_valley:0 "药王谷"
+ medicine_king_valley_adj:0 "药王"
+ medicine_king_valley_adherent:0 "药王修炼者"
+ medicine_king_valley_adherent_plural:0 "药王修炼者"
+ medicine_king_valley_desc:0 "医者和制药师，他们精通医药技艺。"
+
+ hundred_herbs_pavilion:0 "百草亭"
+ hundred_herbs_pavilion_adj:0 "百草本"
+ hundred_herbs_pavilion_adherent:0 "百草栽培器"
+ hundred_herbs_pavilion_adherent_plural:0 "百草种植者"
+ hundred_herbs_pavilion_desc:0 "炼金术用稀有灵药的采集者和培育者。"
+
+ eternal_furnace_hall:0 "永恒熔炉大厅"
+ eternal_furnace_hall_adj:0 "永恒熔炉"
+ eternal_furnace_hall_adherent:0 "永恒熔炉修炼者"
+ eternal_furnace_hall_adherent_plural:0 "永恒熔炉修炼者"
+ eternal_furnace_hall_desc:0 "永恒之火的炼制大师，炼制出威力无比的丹药。"
+
+ transcendent_elixir_sect:0 "超凡灵药教派"
+ transcendent_elixir_sect_adj:0 "超凡灵药"
+ transcendent_elixir_sect_adherent:0 "超凡灵药培养者"
+ transcendent_elixir_sect_adherent_plural:0 "超凡灵药培育者"
+ transcendent_elixir_sect_desc:0 "创造出连天理都无法企及的传奇灵药的人。"
+
+ pure_yang_palace:0 "纯阳宫"
+ pure_yang_palace_adj:0 "纯阳"
+ pure_yang_palace_adherent:0 "纯阳修炼者"
+ pure_yang_palace_adherent_plural:0 "纯阳修士"
+ pure_yang_palace_desc:0 "这是一种火属性的传承，弟子们通过炼体和炉火般的循环方法来淬炼炽热的阳气，烧尽杂质。"
+
+ yin_phoenix_sect:0 "阴凤宗"
+ yin_phoenix_sect_adj:0 "阴凤凰"
+ yin_phoenix_sect_adherent:0 "阴凤修士"
+ yin_phoenix_sect_adherent_plural:0 "阴凤修士"
+ yin_phoenix_sect_desc:0 "一个阴气十足的凤凰血统，以优雅而致命的武艺、冷火重生之法以及对灵魂和经络流动的精妙控制而闻名。"
+
+ blissful_union_pavilion:0 "幸福联合亭"
+ blissful_union_pavilion_adj:0 "幸福的结合"
+ blissful_union_pavilion_adherent:0 "幸福联合修炼者"
+ blissful_union_pavilion_adherent_plural:0 "幸福联合修士"
+ blissful_union_pavilion_desc:0 "一座双修亭，教授严格的契约式阴阳和谐，共享循环和相互信任成为通往更高境界的途径。"
+
+ jade_chamber_sect:0 "玉殿门"
+ jade_chamber_sect_adj:0 "玉室"
+ jade_chamber_sect_adherent:0 "玉室修炼器"
+ jade_chamber_sect_adherent_plural:0 "玉室修炼者"
+ jade_chamber_sect_desc:0 "精通精神共鸣艺术，通过仪式化的和谐技巧来增强心智和经络的修炼者。"
+
+ eternal_pleasure_hall:0 "永恒宁静堂"
+ eternal_pleasure_hall_adj:0 "永恒的宁静"
+ eternal_pleasure_hall_adherent:0 "永恒宁静修炼者"
+ eternal_pleasure_hall_adherent_plural:0 "永恒宁静修炼者"
+ eternal_pleasure_hall_desc:0 "冥想高手保持平静的精神状态，不间断地精炼气。"
+
+ moonless_night_pavilion:0 "无月之夜亭"
+ moonless_night_pavilion_adj:0 "无月之夜"
+ moonless_night_pavilion_adherent:0 "无月之夜修士"
+ moonless_night_pavilion_adherent_plural:0 "无月之夜修士"
+ moonless_night_pavilion_desc:0 "在绝对黑暗中施展黑暗魔法的尸体提炼专家。"
+
+ pale_bone_hall:0 "苍白骨厅"
+ pale_bone_hall_adj:0 "苍白骨"
+ pale_bone_hall_adherent:0 "苍白骨骼耕耘者"
+ pale_bone_hall_adherent_plural:0 "苍白骨骼耕耘者"
+ pale_bone_hall_desc:0 "统领跳跃尸鬼和骷髅仆从大军的僵尸大师。"
+
+ eternal_rest_clan:0 "永恒安息氏族"
+ eternal_rest_clan_adj:0 "永恒安息"
+ eternal_rest_clan_adherent:0 "永恒安息修士"
+ eternal_rest_clan_adherent_plural:0 "永恒安息修士"
+ eternal_rest_clan_desc:0 "扰乱永恒沉睡者，束缚死者为生者服务。"
+
+ withered_soul_temple:0 "枯萎灵魂神殿"
+ withered_soul_temple_adj:0 "枯萎的灵魂"
+ withered_soul_temple_adherent:0 "枯萎的灵魂修炼者"
+ withered_soul_temple_adherent_plural:0 "枯萎灵魂修炼者"
+ withered_soul_temple_desc:0 "吸取尸体精华以增强自身修炼能力的修行者。"
+
+ hopping_corpse_sect:0 "跳尸宗"
+ hopping_corpse_sect_adj:0 "跳跃的尸体"
+ hopping_corpse_sect_adherent:0 "跳尸修士"
+ hopping_corpse_sect_adherent_plural:0 "跳尸修士"
+ hopping_corpse_sect_desc:0 "专门从事中国传统僵尸的创造和控制的专家。"
+
+ blood_river_sect:0 "血河教派"
+ blood_river_sect_adj:0 "血河"
+ blood_river_sect_adherent:0 "血河耕耘者"
+ blood_river_sect_adherent_plural:0 "血河耕耘者"
+ blood_river_sect_desc:0 "沐浴在敌人鲜血汇成的河流中以求变得更强的魔族修士。"
+
+ ten_thousand_corpse_valley:0 "万尸谷"
+ ten_thousand_corpse_valley_adj:0 "万尸"
+ ten_thousand_corpse_valley_adherent:0 "万尸修士"
+ ten_thousand_corpse_valley_adherent_plural:0 "万尸修者"
+ ten_thousand_corpse_valley_desc:0 "这是一个令人恐惧的炼尸炼化和尸气术山谷，死者被锻造成武器，活着的弟子在瘴气和葬火中修炼。"
+
+ asura_battle_hall:0 "阿修罗战斗大厅"
+ asura_battle_hall_adj:0 "阿修罗"
+ asura_battle_hall_adherent:0 "阿修罗修士"
+ asura_battle_hall_adherent_plural:0 "阿修罗修士"
+ asura_battle_hall_desc:0 "他们是愤怒的阿修罗化身，活着只为战斗和杀戮。"
+
+ five_poison_cult:0 "五毒教"
+ five_poison_cult_adj:0 "五毒"
+ five_poison_cult_adherent:0 "五毒修士"
+ five_poison_cult_adherent_plural:0 "五毒修士"
+ five_poison_cult_desc:0 "精通五毒：蝎子、蛇、蜘蛛、蜈蚣和蟾蜍。"
+
+ venomous_serpent_valley:0 "毒蛇谷"
+ venomous_serpent_valley_adj:0 "毒蛇"
+ venomous_serpent_valley_adherent:0 "毒蛇修士"
+ venomous_serpent_valley_adherent_plural:0 "毒蛇修士"
+ venomous_serpent_valley_desc:0 "毒药培育者，他们饲养并从致命毒蛇身上提取毒液。"
+
+ miasma_swamp_sect:0 "瘴气沼泽教派"
+ miasma_swamp_sect_adj:0 "瘴气沼泽"
+ miasma_swamp_sect_adherent:0 "瘴气沼泽耕耘者"
+ miasma_swamp_sect_adherent_plural:0 "瘴气沼泽耕耘者"
+ miasma_swamp_sect_desc:0 "居住在有毒沼泽中，通过呼吸有毒瘴气进行耕作的人们。"
+
+ blood_yin_cult:0 "血阴教"
+ blood_yin_cult_adj:0 "血阴"
+ blood_yin_cult_adherent:0 "血阴修士"
+ blood_yin_cult_adherent_plural:0 "血阴修士"
+ blood_yin_cult_desc:0 "一个邪恶的血道宗派，收割血精和月气，将窃取的生命力提炼成快速突破和残酷的身体技艺。"
+
+ blood_moon_demonic_sect:0 "天魔宗"
+ blood_moon_demonic_sect_adj:0 "天魔"
+ blood_moon_demonic_sect_adherent:0 "天魔修士"
+ blood_moon_demonic_sect_adherent_plural:0 "天魔修士"
+ blood_moon_demonic_sect_desc:0 "一个臭名昭著的恶魔血统，在月光下举行血祭仪式，召唤不祥的月潮来推动献祭突破和诅咒术。"
+
+ scarlet_heart_palace:0 "红心宫"
+ scarlet_heart_palace_adj:0 "步步惊心"
+ scarlet_heart_palace_adherent:0 "红心修士"
+ scarlet_heart_palace_adherent_plural:0 "红心修士"
+ scarlet_heart_palace_desc:0 "那些将人心提炼成修炼资源的人。"
+
+ succubus_palace:0 "夜影宫"
+ succubus_palace_adj:0 "茄科"
+ succubus_palace_adherent:0 "茄科植物栽培者"
+ succubus_palace_adherent_plural:0 "茄科植物种植者"
+ succubus_palace_desc:0 "一座危险的恶魔宫殿，其信徒修炼魅惑、梦境和灵魂束缚技巧，通过契约、痴迷和精神腐蚀来吸取精华。"
+
+ womb_engraving_sect:0 "绯红印记教派"
+ womb_engraving_sect_adj:0 "深红印记"
+ womb_engraving_sect_adherent:0 "绯红印记修炼者"
+ womb_engraving_sect_adherent_plural:0 "绯红印记修炼者"
+ womb_engraving_sect_desc:0 "黑暗势力的信徒用禁忌的符文烙印目标，束缚其灵魂和意志，使其服从自己的命令。"
+
+ lone_wolf_wanderers:0 "孤狼流浪者"
+ lone_wolf_wanderers_adj:0 "孤狼"
+ lone_wolf_wanderers_adherent:0 "孤狼修仙者"
+ lone_wolf_wanderers_adherent_plural:0 "孤狼修仙者"
+ lone_wolf_wanderers_desc:0 "独立修炼的刀锋修士，独自修行，不隶属于任何宗门。"
+
+ rootless_sword_alliance:0 "无根之剑联盟"
+ rootless_sword_alliance_adj:0 "无根之剑"
+ rootless_sword_alliance_adherent:0 "无根剑耕机"
+ rootless_sword_alliance_adherent_plural:0 "无根剑耕者"
+ rootless_sword_alliance_desc:0 "一群四处流浪的剑客，为了互相保护而结成联盟，同时又保持着各自的独立性。"
+
+ vagrant_blade_brotherhood:0 "流浪之刃兄弟会"
+ vagrant_blade_brotherhood_adj:0 "流浪之刃"
+ vagrant_blade_brotherhood_adherent:0 "流浪刀片耕耘机"
+ vagrant_blade_brotherhood_adherent_plural:0 "流浪刀片耕耘机"
+ vagrant_blade_brotherhood_desc:0 "浪迹天涯的战士们在旅途中结下了兄弟般的情谊。"
+
+ thousand_treasures_pavilion:0 "千宝阁"
+ thousand_treasures_pavilion_adj:0 "千宝"
+ thousand_treasures_pavilion_adherent:0 "千宝修士"
+ thousand_treasures_pavilion_adherent_plural:0 "千宝修士"
+ thousand_treasures_pavilion_desc:0 "无数神秘文物和珍宝的收藏家和提炼者。"
+
+ mystic_forge_hall:0 "神秘锻造大厅"
+ mystic_forge_hall_adj:0 "神秘熔炉"
+ mystic_forge_hall_adherent:0 "神秘锻造者"
+ mystic_forge_hall_adherent_plural:0 "神秘锻造者"
+ mystic_forge_hall_desc:0 "四处游历的铁匠，打造传奇武器和神器。"
+
+ ancient_relic_sect:0 "古遗物教派"
+ ancient_relic_sect_adj:0 "古代遗物"
+ ancient_relic_sect_adherent:0 "古代遗物修炼者"
+ ancient_relic_sect_adherent_plural:0 "古代遗物修炼者"
+ ancient_relic_sect_desc:0 "寻宝者寻找并提炼古代具有强大力量的遗物。"
+
+ ancient_bloodline_temple:0 "远古血脉神殿"
+ ancient_bloodline_temple_adj:0 "古老血统"
+ ancient_bloodline_temple_adherent:0 "远古血脉修士"
+ ancient_bloodline_temple_adherent_plural:0 "远古血脉修士"
+ ancient_bloodline_temple_desc:0 "一个致力于唤醒隐藏在凡人肉体中的远古祖先的血脉神殿，利用遗物仪式和传承祭坛来触发血脉共鸣。"
+
+ primal_beast_sect:0 "原始兽宗"
+ primal_beast_sect_adj:0 "原始野兽"
+ primal_beast_sect_adherent:0 "原始兽修士"
+ primal_beast_sect_adherent_plural:0 "原始兽修士"
+ primal_beast_sect_desc:0 "那些将身体改造为具有原始野兽特征的人。"
+
+ primordial_chaos_hall:0 "原始混沌大厅"
+ primordial_chaos_hall_adj:0 "原始混沌"
+ primordial_chaos_hall_adherent:0 "混沌始祖修炼者"
+ primordial_chaos_hall_adherent_plural:0 "混沌始祖修炼者"
+ primordial_chaos_hall_desc:0 "修炼身体的修炼者，他们汲取了创世之前那混沌的原始能量。"
+
+ wild_beast_mountain:0 "野兽山"
+ wild_beast_mountain_adj:0 "野兽"
+ wild_beast_mountain_adherent:0 "野兽修士"
+ wild_beast_mountain_adherent_plural:0 "野兽修士"
+ wild_beast_mountain_desc:0 "驯服野兽的人，与未驯服的生物建立联系。"
+
+ savage_fang_clan:0 "野蛮獠牙氏族"
+ savage_fang_clan_adj:0 "野蛮之牙"
+ savage_fang_clan_adherent:0 "野蛮獠牙修炼者"
+ savage_fang_clan_adherent_plural:0 "野蛮獠牙修士"
+ savage_fang_clan_desc:0 "驯兽师欣然接受其伙伴的野性本性。"
+
+ feral_bond_sect:0 "野性契约教派"
+ feral_bond_sect_adj:0 "野性羁绊"
+ feral_bond_sect_adherent:0 "野性羁绊培养者"
+ feral_bond_sect_adherent_plural:0 "野性纽带耕耘者"
+ feral_bond_sect_desc:0 "与兽族伙伴缔结原始精神契约，融合人兽之气的人。"
+
+ ## VISIT SECT DECISION TOOLTIPS
+
+ visit_mount_hua_sect:0 "华山宗"
+ visit_mount_hua_sect_tooltip:0 "前往华山宗门了解他们的修炼之道。"
+ visit_heavenly_sword_pavilion:0 "天剑阁"
+ visit_heavenly_sword_pavilion_tooltip:0 "前往天剑阁了解他们的修炼之路。"
+ visit_azure_edge_sect:0 "Azure Edge 部门"
+ visit_azure_edge_sect_tooltip:0 "前往Azure Edge Sect了解他们的修行之道。"
+ visit_ten_thousand_swords_valley:0 "万剑谷"
+ visit_ten_thousand_swords_valley_tooltip:0 "前往万剑谷了解他们的修炼之道。"
+ visit_violet_thunder_blade_sect:0 "紫雷刃宗"
+ visit_violet_thunder_blade_sect_tooltip:0 "前往紫雷刃宗了解他们的修炼之道。"
+ visit_eight_trigrams_palace:0 "八卦宫"
+ visit_eight_trigrams_palace_tooltip:0 "参观八卦宫，了解他们的修行之道。"
+ visit_celestial_talisman_hall:0 "天界护符大厅"
+ visit_celestial_talisman_hall_tooltip:0 "前往天符殿了解他们的修炼之道。"
+ visit_nine_star_formation_sect:0 "九星阵派"
+ visit_nine_star_formation_sect_tooltip:0 "前往九星阵宗了解他们的修炼之道。"
+ visit_mystic_seal_pavilion:0 "神秘封印亭"
+ visit_mystic_seal_pavilion_tooltip:0 "前往神秘印记阁了解他们的修炼之道。"
+ visit_heavens_array_manor:0 "天阵庄园"
+ visit_heavens_array_manor_tooltip:0 "前往天阵庄园了解他们的修炼之道。"
+ visit_wudang_sect:0 "武当派"
+ visit_wudang_sect_tooltip:0 "前往武当派了解他们的修炼之道。"
+ visit_shaolin_temple:0 "少林寺"
+ visit_shaolin_temple_tooltip:0 "参观少林寺，了解他们的修行之道。"
+ visit_eternal_harmony_pavilion:0 "永恒和谐亭"
+ visit_eternal_harmony_pavilion_tooltip:0 "前往永恒和谐阁了解他们的修行之路。"
+ visit_jade_lotus_temple:0 "玉莲寺"
+ visit_jade_lotus_temple_tooltip:0 "参观玉莲寺，了解他们的修行之道。"
+ visit_supreme_balance_sect:0 "至尊平衡宗"
+ visit_supreme_balance_sect_tooltip:0 "前往至尊平衡宗了解他们的修炼之道。"
+ visit_divine_beast_mountain:0 "神兽山"
+ visit_divine_beast_mountain_tooltip:0 "前往神兽山了解他们的修炼之道。"
+ visit_celestial_phoenix_pavilion:0 "天凤阁"
+ visit_celestial_phoenix_pavilion_tooltip:0 "前往天凤阁了解他们的修炼之道。"
+ visit_dragon_whisper_sect:0 "龙语宗"
+ visit_dragon_whisper_sect_tooltip:0 "前往龙语宗了解他们的修炼之道。"
+ visit_spirit_communion_temple:0 "圣灵圣殿"
+ visit_spirit_communion_temple_tooltip:0 "前往灵性交流殿了解他们的修行之路。"
+ visit_thousand_beast_valley:0 "千兽谷"
+ visit_thousand_beast_valley_tooltip:0 "前往千兽谷了解它们的修炼之道。"
+ visit_crimson_moon_blade_hall:0 "绯红之月刃殿"
+ visit_crimson_moon_blade_hall_tooltip:0 "前往赤月刀殿了解他们的修炼之道。"
+ visit_tyrant_saber_palace:0 "暴君剑宫"
+ visit_tyrant_saber_palace_tooltip:0 "前往暴君剑宫了解他们的修炼之道。"
+ visit_howling_wind_saber_sect:0 "啸风剑宗"
+ visit_howling_wind_saber_sect_tooltip:0 "前往啸风刀宗了解他们的修炼之道。"
+ visit_demon_suppressing_blade_clan:0 "灭魔刀族"
+ visit_demon_suppressing_blade_clan_tooltip:0 "前往镇魔刀宗了解他们的修炼之道。"
+ visit_black_iron_saber_sect:0 "黑铁剑教"
+ visit_black_iron_saber_sect_tooltip:0 "前往黑铁刀宗了解他们的修炼之道。"
+ visit_jade_cauldron_sect:0 "玉鼎宗"
+ visit_jade_cauldron_sect_tooltip:0 "前往玉鼎宗了解他们的修炼之道。"
+ visit_medicine_king_valley:0 "药王谷"
+ visit_medicine_king_valley_tooltip:0 "前往药王谷了解他们的种植方法。"
+ visit_hundred_herbs_pavilion:0 "百草亭"
+ visit_hundred_herbs_pavilion_tooltip:0 "参观百草阁，了解它们的种植方法。"
+ visit_eternal_furnace_hall:0 "永恒熔炉大厅"
+ visit_eternal_furnace_hall_tooltip:0 "前往永恒熔炉殿了解他们的修炼之道。"
+ visit_transcendent_elixir_sect:0 "超凡灵药教派"
+ visit_transcendent_elixir_sect_tooltip:0 "前往超凡丹宗了解他们的修炼之道。"
+ visit_pure_yang_palace:0 "纯阳宫"
+ visit_pure_yang_palace_tooltip:0 "前往纯阳宫了解他们的修行之道。"
+ visit_yin_phoenix_sect:0 "阴凤宗"
+ visit_yin_phoenix_sect_tooltip:0 "前往阴凤宗了解他们的修炼之道。"
+ visit_blissful_union_pavilion:0 "幸福联合亭"
+ visit_blissful_union_pavilion_tooltip:0 "前往幸福合一亭了解他们的修行之路。"
+ visit_jade_chamber_sect:0 "玉殿门"
+ visit_jade_chamber_sect_tooltip:0 "前往玉殿宗了解他们的修炼之道。"
+ visit_eternal_pleasure_hall:0 "永恒宁静堂"
+ visit_eternal_pleasure_hall_tooltip:0 "前往永恒宁静殿了解他们的修炼之道。"
+ visit_moonless_night_pavilion:0 "无月之夜亭"
+ visit_moonless_night_pavilion_tooltip:0 "前往无月之夜阁，了解他们的修行之路。"
+ visit_pale_bone_hall:0 "苍白骨厅"
+ visit_pale_bone_hall_tooltip:0 "前往苍骨殿了解他们的修炼之道。"
+ visit_eternal_rest_clan:0 "永恒安息氏族"
+ visit_eternal_rest_clan_tooltip:0 "前往永恒安息家族了解他们的修炼之道。"
+ visit_withered_soul_temple:0 "枯萎灵魂神殿"
+ visit_withered_soul_temple_tooltip:0 "前往枯萎灵魂神殿了解他们的修行之路。"
+ visit_hopping_corpse_sect:0 "跳尸宗"
+ visit_hopping_corpse_sect_tooltip:0 "前往跳尸宗了解他们的修炼之道。"
+ visit_blood_river_sect:0 "血河教派"
+ visit_blood_river_sect_tooltip:0 "前往血河宗了解他们的修炼之道。"
+ visit_ten_thousand_corpse_valley:0 "万尸谷"
+ visit_ten_thousand_corpse_valley_tooltip:0 "前往万尸谷了解他们的修行之道。"
+ visit_asura_battle_hall:0 "阿修罗战斗大厅"
+ visit_asura_battle_hall_tooltip:0 "前往阿修罗战斗大厅了解他们的修炼之道。"
+ visit_five_poison_cult:0 "五毒教"
+ visit_five_poison_cult_tooltip:0 "前往五毒教了解他们的修炼之道。"
+ visit_venomous_serpent_valley:0 "毒蛇谷"
+ visit_venomous_serpent_valley_tooltip:0 "前往毒蛇谷了解它们的修炼之道。"
+ visit_miasma_swamp_sect:0 "瘴气沼泽教派"
+ visit_miasma_swamp_sect_tooltip:0 "前往瘴气沼泽宗门了解他们的修炼之道。"
+ visit_blood_yin_cult:0 "血阴教"
+ visit_blood_yin_cult_tooltip:0 "前往血阴教了解他们的修炼之道。"
+ visit_blood_moon_demonic_sect:0 "天魔宗"
+ visit_blood_moon_demonic_sect_tooltip:0 "前往天魔宗了解他们的修炼之道。"
+ visit_scarlet_heart_palace:0 "红心宫"
+ visit_scarlet_heart_palace_tooltip:0 "前往红心宫了解他们的修炼之路。"
+ visit_succubus_palace:0 "夜影宫"
+ visit_succubus_palace_tooltip:0 "前往夜影宫了解他们的修行之道。"
+ visit_womb_engraving_sect:0 "绯红印记教派"
+ visit_womb_engraving_sect_tooltip:0 "前往赤徽宗了解他们的修炼之道。"
+ visit_lone_wolf_wanderers:0 "孤狼流浪者"
+ visit_lone_wolf_wanderers_tooltip:0 "拜访孤狼游侠，了解他们的修行之路。"
+ visit_rootless_sword_alliance:0 "无根之剑联盟"
+ visit_rootless_sword_alliance_tooltip:0 "前往无根剑盟了解他们的修炼之道。"
+ visit_vagrant_blade_brotherhood:0 "流浪之刃兄弟会"
+ visit_vagrant_blade_brotherhood_tooltip:0 "前往流浪刀兄弟会了解他们的修炼之道。"
+ visit_thousand_treasures_pavilion:0 "千宝阁"
+ visit_thousand_treasures_pavilion_tooltip:0 "参观千宝阁，了解他们的修行之路。"
+ visit_mystic_forge_hall:0 "神秘锻造大厅"
+ visit_mystic_forge_hall_tooltip:0 "前往神秘熔炉大厅了解他们的修炼之道。"
+ visit_ancient_relic_sect:0 "古遗物教派"
+ visit_ancient_relic_sect_tooltip:0 "前往古遗宗了解他们的修炼之道。"
+ visit_ancient_bloodline_temple:0 "远古血脉神殿"
+ visit_ancient_bloodline_temple_tooltip:0 "前往远古血脉神殿，了解他们的修炼之道。"
+ visit_primal_beast_sect:0 "原始兽宗"
+ visit_primal_beast_sect_tooltip:0 "前往始祖兽宗了解他们的修炼之道。"
+ visit_primordial_chaos_hall:0 "原始混沌大厅"
+ visit_primordial_chaos_hall_tooltip:0 "前往混沌殿了解他们的修炼之道。"
+ visit_wild_beast_mountain:0 "野兽山"
+ visit_wild_beast_mountain_tooltip:0 "前往野兽山了解它们的修炼之道。"
+ visit_savage_fang_clan:0 "野蛮獠牙氏族"
+ visit_savage_fang_clan_tooltip:0 "前往蛮牙氏族了解他们的修炼之道。"
+ visit_feral_bond_sect:0 "野性契约教派"
+ visit_feral_bond_sect_tooltip:0 "前往野性羁绊宗门了解他们的修炼之道。"
+
+ ## VISIT EVENTS
+
+ visit_cultivation_sect_decision:0 "造访修仙宗"
+ visit_cultivation_sect_decision_desc:0 "修真者往往隶属于不同的宗门。有些宗门历史悠久，与世界本身一样古老；而有些宗门则是新近创立的。拜访某个宗门，了解其历史和修炼之道——然后决定是加入他们，还是让他们在你的力量面前颤抖。"
+ visit_cultivation_sect_decision_tooltip:0 "选择一个教派进行参拜。"
+ visit_cultivation_sect_decision_confirm:0 "访问 Sect"
+
+ cultivation_sect_visit.1000.t:0 "华山宗"
+ cultivation_sect_visit.1000.desc:0 "这是一个以精湛剑术和正道修炼著称的著名正统宗门。一位宗门长老前来考察你的潜力。"
+ cultivation_sect_visit.1001.t:0 "天剑阁"
+ cultivation_sect_visit.1001.desc:0 "他们是精通天剑术的高手，信奉天剑合一的理念。一位宗门长老前来考察你的潜力。"
+ cultivation_sect_visit.1002.t:0 "Azure Edge 部门"
+ cultivation_sect_visit.1002.desc:0 "精通迅捷青刃的武者，将速度与精准融为一体。一位宗门长老前来考察你的潜力。"
+ cultivation_sect_visit.1003.t:0 "万剑谷"
+ cultivation_sect_visit.1003.desc:0 "这是一个剑术云集的山谷，弟子们在此学习上千种剑法。一位宗门长老前来考察你的潜力。"
+ cultivation_sect_visit.1004.t:0 "紫雷刃宗"
+ cultivation_sect_visit.1004.desc:0 "挥舞着雷霆之剑，将雷霆之怒注入剑刃。一位宗门长老前来评估你的潜力。"
+ cultivation_sect_visit.1050.t:0 "八卦宫"
+ cultivation_sect_visit.1050.desc:0 "精通运用古代八卦阵法，以几何图案操控现实的大师。一位宗门长老前来评估你的潜力。"
+ cultivation_sect_visit.1051.t:0 "天界护符大厅"
+ cultivation_sect_visit.1051.desc:0 "擅长制作能驾驭天界能量的强大护身符的专家。一位教派长老前来评估你的潜力。"
+ cultivation_sect_visit.1052.t:0 "九星阵派"
+ cultivation_sect_visit.1052.desc:0 "阵法大师们根据九星法则布阵。一位宗门长老前来评估你的潜力。"
+ cultivation_sect_visit.1053.t:0 "神秘封印亭"
+ cultivation_sect_visit.1053.desc:0 "精通封印术和防护屏障的专家，能够抵御一切威胁。一位宗门长老前来评估你的潜力。"
+ cultivation_sect_visit.1054.t:0 "天阵庄园"
+ cultivation_sect_visit.1054.desc:0 "擅长构筑天降神兵的防御阵法专家。一位宗门长老前来评估你的潜力。"
+ cultivation_sect_visit.1100.t:0 "武当派"
+ cultivation_sect_visit.1100.desc:0 "他们以道家思想为基础，追求阴阳、身心之间的完美平衡。一位宗门长老会前来评估你的潜能。"
+ cultivation_sect_visit.1101.t:0 "少林寺"
+ cultivation_sect_visit.1101.desc:0 "佛教僧侣通过严苛的武术和禅修来磨练身心。一位宗派长老前来评估你的潜力。"
+ cultivation_sect_visit.1102.t:0 "永恒和谐亭"
+ cultivation_sect_visit.1102.desc:0 "修炼正二修的修行者，追求伴侣间完美的精神和谐。一位宗门长老前来评估你们的潜力。"
+ cultivation_sect_visit.1103.t:0 "玉莲寺"
+ cultivation_sect_visit.1103.desc:0 "纯粹的阴阳修炼者，信奉互补能量的神圣结合。一位宗门长老前来评估你的潜力。"
+ cultivation_sect_visit.1104.t:0 "至尊平衡宗"
+ cultivation_sect_visit.1104.desc:0 "追求修炼与生活各方面绝对平衡之人。一位宗门长老前来评估你的潜力。"
+ cultivation_sect_visit.1150.t:0 "神兽山"
+ cultivation_sect_visit.1150.desc:0 "与神圣天兽缔结契约，与拥有强大灵力的生物建立联系。一位宗门长老前来评估你的潜力。"
+ cultivation_sect_visit.1151.t:0 "天凤阁"
+ cultivation_sect_visit.1151.desc:0 "擅长与鸟型神灵，特别是传说中的凤凰签订契约的专家。一位宗门长老前来评估你的潜力。"
+ cultivation_sect_visit.1152.t:0 "龙语宗"
+ cultivation_sect_visit.1152.desc:0 "那些与龙族神兽沟通并驾驭其远古力量的人。一位宗门长老前来评估你的潜力。"
+ cultivation_sect_visit.1153.t:0 "圣灵相通圣殿"
+ cultivation_sect_visit.1153.desc:0 "人兽世界的调解者，促进彼此理解与发展。一位宗门长老前来评估你的潜力。"
+ cultivation_sect_visit.1154.t:0 "千兽谷"
+ cultivation_sect_visit.1154.desc:0 "精通同时与多只灵兽缔结契约之人。一位宗门长老前来评估你的潜力。"
+ cultivation_sect_visit.2000.t:0 "绯红之月刃殿"
+ cultivation_sect_visit.2000.desc:0 "夜战刀法专家，月光下刀光闪耀着猩红。一位宗门长老前来评估你的潜力。"
+ cultivation_sect_visit.2001.t:0 "暴君剑宫"
+ cultivation_sect_visit.2001.desc:0 "精通霸道刀法，所向披靡。一位宗门长老前来评估你的潜力。"
+ cultivation_sect_visit.2002.t:0 "啸风剑宗"
+ cultivation_sect_visit.2002.desc:0 "速度型剑术大师，他们的攻击迅捷无比，变幻莫测，如同疾风一般。一位宗门长老前来考察你的潜力。"
+ cultivation_sect_visit.2003.t:0 "灭魔刀族"
+ cultivation_sect_visit.2003.desc:0 "一群行事怪异的修仙者，他们以残酷的效率猎杀魔道修士。一位宗门长老前来评估你的潜力。"
+ cultivation_sect_visit.2004.t:0 "黑铁剑教"
+ cultivation_sect_visit.2004.desc:0 "挥舞重刀的强者，以压倒性的蛮力碾压敌人。一位宗门长老前来评估你的潜力。"
+ cultivation_sect_visit.2050.t:0 "玉鼎宗"
+ cultivation_sect_visit.2050.desc:0 "炼丹师们在古老的玉鼎中炼制传奇丹药。一位宗门长老前来评估你的潜力。"
+ cultivation_sect_visit.2051.t:0 "药王谷"
+ cultivation_sect_visit.2051.desc:0 "医者和炼丹师，他们精通医术。一位宗门长老前来评估你的潜力。"
+ cultivation_sect_visit.2052.t:0 "百草亭"
+ cultivation_sect_visit.2052.desc:0 "采集和培育用于炼丹的珍稀灵药的人们。一位宗门长老前来评估你们的潜力。"
+ cultivation_sect_visit.2053.t:0 "永恒熔炉大厅"
+ cultivation_sect_visit.2053.desc:0 "永恒火焰的炼丹大师，正在炼制威力惊人的丹药。一位宗门长老前来考察你的潜力。"
+ cultivation_sect_visit.2054.t:0 "超凡灵药教派"
+ cultivation_sect_visit.2054.desc:0 "炼制出足以撼动天地的传奇灵药的大师。一位宗门长老前来评估你的潜力。"
+ cultivation_sect_visit.2100.t:0 "纯阳宫"
+ cultivation_sect_visit.2100.desc:0 "纯阳血脉修士，以严苛的炼体之法淬炼炽烈阳气。一位宗门长老前来评估你的潜力。"
+ cultivation_sect_visit.2101.t:0 "阴凤宗"
+ cultivation_sect_visit.2101.desc:0 "兼具女性力量与魅力的阴柔修炼女高手。一位宗门长老前来评估你的潜力。"
+ cultivation_sect_visit.2102.t:0 "幸福联合亭"
+ cultivation_sect_visit.2102.desc:0 "追求阴阳和谐、力求证悟的双修修炼者。一位宗门长老前来评估你的潜能。"
+ cultivation_sect_visit.2103.t:0 "玉殿门"
+ cultivation_sect_visit.2103.desc:0 "精通灵气共鸣技艺的炼化者，通过仪式化的和谐技巧来强化心智和经络。一位宗门长老前来评估你的潜能。"
+ cultivation_sect_visit.2104.t:0 "永恒宁静堂"
+ cultivation_sect_visit.2104.desc:0 "冥想高手保持心境平和，不间断地炼化气。一位宗门长老前来评估你的潜力。"
+ cultivation_sect_visit.2150.t:0 "无月之夜亭"
+ cultivation_sect_visit.2150.desc:0 "一群在绝对黑暗中修炼尸体技艺的专家。一位宗门长老前来评估你的潜力。"
+ cultivation_sect_visit.2151.t:0 "苍白骨厅"
+ cultivation_sect_visit.2151.desc:0 "统领着跳尸和骷髅仆从大军的僵尸大师。一位宗门长老前来评估你的潜力。"
+ cultivation_sect_visit.2152.t:0 "永恒安息氏族"
+ cultivation_sect_visit.2152.desc:0 "扰乱永恒沉睡之人，束缚亡灵侍奉生者。一位宗门长老前来评估你的潜力。"
+ cultivation_sect_visit.2153.t:0 "枯萎灵魂神殿"
+ cultivation_sect_visit.2153.desc:0 "吸取尸体精华以增强修炼能力的修行者。一位宗门长老前来评估你的潜力。"
+ cultivation_sect_visit.2154.t:0 "跳尸宗"
+ cultivation_sect_visit.2154.desc:0 "擅长制作和操控中国传统僵尸的专家。宗门长老会来评估你的潜力。"
+ cultivation_sect_visit.3000.t:0 "血河教派"
+ cultivation_sect_visit.3000.desc:0 "沐浴在敌人鲜血汇成的河流中以求变强的魔族修士。一位宗门长老前来评估你的潜力。"
+ cultivation_sect_visit.3001.t:0 "万尸谷"
+ cultivation_sect_visit.3001.desc:0 "山谷中遍布着他们受害者的遗骸，死亡在这里孕育着力量。一位教派长老前来评估你的潜力。"
+ cultivation_sect_visit.3002.t:0 "阿修罗战斗大厅"
+ cultivation_sect_visit.3002.desc:0 "他们是化身为愤怒阿修罗的魔战士，活着只为战斗和杀戮。一位宗门长老前来评估你的潜力。"
+ cultivation_sect_visit.3050.t:0 "五毒教"
+ cultivation_sect_visit.3050.desc:0 "精通五毒之人：蝎毒、蛇毒、蛛毒、蜈蚣毒、蟾蜍毒。一位宗门长老前来考察你的潜力。"
+ cultivation_sect_visit.3051.t:0 "毒蛇谷"
+ cultivation_sect_visit.3051.desc:0 "一群炼毒师，他们饲养并提取剧毒毒蛇的毒液。一位宗门长老前来评估你的潜力。"
+ cultivation_sect_visit.3052.t:0 "瘴气沼泽教派"
+ cultivation_sect_visit.3052.desc:0 "居住在有毒沼泽中，通过呼吸有毒瘴气进行修炼的人们。一位宗门长老前来评估你的潜力。"
+ cultivation_sect_visit.3100.t:0 "血阴教"
+ cultivation_sect_visit.3100.desc:0 "吸取受害者血液精华的吸血修士。一位宗门长老前来评估你的潜力。"
+ cultivation_sect_visit.3101.t:0 "血月魔宗"
+ cultivation_sect_visit.3101.desc:0 "以血月为力量源泉的血魔法修行者。一位宗门长老前来评估你的潜力。"
+ cultivation_sect_visit.3102.t:0 "红心宫"
+ cultivation_sect_visit.3102.desc:0 "那些将人心炼化为修炼资源的人。一位宗门长老前来评估你的潜力。"
+ cultivation_sect_visit.3150.t:0 "夜影宫"
+ cultivation_sect_visit.3150.desc:0 "暗道修炼者通过禁忌的缚魂术吸取灵力。一位宗门长老前来评估你的潜力。"
+ cultivation_sect_visit.3151.t:0 "绯红印记教派"
+ cultivation_sect_visit.3151.desc:0 "黑暗势力的修行者会在目标身上烙下禁忌的符文，束缚其灵魂和意志，使其臣服于自己。一位教派长老前来评估你的潜力。"
+ cultivation_sect_visit.4000.t:0 "孤狼流浪者"
+ cultivation_sect_visit.4000.desc:0 "独立修炼的刀锋修士，独行一族，不隶属于任何宗门。一位宗门长老前来考察你的潜力。"
+ cultivation_sect_visit.4001.t:0 "无根之剑联盟"
+ cultivation_sect_visit.4001.desc:0 "一群浪迹天涯的剑客为了互相保护而结盟，同时又各自保持独立。一位宗门长老前来考察你们的潜力。"
+ cultivation_sect_visit.4002.t:0 "流浪之刃兄弟会"
+ cultivation_sect_visit.4002.desc:0 "浪迹天涯的武士们在旅途中结下了兄弟般的情谊。一位宗门长老前来考察你们的潜力。"
+ cultivation_sect_visit.4050.t:0 "千宝阁"
+ cultivation_sect_visit.4050.desc:0 "无数神秘神器和珍宝的收藏家和提炼者。一位宗门长老前来评估你的潜力。"
+ cultivation_sect_visit.4051.t:0 "神秘锻造大厅"
+ cultivation_sect_visit.4051.desc:0 "四处游历的铁匠，打造传奇武器和神器。一位宗门长老前来评估你的潜力。"
+ cultivation_sect_visit.4052.t:0 "古遗物教派"
+ cultivation_sect_visit.4052.desc:0 "寻宝者寻找并提炼古代蕴藏力量的遗物。一位宗门长老前来评估你的潜力。"
+ cultivation_sect_visit.4100.t:0 "远古血脉神殿"
+ cultivation_sect_visit.4100.desc:0 "唤醒体内沉睡远古血脉的修炼者。一位宗门长老前来评估你的潜力。"
+ cultivation_sect_visit.4101.t:0 "原始兽宗"
+ cultivation_sect_visit.4101.desc:0 "那些将身体改造为具有原始野兽特征的人。一位宗门长老前来评估你的潜力。"
+ cultivation_sect_visit.4102.t:0 "原始混沌大厅"
+ cultivation_sect_visit.4102.desc:0 "修炼肉身之人，他们汲取着创世之前那混沌的原始力量。一位宗门长老前来评估你的潜力。"
+ cultivation_sect_visit.4150.t:0 "野兽山"
+ cultivation_sect_visit.4150.desc:0 "驯服野兽，与未驯服的生灵建立联系。一位宗门长老前来评估你的潜力。"
+ cultivation_sect_visit.4151.t:0 "野蛮獠牙氏族"
+ cultivation_sect_visit.4151.desc:0 "驯兽师们欣然接受同伴的野性本能。一位宗门长老前来评估你的潜力。"
+ cultivation_sect_visit.4152.t:0 "野性契约教派"
+ cultivation_sect_visit.4152.desc:0 "与兽族伙伴缔结原始精神契约，将人兽之气融为一体，形成统一战路之人。一位宗门长老前来评估你的潜力。"
+
+ ## JOIN EVENTS
+
+ cultivation_sect_join.1000.t:0 "加入华山宗"
+ cultivation_sect_join.1000.desc:0 "长老会评估你的修为和资源。你是否愿意加入华山宗？"
+ cultivation_sect_join.1001.t:0 "加入天剑阁"
+ cultivation_sect_join.1001.desc:0 "长老会评估你的修为和资源。你是否愿意加入天剑阁？"
+ cultivation_sect_join.1002.t:0 "加入 Azure Edge 小组"
+ cultivation_sect_join.1002.desc:0 "长老会评估你的修为和资源。你是否愿意加入蔚蓝边缘宗？"
+ cultivation_sect_join.1003.t:0 "加入万剑谷"
+ cultivation_sect_join.1003.desc:0 "长老会评估你的修为和资源。你是否愿意加入万剑谷？"
+ cultivation_sect_join.1004.t:0 "加入紫雷刃宗"
+ cultivation_sect_join.1004.desc:0 "长老会评估你的修为和资源。你是否愿意加入紫雷刃宗？"
+ cultivation_sect_join.1050.t:0 "加入八卦宫"
+ cultivation_sect_join.1050.desc:0 "长老会评估你的修为和资源。你是否愿意加入八卦宫？"
+ cultivation_sect_join.1051.t:0 "加入天界护符大厅"
+ cultivation_sect_join.1051.desc:0 "长老会评估你的修为和资源。你是否愿意加入天符殿？"
+ cultivation_sect_join.1052.t:0 "加入九星阵宗"
+ cultivation_sect_join.1052.desc:0 "长老会评估你的修为和资源。你是否愿意加入九星阵宗？"
+ cultivation_sect_join.1053.t:0 "加入神秘封印阁"
+ cultivation_sect_join.1053.desc:0 "长老会评估你的修为和资源。你是否愿意加入玄印阁？"
+ cultivation_sect_join.1054.t:0 "加入天阵庄园"
+ cultivation_sect_join.1054.desc:0 "长老会评估你的修为和资源。你是否愿意加入天阵府？"
+ cultivation_sect_join.1100.t:0 "加入武当派"
+ cultivation_sect_join.1100.desc:0 "长老会评估你的修为和资源。你是否愿意加入武当派？"
+ cultivation_sect_join.1101.t:0 "加入少林寺"
+ cultivation_sect_join.1101.desc:0 "长老会评估你的修为和资源。你愿意加入少林寺吗？"
+ cultivation_sect_join.1102.t:0 "加入永恒和谐阁"
+ cultivation_sect_join.1102.desc:0 "长老会评估你的修为和资源。你是否愿意加入永恒和谐阁？"
+ cultivation_sect_join.1103.t:0 "加入玉莲寺"
+ cultivation_sect_join.1103.desc:0 "长老会评估你的修为和资源。你是否愿意加入玉莲寺？"
+ cultivation_sect_join.1104.t:0 "加入至高平衡教派"
+ cultivation_sect_join.1104.desc:0 "长老会评估你的修为和资源。你是否愿意加入至尊平衡宗？"
+ cultivation_sect_join.1150.t:0 "加入神兽山"
+ cultivation_sect_join.1150.desc:0 "长老会评估你的修为和资源。你是否愿意加入神兽山？"
+ cultivation_sect_join.1151.t:0 "加入天凤阁"
+ cultivation_sect_join.1151.desc:0 "长老会评估你的修为和资源。你是否愿意加入天凤阁？"
+ cultivation_sect_join.1152.t:0 "加入龙语宗"
+ cultivation_sect_join.1152.desc:0 "长老会评估你的修为和资源。你是否愿意加入龙语宗？"
+ cultivation_sect_join.1153.t:0 "加入圣灵圣殿"
+ cultivation_sect_join.1153.desc:0 "长老会评估你的修为和资源。你是否愿意加入灵界圣殿？"
+ cultivation_sect_join.1154.t:0 "加入千兽谷"
+ cultivation_sect_join.1154.desc:0 "长老会评估你的修为和资源。你是否愿意加入千兽谷？"
+ cultivation_sect_join.2000.t:0 "加入绯红之月之刃殿"
+ cultivation_sect_join.2000.desc:0 "长老会评估你的修为和资源。你是否愿意加入赤月刃殿？"
+ cultivation_sect_join.2001.t:0 "加入暴君剑宫"
+ cultivation_sect_join.2001.desc:0 "长老会评估你的修为和资源。你是否愿意加入暴君剑宫？"
+ cultivation_sect_join.2002.t:0 "加入嚎风剑教"
+ cultivation_sect_join.2002.desc:0 "长老会评估你的修为和资源。你是否愿意加入啸风刀宗？"
+ cultivation_sect_join.2003.t:0 "加入灭魔刀族"
+ cultivation_sect_join.2003.desc:0 "长老会评估你的修为和资源。你是否愿意加入灭魔刀族？"
+ cultivation_sect_join.2004.t:0 "加入黑铁刀宗"
+ cultivation_sect_join.2004.desc:0 "长老会评估你的修为和资源。你是否愿意加入黑铁刀宗？"
+ cultivation_sect_join.2050.t:0 "加入玉鼎宗"
+ cultivation_sect_join.2050.desc:0 "长老会评估你的修为和资源。你是否愿意加入玉鼎宗？"
+ cultivation_sect_join.2051.t:0 "加入药王谷"
+ cultivation_sect_join.2051.desc:0 "长老会评估你的修为和资源。你是否愿意加入药王谷？"
+ cultivation_sect_join.2052.t:0 "加入百草阁"
+ cultivation_sect_join.2052.desc:0 "长老会评估你的修为和资源。你是否愿意加入百草阁？"
+ cultivation_sect_join.2053.t:0 "加入永恒熔炉大厅"
+ cultivation_sect_join.2053.desc:0 "长老会评估你的修为和资源。你是否愿意加入永恒熔炉殿？"
+ cultivation_sect_join.2054.t:0 "加入超凡灵药教派"
+ cultivation_sect_join.2054.desc:0 "长老会评估你的修为和资源。你是否愿意加入超凡丹宗？"
+ cultivation_sect_join.2100.t:0 "加入纯阳宫"
+ cultivation_sect_join.2100.desc:0 "长老会评估你的修为和资源。你是否愿意加入纯阳宫？"
+ cultivation_sect_join.2101.t:0 "加入阴凤宗"
+ cultivation_sect_join.2101.desc:0 "长老会评估你的修为和资源。你是否愿意加入阴凤宗？"
+ cultivation_sect_join.2102.t:0 "加入幸福联盟馆"
+ cultivation_sect_join.2102.desc:0 "长老会评估你的修为和资源。你是否愿意加入幸福协和阁？"
+ cultivation_sect_join.2103.t:0 "加入玉殿门"
+ cultivation_sect_join.2103.desc:0 "长老会评估你的修为和资源。你是否愿意加入玉殿宗？"
+ cultivation_sect_join.2104.t:0 "加入永恒宁静大厅"
+ cultivation_sect_join.2104.desc:0 "长老会评估你的修为和资源。你是否愿意加入永恒宁静殿？"
+ cultivation_sect_join.2150.t:0 "加入无月之夜亭"
+ cultivation_sect_join.2150.desc:0 "长老会评估你的修为和资源。你是否愿意加入无月阁？"
+ cultivation_sect_join.2151.t:0 "加入苍白骨堂"
+ cultivation_sect_join.2151.desc:0 "长老会评估你的修为和资源。你是否愿意加入苍骨殿？"
+ cultivation_sect_join.2152.t:0 "加入永恒安息氏族"
+ cultivation_sect_join.2152.desc:0 "长老会评估你的修为和资源。你是否愿意加入永眠氏族？"
+ cultivation_sect_join.2153.t:0 "加入枯萎之魂神殿"
+ cultivation_sect_join.2153.desc:0 "长老会评估你的修为和资源。你是否愿意加入枯魂神殿？"
+ cultivation_sect_join.2154.t:0 "加入跳尸教"
+ cultivation_sect_join.2154.desc:0 "长老会评估你的修为和资源。你是否愿意加入跳尸宗？"
+ cultivation_sect_join.3000.t:0 "加入血河宗"
+ cultivation_sect_join.3000.desc:0 "长老会评估你的修为和资源。你是否愿意加入血河宗？"
+ cultivation_sect_join.3001.t:0 "加入万尸谷"
+ cultivation_sect_join.3001.desc:0 "长老会评估你的修为和资源。你是否愿意加入万尸谷？"
+ cultivation_sect_join.3002.t:0 "加入阿修罗战斗大厅"
+ cultivation_sect_join.3002.desc:0 "长老会评估你的修为和资源。你是否愿意加入修罗战殿？"
+ cultivation_sect_join.3050.t:0 "加入五毒教"
+ cultivation_sect_join.3050.desc:0 "长老会评估你的修为和资源。你是否愿意加入五毒教？"
+ cultivation_sect_join.3051.t:0 "加入毒蛇谷"
+ cultivation_sect_join.3051.desc:0 "长老会评估你的修为和资源。你是否愿意加入毒蛇谷？"
+ cultivation_sect_join.3052.t:0 "加入瘴气沼泽教派"
+ cultivation_sect_join.3052.desc:0 "长老会评估你的修为和资源。你是否愿意加入瘴气沼泽宗？"
+ cultivation_sect_join.3100.t:0 "加入血阴教"
+ cultivation_sect_join.3100.desc:0 "长老会评估你的修为和资源。你是否愿意加入血阴教？"
+ cultivation_sect_join.3101.t:0 "加入赤月魔宗"
+ cultivation_sect_join.3101.desc:0 "长老会评估你的修为和资源。你是否愿意加入赤月魔宗？"
+ cultivation_sect_join.3102.t:0 "加入红心宫"
+ cultivation_sect_join.3102.desc:0 "长老会评估你的修为和资源。你是否愿意加入红心宫？"
+ cultivation_sect_join.3150.t:0 "加入夜影宫"
+ cultivation_sect_join.3150.desc:0 "长老会评估你的修为和资源。你是否愿意加入夜影宫？"
+ cultivation_sect_join.3151.t:0 "加入绯红印记教派"
+ cultivation_sect_join.3151.desc:0 "长老会评估你的修为和资源。你是否愿意加入赤徽宗？"
+ cultivation_sect_join.4000.t:0 "加入孤狼游侠行列"
+ cultivation_sect_join.4000.desc:0 "长老会评估你的修为和资源。你是否愿意加入孤狼旅团？"
+ cultivation_sect_join.4001.t:0 "加入无根之剑联盟"
+ cultivation_sect_join.4001.desc:0 "长老会评估你的修为和资源。你是否愿意加入无根剑盟？"
+ cultivation_sect_join.4002.t:0 "加入流浪之刃兄弟会"
+ cultivation_sect_join.4002.desc:0 "长老会评估你的修为和资源。你是否愿意加入浪刃兄弟会？"
+ cultivation_sect_join.4050.t:0 "加入千宝阁"
+ cultivation_sect_join.4050.desc:0 "长老会评估你的修为和资源。你是否愿意加入千宝阁？"
+ cultivation_sect_join.4051.t:0 "加入神秘熔炉大厅"
+ cultivation_sect_join.4051.desc:0 "长老会评估你的修为和资源。你是否愿意加入神秘熔炉殿？"
+ cultivation_sect_join.4052.t:0 "加入古遗教派"
+ cultivation_sect_join.4052.desc:0 "长老会评估你的修为和资源。你是否愿意加入古遗宗？"
+ cultivation_sect_join.4100.t:0 "加入远古血脉神殿"
+ cultivation_sect_join.4100.desc:0 "长老会评估你的修为和资源。你是否愿意加入远古血脉神殿？"
+ cultivation_sect_join.4101.t:0 "加入蛮兽宗"
+ cultivation_sect_join.4101.desc:0 "长老会评估你的修为和资源。你是否愿意加入始祖兽宗？"
+ cultivation_sect_join.4102.t:0 "加入原始混沌大厅"
+ cultivation_sect_join.4102.desc:0 "长老会评估你的修为和资源。你是否愿意加入混沌殿？"
+ cultivation_sect_join.4150.t:0 "加入野兽山"
+ cultivation_sect_join.4150.desc:0 "长老会评估你的修为和资源。你是否愿意加入野兽山？"
+ cultivation_sect_join.4151.t:0 "加入野蛮獠牙氏族"
+ cultivation_sect_join.4151.desc:0 "长老会评估你的修为和资源。你是否愿意加入蛮牙氏族？"
+ cultivation_sect_join.4152.t:0 "加入野性契约教派"
+ cultivation_sect_join.4152.desc:0 "长老会评估你的修为和资源。你是否愿意加入野性羁绊宗？"
+
+ ## COMMON EVENT OPTIONS
+ sect_join:0 "申请加入教派"
+ sect_spar:0 "与他们的门徒切磋"
+ sect_visit_cancel:0 "告辞"
+ sect_join_donate:0 "出卖黄金即可加入该教派"
+ sect_join_cancel:0 "改变主意了"
+
+ tenet_sect_empty_1_name:0 ""
+ tenet_sect_empty_1_desc:0 "选择新租户。"
+ tenet_sect_empty_2_name:0 ""
+ tenet_sect_empty_2_desc:0 "选择新租户。"
+ tenet_sect_empty_3_name:0 ""
+ tenet_sect_empty_3_desc:0 "选择新租户。"
+ tenet_sect_empty_4_name:0 ""
+ tenet_sect_empty_4_desc:0 "选择新租户。"
+ tenet_sect_empty_5_name:0 ""
+ tenet_sect_empty_5_desc:0 "选择新租户。"
+ tenet_sect_empty_6_name:0 ""
+ tenet_sect_empty_6_desc:0 "选择新租户。"
+ tenet_sect_empty_7_name:0 ""
+ tenet_sect_empty_7_desc:0 "选择新租户。"
+ tenet_sect_empty_8_name:0 ""
+ tenet_sect_empty_8_desc:0 "选择新租户。"
+ tenet_sect_empty_9_name:0 ""
+ tenet_sect_empty_9_desc:0 "选择新租户。"
+ tenet_sect_empty_10_name:0 ""
+ tenet_sect_empty_10_desc:0 "选择新租户。"
+ tenet_sect_empty_11_name:0 ""
+ tenet_sect_empty_11_desc:0 "选择新租户。"
+ tenet_sect_empty_12_name:0 ""
+ tenet_sect_empty_12_desc:0 "选择新租户。"
+ tenet_sect_empty_13_name:0 ""
+ tenet_sect_empty_13_desc:0 "选择新租户。"
+ tenet_sect_empty_14_name:0 ""
+ tenet_sect_empty_14_desc:0 "选择新租户。"
+ tenet_sect_empty_15_name:0 ""
+ tenet_sect_empty_15_desc:0 "选择新租户。"
+ tenet_sect_empty_16_name:0 ""
+ tenet_sect_empty_16_desc:0 "选择新租户。"
+ tenet_sect_empty_17_name:0 ""
+ tenet_sect_empty_17_desc:0 "选择新租户。"
+
+ #######################
+ ## BREAKTHROUGH DECISIONS
+ #######################
+
+ attempt_qi_gathering_breakthrough_decision:0 "突破：气聚集"
+ attempt_qi_gathering_breakthrough_decision_desc:0 "尝试从凡人界突破到[GetTrait('cultivation_qi_gathering').GetName(GetNullCharacter)]领域。"
+ attempt_qi_gathering_breakthrough_decision_tooltip:0 "你已经准备好尝试突破气聚境界。"
+ attempt_qi_gathering_breakthrough_confirm:0 "尝试突破"
+ can_attempt_qi_gathering_breakthrough:0 "突破：气聚集增益"
+
+ attempt_qi_refining_breakthrough_decision:0 "突破：气精炼"
+ attempt_qi_refining_breakthrough_decision_desc:0 "试图突破[GetTrait('cultivation_qi_gathering').GetName(GetNullCharacter)] 到 [GetTrait('cultivation_qi_refining').GetName(GetNullCharacter)]领域。"
+ attempt_qi_refining_breakthrough_decision_tooltip:0 "你已准备好尝试突破。[GetTrait('cultivation_qi_refining').GetName(GetNullCharacter)]领域。"
+ attempt_qi_refining_breakthrough_confirm:0 "尝试突破"
+ can_attempt_qi_refining_breakthrough:0 "突破：精气特长"
+
+ attempt_qi_building_breakthrough_decision:0 "突破：气建筑"
+ attempt_qi_building_breakthrough_decision_desc:0 "试图突破[GetTrait('cultivation_qi_refining').GetName(GetNullCharacter)] 到 [GetTrait('cultivation_qi_building').GetName(GetNullCharacter)]领域。"
+ attempt_qi_building_breakthrough_decision_tooltip:0 "你已经准备好尝试突破气功建造的瓶颈。"
+ attempt_qi_building_breakthrough_confirm:0 "尝试突破"
+ can_attempt_qi_building_breakthrough:0 "突破：气建筑特权"
+
+ attempt_core_formation_breakthrough_decision:0 "突破：核心形成"
+ attempt_core_formation_breakthrough_decision_desc:0 "试图突破[GetTrait('cultivation_qi_building').GetName(GetNullCharacter)] 到 [GetTrait('cultivation_core_formation').GetName(GetNullCharacter)]领域。"
+ attempt_core_formation_breakthrough_decision_tooltip:0 "你已准备好尝试突破。[GetTrait('cultivation_core_formation').GetName(GetNullCharacter)]领域。"
+ attempt_core_formation_breakthrough_confirm:0 "尝试突破"
+ can_attempt_core_formation_breakthrough:0 "突破：气核心形成特权"
+
+ attempt_nascent_soul_breakthrough_decision:0 "突破：初生的灵魂"
+ attempt_nascent_soul_breakthrough_decision_desc:0 "试图突破[GetTrait('cultivation_core_formation').GetName(GetNullCharacter)] 到 [GetTrait('cultivation_nascent_soul').GetName(GetNullCharacter)]领域。"
+ attempt_nascent_soul_breakthrough_decision_tooltip:0 "你已经准备好尝试突破到初生之魂的境界。"
+ attempt_nascent_soul_breakthrough_confirm:0 "尝试突破"
+ can_attempt_nascent_soul_breakthrough:0 "突破：气元之魂特长"
+
+ attempt_heavenly_being_breakthrough_decision:0 "突破：天上的存在"
+ attempt_heavenly_being_breakthrough_decision_desc:0 "试图突破[GetTrait('cultivation_nascent_soul').GetName(GetNullCharacter)] 到 [GetTrait('cultivation_heavenly_being').GetName(GetNullCharacter)]领域。"
+ attempt_heavenly_being_breakthrough_decision_tooltip:0 "你已准备好尝试突破。[GetTrait('cultivation_heavenly_being').GetName(GetNullCharacter)]领域。"
+ attempt_heavenly_being_breakthrough_confirm:0 "尝试突破"
+ can_attempt_heavenly_being_breakthrough:0 "突破：天界存在特权"
+
+ attempt_four_axis_breakthrough_decision:0 "突破：四轴"
+ attempt_four_axis_breakthrough_decision_desc:0 "试图突破[GetTrait('cultivation_heavenly_being').GetName(GetNullCharacter)] 到 [GetTrait('cultivation_four_axis').GetName(GetNullCharacter)]领域。"
+ attempt_four_axis_breakthrough_decision_tooltip:0 "你已准备好尝试突破。[GetTrait('cultivation_four_axis').GetName(GetNullCharacter)]领域。"
+ attempt_four_axis_breakthrough_confirm:0 "尝试突破"
+ can_attempt_four_axis_breakthrough:0 "突破：四轴优势"
+
+ attempt_integration_breakthrough_decision:0 "突破：整合"
+ attempt_integration_breakthrough_decision_desc:0 "试图突破[GetTrait('cultivation_four_axis').GetName(GetNullCharacter)] 到 [GetTrait('cultivation_integration').GetName(GetNullCharacter)]领域。"
+ attempt_integration_breakthrough_decision_tooltip:0 "你已准备好尝试突破。[GetTrait('cultivation_integration').GetName(GetNullCharacter)]领域。"
+ attempt_integration_breakthrough_confirm:0 "尝试突破"
+ can_attempt_integration_breakthrough:0 "突破：整合优势"
+
+ attempt_star_shattering_breakthrough_decision:0 "突破：星辰破碎"
+ attempt_star_shattering_breakthrough_decision_desc:0 "试图突破[GetTrait('cultivation_integration').GetName(GetNullCharacter)] 到 [GetTrait('cultivation_star_shattering').GetName(GetNullCharacter)]领域。"
+ attempt_star_shattering_breakthrough_decision_tooltip:0 "你已准备好尝试突破。[GetTrait('cultivation_star_shattering').GetName(GetNullCharacter)]领域。"
+ attempt_star_shattering_breakthrough_confirm:0 "尝试突破"
+ can_attempt_star_shattering_breakthrough:0 "突破：星辰破碎特长"
+
+ attempt_sacred_vessel_breakthrough_decision:0 "突破：圣器"
+ attempt_sacred_vessel_breakthrough_decision_desc:0 "试图突破[GetTrait('cultivation_star_shattering').GetName(GetNullCharacter)] 到 [GetTrait('cultivation_sacred_vessel').GetName(GetNullCharacter)]领域。"
+ attempt_sacred_vessel_breakthrough_decision_tooltip:0 "你已准备好尝试突破。[GetTrait('cultivation_sacred_vessel').GetName(GetNullCharacter)]."
+ attempt_sacred_vessel_breakthrough_confirm:0 "尝试突破"
+ can_attempt_sacred_vessel_breakthrough:0 "突破：圣器特权"
+
+ attempt_entering_nirvana_breakthrough_decision:0 "突破：进入涅槃"
+ attempt_entering_nirvana_breakthrough_decision_desc:0 "试图突破[GetTrait('cultivation_sacred_vessel').GetName(GetNullCharacter)] 到 [GetTrait('cultivation_entering_nirvana').GetName(GetNullCharacter)]领域。"
+ attempt_entering_nirvana_breakthrough_decision_tooltip:0 "你已准备好尝试突破。[GetTrait('cultivation_entering_nirvana').GetName(GetNullCharacter)]领域。"
+ attempt_entering_nirvana_breakthrough_confirm:0 "尝试突破"
+ can_attempt_entering_nirvana_breakthrough:0 "突破：进入涅槃特权"
+
+ attempt_true_immortal_breakthrough_decision:0 "突破：真正的不朽"
+ attempt_true_immortal_breakthrough_decision_desc:0 "试图突破[GetTrait('cultivation_entering_nirvana').GetName(GetNullCharacter)] 到 [GetTrait('cultivation_true_immortal').GetName(GetNullCharacter)]领域。"
+ attempt_true_immortal_breakthrough_decision_tooltip:0 "你已准备好尝试突破。[GetTrait('cultivation_true_immortal').GetName(GetNullCharacter)]领域。"
+ attempt_true_immortal_breakthrough_confirm:0 "尝试突破"
+ can_attempt_true_immortal_breakthrough:0 "突破：真正的不朽者特长"
+
+ #######################
+ ## BREAKTHROUGH EVENTS - MAIN CHOICES
+ #######################
+
+ # Qi Gathering (1000-1002)
+ cultivation_breakthrough.1000.t:0 "气聚集突破"
+ cultivation_breakthrough.1000.desc:0 "你静坐冥想，聚集周围的灵性能量。这是决胜时刻——你能否突破到聚气境界？"
+ cultivation_breakthrough.1000.attempt:0 "现在就尝试突破"
+ cultivation_breakthrough.1000.wait:0 "等待更好的机会"
+ cultivation_breakthrough.1000.s_tt:0 "#high Success:#！上升到[GetTrait('cultivation_qi_gathering').GetName(GetNullCharacter)]领域！"
+ cultivation_breakthrough.1000.f_tt:0 "#低故障率:#! +15[stress|E]， 获得 [GetModifier('failed_breakthrough_attempt').GetNameWithTooltip]3个月"
+
+ cultivation_breakthrough.1001.t:0 "突破性成功！"
+ cultivation_breakthrough.1001.desc:0 "一股强大的精神能量涌入你的身体！当你踏入其中的那一刻，你的肉身破碎了。[GetTrait('cultivation_qi_gathering').GetName(GetNullCharacter)]境界。世界似乎更加明亮，你的感官更加敏锐——你已经迈出了通往永生的第一步！"
+ cultivation_breakthrough.1001.a:0 "我突破了！"
+
+ cultivation_breakthrough.1002.t:0 "突破失败"
+ cultivation_breakthrough.1002.desc:0 "气从你指间溜走，如同水从指缝间流过。你的根基摇晃，但依然稳固。这次你失败了，但恢复之后你可以再次尝试。"
+ cultivation_breakthrough.1002.a:0 "我需要做更多准备……"
+
+ # Qi Refining (1100-1102)
+ cultivation_breakthrough.1100.t:0 "气精炼突破"
+ cultivation_breakthrough.1100.desc:0 "你体内聚集的真气翻涌涌动，准备被提炼成更加纯净的形态。下一个境界在等待着你——但难度也会随之增加。"
+ cultivation_breakthrough.1100.attempt:0 "现在就尝试突破"
+ cultivation_breakthrough.1100.wait:0 "等待更好的机会"
+ cultivation_breakthrough.1100.s_tt:0 "#high Success:#！上升到[GetTrait('cultivation_qi_refining').GetName(GetNullCharacter)]领域！"
+ cultivation_breakthrough.1100.f_tt:0 "#低故障率：#! +20[stress|E]， 获得 [GetModifier('failed_breakthrough_attempt').GetNameWithTooltip]3个月"
+
+ cultivation_breakthrough.1101.t:0 "精炼成功！"
+ cultivation_breakthrough.1101.desc:0 "你的气发生了转变，变得更加纯净、更加强大！你已经进入了……[GetTrait('cultivation_qi_refining').GetName(GetNullCharacter)]境界。如今，每一次呼吸都吸入精炼的精神能量。"
+ cultivation_breakthrough.1101.a:0 "我的气已经精炼了！"
+
+ cultivation_breakthrough.1102.t:0 "炼气失败"
+ cultivation_breakthrough.1102.desc:0 "精炼过程出了差错。你的气没有改变，但你感觉到了哪里出了问题。下次一定不一样。"
+ cultivation_breakthrough.1102.a:0 "我再试一次……"
+
+ # Qi Building (1200-1202)
+ cultivation_breakthrough.1200.t:0 "气建筑突破"
+ cultivation_breakthrough.1200.desc:0 "你精炼的真气需要结构。你必须为结核打下稳固的基础——这是修炼过程中至关重要的一步。"
+ cultivation_breakthrough.1200.attempt:0 "现在就尝试突破"
+ cultivation_breakthrough.1200.wait:0 "等待更好的机会"
+ cultivation_breakthrough.1200.s_tt:0 "#high Success:#！上升到[GetTrait('cultivation_qi_building').GetName(GetNullCharacter)]领域！"
+ cultivation_breakthrough.1200.f_tt:0 "#低故障率:#! +25[stress|E]， 获得 [GetModifier('failed_breakthrough_attempt').GetNameWithTooltip]3个月"
+
+ cultivation_breakthrough.1201.t:0 "气功助你成功！"
+ cultivation_breakthrough.1201.desc:0 "你的气根稳固了！一砖一瓦，层层夯实，你为未来的金刚心打下了坚实的基础。[GetTrait('cultivation_qi_building').GetName(GetNullCharacter)]这片土地是你的！"
+ cultivation_breakthrough.1201.a:0 "我的地基很牢固！"
+
+ cultivation_breakthrough.1202.t:0 "齐氏大厦倒塌"
+ cultivation_breakthrough.1202.desc:0 "你的气结构出现了裂缝，根基无法稳固。你必须更加努力学习，才能再次尝试。"
+ cultivation_breakthrough.1202.a:0 "继续学习……"
+
+ # Core Formation (1300-1302)
+ cultivation_breakthrough.1300.t:0 "核心形成突破"
+ cultivation_breakthrough.1300.desc:0 "现在正是将你的气凝聚成金核的时刻。这才是真正长生不老的开始！成功意味着超越死亡本身。"
+ cultivation_breakthrough.1300.attempt:0 "现在就尝试突破"
+ cultivation_breakthrough.1300.wait:0 "等待更好的机会"
+ cultivation_breakthrough.1300.s_tt:0 "#high Success:#！上升到[GetTrait('cultivation_core_formation').GetName(GetNullCharacter)]领域！"
+ cultivation_breakthrough.1300.f_tt:0 "#低故障率：#! +30[stress|E]， 获得 [GetModifier('failed_breakthrough_attempt').GetNameWithTooltip]3个月"
+
+ cultivation_breakthrough.1301.t:0 "核心形成成功！"
+ cultivation_breakthrough.1301.desc:0 "一道耀眼的金光从你的丹田迸发而出！你的真气凝聚成一个完美的金核，散发出强大的力量。你已不再是凡人——通往永生的道路已在你面前敞开！"
+ cultivation_breakthrough.1301.a:0 "黄金核心形成！"
+
+ cultivation_breakthrough.1302.t:0 "核心形成失败"
+ cultivation_breakthrough.1302.desc:0 "气无法凝聚，你的核心依然未成形。这是一个难以逾越的障碍——许多修士都在此停留数十年之久。但你还会再试一次。"
+ cultivation_breakthrough.1302.a:0 "瓶颈依然存在……"
+
+ # Nascent Soul (1400-1402)
+ cultivation_breakthrough.1400.t:0 "初生灵魂的突破"
+ cultivation_breakthrough.1400.desc:0 "你那金子般的核心开始出现裂痕……这不是失败，而是转变！一个新生的灵魂将从中诞生！"
+ cultivation_breakthrough.1400.attempt:0 "现在就尝试突破"
+ cultivation_breakthrough.1400.wait:0 "等待更好的机会"
+ cultivation_breakthrough.1400.s_tt:0 "#high Success:#！上升到[GetTrait('cultivation_nascent_soul').GetName(GetNullCharacter)]领域！"
+ cultivation_breakthrough.1400.f_tt:0 "#低故障率:#! +35[stress|E]， 获得 [GetModifier('failed_breakthrough_attempt').GetNameWithTooltip]3个月"
+
+ cultivation_breakthrough.1401.t:0 "初生灵魂的成功！"
+ cultivation_breakthrough.1401.desc:0 "你的金刚核心破碎，从中诞生出一个微缩版的你——你的新生灵魂！即使你的肉体消亡，你的灵魂也能永存。真正的永生近在咫尺！"
+ cultivation_breakthrough.1401.a:0 "我的灵魂诞生了！"
+
+ cultivation_breakthrough.1402.t:0 "初生的灵魂失败了"
+ cultivation_breakthrough.1402.desc:0 "转变失败了。你的本质完好无损，却一成不变。初生的灵魂拒绝显现。"
+ cultivation_breakthrough.1402.a:0 "还没有..."
+
+ # Heavenly Being (1500-1502)
+ cultivation_breakthrough.1500.t:0 "天界突破"
+ cultivation_breakthrough.1500.desc:0 "超越尘世，升华为天界！你那初生的灵魂渴望蜕变。"
+ cultivation_breakthrough.1500.attempt:0 "现在就尝试突破"
+ cultivation_breakthrough.1500.wait:0 "等待更好的机会"
+ cultivation_breakthrough.1500.s_tt:0 "#high Success:#！上升到[GetTrait('cultivation_heavenly_beingg').GetName(GetNullCharacter)]领域！"
+ cultivation_breakthrough.1500.f_tt:0 "#低故障率：#! +40[stress|E]， 获得 [GetModifier('failed_breakthrough_attempt').GetNameWithTooltip]3个月"
+
+ cultivation_breakthrough.1501.t:0 "天赐成功！"
+ cultivation_breakthrough.1501.desc:0 "你新生的灵魂升华了！你不再受凡人法则的束缚。连天界都认可你的存在！"
+ cultivation_breakthrough.1501.a:0 "我升天了！"
+
+ cultivation_breakthrough.1502.t:0 "天上的存在失败了"
+ cultivation_breakthrough.1502.desc:0 "天谴与你为敌，屏障坚不可摧。"
+ cultivation_breakthrough.1502.a:0 "天涯海角阻挡了我的去路……"
+
+ # Four-Axis (1600-1602)
+ cultivation_breakthrough.1600.t:0 "四轴突破"
+ cultivation_breakthrough.1600.desc:0 "掌握四大基本力量，超越天际！"
+ cultivation_breakthrough.1600.attempt:0 "现在就尝试突破"
+ cultivation_breakthrough.1600.wait:0 "等待更好的机会"
+ cultivation_breakthrough.1600.s_tt:0 "#high Success:#！上升到[GetTrait('cultivation_four_axis').GetName(GetNullCharacter)]领域！"
+ cultivation_breakthrough.1600.f_tt:0 "#低故障率:#! +45[stress|E]， 获得 [GetModifier('failed_breakthrough_attempt').GetNameWithTooltip]3个月"
+
+ cultivation_breakthrough.1601.t:0 "四轴成功！"
+ cultivation_breakthrough.1601.desc:0 "四轴齐备！空间、时间、物质、能量——全都臣服于你的意志！"
+ cultivation_breakthrough.1601.a:0 "这些力量是我的！"
+
+ cultivation_breakthrough.1602.t:0 "四轴失效"
+ cultivation_breakthrough.1602.desc:0 "这些力量仍然超出你的掌控。"
+ cultivation_breakthrough.1602.a:0 "不够强……"
+
+ # Integration (1700-1702)
+ cultivation_breakthrough.1700.t:0 "整合突破"
+ cultivation_breakthrough.1700.desc:0 "将你所有的修炼心得融会贯通，达到完美和谐！"
+ cultivation_breakthrough.1700.attempt:0 "现在就尝试突破"
+ cultivation_breakthrough.1700.wait:0 "等待更好的机会"
+ cultivation_breakthrough.1700.s_tt:0 "#high Success:#！上升到[GetTrait('cultivation_integration').GetName(GetNullCharacter)]领域！"
+ cultivation_breakthrough.1700.f_tt:0 "#低故障率：#! +50[stress|E]， 获得 [GetModifier('failed_breakthrough_attempt').GetNameWithTooltip]3个月"
+
+ cultivation_breakthrough.1701.t:0 "集成成功！"
+ cultivation_breakthrough.1701.desc:0 "完美融合！您种植的各个方面都融为一体！"
+ cultivation_breakthrough.1701.a:0 "实现统一！"
+
+ cultivation_breakthrough.1702.t:0 "集成失败"
+ cultivation_breakthrough.1702.desc:0 "碎片无法拼合。你的修炼依然支离破碎。"
+ cultivation_breakthrough.1702.a:0 "仍然支离破碎……"
+
+ # Star Shattering (1800-1802)
+ cultivation_breakthrough.1800.t:0 "星辰破碎的突破"
+ cultivation_breakthrough.1800.desc:0 "只需一个手势，即可获得粉碎星辰的力量！"
+ cultivation_breakthrough.1800.attempt:0 "现在就尝试突破"
+ cultivation_breakthrough.1800.wait:0 "等待更好的机会"
+ cultivation_breakthrough.1800.s_tt:0 "#high Success:#！上升到[GetTrait('cultivation_star_shattering').GetName(GetNullCharacter)]领域！"
+ cultivation_breakthrough.1800.f_tt:0 "#低故障率:#! +55[stress|E]， 获得 [GetModifier('failed_breakthrough_attempt').GetNameWithTooltip]3个月"
+
+ cultivation_breakthrough.1801.t:0 "惊天动地的成功！"
+ cultivation_breakthrough.1801.desc:0 "你的力量向外爆发！群星在你面前颤抖！"
+ cultivation_breakthrough.1801.a:0 "连星星都要向我俯首称臣！"
+
+ cultivation_breakthrough.1802.t:0 "星辰破碎失败"
+ cultivation_breakthrough.1802.desc:0 "星辰依然遥不可及。"
+ cultivation_breakthrough.1802.a:0 "还没有..."
+
+ # Sacred Vessel (1900-1902)
+ cultivation_breakthrough.1900.t:0 "圣器突破"
+ cultivation_breakthrough.1900.desc:0 "将你的身体转化为蕴含无限力量的神圣容器！"
+ cultivation_breakthrough.1900.attempt:0 "现在就尝试突破"
+ cultivation_breakthrough.1900.wait:0 "等待更好的机会"
+ cultivation_breakthrough.1900.s_tt:0 "#high Success:#！上升到[GetTrait('cultivation_sacred_vessel').GetName(GetNullCharacter)]领域！"
+ cultivation_breakthrough.1900.f_tt:0 "#低故障率：#! +60[stress|E]， 获得 [GetModifier('failed_breakthrough_attempt').GetNameWithTooltip]3个月"
+
+ cultivation_breakthrough.1901.t:0 "圣器成功！"
+ cultivation_breakthrough.1901.desc:0 "你的身体正在蜕变！你现在是一个蕴含无限潜能的神圣容器！"
+ cultivation_breakthrough.1901.a:0 "我的身体太完美了！"
+
+ cultivation_breakthrough.1902.t:0 "圣器失效"
+ cultivation_breakthrough.1902.desc:0 "转变失败。你的肉身依然存在。"
+ cultivation_breakthrough.1902.a:0 "终究是凡人……"
+
+ # Entering Nirvana (2000-2002)
+ cultivation_breakthrough.2000.t:0 "进入涅槃突破"
+ cultivation_breakthrough.2000.desc:0 "通往真正超脱的最后一步。你愿意进入涅槃吗？"
+ cultivation_breakthrough.2000.attempt:0 "现在就尝试突破"
+ cultivation_breakthrough.2000.wait:0 "等待更好的机会"
+ cultivation_breakthrough.2000.s_tt:0 "#high Success:#！上升到[GetTrait('cultivation_entering_nirvana').GetName(GetNullCharacter)]领域！"
+ cultivation_breakthrough.2000.f_tt:0 "#低故障率:#! +65[stress|E]， 获得 [GetModifier('failed_breakthrough_attempt').GetNameWithTooltip]3个月"
+
+ cultivation_breakthrough.2001.t:0 "迈向成功的巅峰！"
+ cultivation_breakthrough.2001.desc:0 "你已步入涅槃！轮回已断！真正的超脱近在眼前！"
+ cultivation_breakthrough.2001.a:0 "我进入涅槃！"
+
+ cultivation_breakthrough.2002.t:0 "进入涅槃失败"
+ cultivation_breakthrough.2002.desc:0 "涅槃之路依然关闭。还差最后一步。"
+ cultivation_breakthrough.2002.a:0 "最后的障碍……"
+
+ # True Immortal (2100-2102)
+ cultivation_breakthrough.2100.t:0 "真正的不朽突破"
+ cultivation_breakthrough.2100.desc:0 "终极蜕变即将到来。涅槃之后是真正的永生——永恒存在，不变不灭。这才是修炼的巅峰！"
+ cultivation_breakthrough.2100.attempt:0 "现在就尝试突破"
+ cultivation_breakthrough.2100.wait:0 "等待更好的机会"
+ cultivation_breakthrough.2100.s_tt:0 "#high Success:#！上升到[GetTrait('cultivation_true_immortal').GetName(GetNullCharacter)]领域！"
+ cultivation_breakthrough.2100.f_tt:0 "#低故障率：#! +70[stress|E]， 获得 [GetModifier('failed_breakthrough_attempt').GetNameWithTooltip]3个月"
+
+ cultivation_breakthrough.2101.t:0 "真正的不朽成功！"
+ cultivation_breakthrough.2101.desc:0 "你超越了凡人的一切限制！宇宙本身也承认你的存在，你是真正的不朽者。死亡毫无意义。时间也无法束缚你。你是永恒的！"
+ cultivation_breakthrough.2101.a:0 "我是永生的！"
+
+ cultivation_breakthrough.2102.t:0 "真不朽失败"
+ cultivation_breakthrough.2102.desc:0 "最后的屏障依然存在。即使是涅槃也无法突破真正的永生。但你会坚持下去。"
+ cultivation_breakthrough.2102.a:0 "一天..."
+
+ contemplating_breakthrough:0 "思考突破"
+ contemplating_breakthrough_desc:0 "陷入沉思，准备进行突破性尝试。"
+
+ failed_breakthrough_attempt:0 "突破失败"
+ failed_breakthrough_attempt_desc:0 "仍在从突破失败的阴影中恢复。基础尚不稳固。"
+
+ #######################
+ ## BREAKTHROUGH MODIFIERS
+ #######################
+
+
+
+ #######################
+ ## CULTIVATION PATH TENETS
+ #######################
+
+ # Orthodox Cultivation
+ tenet_orthodox_cultivation:0 "正统教养"
+ tenet_orthodox_cultivation_desc:0 "此宗派奉行正道：严守戒律，恪守因果报应，坚持师徒正统，坦诚面对冲突。其弟子在江湖中珍视荣誉、克制与合法性。"
+ tenet_orthodox_cultivation_name:0 "正统之路"
+
+ # Unorthodox Cultivation
+ tenet_unorthodox_cultivation:0 "非正统的耕作方式"
+ tenet_unorthodox_cultivation_desc:0 "这个教派追求非传统的继承方式和非常规的做法，而这些做法为正统长老所谴责。他们本身并非邪恶，但他们重视结果、创新和抓住机会取得突破。"
+ tenet_unorthodox_cultivation_name:0 "非正统之路"
+
+ # Demonic Cultivation
+ tenet_demonic_cultivation:0 "魔道修炼"
+ tenet_demonic_cultivation_desc:0 "这个教派信奉禁忌的吞噬、献祭和邪恶炼化之术。权力并非与生俱来，而是靠夺取；恐惧是一种资源；每一次突破都可能带来更深的业力腐蚀。"
+ tenet_demonic_cultivation_name:0 "恶魔之路"
+
+ # Vagrant Cultivation
+ tenet_vagrant_cultivation:0 "流浪栽培"
+ tenet_vagrant_cultivation_desc:0 "这个宗派奉行游方之道，融合了多种传承的碎片，却不拘泥于任何单一的正统教义。其修士凭借适应能力、决斗技巧和来之不易的实战经验生存下来。"
+ tenet_vagrant_cultivation_name:0 "流浪之路"
+
+ #######################
+ ## CULTIVATION HUD
+ #######################
+
+ CULTIVATION_WINDOW_TITLE:0 "栽培"
+ CULTIVATION_WINDOW_TOOLTIP:0 "开放栽培窗口"
+ CULTIVATION_WINDOW_CONTENT:0 "这是你的栽培窗口期。\n\n您可以在这里添加内容！"
+
+ # Partner Selection
+ NO_LEFT_PARTNER:0 "没有左翼伙伴"
+ NO_RIGHT_PARTNER:0 "没有合适的伴侣"
+ SELECT_LEFT_PARTNER:0 "选择左侧合伙人"
+ SELECT_RIGHT_PARTNER:0 "选择合适的合作伙伴"
+ REMOVE_PARTNER:0 "移除合作伙伴"
+
+ SELECT_LEFT_PARTNER_TOOLTIP:0 "选择一名种植者作为你的左侧双耕伙伴"
+ SELECT_RIGHT_PARTNER_TOOLTIP:0 "选择合适的种植者作为您的双作伙伴"
+
+ # Interactions
+ cultivation_select_left_partner_interaction:0 "选择左侧耕耘伙伴"
+ cultivation_select_left_partner_interaction_desc:0 "选择这位种植者作为你左侧的双耕伙伴。他们将出现在你的种植界面中。"
+
+ cultivation_select_right_partner_interaction:0 "选择合适的栽培伙伴"
+ cultivation_select_right_partner_interaction_desc:0 "选择这位种植者作为你的双耕伙伴。他们将出现在你的种植窗口中。"
+
+ CULTIVATION_PARTNER_SELECTED_NOTIFICATION:0 "选定培育伙伴"
+ find_cultivation_left_partner_desc:0 "选择左侧双栽伙伴。"
+ CULTIVATION_LEFT_PARTNER_SELECTED:0 "已选择左侧伙伴。"
+ find_cultivation_right_partner_desc:0 "选择右侧双栽伙伴。"
+ CULTIVATION_RIGHT_PARTNER_SELECTED:0 "找到了合适的合作伙伴。"
+ dual_cultivation_interaction:0 "双修"
+ dual_cultivation_interaction_desc:0 "共同修炼，以求阴阳和谐。"
+ visit_mount_hua_sect_decision_tooltip:0 "前往华山宗。"
+ visit_heavenly_sword_pavilion_decision_tooltip:0 "前往天剑阁。"
+ visit_ten_thousand_swords_valley_decision_tooltip:0 "前往万剑谷。"
+ visit_violet_thunder_blade_sect_decision_tooltip:0 "前往紫雷刃宗。"
+ visit_wudang_sect_decision_tooltip:0 "前往武当派。"
+ trait_1_xp_tt:0 "获得特质经验。"
+ trait_1_xp_desc:0 "你的第一个特质会获得经验。"
+ trait_2_xp_tt:0 "获得特质经验。"
+ trait_2_xp_desc:0 "你的第二个特质会获得经验。"
+ trait_3_xp_tt:0 "获得特质经验。"
+ trait_3_xp_desc:0 "你的第三项特质会获得经验。"
+ trait_4_xp_tt:0 "获得特质经验。"
+ trait_4_xp_desc:0 "你的第四项特质会获得经验。"
+ trait_5_xp_tt:0 "获得特质经验。"
+ trait_5_xp_desc:0 "你的第五项特质获得经验。"
+ trait_6_xp_tt:0 "获得特质经验。"
+ trait_6_xp_desc:0 "你的第六项特质获得经验。"
+
+ CULTIVATION_MARRIAGE_BLOCKED_MERIDIANS_TABOO:0 "经络阻塞是婚姻禁忌"
+ CULTIVATION_MARRIAGE_POOR_MERIDIANS_PENALTY:0 "贫子午线基金会"
+ CULTIVATION_MARRIAGE_STRONG_MERIDIANS_PRIORITY:0 "优先考虑强健的经络"
+ CULTIVATION_MARRIAGE_HEAVENLY_MERIDIANS_PRIORITY:0 "寻找天子嗣"
+ CULTIVATION_MARRIAGE_HEAVENLY_MERIDIAN_PURITY:0 "天脉纯净标准"
+ fox_spirit_awakened:0 "觉醒的狐灵"
+ fox_spirit_awakened_desc:0 "这位修炼者精通狐妖之术，包括阴柔共鸣、魅惑和灵魂伪装欺骗。"
+ opinion_fox_spirit_orthodox_hate:0 "狐灵异端"
+ opinion_fox_spirit_order_hate:0 "占有禁忌"
+ opinion_fox_spirit_unorthodox_wary:0 "警惕狐妖术"
+ opinion_fox_spirit_vagrant_swing:0 "古怪的好奇心"
+ opinion_fox_spirit_demonic_ally:0 "狐灵盟友"
+ opinion_fox_spirit_yin_affinity:0 "阴灵共鸣"
+ opinion_fox_spirit_accepted_child:0 "接受了我的狐妖本性"
+ fox_spirit_disowned_child:0 "被遗弃的狐妖之子"
+ fox_spirit_disowned_child_desc:0 "觉醒为狐妖后被家人抛弃，这位修仙者在拥有强大灵力的同时，也背负着社会创伤。"
+ cultivation_ai.2261.t:0 "孩童觉醒为狐妖"
+ cultivation_ai.2261.desc:0 "[scope:fox_spirit_child_target.GetFirstName]已显现狐妖之性。你可以接纳此孩子进入你的血脉，也可以断绝关系并将其驱逐。"
+ cultivation_ai_2261_accept:0 "接纳这个孩子，给他/她提供庇护。"
+ cultivation_ai_2261_disown:0 "与它们断绝关系。我们家这一支系里没有狐狸精。"
+
+ beggar_sect:0 "乞丐教"
+ beggar_sect_adj:0 "乞丐教"
+ beggar_sect_adherent:0 "乞丐派弟子"
+ beggar_sect_adherent_plural:0 "乞丐派弟子"
+ beggar_sect_desc:0 "一个庞大的正统派网络，由游侠、侦察兵和参谋组成，他们维护着江湖的信息渠道和粗暴的司法。"
+ tang_clan:0 "唐氏家族"
+ tang_clan_adj:0 "唐"
+ tang_clan_adherent:0 "唐氏家族修士"
+ tang_clan_adherent_plural:0 "唐氏家族修士"
+ tang_clan_desc:0 "一个正统的毒药与机械流派，兼具隐蔽武器的实用主义和严格的内部纪律。"
+ emei_sword_sect:0 "峨眉派"
+ emei_sword_sect_adj:0 "峨眉"
+ emei_sword_sect_adherent:0 "峨眉山耕耘者"
+ emei_sword_sect_adherent_plural:0 "峨眉山种植者"
+ emei_sword_sect_desc:0 "以清晰、克制和精妙的刀法著称的正统山地剑流派。"
+
+ qingcheng_sect:0 "青城派"
+ qingcheng_sect_adj:0 "青城"
+ qingcheng_sect_adherent:0 "青城修士"
+ qingcheng_sect_adherent_plural:0 "青城修士"
+ qingcheng_sect_desc:0 "以敏捷的步法和实用的山地战术而闻名的正统剑术流派。"
+ kunlun_sect:0 "昆仑派"
+ kunlun_sect_adj:0 "昆仑"
+ kunlun_sect_adherent:0 "昆仑修士"
+ kunlun_sect_adherent_plural:0 "昆仑修士"
+ kunlun_sect_desc:0 "高地正统的神秘剑术传承和严苛的偏远修炼传统。"
+ kongtong_sect:0 "孔通派"
+ kongtong_sect_adj:0 "孔通"
+ kongtong_sect_adherent:0 "孔通耕耘机"
+ kongtong_sect_adherent_plural:0 "孔通种植者"
+ kongtong_sect_desc:0 "一个古老的正统教派，保留着严格的形式、层层叠叠的技法和严苛的殿堂传统。"
+ diancang_sect:0 "点苍派"
+ diancang_sect_adj:0 "点仓"
+ diancang_sect_adherent:0 "点苍修士"
+ diancang_sect_adherent_plural:0 "滇藏耕耘者"
+ diancang_sect_desc:0 "以优雅精准的刀法而闻名的正统山剑流派。"
+ heavenly_mandate_bureau:0 "天命局"
+ heavenly_mandate_bureau_adj:0 "天命"
+ heavenly_mandate_bureau_adherent:0 "天命修士"
+ heavenly_mandate_bureau_adherent_plural:0 "天命修士"
+ heavenly_mandate_bureau_desc:0 "一个受朝廷支持的正统教派，其任务是维护朝廷的合法性，并在汉族统治下稳定江湖。"
+ yin_yang_harmony_sect:0 "阴阳宗"
+ yin_yang_harmony_sect_adj:0 "阴阳"
+yin_yang_harmony_sect_adherent:0 "阴阳修炼器"
+yin_yang_harmony_sect_adherent_plural:0 "阴阳修炼者"
+yin_yang_harmony_sect_desc:0 "一个倾向魔道的双修派系，融合了诱惑手段、气功调和以及残酷的野心。"
+ jianghu_extinguish_noble_family_roots_interaction:0 "消灭贵族家族（根源）"
+ jianghu_extinguish_noble_family_roots_interaction_desc:0 "务必将这名被囚禁的贵族修士的血脉彻底铲除。如果目标是实力更强的囚犯，他们很有可能会逃脱。"
+ jianghu_extinguish_noble_family_spare_children_interaction:0 "灭亡贵族家族（留置子女）"
+ jianghu_extinguish_noble_family_spare_children_interaction_desc:0 "灭亡这位被囚禁的贵族修士的血脉，但饶恕孩童；只有成年人才会被处死。"
+ cultivation_breakthrough.9000.t:0 "传奇药丸共鸣"
+ cultivation_breakthrough.9000.desc:0 "传说中的突破丹药化作纯粹的道光，你的瓶颈毫不费力地被突破，你的境界必将稳步提升。"
+ cultivation_breakthrough.9000.a:0 "天也无法阻挡我的道路。"
+ cultivation_breakthrough_resource_cooldown:0 "灵石瓶颈"
+ cultivation_breakthrough_resource_cooldown_desc:0 "突破性准备工作消耗了稀缺的灵石。在资源恢复之前，进展将放缓。"
+
+ visit_heavenly_mandate_bureau:0 "天命局"
+ visit_heavenly_mandate_bureau_tooltip:0 "前往天命局寻求皇室支持的修炼指导。"
+ cultivation_sect_visit.1200.t:0 "天命局"
+ cultivation_sect_visit.1200.desc:0 "天命局的官员和修士法官在摆满玉匾和御旨的大殿中迎接你。"
+ cultivation_sect_join.1200.t:0 "加入天命局"
+ cultivation_sect_join.1200.desc:0 "局长将评估你的修为和政治纪律。你是否愿意接受天命的服役？"
+
+ visit_beggar_sect:0 "乞丐教"
+ visit_beggar_sect_tooltip:0 "前往乞丐教修行。"
+ cultivation_sect_visit.4250.t:0 "乞丐教"
+ cultivation_sect_visit.4250.desc:0 "你来到了乞丐教，教内的长老们会衡量你的天赋和意图。"
+ cultivation_sect_join.4250.t:0 "加入乞丐教"
+ cultivation_sect_join.4250.desc:0 "长老会评估你的修为和资源。你是否愿意加入乞丐派？"
+
+ visit_tang_clan:0 "唐氏家族"
+ visit_tang_clan_tooltip:0 "前往唐家，学习他们的修炼之道。"
+ cultivation_sect_visit.4251.t:0 "唐氏家族"
+ cultivation_sect_visit.4251.desc:0 "你来到唐氏家族，家族中的长者们会衡量你的才能和意图。"
+ cultivation_sect_join.4251.t:0 "加入唐氏家族"
+ cultivation_sect_join.4251.desc:0 "长老会评估你的修为和资源。你是否愿意加入唐家？"
+
+ visit_emei_sword_sect:0 "峨眉剑派"
+ visit_emei_sword_sect_tooltip:0 "前往峨眉剑宗，学习他们的修炼之道。"
+ cultivation_sect_visit.4252.t:0 "峨眉剑派"
+ cultivation_sect_visit.4252.desc:0 "你来到峨眉剑宗，那里的长老们会评判你的天赋和意图。"
+ cultivation_sect_join.4252.t:0 "加入峨眉剑派"
+ cultivation_sect_join.4252.desc:0 "长老会评估你的修为和资源。你是否愿意加入峨眉剑宗？"
+
+ visit_qingcheng_sect:0 "青城派"
+ visit_qingcheng_sect_tooltip:0 "前往青城宗，学习他们的修炼之道。"
+ cultivation_sect_visit.4253.t:0 "青城派"
+ cultivation_sect_visit.4253.desc:0 "你来到青城宗，宗内的长老们会衡量你的天赋和意图。"
+ cultivation_sect_join.4253.t:0 "加入青城宗"
+ cultivation_sect_join.4253.desc:0 "长老会评估你的修为和资源。你是否愿意加入青城宗？"
+
+ visit_kunlun_sect:0 "昆仑派"
+ visit_kunlun_sect_tooltip:0 "前往昆仑宗，学习他们的修炼之道。"
+ cultivation_sect_visit.4254.t:0 "昆仑派"
+ cultivation_sect_visit.4254.desc:0 "你来到昆仑宗，那里的长老们会衡量你的天赋和意图。"
+ cultivation_sect_join.4254.t:0 "加入昆仑派"
+ cultivation_sect_join.4254.desc:0 "长老会评估你的修为和资源。你是否愿意加入昆仑派？"
+
+ visit_kongtong_sect:0 "孔通派"
+ visit_kongtong_sect_tooltip:0 "前往孔通宗，学习他们的修行之道。"
+ cultivation_sect_visit.4255.t:0 "孔通派"
+ cultivation_sect_visit.4255.desc:0 "你来到孔通派，那里的长老们会衡量你的天赋和意图。"
+ cultivation_sect_join.4255.t:0 "加入孔通教"
+ cultivation_sect_join.4255.desc:0 "长老会评估你的修为和资源。你是否愿意加入空洞派？"
+
+ visit_diancang_sect:0 "点苍派"
+ visit_diancang_sect_tooltip:0 "前往点苍宗，学习他们的修炼之道。"
+ cultivation_sect_visit.4256.t:0 "点苍派"
+ cultivation_sect_visit.4256.desc:0 "你来到点苍宗，那里的长老们会衡量你的天赋和意图。"
+ cultivation_sect_join.4256.t:0 "加入点苍派"
+ cultivation_sect_join.4256.desc:0 "长老会评估你的修为和资源。你是否愿意加入点苍宗？"
+
+ visit_yin_yang_harmony_sect:0 "阴阳宗"
+ visit_yin_yang_harmony_sect_tooltip:0 "前往阴阳宗，学习他们的修炼之道。"
+ cultivation_sect_visit.4257.t:0 "阴阳宗"
+ cultivation_sect_visit.4257.desc:0 "你来到阴阳宗，那里的长老们会衡量你的天赋和意图。"
+ cultivation_sect_join.4257.t:0 "加入阴阳宗"
+ cultivation_sect_join.4257.desc:0 "长老会评估你的修为和资源。你是否愿意加入阴阳宗？"
+
+ request_teach_cultivation_interaction:0 "请求收为门徒"
+ request_teach_cultivation_interaction_desc:0 "要求 [recipient.GetShortUINameNoTooltip]收你为门徒"

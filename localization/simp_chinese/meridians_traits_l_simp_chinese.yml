@@ -1,0 +1,33 @@
+l_simp_chinese:
+ trait_poor_meridians:0 "阻塞的经络"
+ trait_poor_meridians_desc:0 "该人物的经络系统阻塞且脆弱，严重限制了气血运行和修炼效率。"
+ trait_poor_meridians_character_desc:0 "[ROOT.GetCharacter.GetFirstNameNoTooltip]他的经络受阻，导致他在道上的每一步都异常缓慢。"
+
+ trait_normal_meridians:0 "普通子午线"
+ trait_normal_meridians_desc:0 "该人物的经络稳定但不突出，足以进行常规的修炼。"
+ trait_normal_meridians_character_desc:0 "[ROOT.GetCharacter.GetFirstNameNoTooltip]拥有普通的经络，并以稳定的速度前进。"
+
+ trait_good_meridians:0 "精细经络"
+ trait_good_meridians_desc:0 "这个角色的经络自然清晰而富有弹性，能够更顺畅地精炼气，更快地领悟事物。"
+ trait_good_meridians_character_desc:0 "[ROOT.GetCharacter.GetFirstNameNoTooltip]拥有精细的经络，极大地促进了修炼的突破。"
+
+ trait_excellent_meridians:0 "灵性子午线"
+ trait_excellent_meridians_desc:0 "这个角色拥有罕见的灵性经脉，能够引导纯净而深邃的灵气。"
+ trait_excellent_meridians_character_desc:0 "[ROOT.GetCharacter.GetFirstNameNoTooltip]掌控着令宗门弟子艳羡的灵性经脉。"
+
+ trait_heavenly_meridians:0 "天经"
+ trait_heavenly_meridians_desc:0 "千载难逢的天赐经络体质，能够承载浩瀚的气场和深邃的道义。"
+ trait_heavenly_meridians_character_desc:0 "[ROOT.GetCharacter.GetFirstNameNoTooltip]承载着天经，是成就传奇的基石。"
+ trait_crippled_meridians:0 "破碎的子午线"
+ trait_crippled_meridians_desc:0 "这个角色的经络系统已被人为破坏；气无法再稳定地运行。"
+ trait_crippled_meridians_character_desc:0 "[ROOT.GetCharacter.GetFirstNameNoTooltip]经络已彻底断裂，无法修复，任何修炼之路都已断绝。"
+
+ poor_meridians_opinion_tooltip:0 "其他修炼者则认为这些阻塞的经络是严重的弱点。"
+ normal_meridians_opinion_tooltip:0 "普通的经络不会引起同辈人的敬畏。"
+ good_meridians_opinion_tooltip:0 "精妙的经脉在宗门中享有很高的声望。"
+ excellent_meridians_opinion_tooltip:0 "灵性经络令人敬畏，同时也需谨慎对待。"
+ heavenly_meridians_opinion_tooltip:0 "天经被尊为命运的化身。"
+ crippled_meridians_opinion_tooltip:0 "破碎的经络基础表明此人在精神上已经破碎。"
+ trait_active_meridians:0 "活跃经络"
+ trait_cultivation_realm:0 "修真领域"
+ OK:0 "好的"

@@ -1,0 +1,184 @@
+l_simp_chinese:
+ # ============================================================
+ # 500: THE OPENER
+ # ============================================================
+ iti_event.500.opening: "To [ROOT.Char.GetFirstNameNoTooltip], beneath Heaven,"
+ iti_event.500.desc: "This venerable one has received a jade slip bearing your aura. Within, an illusion depicts me in disgrace, slandering even my honored parents. Such audacity shakes the heavens. Surely this is a deviation of the heart—explain yourself before your karma ripens."
+ iti_event.500.a: "Let this venerable one enlighten the [iti_insult_ruler.GetDynastyName] on the Dao of humiliation."
+ iti_event.500.desc_family: "I know not what inner demons drove you to such provocation, but retract your words and sever this karmic entanglement, lest both our bloodlines suffer beneath Heaven. We share the same ancestral roots, after all."
+ iti_event.500.b: "This junior swears upon Heaven—it was not me!"
+ iti_event_500_reply_tt: "Karmic threads begin to intertwine..."
+ iti_event_500_disregard_tt: "You cast the matter aside like drifting dust."
+ iti_insult_escalation_tt: "Heavenly consequences may descend."
+
+ # ============================================================
+ # 1000 SERIES: THE INITIAL INSULT
+ # ============================================================
+ iti_event.1000.opening: "To the [ROOT.Char.Custom('InsultAdjective')] [ROOT.Char.GetTitledFirstName], an ant beneath Heaven,"
+
+ iti_event.1000.desc_standard: "You, a mere [ROOT.Char.Custom2('InsultNoun', ROOT.Char)]. All beneath Heaven knows your worth is no greater than that of a [ROOT.Char.Custom2('InsultNoun', ROOT.Char)]. A shameless, lecherous [ROOT.Char.Custom2('InsultNoun', ROOT.Char)]. I wonder how long such a creature can persist before being struck down by righteous retribution."
+ iti_event.1000.desc_rival: "Hatred. From the moment this seat beheld your [ROOT.Char.Custom('InsultAdjective')] face, a flame ignited within my dantian. Even if every grain beneath Heaven bore the word 'Hate,' it would not measure even a fraction of what I feel toward the [ROOT.Char.GetDynastyName]—toward you."
+ iti_event.1000.desc_family: "I always knew you were a [ROOT.Char.Custom('InsultAdjective')] disgrace, [ROOT.Char.GetFirstNameNoTooltip]. To think we share blood! Our ancestors surely rage in the underworld to see the [ROOT.Char.GetDynasty.GetBaseName] lineage tainted by such a [ROOT.Char.Custom('InsultAdjective')] [ROOT.Char.Custom2('InsultNoun', ROOT.Char)]. You are a stain upon our clan."
+ iti_event.1000.desc_negative_opinion: "It is a tragic comedy that a [ROOT.Char.Custom2('InsultNoun', ROOT.Char)] so utterly [ROOT.Char.Custom('InsultAdjective')] has been allowed to stand among the mighty. Fear not—Heaven has a way of cleansing such filth, and your time for retribution draws near, you [ROOT.Char.Custom('InsultAdjective')] [ROOT.Char.Custom2('InsultNoun', ROOT.Char)]."
+
+ iti_event.1000.a: "Hmph. Let us see how you respond to this."
+ iti_event.1000.a.tt: "You reply with a devastating insult, shaking their spirit. #high Your words cut like blades!#!"
+ iti_event.1000.b: "This trivial matter is beneath my notice."
+ iti_event.1000.b.tt: "You refuse to dignify the insult."
+
+ iti_event.1001.opening: "To my most... [ROOT.Char.Custom('InsultAdjective')] neighbor,"
+ iti_event.1001.desc: "A jade slip arrived today, foul in both scent and intent. Its aura alone offends. This one debates whether it is even worth reading."
+ iti_event.1001.a: "I will not lower myself to respond."
+
+ # ============================================================
+ # 3000 SERIES: THE RESPONSE
+ # ============================================================
+ iti_event.3000.opening: "To the [ROOT.Char.Custom2('InsultNoun', ROOT.Char)] [ROOT.Char.GetTitledFirstName],"
+ iti_event.3000.desc: "You dare speak thus to this venerable one, you insignificant [ROOT.Char.Custom2('InsultNoun', ROOT.Char)]? Know that I have stood at the peak of my domain and crushed countless foes. Your kind would not survive a single breath of my killing intent."
+ iti_event.3000.desc_dead: "The one you seek has already returned to the cycle of reincarnation. Their hatred perished with them."
+
+ iti_event.3000.a_lifestyle_diplomat: "To the [ROOT.Char.Custom('InsultAdjective')] [ROOT.Char.Custom2('InsultNoun', ROOT.Char)] [iti_insult_ruler.GetTitledFirstName]..."
+ iti_event.3000.a_lifestyle_general: "That [ROOT.Char.Custom2('InsultNoun', ROOT.Char)]. I must vent my killing intent before replying."
+ iti_event.3000.a_lifestyle_administrator: "Your lineage... reeks of decay."
+ iti_event.3000.a_lifestyle_schemer: "I will send something... appropriate along with my reply."
+ iti_event.3000.a_lifestyle_scholar: "Your ancestry is as laughable as your cultivation."
+
+ iti_event.3000.a.tt: "You craft a devastating verbal strike."
+ iti_event.3000.b: "Attempt to calm the storm."
+ iti_event.3000.b.tt: "You attempt to disperse the tension."
+ iti_event.3000.c: "Send them a 'gift'."
+ iti_event.3000.c.tt: "A humiliating offering is delivered."
+
+ # ============================================================
+ # 7000-8000 SERIES
+ # ============================================================
+ iti_event.7000.opening: "To the [ROOT.Char.Custom('InsultAdjective')] [ROOT.Char.Custom2('InsultNoun', ROOT.Char)] [ROOT.Char.GetTitledFirstName],"
+ iti_event.7000.desc: "I hate you. I hate you. I hate you. Your existence defies reason. You are nothing but a [ROOT.Char.Custom2('InsultNoun', ROOT.Char)], a [ROOT.Char.Custom('InsultAdjective')] aberration. May your lineage crumble to dust beneath Heaven."
+ iti_event.7000.a: "This is beneath me..."
+ iti_event.7000.a.tt: "You withdraw."
+ iti_event.7000.b: "You will regret provoking me."
+ iti_event.7000.b.tt: "You escalate further. #N Conflict deepens#!."
+
+ iti_event.8000.opening: "To the [ROOT.Char.Custom('InsultAdjective')] [ROOT.Char.Custom2('InsultNoun', ROOT.Char)] [ROOT.Char.GetTitledFirstName],"
+ iti_event.8000.desc: "This venerable one will waste no more time on a whelp like you. Crawl away while you still can. Whatever pride you cling to is meaningless beneath Heaven."
+ iti_event.8000.a: "So be it."
+ iti_event.8000.a.tt: "You feel relief."
+
+ # ============================================================
+ # 9000 SERIES
+ # ============================================================
+ iti_event.9000.opening: "To the [ROOT.Char.Custom('InsultAdjective')] [ROOT.Char.GetTitledFirstName],"
+ iti_event.9000.desc: "Your words amuse me.\n\nYou mistake restraint for weakness. One day, when you lie broken upon the earth, you will understand the price of your arrogance. My retribution will descend like heavenly thunder."
+ iti_event.9000.a: "This ends now. Prepare the army."
+ iti_event.9000.b: "This has gone too far... withdraw."
+ iti_event.9000.c: "We settle this with strength."
+
+ # ============================================================
+ # TRAVEL THUG EVENTS
+ # ============================================================
+ iti_travel_thug_event.3000.t: "Victory on the Road"
+ iti_travel_thug_event.3000.desc: "The dust settles as [traveling_victim.GetTitledFirstName] crawls across the ground, defeated. Their protectors have fled, and all they possess now belongs to me."
+ iti_travel_thug_event.3000.a: "Your wealth is mine by right of strength."
+ iti_travel_thug_event.3000.b: "Go… and spread word beneath Heaven of this venerable one’s might!"
+ # TOOLTIPS
+ iti_travel_thug_event.1000.a.tt: "You will attempt to rob [traveling_victim.GetTitledFirstName] of their possessions through force."
+ iti_mugging_win_tt: "You overwhelm the target and their guards with superior strength."
+ iti_mugging_loss_tt: "The target’s protectors repel you and force your retreat!"
+
+ # ============================================================
+ # INTERFACE & INTERACTIONS
+ # ============================================================
+ iti_insult_interaction: "Send a Provocation"
+ insult_interaction_desc: "Deliver a cutting insult infused with killing intent to a neighboring ruler. Beware—some answer words with steel."
+ send_insult_effect_tt: "You deliver a calculated provocation, ensuring karmic retaliation."
+ WAR_REPLY_TO_INSULT: "Clash of Pride"
+ WAR_REPLY_TO_INSULT_BASE: "Answer [DEFENDER.GetShortUIName]'s Provocation"
+ iti_reply_to_insult_cb: "Retribution for Insult"
+ iti_reply_to_insult_cb_desc: "A conflict born from wounded pride and escalating hostility between rulers."
+
+ # ============================================================
+ # TOOLTIPS & ERROR MESSAGES
+ # ============================================================
+ too_many_thugs_error: "You have already gathered the maximum number of enforcers (3) within your court."
+ iti_thug_limit_reached: "You cannot control more than three hired enforcers."
+ iti_thug_user_cooldown_tt: "You have not recently taught anyone a lesson."
+ iti_thug_victim_cooldown_tt: "[target.GetTitledFirstName] has not recently suffered retribution."
+ iti_duel_start_tt: "You will enter single combat. Your Prowess will decide your fate."
+ iti_duel_active_cooldown_tt: "The target has not recently been provoked or challenged."
+ iti_insult_cooldown_tt: "You have not issued a provocation recently."
+ iti_insult_no_retort_tt: "The target swallows the insult and remains silent."
+ iti_insult_retort_tt: "The target is enraged and may seek a duel to restore honor!"
+ iti_perk_bonus_tt: "A Job Done Right Perk"
+
+ # ============================================================
+ # OPINION MODIFIERS & MODIFIERS
+ # ============================================================
+ escalated_insult_opinion: "Subjected me to a grievous insult!"
+ insulted_interaction_opinion: "Sent me a humiliating message!"
+ iti_disregard_letter_opinion: "Handled the matter with restraint."
+ aggravated_insult_opinion: "You dared insult me?!"
+ rival_insult: "Provoked by my sworn rival"
+ humiliated_dynasty_opinion: "Brought shame upon our clan"
+ humiliated_dynasty_opinion_desc: "This character's petty feud and defeat have tarnished the honor of the entire lineage."
+ iti_thugs_failed_opinion: "Suspected of sending enforcers after me"
+ attempted_medieval_jumping_opinion: "Sent men to ambush me!"
+ suspected_involvement_opinion: "Strange figures lurk in my shadow..."
+ hired_thug_opinion: "I will crush your enemies for you."
+ iti_hired_muscle_modifier: "Hired Enforcers"
+ humiliated_by_knights_opinion: "Defeated and humiliated by warriors"
+
+ # ============================================================
+ # NOTIFICATIONS (TOASTS & BANNERS)
+ # ============================================================
+ iti_thug_exposed_message_title: "Word spreads that your men were behind the assault on [recipient.GetShortUIName]!"
+ iti_thug_brutal_message_title: "Your men delivered a merciless beating to [recipient.GetShortUIName]."
+ iti_thug_fail_toast_title: "Your men were defeated and forced to flee."
+ iti_thug_success_toast_title: "Your men carried out a crushing punishment on your behalf."
+
+ # ============================================================
+ # ARTIFACTS
+ # ============================================================
+ iti_thug_tooth_name: "Tooth of [iti_thug_victim.GetFirstNameNoTooltip]"
+ iti_thug_tooth_description: "A grim trophy taken from [iti_thug_victim.GetTitledFirstName] during a violent ambush. It stands as proof of dominance."
+ iti_thug_artifact_steal_chance_standard_tt: "Your men have seized something valuable from the target!"
+ iti_thug_event.1003.toast: "Your men returned with a brutal trophy."
+ iti_thug_event.1004.toast: "Your men brought back spoils from the ambush."
+
+ # ============================================================
+ # SECRETS & SCHEMES
+ # ============================================================
+ secret_thug_assault: "Covert Assault"
+ secret_thug_assault_type_desc: "This character secretly dispatched enforcers to carry out violence."
+ secret_thug_assault_desc: "Sent enforcers to punish [target.GetTitledFirstName]."
+ iti_secrets.1000.t: "A Dark Reputation"
+ iti_secrets.1000.desc: "As I cultivated my presence in silence, [councillor.GetTitledFirstName] approached with unease. 'My lord… word has spread. The realm whispers that you sent men to brutalize [victim.GetTitledFirstName]. Your name inspires… fear.'"
+ iti_secrets.1000.a: "Fear is a useful tool."
+ thuggery: "Covert Assault"
+ thuggery_scheme_desc: "Dispatch enforcers to deliver a brutal lesson."
+ thuggery_scheme_invalidated_title: "Assault Aborted"
+ thuggery_target_died: "There is no meaning in striking the dead."
+ thuggery_target_not_in_diplomatic_range: "The target has slipped beyond your reach."
+ thuggery_target_imprisoned: "The target is already confined. Another target may be wiser."
+ thuggery_scheme_success_desc: "Your enforcers instilled fear into the target."
+ thuggery_scheme_discovery_desc: "Rumors reach [target.GetTitledFirstName] that you are behind the plot!"
+ icon_scheme_thuggery: "Covert Assault"
+ thuggery_action: "Ambush"
+ thuggery_desc: "Have your enforcers intercept the target in darkness. Their suffering will be swift."
+ thuggery_no_thugs_left_tt: "You lack sufficient enforcers to proceed."
+ thuggery_desc_general: "Your agents shadow the target, awaiting the moment to strike."
+
+ # ============================================================
+ # SCHEME TOOLTIPS
+ # ============================================================
+ SCHEME_OWNER_PROWESS: "Your cultivation and physical strength"
+ SCHEME_TARGET_PROWESS: "[target.GetFirstNameNoTooltip]'s ability to resist"
+ SCHEME_TARGET_IS_RULER: "Target holds status and authority"
+ iti_extra_thugs_bonus_tt: "Additional enforcers bolster your strength"
+ iti_large_gang_bonus_tt: "A full force ensures overwhelming dominance"
+ SCHEME_HAS_MULTIPLE_THUGS: "Multiple enforcers are deployed."
+ SCHEME_HAS_FULL_GANG: "All enforcers are present."
+
+ iti_debug.0001.t: "Tooth Extraction"
+ iti_debug.0001.desc: "'Have you come to have a tooth removed?'\n\n 'Yes, my lord,' he replied."
+ iti_debug.0001.b: "Begin."
+ iti_debug.b.equipped_tt: "Pain has been removed."

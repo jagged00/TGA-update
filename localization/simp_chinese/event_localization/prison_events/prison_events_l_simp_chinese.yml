@@ -1,0 +1,145 @@
+l_simp_chinese:
+ prison.1001.t:0 "真相还是折磨"
+ prison.1001.start.desc:1 "我的白日梦被牢房门猛地推开的声音戛然而止。狱警的身影很熟悉，但……[actor.GetWomanMan]在他身后……哦。哦不。\n\n"
+ prison.1001.rack.desc:0 "[actor.GetTitledFirstName] straps me to the rack [actor.GetHerselfHimself], a pleased smirk on [actor.GetHerHis] lips. "I trust you have heard the others. The screams, the snapping of bones and sinews."
+ prison.1001.whip.desc:0 "[actor.GetTitledFirstName] twirls the whip in [actor.GetHerHis] hand.  "Oh, the whip looks innocent enough, but it can separate flesh from bones just as well as any knife."
+ prison.1001.rats.desc:0 ""These rats might seem docile," [actor.GetTitledFirstName] says, gesturing towards a faintly squeaking bucket. "But if they smell fire, they will happily gnaw their way through #emp anything#! to escape."
+ prison.1001.my_secret.desc:1 ""You are hiding something, I can tell," [actor.GetTitledFirstName] says. "Give me the truth, or else...""
+ prison.1001.anothers_secret.desc:1 ""You know something about [reveal_secret_owner.Custom2('MyCharacterIntroductionNoComma' SCOPE.sC('actor'))]," [actor.GetTitledFirstName] says. "Tell me everything, or else...""
+ prison.1001.a:0 "我发誓，我会把一切都告诉你！"
+ prison.1001.b:0 "..."
+
+ prison.1002.rack.desc:0 "何必把事情复杂化呢？没有什么比得上老式的刑架。当狱卒拖着……[recipient.GetTitledFirstName]进入房间，[recipient.GetHerHis]目光立刻被那巨大的木制相框吸引住了。"
+ prison.1002.whip.desc:0 "哦，鞭子的甜蜜之吻！它看起来或许无害，但它也能像任何刀具一样将血肉与骨头分离。看看那表情就知道了……[recipient.GetTitledFirstNamePossessive] 脸， [recipient.GetSheHe]对此他深有体会。"
+ prison.1002.rats.desc:0 "桶里的老鼠起初可能看起来很害羞，但它们会很乐意地啃噬一切。[`recipient.GetWomanMan]当胸部受热后，就会出现这种情况。当我向他解释这个概念时[recipient.GetTitledFirstName], [recipient.GetHerHis]决心在我眼前瞬间瓦解。"
+ prison.1002.anothers_secret.desc:0 "\n\n"No, no, I... I have information! [reveal_secret_owner.GetTitledFirstName] [secret_to_reveal.Custom('SecretDescriptionThirdPerson')]! I will tell you everything!""
+ prison.1002.my_secret.desc:0 "\n\n"Please, no! #EMP Please!#! I will tell you anything you want to know! I... I [secret_to_reveal.Custom('SecretDescriptionFirstPerson')]!""
+ prison.1002.a:0 "有趣。拿[recipient.GetHerHim]回到牢房。"
+ prison.1002.b:0 "我还没完事儿呢，#emp 还没完事儿呢……"
+
+ prison.1003.t:0 "酷刑"
+ prison.1003.rack.desc:0 "何必把事情复杂化呢？没有什么比得上传统的刑架。骨头和筋腱断裂的声音令人难忘。但更令人难忘的是那种疼痛。[recipient.GetTitledFirstName]即将经历……"
+ prison.1003.whip.desc:0 "哦，鞭子的温柔一吻！它看起来或许无害，但它也能像任何刀具一样将血肉与骨头分离——这是事实。[recipient.GetTitledFirstName]即将体验。[recipient.GetSheHe|U]将会睡在[recipient.GetHerHis]胃部不适持续了相当长一段时间……"
+ prison.1003.rats.desc:0 ""These rats might seem shy," I say as I strap the bucket to [recipient.GetFirstNamePossessive] exposed chest. "But once it gets warm in there, they will do anything to escape. Luckily for them, their teeth are #emp very#! sharp." [recipient.GetSheHe|U] pleads for mercy as I reach for the glowing coals."
+ prison.1003.a:0 "啊……我可以听听[recipient.GetHerHis]尖叫声持续了几个小时。"
+ prison.1003.b:0 "这件事必须要做。"
+
+ prison.1010.rack.desc:0 "[actor.GetTitledFirstName]他把我绑在刑架上。[actor.GetHerselfHimself]脸上带着一丝得意的微笑[actor.GetHerHis]嘴唇。我听见了惨叫，听见了骨头和筋腱断裂的声音……我乞求饶恕，但是[actor.GetFirstNamePossessiveNoTooltip]笑容愈发灿烂。"
+ prison.1010.whip.desc:0 "[actor.GetTitledFirstName] twirls the whip in [actor.GetHerHis] hand. "Oh, the whip looks innocent enough, but it can separate flesh from bones just as well as any knife. Allow me to demonstrate...""
+ prison.1010.rats.desc:0 ""These rats might seem shy," [actor.GetTitledFirstName] says as [actor.GetSheHe] strap the bucket to my exposed chest. "But once it gets warm in there, they will do anything to escape. Luckily for them, their teeth are #emp very#! sharp.""
+ prison.1010.a:0 "不，我……！#emp 啊啊啊啊啊！#！"
+
+ prison.1020.t:0 "失明"
+ prison.1020.start.desc:0 "The jailer drags a panicked [recipient.GetTitledFirstName] into the room. "Please! I will do anything, anything you want!" [recipient.GetHerHis|U] protests are cut short as the jailor gags [recipient.GetHerHim] and ties [recipient.GetHerHim] down on the table.\n\n"
+ prison.1020.cruel.desc:0 ""Oh, [recipient.GetFirstNameNoTooltip]," I sigh theatrically. "You and I never quite saw eye to eye. But on the bright side, I have finally decided how to rectify the situation.""
+ prison.1020.compassionate.desc:0 ""This might seem barbaric," I say as the physician prepares [physician.GetHerHis] tools, "but this is for the stability of the realm. Trust me — I take no pleasure in your suffering.""
+ prison.1020.child.desc:1 ""This will make everything feel better," the physician says as [physician.GetSheHe] offers [recipient.GetTitledFirstName] the sedating draught. [recipient.GetHerHis|U] little hand is shaking, but [recipient.GetSheHe] drinks it all the same.\n\nOnce the [recipient.Custom('GirlBoy')] is asleep, the physician gives me a long look. "Are you sure about this, my [actor.GetLadyLord]?""
+ prison.1020.a:0 "哦，是的，这个#emp#会很疼。"
+ prison.1020.b:0 "我自有我的理由。"
+
+ prison.1021.start.desc:0 "我正静静地思考着自己的命运，狱卒突然猛地推开牢房门，把我拖了出来。在那条阴暗的走廊里，[actor.GetTitledFirstName]等待。\n\n"
+ prison.1021.cruel.desc:0 "The pleased look on [actor.GetHerHis] face sends a shiver up my spine.\n\n"Do not fret. I have not come for your head — your eyes will do just fine.""
+ prison.1021.compassionate.desc:0 ""[recipient.GetFirstNameNoTooltip], I want you to know I take no pleasure in this. I am forced to blind you. For the stability of the realm.""
+ prison.1021.child.desc:0 ""It will make everything feel better," the physician says as [physician.GetSheHe] offers me a tiny glass bottle. This is a bad place, with bad people, but [physician.GetHerHis] eyes... they are nice. With a shaking hand, I lift the bottle to my lips."
+ prison.1021.a:0 "我的……我的眼睛？放开我！#emp 不！#！"
+ prison.1021.b:0 "我……我感觉很奇怪……"
+
+ prison.1025.t:0 "阉割"
+ prison.1025.cruel.desc:0 ""Oh, [recipient.GetFirstNameNoTooltip]," I sigh theatrically. "Do not fret. I am not here to take your head — or anything else of value. Your manhood will do just fine.""
+
+ prison.1026.cruel.desc:0 "The pleased look on [actor.GetHerHis] face sends a shiver up my spine.\n\n"Do not fret. I have not come for your head — or anything else of value for that matter. Your manhood will do just fine.""
+ prison.1026.compassionate.desc:0 ""[recipient.GetFirstNameNoTooltip], I want you to know I take no pleasure in this. I am forced to have you castrated. For the stability of the realm.""
+ prison.1026.a:0 "什么？放开我！#emp 不！#！"
+
+
+
+ prison.1027.t:0 "已绝育"
+ prison.1027.cruel.desc:0 ""Oh, [recipient.GetFirstNameNoTooltip]," I sigh theatrically. "Don't worry. I'm not going to kill you. There are other ways to 'fix' naughty women.""
+
+ prison.1028.cruel.desc:0 "The pleased look on [actor.GetHerHis] face sends a shiver up my spine.\n\n"Don't worry. I'm not going to kill you. There are other ways to 'fix' naughty women.""
+ prison.1028.compassionate.desc:0 ""[recipient.GetFirstNameNoTooltip], I want you to know I take no pleasure in this. I am forced to have you spayed. For the stability of the realm.""
+ prison.1028.a:0 "什么？放开我！#emp 不！#！"
+
+ prison.1029.t:0 "截肢"
+ prison.1029.cruel.desc:0 ""Oh, [recipient.GetFirstNameNoTooltip]," I sigh theatrically. "Don't worry. I'm not going to kill you. I would ask you to lend me a hand, but I think asking for a leg would be more fitting.""
+
+ prison.1030.cruel.desc:0 "The pleased look on [actor.GetHerHis] face sends a shiver up my spine.\n\n"Don't worry. I'm not going to kill you. I would ask you to lend me a hand, but I think asking for a leg would be more fitting.""
+ prison.1030.compassionate.desc:0 ""[recipient.GetFirstNameNoTooltip], I want you to know I take no pleasure in this. I am forced to have you de-leged. For the stability of the realm.""
+ prison.1030.a:0 "什么？放开我！#emp 不！#！"
+
+ prison.1031.t:0 "强奸"
+ prison.1031.desc:0 ""Don't worry... this won't hurt. In fact, I think you'll like it," I whisper into her ear as she screams and tries to run away."
+ prison.1031.a:0 "当国王真好！"
+
+ prison.1032.t:0 "强奸"
+ prison.1032.desc:0 "[actor.GetHerHis] comes into my cell with a nasty look on his face. He comes over to me and whispers "Don't worry... this won't hurt. In fact, I think you'll like it.""
+ prison.1032.a:0 "我终将报仇雪恨。"
+
+ prison.1033.t:0 "迈明"
+ prison.1033.cruel.desc:0 ""Now, [recipient.GetFirstNameNoTooltip]," I sigh theatrically. "You have done something very upsetting to me. I'm not nice towards people who upset me, and yes, this will hurt.""
+
+ prison.1034.cruel.desc:0 "The pleased look on [actor.GetHerHis] face sends a shiver up my spine.\n\n"You have done something very upsetting to me. I'm not nice towards people who upset me, and yes, this will hurt.""
+ prison.1034.compassionate.desc:0 ""[recipient.GetFirstNameNoTooltip], I want you to know I take no pleasure in this. I am doing this only for the stability of the realm.""
+ prison.1034.a:0 "什么？放开我！#emp 不！#！"
+
+
+
+ prison.9001.t:0 "自由！"
+ prison.9001.desc_1:0 "我花了数天时间计划逃跑，思考最佳的行动方案和逃跑路线。然而这一切都徒劳无功，因为有一天，守卫竟然忘记锁门，头也不回地踉跄着离开了。"
+ prison.9001.desc_2:0 "一句好话，一句真诚的赞美——很快，警卫用亲切熟悉的目光看待我，而不是最初的怀疑。[dummy_gender.GetSheHe]藏匿。当我请求呼吸一点新鲜空气时[dummy_gender.GetSheHe]他甚至都没问我任何问题，我就离开了。[dummy_gender.GetHerHim]脸朝下掉进沟里。"
+ prison.9001.desc_3_opening:0 "片刻的分神，让我得以将钥匙圈从警卫的腰带上取下，藏到自己身后。"
+ prison.9001.desc_3_house_arrest:0 "夜幕降临时，我轻轻地打开门，刺耳的摩擦声让我不禁皱起了眉头。"
+ prison.9001.desc_3:0 "夜幕降临，我慢慢走出牢房，被刺耳的尖叫声吓了一跳。"
+ prison.9001.desc_4:0 "我仔细搜遍了牢房的每一个角落。我检查了每一个铰链，摸索了每一根铁条，仔细查看了每一块石头。夜幕再次降临，我终于找到了我一直在寻找的东西——一块松动的石头！之后，我很快就把洞扩大成了一条隧道。"
+ prison.9001.desc_5:0 "我徘徊在走廊里，每一扇门都像老朋友一样熟悉，我静待时机。我知道谁会去哪里，什么时候去。我知道谁会召唤特定的仆人，也知道离开这里最快的路线。[imprisoner.Custom('ResidenceBuilding')]夜幕降临，我静待最佳时机，然后像影子一样悄然离去。"
+ prison.9001.desc_6:0 "我等到夜幕降临，确定周围无人后，双手各抓一根金属条，开始#EMP弯腰#！汗水滴进眼睛，我的喘息声在黑暗中回荡，但很快我就掰出了一个刚好够我挤过去的洞。"
+ prison.9001.desc_7:0 "守卫一离开，我就冲向锁。锁又旧又锈，我唯一能用的工具就是在角落里找到的一根小钉子，但这挡不住我的路。轻轻一拧，轻轻一推——#EMP！#"
+ prison.9001.desc_8:0 "我看着警卫努力忍住哈欠，笑了。我们已经聊了好几个小时了，现在我深入探讨了……[ROOT.Char.Custom('subject_of_interest')]毫不松懈。很快[dummy_gender.GetSheHe]点头[dummy_gender.GetHerHis]椅子，然后拿到钥匙就很容易了。[dummy_gender.GetHerHim]."
+ prison.9001.desc_9:0 "多日的偷偷凝视、暗示的手势和邀请终于有了结果，当警卫走近我时，他的一只手已经解开了鞋带。[dummy_gender.GetHerHis] [dummy_gender.Custom('GetUpperClothingArticle')]我笑了。在极度的幸福中昏厥过去是件轻松的事，而且我确保不会造成任何不必要的伤害。"
+ prison.9001.desc_ending_1:0 "\n\n当我消失在……[imprisoner.Custom('TerrainType')]周围[imprisoner.GetTitledFirstNamePossessive] [imprisoner.Custom('ResidenceBuilding')]我终于敢抱有希望了。"
+ prison.9001.desc_ending_2:0 "\n\n当我消失在夜色中，远离尘嚣时，我仰头大笑。"
+ prison.9001.a:0 "我自由了！"
+
+ prison.9002.desc_opening:0 "我只需要片刻的注意力分散。"
+ prison.9002.desc_rat:0 "我放开我的老鼠，它悄无声息地穿过地板，爬上守卫休息的凳子，径直走到钥匙旁。"
+ prison.9002.desc_stone:0 "我悄悄绕到守卫身后，用#EMP#把我的石头砸向他的后背。[dummy_gender.GetHerHis]头盔。守卫倒地后，我迅速搜查。[dummy_gender.GetHerHim]钥匙"
+ prison.9002.desc_spoon:0 "我把勺子戳进锁里。晃动弯曲了好一会儿，锁终于咔哒一声开了！"
+ prison.9002.desc_cockroach:0 "我放出蟑螂，它迅速从守卫脚下窜过。[dummy_gender.GetSheHe]猛地向后一甩，力道之大足以猛击[dummy_gender.GetHerHis]骷髅头靠在墙上"
+ prison.9002.desc_end:0 "很快，我和我信任的人都会……[ROOT.Char.Custom('prison_pet')]正在消失于[imprisoner.Custom('TerrainType')]周围[imprisoner.GetTitledFirstNamePossessive] [imprisoner.Custom('ResidenceBuilding')]."
+ prison.9002.a:0 "我们是自由的，[ROOT.Char.Custom('prison_pet')]!"
+
+ prison.9003.desc:0 "立刻 [imprisoner.GetTitledFirstNamePossessive]狱警们背对着我和我的狱友，[prison_friend.GetTitledFirstName]我们罢工。\n\n长时间的囚禁让我变得虚弱，当守卫用铁拳猛击我的腹部时，我很快就感到力不从心，被压制住了。守卫准备给我最后一击，但我却看到了……[prison_friend.GetTitledFirstNameNoTooltip]他高高地悬在我们上方，手里拿着守卫自己的刀——很快我们又得转移阵地了。\n\n我们靠着彼此，走进了夜色中，笑了起来。"
+ prison.9003.a:0 "我们自由了！"
+
+ prison.9499.t:0 "逃脱了！"
+ prison.9499.desc_house_arrest:0 "我的囚犯，[escapee.GetTitledFirstName]已经逃脱[escapee.GetHerHis]监禁！"
+ prison.9499.desc_dungeon:0 "我的囚犯，[escapee.GetTitledFirstName]，已经逃出我的地牢了！"
+ prison.9499.desc_ending:0 "\n\n守卫们无言以对，但伤害已经造成了。"
+ prison.9499.a:0 "诅咒你，[escapee.GetFirstNameNoTooltip]!"
+
+ prison.9501.t:0 "牢不可破的锁链"
+ prison.9501.desc:0 "As the guard is momentarily distracted I reach for the keyring hanging on the guard's belt, but a firm hand stops me halfway.\n\n"Oh no no. There's no escaping here, #EMP my [ROOT.Char.GetTitleAsNameNoTooltip]#!." The guard sneers down at me and laughs.\n\n"You thought the gruel you were getting was bad? Just you wait.""
+ prison.9501.a:0 "我将在这里腐烂……"
+
+ prison.9502.t:0 "我的勇敢[ROOT.Char.Custom('prison_pet')|U]"
+ prison.9502.desc_opening:0 "守卫转身的瞬间，我迅速伸手去拿我的[ROOT.Char.Custom('prison_pet')]然后把它扔出去[dummy_gender.GetHerHis] 头。"
+ prison.9502.desc_rat:0 "它挣扎着，试图找到着力点，但守卫迅速伸手把它扔到地上。我的抗议尖叫几乎被守卫无情碾压时发出的痛苦尖叫声淹没。[dummy_gender.GetHerHis]脚后跟向下。"
+ prison.9502.desc_stone:0 "它重重地撞在卫兵的头盔上，但[dummy_gender.GetSheHe]他只是惊讶地扬起眉毛，转过身去，发现了那块石头。[dummy_gender.GetSheHe]他冷笑着把它扔出了窗外。"
+ prison.9502.desc_spoon:0 "它从卫兵的头盔上弹了下来，[dummy_gender.GetSheHe]他似乎几乎没注意到。转过身，他看到了那把不合时宜的勺子。[dummy_gender.GetSheHe]他捡起它，把它塞进……[dummy_gender.GetHerHis]自备腰带。"
+ prison.9502.desc_cockroach:0 "它慌忙抢购，但这一举动肯定惊动了守卫。[dummy_gender.GetHerHis]一只手抬起来，毫不留情地将我心爱的蟑螂拍倒在地，带着厌恶的冷笑把它踩进土里。"
+ prison.9502.a:0 "不！！我的[ROOT.Char.Custom('prison_pet')]!"
+
+ prison.9503.t:0 "背叛"
+ prison.9503.desc:0 "我的狱友[prison_friend.GetTitledFirstName]我曾多次彻夜策划我们的逃跑计划。\n\n当我大吵大闹时[prison_friend.GetSheHe]他守在门口。卫兵打开门，我笑了。[prison_friend.GetFirstNameNoTooltip]会从背后发动攻击——然后，门就关上了，守卫离开了。[prison_friend.GetTitledFirstNameNoTooltip]消失在夜色中，没有受到任何阻碍，所有守卫都向我逼近。"
+ prison.9503.a:0 "至少是这样。[prison_friend.GetSheHe]出去了……"
+ prison.9503.b:0 "这 [prison_friend.Custom('InsultAdjective')] [prison_friend.Custom('InsultNoun')]背叛了我！"
+
+ prison.9504.t:0 "我的狱友"
+ prison.9504.desc:0 "I have spent many hours planning my escape, and as I make my way down a dark corridor in the middle of the night I cannot help but smile. This might just work! The guard is neutralized, the gate–\n\n"[ROOT.Char.GetFirstNameNoTooltip] is escaping! Guards! #EMP Guards!#!" The grating voice of my [ROOT.Char.Custom2('RelationToMe', SCOPE.sC('prison_rival'))] [prison_rival.GetTitledFirstName] breaks the silence, and soon I am surrounded by armed and angry guards."
+ prison.9504.a:0 "诅咒你，[prison_rival.GetFirstNameNoTooltip]!"
+
+ prison.9505.t:0 "突破界限"
+ prison.9505.opening:0 "我越来越清楚地意识到，我必须将自己的命运掌握在自己手中。同样显而易见的是，并非城墙的每一处都守卫得同样严密。"
+ prison.9505.tumble:0 "\n\n从岩壁上摔下来之后，我真希望当时的情况是这样。过了一个小时才有人发现我，把我扶回房间，然后叫来了治疗师。"
+ prison.9505.tunnels:0 "\n\n然而，我很快发现，墙下的隧道黑暗而迷路。我磕磕碰碰、磕磕碰碰，头部多次被石块击中，才终于找到出路，回到庭院。"
+ prison.9505.a:0 "我……我还活着……！"

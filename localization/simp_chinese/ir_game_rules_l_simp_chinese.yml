@@ -1,0 +1,6 @@
+l_simp_chinese:
+ rule_ir_best_friend_to_heir_friend:0 "友谊继承（可继承关系）"
+ setting_ir_best_friend_to_heir_friend_allowed:0 "默认"
+ setting_ir_best_friend_to_heir_friend_allowed_desc:0 "前任最好的朋友可以在继承人继承爵位时成为其继承人的朋友。"
+ setting_ir_best_friend_to_heir_friend_blocked:1 "#high Direct Inheritance Disallowed#!"
+ setting_ir_best_friend_to_heir_friend_blocked_desc:0 "前任的挚友不能成为其继承人的挚友。"

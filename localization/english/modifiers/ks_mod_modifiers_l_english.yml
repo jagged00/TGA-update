@@ -1,0 +1,74 @@
+﻿l_english:
+ #DECISION_ON_COOLDOWN: "@warning_icon! #X $DECISION_NAME$ unavailable until [DATE.GetStringLong]#!"
+ PORTRAIT_MODIFIER_custom_ksmod: "Fox Spirit MOD Added"
+ PORTRAIT_MODIFIER_custom_ksmod_male_empty: "None"
+ PORTRAIT_MODIFIER_custom_ksmod_fox_ears_m_01: "Male Fox Spirit Ears"
+ PORTRAIT_MODIFIER_custom_ksmod_female_empty: "None"
+ PORTRAIT_MODIFIER_custom_ksmod_fox_ears_01: "Female Fox Spirit Ears"
+ ks_night_cultivation_modifier: "Nightlong Cultivation"
+ ks_night_cultivation_modifier_desc: "Tired from nightlong cultivation, physically unwell"
+ ks_human_like_fox_modifier: "Blending with Humans"
+ ks_human_like_fox_modifier_desc: "As a Fox Spirit, you are skilled in transformation, able to blend with humans undetected"
+ ks_good_sexual_dream_modifier: "Seamless Erotic Dream"
+ ks_good_sexual_dream_modifier_desc: "In your dream, you were intimate with a Fox Spirit"
+ ks_possessed_by_a_huxian_modifier: "Possessed by a Fox Spirit"
+ ks_possessed_by_a_huxian_modifier_desc: "You were possessed by a Fox Spirit and had your life force drained"
+ ks_amulet_modifier: "Wearing an Amulet"
+ ks_amulet_modifier_desc: "Conceals the effects of Fox Spirit blood; clergy see you as a walking purse"
+ ks_ritual_modifier: "Performed Exorcism Ritual"
+ ks_ritual_modifier_desc: "Almost removed the effects of Fox Spirit blood; clergy see you as a gullible target"
+ 
+ l_english:
+ # ============================================================================
+ # CULTIVATION & JIANGHU OPINION MODIFIERS - LOCALIZATION
+ # ============================================================================
+
+ opinion_remnant_sect_purged_desc:0 "This character survived the purge of our sect"
+ opinion_despises_weak_liege_cultivation_desc:0 "Despises me for being a weak liege"
+ opinion_cultivation_views_me_as_future_threat_desc:0 "Views me as a future threat"
+ opinion_cultivation_invests_in_my_talent_desc:0 "Invested in my talent and potential"
+ opinion_mentor_guidance_desc:0 "Received valuable guidance from this mentor"
+ opinion_lineage_betrayal_desc:0 "Betrayed our shared lineage"
+
+ # Fox Spirit Opinions
+ opinion_fox_spirit_orthodox_hate_desc:0 "Hates fox spirits as deceitful demons"
+ opinion_fox_spirit_order_hate_desc:0 "Strongly dislikes this fox spirit"
+ opinion_fox_spirit_unorthodox_wary_desc:0 "Wary of this fox spirit's schemes"
+ opinion_fox_spirit_vagrant_swing_desc:0 "Has a neutral but shifting opinion of this fox spirit"
+ opinion_fox_spirit_demonic_ally_desc:0 "Sees this fox spirit as a valuable demonic ally"
+ opinion_fox_spirit_yin_affinity_desc:0 "Feels a strong yin affinity with this fox spirit"
+ opinion_fox_spirit_accepted_child_desc:0 "Accepts this fox spirit as one of their own"
+ opinion_fox_spirit_mortal_hunter_desc:0 "Views this fox spirit as a dangerous mortal hunter"
+
+ # Path & Jianghu Social Opinions
+ opinion_cultivation_path_peer_desc:0 "Regards me as a fellow cultivator on the same path"
+ opinion_cultivation_path_rival_desc:0 "Sees me as a rival on the cultivation path"
+ opinion_jianghu_public_humiliation_desc:0 "Publicly humiliated in the jianghu"
+ opinion_jianghu_face_grudge_desc:0 "Holds a deep face grudge against me"
+ opinion_jianghu_ambushed_me_desc:0 "I ambushed them in the jianghu"
+ opinion_jianghu_forced_rescue_desc:0 "Was forced to rescue me"
+ opinion_jianghu_blood_vengeance_desc:0 "Sworn blood vengeance against me"
+ opinion_jianghu_inherited_friendship_desc:0 "Inherited friendship from our ancestors"
+ opinion_jianghu_inherited_rivalry_desc:0 "Inherited rivalry from our ancestors"
+
+ # Sect Internal Politics
+ opinion_sect_leader_appeased_elders_desc:0 "Successfully appeased the sect elders"
+ opinion_sect_leader_purged_elders_desc:0 "Purged the sect elders"
+ opinion_sect_leader_crushed_dissent_desc:0 "Crushed internal dissent"
+ opinion_sect_challenger_usurped_leadership_desc:0 "Usurped the sect leadership"
+ opinion_sect_schism_allowed_desc:0 "Allowed the sect to fall into schism"
+ opinion_high_realm_submission_desc:0 "Forced to submit to a high-realm cultivator"
+
+ # Optional extra flavor (you can remove if not needed)
+ opinion_remnant_sect_purged_desc:1 "Survived the great sect purge"
+ opinion_despises_weak_liege_cultivation_desc:1 "Considers their liege too weak for the dao"
+ opinion_cultivation_views_me_as_future_threat_desc:1 "Sees great danger in my future growth"
+ opinion_cultivation_invests_in_my_talent_desc:1 "Has placed hopes on my cultivation talent"
+ opinion_mentor_guidance_desc:1 "Guided me on the path of cultivation"
+ opinion_lineage_betrayal_desc:1 "Betrayed the sacred lineage bond"
+
+ opinion_fox_spirit_orthodox_hate_desc:1 " orthodox path views fox spirits as vile temptresses"
+ opinion_fox_spirit_demonic_ally_desc:1 "Considers this fox spirit a useful demonic partner"
+ opinion_fox_spirit_yin_affinity_desc:1 "Shares a deep yin resonance with this fox spirit"
+ opinion_jianghu_blood_vengeance_desc:1 "Blood debt that can only be repaid with death"
+ opinion_jianghu_public_humiliation_desc:1 "Lost significant face in the martial world"

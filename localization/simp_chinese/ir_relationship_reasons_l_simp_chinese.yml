@@ -1,0 +1,9 @@
+l_simp_chinese:
+### ub
+ ir_inherited_friendship:0 "[TARGET_CHARACTER_2.GetShortUINamePossessive]继承人，[TARGET_CHARACTER.GetShortUIName|U]决定维持[Select_CString(TARGET_CHARACTER.IsLocalPlayer, 'your', TARGET_CHARACTER.GetHerHis )]前任与……的密切友谊[CHARACTER.GetShortUIName|U]."
+ ir_inherited_friendship_corresponding:0 "[TARGET_CHARACTER_2.GetShortUINamePossessive]继承人，[CHARACTER.GetShortUIName|U]决定维持[Select_CString(CHARACTER.IsLocalPlayer, 'your', CHARACTER.GetHerHis )]前任与……的密切友谊[TARGET_CHARACTER.GetShortUIName|U]."
+
+ ir_inherited_rivalry:0 "[TARGET_CHARACTER_2.GetShortUINamePossessive]继承人，[TARGET_CHARACTER.GetShortUIName|U]不能让彼此之间的怨恨[Select_CString(TARGET_CHARACTER.IsLocalPlayer, 'your', TARGET_CHARACTER.GetHerHis )]前任和[CHARACTER.GetShortUIName|U]悬而未决。"
+ ir_inherited_rivalry_corresponding:0 "[TARGET_CHARACTER_2.GetShortUINamePossessive]继承人，[CHARACTER.GetShortUIName|U]不能让彼此之间的怨恨[Select_CString(CHARACTER.IsLocalPlayer, 'your', CHARACTER.GetHerHis )]前任和[TARGET_CHARACTER.GetShortUIName|U]悬而未决。"
+
+

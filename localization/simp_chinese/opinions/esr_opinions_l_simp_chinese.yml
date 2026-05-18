@@ -1,0 +1,123 @@
+l_simp_chinese:
+ ### war related
+ esr_declared_war_on_family:0 "向……宣战[family_member|E]"
+ esr_declared_war_on_close_family:0 "向……宣战[close_family_member|E]"
+ esr_joined_war_on_family:0 "加入战争[family_member|E]"
+ esr_joined_war_on_me:0 "加入对我的战争"
+ esr_declared_war_on_friend:0 "向……宣战[friend|E]"
+ esr_declared_war_on_best_friend:0 "向……宣战[best_friend|E]"
+ esr_declared_war_on_lover:0 "向……宣战[lover|E]"
+ esr_declared_war_on_soulmate:0 "向……宣战[soulmate|E]"
+ esr_declared_war_on_rival:0 "向……宣战[rival|E]"
+ esr_declared_war_on_nemesis:0 "向……宣战[nemesis|E]"
+
+ ### relation related
+ esr_common_friend:0 "共同点[friend|E]"
+ esr_rival_friend:0 "你是我的[rival|E]的[friend|E]"
+ esr_nemesis_friend:0 "你是我的[nemesis|E]的[friend|E]"
+ esr_rival_best_friend:0 "你是我的[rival|E]的[best_friend|E]"
+ esr_nemesis_best_friend:0 "你是我的[nemesis|E]的[best_friend|E]"
+ esr_common_rival:0 "共同点[rival|E]"
+ esr_friend_rival:0 "你是我的[friend|E]的[rival|E]"
+ esr_best_friend_rival:0 "你是我的[best_friend|E]的[rival|E]"
+ esr_friend_nemesis:0 "你是我的[friend|E]的[nemesis|E]"
+ esr_best_friend_nemesis:0 "你是我的[best_friend|E]的[nemesis|E]"
+
+ ### Murder / Execution related
+ esr_murdered_best_friend:0 "已执行[best_friend|E]"
+ esr_murdered_soulmate:0 "已执行[soulmate|E]"
+ esr_murdered_rival:0 "已执行[rival|E]"
+ esr_murdered_nemesis:0 "已执行[nemesis|E]"
+ esr_murdered_extended_family:0 "已执行[extended_family_members|E]"
+ esr_hate_by_association_murder:0 "凶手的家人"
+
+ ### Attempted Murder related modifiers
+ esr_attempted_murder_extended_family:0 "谋杀未遂[extended_family_members|E]"
+ esr_attempted_murder_close_relation_opinion:0 "企图谋杀近亲"
+ esr_attempted_murder_best_friend:0 "谋杀未遂[best_friend|E]"
+ esr_attempted_murder_soulmate:0 "谋杀未遂[soulmate|E]"
+ esr_attempted_murder_rival:0 "谋杀未遂[rival|E]"
+ esr_attempted_murder_nemesis:0 "谋杀未遂[nemesis|E]"
+
+ ### Execution modifiers
+ esr_hate_by_association_execution:0 "刽子手的家人"
+
+ ### Imprison modifiers
+ esr_imprisoned_close_family:0 "被监禁[close_family_member|E]"
+ esr_imprisoned_extended_family:0 "被监禁[extended_family_members|E]"
+ esr_imprisoned_close_relation_opinion:0 "被监禁的近亲"
+ esr_imprisoned_rival:0 "囚禁我的[rival|E]"
+ esr_imprisoned_best_friend:0 "囚禁我的[best_friend|E]"
+ esr_imprisoned_soulmate:0 "囚禁我的[soulmate|E]"
+ esr_imprisoned_nemesis:0 "囚禁我的[nemesis|E]"
+ esr_threw_family_in_dungeon:0 "扔[family_member|E]在地牢里"
+ esr_threw_close_relation_in_dungeon:0 "将近亲扔进地牢"
+ esr_threw_very_close_in_dungeon:0 "扔[best_friend|E] 或者 [soulmate|E]在地牢里"
+ esr_threw_nemesis_in_dungeon:0 "扔[nemesis|E]在地牢里"
+ esr_move_family_to_house_arrest:0 "已搬迁[family_member|E]软禁"
+ esr_move_close_relation_to_house_arrest:0 "与软禁密切相关"
+ esr_move_very_close_to_house_arrest:0 "已搬迁[best_friend|E] 或者 [soulmate|E]软禁"
+ esr_move_nemesis_to_house_arrest:0 "已搬迁[nemesis|E]软禁"
+
+ ### Revoke title modifiers
+ esr_revoked_close_family:0 "撤销[close_family_member|E]标题"
+ esr_revoked_extended_family:0 "撤销[extended_family_members|E]标题"
+ esr_revoked_close_relation_opinion:0 "撤销近亲属头衔"
+ esr_revoked_best_friend:0 "撤销[best_friend|E]标题"
+ esr_revoked_soulmate:0 "撤销[soulmate|E]标题"
+ esr_revoked_rival:0 "撤销[rival|E]标题"
+ esr_revoked_nemesis:0 "撤销[nemesis|E]标题"
+
+ ### Retracted vassal modifiers
+ esr_retracted_close_family:0 "撤回[close_family_member|E]的[vassal|E]"
+ esr_retracted_extended_family:0 "撤回[extended_family_members|E]的[vassal|E]"
+ esr_retracted_close_relation_opinion:0 "撤回的近亲[vassal|E]"
+ esr_retracted_best_friend:0 "撤回[best_friend|E]的[vassal|E]"
+ esr_retracted_soulmate:0 "撤回[soulmate|E]的[vassal|E]"
+ esr_retracted_rival:0 "撤回[rival|E]的[vassal|E]"
+ esr_retracted_nemesis:0 "撤回[nemesis|E]的[vassal|E]"
+
+ ### Grant title / [vassal|E] modifiers
+ esr_grant_family_barony:0 "的确 [close_family_member|E]男爵领"
+ esr_grant_family_county:0 "的确 [close_family_member|E]县"
+ esr_grant_family_duchy:0 "的确 [close_family_member|E]公国"
+ esr_grant_family_kingdom:0 "的确 [close_family_member|E]王国"
+ esr_grant_family_empire:0 "的确 [close_family_member|E]帝国"
+ esr_grant_family_vassal:0 "的确 [close_family_member|E] [vassal|E]"
+ esr_grant_close_relation_opinion:0 "授予近亲属所有权或[vassal|E]"
+ esr_grant_best_friend:0 "的确 [best_friend|E]标题或[vassal|E]"
+ esr_grant_soulmate:0 "的确 [soulmate|E]标题或[vassal|E]"
+ esr_grant_rival:0 "的确 [rival|E]标题或[vassal|E]"
+ esr_grant_nemesis:0 "的确 [nemesis|E]标题或[vassal|E]"
+
+ ### Grant Independance
+ esr_grant_independence_family:0 "的确 [close_family_member|E]独立"
+
+ ### Family friend
+ esr_family_friend:0 "[family_friend|E]"
+
+ ### Threat
+ esr_threatened_by_war_declared:0 "受到侵略的威胁"
+
+
+
+
+
+ 
+
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
