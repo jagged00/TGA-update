@@ -1,0 +1,193 @@
+﻿# ============================================================================
+# MERIDIANS TRAIT GROUP
+# Determines qi flow quality and cultivation talent/speed
+# ============================================================================
+
+poor_meridians = {
+    index = 14250
+    group = active_meridians
+    level = 1
+    opposites = { normal_meridians good_meridians excellent_meridians heavenly_meridians }
+    
+    birth = 82          # Common birth defect / weak talent
+    random_creation = 85
+    ruler_designer_cost = -100
+    inherit_chance = 92
+    both_parent_has_trait_inherit_chance = 97
+    
+    attraction_opinion = -15
+    monthly_lifestyle_xp_gain_mult = -0.40     # Significant but not total block
+    learning = -1
+    
+    physical = yes
+    good = no
+    
+    icon = {
+        first_valid = {
+            triggered_desc = {
+                trigger = { NOT = { exists = this } }
+                desc = poor_meridians.dds
+            }
+            desc = poor_meridians.dds
+        }
+    }
+}
+
+normal_meridians = {
+    index = 14251
+    group = active_meridians
+    level = 2
+    opposites = { poor_meridians good_meridians excellent_meridians heavenly_meridians }
+    
+    birth = 14
+    random_creation = 12
+    ruler_designer_cost = 0
+    inherit_chance = 75
+    both_parent_has_trait_inherit_chance = 92
+    
+    monthly_lifestyle_xp_gain_mult = -0.05      # Slightly below average
+    learning = 1
+    
+    physical = yes
+    good = yes
+    
+    icon = {
+        first_valid = {
+            triggered_desc = {
+                trigger = { NOT = { exists = this } }
+                desc = normal_meridians.dds
+            }
+            desc = normal_meridians.dds
+        }
+    }
+}
+
+good_meridians = {
+    index = 14252
+    group = active_meridians
+    level = 3
+    opposites = { poor_meridians normal_meridians excellent_meridians heavenly_meridians }
+    
+    birth = 3.2
+    random_creation = 2.0
+    ruler_designer_cost = 180
+    inherit_chance = 45
+    both_parent_has_trait_inherit_chance = 78
+    
+    learning = 3
+    monthly_lifestyle_xp_gain_mult = 0.08
+    attraction_opinion = 12
+    
+    physical = yes
+    good = yes
+    
+    icon = {
+        first_valid = {
+            triggered_desc = {
+                trigger = { NOT = { exists = this } }
+                desc = good_meridians.dds
+            }
+            desc = good_meridians.dds
+        }
+    }
+}
+
+excellent_meridians = {
+    index = 14253
+    group = active_meridians
+    level = 4
+    opposites = { poor_meridians normal_meridians good_meridians heavenly_meridians }
+    
+    birth = 0.25
+    random_creation = 0.22
+    ruler_designer_cost = 550
+    inherit_chance = 25
+    both_parent_has_trait_inherit_chance = 60
+    
+    fertility = -0.10
+    learning = 6
+    monthly_lifestyle_xp_gain_mult = 0.15
+    attraction_opinion = 25
+    monthly_prestige = 1.5
+    prowess = 3
+    
+    physical = yes
+    good = yes
+    
+    icon = {
+        first_valid = {
+            triggered_desc = {
+                trigger = { NOT = { exists = this } }
+                desc = excellent_meridians.dds
+            }
+            desc = excellent_meridians.dds
+        }
+    }
+}
+
+heavenly_meridians = {
+    index = 14254
+    group = active_meridians
+    level = 5
+    opposites = { poor_meridians normal_meridians good_meridians excellent_meridians }
+    
+    birth = 0.00015      # Truly legendary / protagonist-tier
+    random_creation = 0.00008
+    ruler_designer_cost = 2200
+    inherit_chance = 8
+    both_parent_has_trait_inherit_chance = 35
+    
+    fertility = -0.35
+    learning = 10
+    monthly_lifestyle_xp_gain_mult = 0.22      # Strong but not broken with your other bonuses
+    prowess = 12
+    martial = 4
+    attraction_opinion = 60
+    monthly_prestige = 6
+    dread_baseline_add = 25                    # Heavenly aura commands fear/respect
+    
+    physical = yes
+    good = yes
+    
+    icon = {
+        first_valid = {
+            triggered_desc = {
+                trigger = { NOT = { exists = this } }
+                desc = heavenly_meridians.dds
+            }
+            desc = heavenly_meridians.dds
+        }
+    }
+}
+
+crippled_meridians = {
+    index = 14255
+    group = active_meridians
+    level = 0
+    opposites = { poor_meridians normal_meridians good_meridians excellent_meridians heavenly_meridians }
+    
+    birth = 0.05         # Rare at birth, mostly from events/deviation/qi backlash
+    random_creation = 0.02
+    ruler_designer_cost = -2500
+    inherit_chance = 2
+    both_parent_has_trait_inherit_chance = 10
+    
+    learning = -6
+    health = -0.8
+    monthly_lifestyle_xp_gain_mult = -0.75
+    attraction_opinion = -25
+    stress_gain_mult = 0.20
+    
+    physical = yes
+    good = no
+    
+    icon = {
+        first_valid = {
+            triggered_desc = {
+                trigger = { NOT = { exists = this } }
+                desc = poor_meridians.dds   # Reuse poor icon or make a dedicated crippled one
+            }
+            desc = poor_meridians.dds
+        }
+    }
+}
