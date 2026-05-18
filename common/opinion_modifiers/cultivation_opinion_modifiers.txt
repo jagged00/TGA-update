@@ -1,0 +1,181 @@
+﻿# ============================================================================
+# CULTIVATION & JIANGHU OPINION MODIFIERS
+# Path: common/opinion_modifiers/cultivation_opinion_modifiers.txt
+# ============================================================================
+
+remnant_sect_purged_opinion = {
+    opinion = -25
+    months = 180
+    desc = opinion_remnant_sect_purged_desc
+}
+
+despises_weak_liege_cultivation_opinion = {
+    opinion = -50          # Strong but not absurd hatred for weak liege
+    months = 36
+    desc = opinion_despises_weak_liege_cultivation_desc
+}
+
+cultivation_views_me_as_future_threat_opinion = {
+    opinion = -40
+    months = 180
+    desc = opinion_cultivation_views_me_as_future_threat_desc
+}
+
+cultivation_invests_in_my_talent_opinion = {
+    opinion = 40
+    months = 180
+    desc = opinion_cultivation_invests_in_my_talent_desc
+}
+
+mentor_guidance_opinion = {
+    opinion = 35
+    months = 240
+    desc = opinion_mentor_guidance_desc
+}
+
+lineage_betrayal_opinion = {
+    opinion = -70
+    months = 360
+    desc = opinion_lineage_betrayal_desc
+}
+
+# Fox Spirit Opinions (very flavorful and distinct per path)
+opinion_fox_spirit_orthodox_hate = {
+    opinion = -90
+    months = 480
+    desc = opinion_fox_spirit_orthodox_hate_desc
+}
+
+opinion_fox_spirit_order_hate = {
+    opinion = -65
+    months = 420
+    desc = opinion_fox_spirit_order_hate_desc
+}
+
+opinion_fox_spirit_unorthodox_wary = {
+    opinion = -25
+    months = 300
+    desc = opinion_fox_spirit_unorthodox_wary_desc
+}
+
+opinion_fox_spirit_vagrant_swing = {
+    opinion = 15
+    months = 240
+    desc = opinion_fox_spirit_vagrant_swing_desc
+}
+
+opinion_fox_spirit_demonic_ally = {
+    opinion = 70
+    months = 480
+    desc = opinion_fox_spirit_demonic_ally_desc
+}
+
+opinion_fox_spirit_yin_affinity = {
+    opinion = 45
+    months = 360
+    desc = opinion_fox_spirit_yin_affinity_desc
+}
+
+opinion_fox_spirit_accepted_child = {
+    opinion = 35
+    months = 480
+    desc = opinion_fox_spirit_accepted_child_desc
+}
+
+opinion_fox_spirit_mortal_hunter = {
+    opinion = -85
+    months = 300
+    desc = opinion_fox_spirit_mortal_hunter_desc
+}
+
+# Path & Jianghu Social Opinions
+opinion_cultivation_path_peer = {
+    opinion = 15
+    months = 300
+    desc = opinion_cultivation_path_peer_desc
+}
+
+opinion_cultivation_path_rival = {
+    opinion = -45
+    months = 300
+    desc = opinion_cultivation_path_rival_desc
+}
+
+opinion_jianghu_public_humiliation = {
+    opinion = -40
+    months = 1800   # Long-lasting face loss
+    desc = opinion_jianghu_public_humiliation_desc
+}
+
+opinion_jianghu_face_grudge = {
+    opinion = -60
+    months = 2400
+    desc = opinion_jianghu_face_grudge_desc
+}
+
+opinion_jianghu_ambushed_me = {
+    opinion = -90
+    months = 3000   # Serious blood feud material
+    desc = opinion_jianghu_ambushed_me_desc
+}
+
+opinion_jianghu_forced_rescue = {
+    opinion = -50
+    months = 2400
+    desc = opinion_jianghu_forced_rescue_desc
+}
+
+opinion_jianghu_blood_vengeance = {
+    opinion = -75
+    months = 4800   # Very long-term vengeance
+    desc = opinion_jianghu_blood_vengeance_desc
+}
+
+opinion_jianghu_inherited_friendship = {
+    opinion = 25
+    months = 3600
+    desc = opinion_jianghu_inherited_friendship_desc
+}
+
+opinion_jianghu_inherited_rivalry = {
+    opinion = -35
+    months = 3600
+    desc = opinion_jianghu_inherited_rivalry_desc
+}
+
+# Sect Internal Politics
+opinion_sect_leader_appeased_elders = {
+    opinion = 25
+    months = 240
+    desc = opinion_sect_leader_appeased_elders_desc
+}
+
+opinion_sect_leader_purged_elders = {
+    opinion = -40
+    months = 360
+    desc = opinion_sect_leader_purged_elders_desc
+}
+
+opinion_sect_leader_crushed_dissent = {
+    opinion = -25
+    months = 240
+    desc = opinion_sect_leader_crushed_dissent_desc
+}
+
+opinion_sect_challenger_usurped_leadership = {
+    opinion = -30
+    months = 420
+    desc = opinion_sect_challenger_usurped_leadership_desc
+}
+
+opinion_sect_schism_allowed = {
+    opinion = -35
+    months = 480
+    desc = opinion_sect_schism_allowed_desc
+}
+
+opinion_high_realm_submission = {
+    opinion = -20
+    months = 240
+    desc = opinion_high_realm_submission_desc
+}

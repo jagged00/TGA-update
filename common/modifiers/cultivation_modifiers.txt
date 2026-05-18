@@ -1,0 +1,415 @@
+﻿# BREAKTHROUGH MODIFIERS
+contemplating_breakthrough = {
+    icon = learning_positive
+    learning = 3                  # Strong focus bonus while preparing
+    monthly_lifestyle_xp_gain_mult = 0.15   # Helpful but not massive
+}
+
+failed_breakthrough_attempt = {
+    icon = learning_negative
+    learning = -2
+    stress_gain_mult = 0.25
+    monthly_lifestyle_xp_gain_mult = -0.15   # Noticeable setback
+}
+
+# Cultivation Sect Modifiers
+sect_join_failed = {
+    icon = stress_negative
+    prowess = -2
+    stress_gain_mult = 0.1
+}
+
+# Mount Hua Sect Modifiers (righteous sword path)
+mount_hua_technique = {
+    icon = learning_positive
+    prowess = 4
+    martial = 3
+    learning = 2
+}
+
+sect_spar_victory = {
+    icon = prowess_positive
+    prowess = 3
+    monthly_prestige = 0.3
+    monthly_prestige_gain_mult = 0.15
+}
+
+sect_spar_defeat = {
+    icon = prowess_negative
+    prowess = -2
+    monthly_prestige = -0.2
+}
+
+# Shaolin Temple Modifiers (monastic / balanced)
+shaolin_teachings = {
+    icon = learning_positive
+    learning = 4
+    monthly_piety = 0.4
+    stress_loss_mult = 0.20
+}
+
+shaolin_martial_training = {
+    icon = prowess_positive
+    prowess = 5
+    martial = 3
+    health = 0.4
+}
+
+# Demonic Sect Modifiers (high risk / high reward)
+demonic_cultivation_path = {
+    icon = dread_positive
+    monthly_dread = 15
+    dread_decay_mult = -0.25
+    prowess = 5
+    intrigue = 3
+    diplomacy = -3
+    monthly_piety = -0.6
+    stress_gain_mult = 0.25
+}
+
+forbidden_technique = {
+    icon = intrigue_positive
+    intrigue = 5
+    prowess = 4
+    monthly_dread = 12
+    monthly_prestige_gain_mult = -0.15   # Slight reputation cost
+}
+
+qi_deviation = {
+    icon = health_negative
+    health = -1.0
+    prowess = -4
+    stress_gain_mult = 0.35
+    fertility = -0.15
+}
+
+demonic_challenger_victor = {
+    icon = prowess_positive
+    prowess = 6
+    monthly_dread = 25
+    monthly_prestige = 0.6
+}
+
+demonic_challenger_defeated = {
+    icon = prowess_negative
+    prowess = -5
+    monthly_prestige = -0.4
+    monthly_prestige_gain_mult = -0.25
+}
+
+# Tang Sect / Poison Path
+tang_poison_arts = {
+    icon = intrigue_positive
+    intrigue = 5
+    learning = 2
+    owned_personal_scheme_success_chance_add = 12
+}
+
+exotic_poisons = {
+    icon = intrigue_positive
+    intrigue = 3
+}
+
+# Dual Cultivation (pleasure / harmony path - seductive but balanced)
+dual_cultivation_boost = {
+    icon = fertility_positive
+    fertility = 0.25
+    prowess = 3
+    attraction_opinion = 12
+    stress_loss_mult = 0.15
+    monthly_lifestyle_xp_gain_mult = 0.12
+}
+
+dual_cultivation_insight = {
+    icon = learning_positive
+    learning = 2
+    monthly_lifestyle_xp_gain_mult = 0.18   # Good insight, but not broken
+}
+
+dual_cultivation_yin_body_resonance = {
+    icon = learning_positive
+    monthly_lifestyle_xp_gain_mult = 0.10
+}
+
+dual_cultivation_yang_body_resonance = {
+    icon = learning_positive
+    monthly_lifestyle_xp_gain_mult = 0.10
+}
+
+dual_cultivation_yinyang_harmony = {
+    icon = learning_positive
+    learning = 2
+    monthly_lifestyle_xp_gain_mult = 0.20   # Strong when both yin & yang align
+}
+
+# Breakthrough & Tribulation
+cultivation_breakthrough = {
+    icon = learning_positive
+    learning = 3
+    prowess = 2
+    monthly_prestige = 0.5
+    stress_loss_mult = 0.10   # Moment of clarity
+}
+
+heavenly_tribulation_preparation = {
+    icon = piety_positive
+    health = -0.6
+    stress_gain_mult = 0.40
+    prowess = -2
+    learning = 4
+}
+
+# Sect Reputation
+sect_elder_respect = {
+    icon = prestige_positive
+    monthly_prestige = 0.5
+    diplomacy = 3
+    general_opinion = 12
+}
+
+sect_disgrace = {
+    icon = prestige_negative
+    monthly_prestige = -0.6
+    diplomacy = -4
+    general_opinion = -18
+    stress_gain_mult = 0.25
+}
+
+# Immortal / High Realm
+immortal_insight = {
+    icon = learning_positive
+    learning = 6
+    prowess = 4
+    monthly_prestige = 1.2
+    stress_loss_mult = 0.30
+    life_expectancy = 15
+}
+
+# Dynasty / Legacy
+martial_arts_legacy_complete = {
+    icon = prestige_positive
+    monthly_dynasty_prestige = 1.2
+    general_opinion = 12
+}
+
+# Zombie / Undead
+zombie_master = {
+    icon = dread_positive
+    monthly_dread = 12
+    monthly_prestige = 0.3
+    monthly_piety = -0.4
+}
+
+# Martial Arts Progression (progressive scaling)
+martial_arts_training = {
+    icon = prowess_positive
+    prowess = 4
+    martial = 2
+    health = 0.3
+}
+
+advanced_martial_arts = {
+    icon = prowess_positive
+    prowess = 6
+    martial = 3
+    knight_effectiveness_mult = 0.20
+}
+
+master_martial_artist = {
+    icon = prowess_positive
+    prowess = 9
+    martial = 4
+    knight_effectiveness_mult = 0.30
+    monthly_prestige = 0.6
+}
+
+# Realm Stabilization
+realm_stabilization = {
+    icon = learning_positive
+    learning = 2
+    health = 0.6
+    stress_loss_mult = 0.12
+}
+
+# Path-specific Realm Insights (differentiated nicely)
+orthodox_realm_insight = {
+    icon = learning_positive
+    learning = 3
+    monthly_piety = 0.35
+    stress_loss_mult = 0.10
+}
+
+unorthodox_realm_insight = {
+    icon = prowess_positive
+    prowess = 3
+    martial = 2
+    monthly_prestige = 0.3
+    knight_effectiveness_mult = 0.12
+}
+
+demonic_realm_insight = {
+    icon = dread_positive
+    prowess = 4
+    intrigue = 3
+    monthly_dread = 15
+    monthly_piety = -0.3
+}
+
+vagrant_realm_insight = {
+    icon = diplomacy_positive
+    diplomacy = 2
+    learning = 2
+    monthly_prestige = 0.25
+    monthly_lifestyle_xp_gain_mult = 0.08
+    travel_speed_mult = 0.15
+}
+
+# Signature Sect Legacies (kept flavorful)
+divine_beast_spirit_companion = {
+    icon = prowess_positive
+    prowess = 5
+    knight_effectiveness_mult = 0.15
+}
+
+wudang_taiji_harmony = {
+    icon = learning_positive
+    learning = 3
+    stress_loss_mult = 0.15
+}
+
+jade_chamber_alluring_presence = {
+    icon = diplomacy_positive
+    diplomacy = 3
+    attraction_opinion = 18
+    fertility = 0.08
+}
+
+blood_moon_killing_intent = {
+    icon = dread_positive
+    prowess = 4
+    monthly_dread = 15
+}
+
+ancient_relic_treasure_resonance = {
+    icon = stewardship_positive
+    stewardship = 3
+    learning = 2
+    monthly_prestige = 0.3
+}
+
+# Focus Modifiers
+qi_gathering_focus = {
+    icon = learning_positive
+    learning = 3
+    monthly_prestige = 0.15
+    stress_gain_mult = -0.15
+}
+
+core_formation_focus = {
+    icon = learning_positive
+    learning = 4
+    prowess = 2
+    health = 0.4
+}
+
+golden_core_stability = {
+    icon = health_positive
+    health = 1.2
+    prowess = 3
+    stress_loss_mult = 0.20
+}
+
+# Fox Spirit (added flavor)
+fox_spirit_awakened = {
+    icon = intrigue_positive
+    intrigue = 4
+    diplomacy = 2
+    attraction_opinion = 18
+    monthly_prestige = 0.3
+    owned_personal_scheme_success_chance_add = 12
+}
+
+fox_spirit_disowned_child = {
+    icon = diplomacy_negative
+    diplomacy = -4
+    monthly_prestige = -0.25
+    stress_gain_mult = 0.15
+}
+
+
+# Hidden sect identity modifiers (CK3-safe backend identity layer).
+sect_signature_orthodox_hidden = {
+        stress_loss_mult = 0.08
+    learning = 1
+    monthly_lifestyle_xp_gain_mult = -0.04
+    monthly_prestige = -0.05
+    stress_gain_mult = -0.08
+    general_opinion = 10
+}
+
+sect_signature_demonic_hidden = {
+        prowess = 2
+    dread_gain_mult = 0.15
+    monthly_lifestyle_xp_gain_mult = 0.05
+    stress_gain_mult = 0.08
+    general_opinion = -20
+}
+
+sect_signature_unorthodox_hidden = {
+        intrigue = 1
+    hostile_scheme_resistance = -6
+    health = -0.1
+    general_opinion = -10
+}
+
+sect_signature_vagrant_hidden = {
+        travel_speed_mult = 0.1
+    monthly_lifestyle_xp_gain_mult = 0.05
+    stress_loss_mult = 0.04
+    vassal_opinion = -4
+}
+
+sect_signature_imperial_guard_hidden = {
+        dread_baseline_add = 6
+    tyranny_gain_mult = -0.05
+    monthly_prestige = 0.2
+    monthly_lifestyle_xp_gain_mult = 0.03
+    general_opinion = -4
+}
+
+# Hidden cultivation-path identity modifiers assigned by branch perks.
+path_internal_cultivation_hidden = {
+        health = 0.15
+    stress_loss_mult = 0.05
+    prowess = -1
+}
+
+path_external_cultivation_hidden = {
+        prowess = 2
+    advantage = 4
+    health = -0.1
+}
+
+path_balanced_cultivation_hidden = {
+        learning = 1
+    martial = 1
+    monthly_lifestyle_xp_gain_mult = 0.03
+}
+
+path_tyrannical_cultivation_hidden = {
+        dread_gain_mult = 0.12
+    prowess = 1
+    stress_gain_mult = 0.08
+    same_faith_opinion = -3
+}
+
+path_longevity_cultivation_hidden = {
+        health = 0.25
+    fertility = -0.05
+    prowess = -1
+}
+
+legendary_breakthrough_pill_ready = {
+    monthly_lifestyle_xp_gain_mult = 0.12
+    health = 0.15
+}

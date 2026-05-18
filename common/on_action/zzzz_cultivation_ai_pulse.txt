@@ -1,0 +1,52 @@
+on_game_start_after_lobby = {
+    events = {
+        cultivation_ai.2250
+        cultivation_ai.2270
+        cultivation_ai.2295
+        cultivation_ai.2290
+        cultivation_ai.3000
+		xianxia_world.9600
+        xianxia_world.1000
+        xianxia_world.1700
+        xianxia_sect_conflict.0001
+    }
+}
+
+# Monthly simulation layer for AI cultivation and social dynamics.
+on_monthly_pulse = {
+    events = {
+        cultivation_ai.2000
+        cultivation_ai.2100
+        cultivation_ai.2200
+        cultivation_ai.2210
+        cultivation_ai.2220
+        cultivation_ai.2230
+        cultivation_ai.2250
+        cultivation_ai.2260
+        cultivation_ai.2270
+        cultivation_ai.2295
+        cultivation_ai.3001
+        cultivation_ai.3002
+        xianxia_world.1710
+        xianxia_social.1000
+        xianxia_social.1100
+        xianxia_sect_conflict.0001
+    }
+}
+
+# Lower-frequency heavy realm adaptation / institution refresh.
+on_yearly_pulse = {
+    events = {
+        cultivation_ai.2280
+        cultivation_ai.3000
+        xianxia_world.1000
+        xianxia_world.1700
+    }
+}
+
+
+on_character_death = {
+    events = {
+        xianxia_sect_succession.0001
+    }
+}

@@ -1,0 +1,580 @@
+﻿sect_headquarters_realm = {
+    monthly_prestige = 0.3
+    monthly_piety = 0.3
+    knight_effectiveness_mult = 0.1
+}
+
+sect_resource_surplus = {
+    monthly_income_mult = 0.1
+    monthly_prestige = 0.15
+}
+
+alchemy_backlash = {
+    health = -0.6
+    learning = -2
+}
+
+perfected_spirit_pill = {
+    health = 0.6
+    prowess = 2
+    learning = 2
+}
+
+manual_comprehension = {
+    monthly_lifestyle_xp_gain_mult = 0.08
+}
+
+tribulation_survivor = {
+    health = 1.0
+    prowess = 4
+    monthly_prestige = 0.5
+}
+
+cultivation_deviation = {
+    health = -0.8
+    diplomacy = -2
+    stewardship = -2
+    martial = -2
+}
+
+secret_realm_inheritance = {
+    monthly_lifestyle_xp_gain_mult = 0.10
+    monthly_prestige = 0.3
+}
+
+high_realm_longevity = {
+    health = 1.5
+    prowess = 2
+}
+
+jianghu_reputation_righteous = {
+    general_opinion = 5
+    clergy_opinion = 8
+}
+
+jianghu_reputation_demonic = {
+    same_faith_opinion = -5
+    dread_gain_mult = 0.3
+    enemy_hostile_scheme_success_chance_add = 10
+}
+
+sect_governance_feudal_adapted = {
+    monthly_prestige = 0.2
+    short_reign_duration_mult = -0.1
+}
+
+sect_governance_republic_adapted = {
+    monthly_income_mult = 0.08
+    vassal_opinion = 4
+}
+
+sect_governance_clan_adapted = {
+    monthly_prestige = 0.25
+    monthly_income_mult = 0.05
+    powerful_vassal_opinion = 5
+}
+
+sect_governance_tribal_adapted = {
+    knight_effectiveness_mult = 0.12
+    monthly_prestige = 0.25
+    levy_size = 0.1
+}
+
+sect_governance_theocracy_adapted = {
+    monthly_piety = 0.4
+    clergy_opinion = 8
+    monthly_lifestyle_xp_gain_mult = 0.04
+}
+
+sect_governance_administrative_adapted = {
+    domain_limit = 1
+    monthly_income_mult = 0.06
+    monthly_prestige = 0.2
+}
+
+jianghu_realm_friction = {
+    vassal_opinion = -4
+}
+
+
+sect_resource_obligations = {
+    monthly_income_mult = -0.08
+    monthly_prestige = 0.1
+    vassal_opinion = -3
+}
+
+sect_resource_stockpile = {
+    monthly_income_mult = 0.12
+    monthly_prestige = 0.2
+    monthly_piety = 0.1
+}
+
+sect_internal_dispute = {
+    vassal_opinion = -8
+    levy_size = -0.08
+    tyranny_gain_mult = 0.1
+}
+
+sect_power_struggle = {
+    enemy_hostile_scheme_success_chance_add = 10
+    owned_personal_scheme_success_chance_add = 8
+    stress_gain_mult = 0.1
+}
+
+tournament_chain_momentum = {
+    martial = 2
+    prowess = 2
+    monthly_prestige = 0.25
+}
+
+tournament_chain_injury = {
+    health = -0.5
+    prowess = -1
+}
+
+expedition_progress = {
+    monthly_lifestyle_xp_gain_mult = 0.08
+    prowess = 1
+}
+
+expedition_setback = {
+    health = -0.4
+    travel_speed_mult = -0.15
+}
+
+lineage_prestige_mentor = {
+    monthly_dynasty_prestige = 0.2
+    monthly_prestige = 0.15
+}
+
+lineage_marked_disciple = {
+    monthly_lifestyle_xp_gain_mult = 0.08
+    monthly_piety = 0.1
+}
+
+outer_court_disciple = {
+    monthly_lifestyle_xp_gain_mult = 0.04
+    monthly_prestige = 0.05
+}
+
+inner_court_disciple = {
+    monthly_lifestyle_xp_gain_mult = 0.12
+    learning = 1
+    monthly_piety = 0.15
+}
+
+promoted_sect_elder = {
+    monthly_prestige = 0.2
+    monthly_piety = 0.2
+    learning = 1
+}
+
+alchemy_furnace_masterwork = {
+    learning = 3
+    prowess = 2
+    monthly_income_mult = 0.05
+}
+
+alchemy_qi_deviation_wound = {
+    health = -0.7
+    prowess = -2
+}
+
+sect_council_consensus = {
+    vassal_opinion = 6
+    monthly_prestige = 0.2
+    monthly_piety = 0.1
+}
+
+sect_council_deadlock = {
+    vassal_opinion = -10
+    monthly_prestige = -0.15
+    stress_gain_mult = 0.15
+}
+
+sect_lineage_favor = {
+    monthly_dynasty_prestige = 0.25
+    same_faith_opinion = 4
+}
+
+sect_lineage_fracture = {
+    same_faith_opinion = -8
+    enemy_hostile_scheme_success_chance_add = 8
+}
+
+alchemy_herb_stockpile = {
+    monthly_income_mult = 0.04
+    learning = 1
+}
+
+alchemy_ore_stockpile = {
+    monthly_income_mult = 0.05
+    stewardship = 1
+}
+
+alchemy_core_stockpile = {
+    prowess = 1
+    monthly_piety = 0.1
+}
+
+
+alchemy_enlightenment_pill = {
+    monthly_lifestyle_xp_gain_mult = 0.20
+    learning = 1
+}
+
+
+formation_barrier_network = {
+    advantage = 4
+    controlled_province_advantage = 4
+    levy_size = 0.08
+}
+
+formation_warded_county = {
+    fort_level = 1
+    garrison_size = 0.15
+}
+
+fox_spirit_mortal_hunt_frenzy = {
+    monthly_lifestyle_xp_gain_mult = 0.25
+    intrigue = 2
+    prowess = 1
+    monthly_dread = 8
+    stress_loss_mult = 0.1
+}
+
+
+heavenly_demon_proclaimed = {
+    same_faith_opinion = 60
+    monthly_lifestyle_xp_gain_mult = 0.35
+    learning = 6
+    monthly_prestige = 0.6
+}
+
+
+sect_hegemon_mandate = {
+    monthly_prestige = 0.45
+    monthly_piety = 0.2
+    same_faith_opinion = 20
+    monthly_lifestyle_xp_gain_mult = 0.12
+}
+
+martial_confederation_founder = {
+    monthly_prestige = 0.35
+    diplomacy = 2
+    same_faith_opinion = 10
+    monthly_lifestyle_xp_gain_mult = 0.08
+}
+
+
+orthodox_alliance_leader = {
+    same_faith_opinion = 25
+    monthly_prestige = 0.5
+    diplomacy = 2
+    monthly_lifestyle_xp_gain_mult = 0.12
+}
+
+demonic_alliance_leader = {
+    same_faith_opinion = 25
+    monthly_prestige = 0.5
+    dread_gain_mult = 0.25
+    monthly_lifestyle_xp_gain_mult = 0.12
+}
+
+unorthodox_alliance_leader = {
+    same_faith_opinion = 20
+    monthly_prestige = 0.5
+    intrigue = 2
+    monthly_lifestyle_xp_gain_mult = 0.12
+}
+
+martial_alliance_leader = {
+    monthly_prestige = 0.4
+    diplomacy = 3
+    vassal_opinion = 8
+    monthly_lifestyle_xp_gain_mult = 0.1
+}
+
+imperial_patron_sect = {
+    monthly_prestige = 0.35
+    monthly_piety = 0.2
+    same_faith_opinion = 12
+    legitimacy_gain_mult = 0.1
+}
+
+jianghu_face_loss = {
+    diplomacy = -2
+    monthly_lifestyle_xp_gain_mult = -0.25
+    general_opinion = -5
+}
+
+legendary_artifact_finder = {
+    monthly_prestige = 0.4
+    monthly_piety = 0.3
+    monthly_lifestyle_xp_gain_mult = 0.1
+    hostile_scheme_resistance = 12
+}
+
+legendary_artifact_escape_wounds = {
+    health = -0.5
+    prowess = -4
+    monthly_lifestyle_xp_gain_mult = -0.08
+}
+
+alchemy_body_tempering_pill = {
+    prowess = 2
+    health = 0.15
+}
+
+alchemy_soul_clarity_pill = {
+    learning = 2
+    stress_loss_mult = 0.1
+}
+
+alchemy_tribulation_guard_pill = {
+    hostile_scheme_resistance = 10
+    health = 0.1
+    monthly_piety = 0.2
+}
+
+alchemy_blood_ignition_pill = {
+    prowess = 3
+    army_damage_mult = 0.05
+    stress_gain_mult = 0.1
+}
+
+auction_mortal_tier_find = {
+    monthly_prestige = 0.12
+    stewardship = 1
+}
+
+auction_profound_tier_find = {
+    monthly_prestige = 0.2
+    learning = 1
+    monthly_lifestyle_xp_gain_mult = 0.04
+}
+
+auction_heaven_tier_find = {
+    monthly_prestige = 0.35
+    monthly_piety = 0.2
+    hostile_scheme_resistance = 8
+}
+
+auction_rival_resentment = {
+    general_opinion = -4
+    stress_gain_mult = 0.1
+}
+
+auction_renowned_seller = {
+    monthly_prestige = 0.18
+    vassal_opinion = 4
+}
+
+invited_path_guardian = {
+    prowess = 3
+    monthly_prestige = 0.08
+}
+
+jianghu_activity_host_momentum = {
+    monthly_prestige = 0.2
+    monthly_lifestyle_xp_gain_mult = 0.05
+    same_faith_opinion = 6
+}
+
+dao_exchange_host_inspiration = {
+    monthly_lifestyle_xp_gain_mult = 0.12
+    monthly_prestige = 0.15
+    learning = 1
+}
+
+dao_exchange_participant = {
+    monthly_lifestyle_xp_gain_mult = 0.08
+    learning = 1
+}
+
+
+jianghu_rank_overall_1 = {
+    monthly_prestige = 0.35
+    prowess = 2
+    attraction_opinion = 5
+}
+
+jianghu_rank_overall_2 = {
+    monthly_prestige = 0.22
+    prowess = 1
+    attraction_opinion = 3
+}
+
+jianghu_rank_overall_3 = {
+    monthly_prestige = 0.12
+    martial = 1
+}
+
+jianghu_rank_path_orthodox_1 = {
+    monthly_piety = 0.22
+    same_faith_opinion = 6
+}
+
+jianghu_rank_path_unorthodox_1 = {
+    monthly_prestige = 0.2
+    intrigue = 1
+}
+
+jianghu_rank_path_demonic_1 = {
+    monthly_prestige = 0.24
+    dread_gain_mult = 0.1
+}
+
+jianghu_rank_path_vagrant_1 = {
+    monthly_prestige = 0.18
+    monthly_lifestyle_xp_gain_mult = 0.05
+}
+
+sect_authority_high = {
+    monthly_prestige = 0.22
+    vassal_opinion = 6
+    same_faith_opinion = 5
+    monthly_county_control_growth_factor = 0.1
+}
+
+sect_authority_low = {
+    monthly_prestige = -0.18
+    vassal_opinion = -8
+    same_faith_opinion = -6
+    monthly_county_control_growth_factor = -0.15
+}
+
+sect_elder_faction_pressure = {
+    monthly_stress_gain_mult = 0.12
+    hostile_scheme_resistance = -10
+    tyranny_gain_mult = 0.1
+}
+
+sect_schism_recent = {
+    vassal_opinion = -10
+    levy_size = -0.08
+    monthly_prestige = -0.25
+}
+
+sect_purge_aftermath = {
+    dread_gain_mult = 0.2
+    same_faith_opinion = -10
+    monthly_county_control_growth_add = -0.1
+}
+
+sect_lineage_backed_heir = {
+    monthly_prestige = 0.1
+    diplomacy = 1
+    same_faith_opinion = 4
+}
+
+sect_challenger_glory = {
+    monthly_prestige = 0.3
+    prowess = 3
+    martial = 2
+}
+
+sect_challenger_disgraced = {
+    diplomacy = -2
+    martial = -1
+    monthly_prestige = -0.2
+    attraction_opinion = -8
+}
+
+sect_forced_abdication_shame = {
+    monthly_prestige = -0.25
+    general_opinion = -8
+    stress_gain_mult = 0.2
+}
+
+sect_exiled_elder = {
+    diplomacy = -2
+    stewardship = -1
+    same_faith_opinion = -12
+}
+
+sacred_mountain_consecrated = {
+    local_county_control_growth = 0.35
+    county_conversion_speed = 0.2
+    county_opinion_add = 8
+    monthly_development_growth = 0.1
+    levy_size = 0.08
+    county_modifier_tax_mult = 0.2
+}
+
+spirit_vein_secured = {
+    local_county_control_growth = 0.25
+    levy_reinforcement_rate = 0.08
+    monthly_development_growth = 0.08
+    county_modifier_tax_mult = 0.15
+}
+
+spirit_vein_contested = {
+    local_county_control_growth = -0.3
+    levy_size = -0.12
+    county_conversion_speed = -0.15
+    monthly_development_growth = -0.08
+    county_modifier_tax_mult = -0.25
+}
+
+corrupted_spirit_vein = {
+    local_county_control_growth = -0.15
+    hostile_scheme_resistance = -8
+    county_opinion_add = -8
+    monthly_development_growth = -0.06
+}
+
+high_realm_mandate_presence = {
+    monthly_prestige = 0.3
+    dread_gain_mult = 0.2
+    hostile_scheme_resistance = 12
+}
+
+high_realm_suppressed_vassal = {
+    martial = -1
+    intrigue = -1
+    monthly_stress_gain_mult = 0.1
+    hostile_scheme_resistance = -10
+}
+
+high_realm_court_deference = {
+    diplomacy = -1
+    monthly_lifestyle_xp_gain_mult = -0.04
+    stress_gain_mult = 0.08
+}
+
+sect_succession_crisis = {
+    vassal_opinion = -35
+    monthly_prestige = -0.4
+    monthly_county_control_growth_factor = -0.35
+    short_reign_opinion_mult = 0.2
+    popular_opinion = -20
+}
+
+sect_claimant_faction_pressure = {
+    hostile_scheme_resistance = -8
+    monthly_stress_gain_mult = 0.1
+    levy_size = -0.05
+}
+
+sect_failed_heir_exile = {
+    diplomacy = -2
+    prowess = -1
+    monthly_prestige = -0.25
+}
+
+sect_lineage_betrayal = {
+    same_faith_opinion = -12
+    intrigue = 1
+}
+
+sect_coup_victor = {
+    dread_gain_mult = 0.15
+    monthly_prestige = 0.18
+}
+
+sect_emergency_regent = {
+    diplomacy = 1
+    stewardship = 1
+    monthly_prestige = 0.1
+}
