@@ -1,0 +1,570 @@
+IN THIS FILE ARE LOGS FROM MODDERS DISCUSSING CHANGES TO 1.19+ CK3 USE THIS CHANGES WHEN NEEDED TO FIX ERRORS 
+1.18 (This thread is meant for discussion of changes in 1.18.*, such as questions about things on the Modder's Patchnotes thread and their responses. This helps keep patch-related discussion to one place for future reference, though you are free to still use the other channels.
+mrtats | Advanced Cheat Menu [HIVE],  — 10/22/25, 9:21 AM
+I asked JonZone (idk if he is here) if add/remove_innovation effect supports the new innovation scope. As they didn't seem to support it in the docs.
+mrtats | Advanced Cheat Menu [HIVE],  — 10/22/25, 11:39 AM
+Well, it is confirmed. add/remove_innovation effect does not support the new innovation scope but he'll see if he can get it in for 1.18.1.
+ [HIVE], 
+PDX-JonZone — 10/22/25, 12:11 PM
+Image
+Saltfish | Anime mods, RUI UnO — 10/22/25, 9:19 PM
+I think add 100 progress work as a roundabout way, since those are confirmed support scope 
+mrtats | Advanced Cheat Menu [HIVE],  — 10/23/25, 6:54 AM
+Yeah that would work for time being I guess.
+plop — 10/25/25, 5:27 AM
+Confederations Types
+We're getting confederation types. 👀 
+Old:
+create_confederation = {
+    name = key/dynamic description
+}
+
+New:
+create_confederation - Creates a confederation and adds the scoped character as a member.
+The confederation will be saved to scope:new_confederation
+usage:
+create_confederation = {
+    name = key/dynamic description
+    type = <confederation type> # Optional. Type of confederation to create.
+    leader = <house> # Optional. House that leads the confederation.
+}
+Supported Scopes: character
+
+
+Targets:
+house_confederation - Scope to the house's confederation
+Input Scopes: dynasty_house
+Output Scopes: confederation
+
+leading_house - Scope to the confederation's leading dynasty house
+Input Scopes: confederation
+Output Scopes: dynasty_house
+
+confederation_type - Get the confederation_type with the specified key
+Requires Data: yes
+Global Link: yes
+Output Scopes: confederation_type
+ 
+Think we can add our own types too!
+plop — 10/25/25, 5:51 AM
+Domiciles
+Noble family titles can be tiered now with tier = <county/duchy>:
+give_noble_family_title -  Give a noble family title to the <root> character.
+
+usage:
+give_noble_family_title = {
+    name = key/dynamic description
+    tier = <county/duchy> # Optional. Defaults to duchy.
+    article = SOME_TITLE_NAME_ARTICLE
+    government = administrative_government # optional government, default is administrative
+    save_scope_as = <name>
+}
+Supported Scopes: character
+Nomad and adventurer titles are unchanged.
+NOTE: Interestingly, set_noble_family_title says the title still needs to be duchy-level.
+
+There's also add_animate_domicile_building to construct domicile buildings with animation. 
+plop — 10/25/25, 6:02 AM
+Setting Title Colors with color values
+We can set title colors, big for custom map modes where we color baronies (rip the performance with the new amount of baronies though).
+set_title_color - Changes the title's map color to the specified value. Both named and RGB values are supported.
+
+usage:
+scope:landed_title = {
+    set_title_color = { 255 0 0 }
+}
+Supported Scopes: landed_title
+ 
+Liege don't always have to defend vassals?!
+set_vassal_wars_are_redirected_to_holder - Flags this title so that the holder will be called to defend their vassals or not according to the given value.
+This must be their primary title in order for the effect to take place.
+
+scope:landed_title = {
+    set_vassal_wars_are_redirected_to_holder = yes/no
+}
+Supported Scopes: landed_title
+Situations
+Situation pins 📌 :
+set_situation_center_province - Sets a center province for the situation, useful for displaying pins in a specific place.
+
+You can now provide a character and a county for catalysts.
+trigger_situation_catalyst = {
+      catalyst = catalyst_type
+      character = scope:character (optional, the actor who will trigger the catalyst)
+      county = scope:province (optional, identifies the subregion where the catalyst will trigger)
+ }
+You can trigger a sub_region_catalyst:
+scope:situation_sub_region = {
+    trigger_sub_region_catalyst = {
+        catalyst = catalyst_type
+        character = scope:character
+    }
+}
+
+
+You can add/remove realms to situation sub regions:
+add_character_realm_to_sub_region = <character> + remove_character_realm_from_sub_region = <character>
+
+You can add/remove de jure counties too:
+add_dejure_title_to_sub_region = <title> + remove_dejure_title_from_sub_region = <title>
+
+Since participants groups are no longer calculated every day, you can use:
+scope:ruler = { recalculate_participant_group = scope:situation } 
+plop — 10/25/25, 6:17 AM
+Barter Goods? - A new currency
+Effects
+add_barter_goods - adds barter goods to a character
+Supported Scopes: character
+
+remove_barter_goods - removes barter goods from a character
+Supported Scopes: character
+
+Also works as a currency that can be used for casus belli contribution.
+
+Targets
+situation_top_barter_goods - Get the participating character with the most barter goods in the scoped situation.
+Input Scopes: situation
+Output Scopes: character
+
+barterer
+barter_loot
+
+Modifiers
+Tag: monthly_barter_goods
+Use areas: character, province, and county
+
+Tag: monthly_barter_goods_mult
+Use areas: character, province, and county
+
+Tag: monthly_war_barter_goods_income_add
+Use areas: character, province, and county
+
+Tag: monthly_war_barter_goods_income_mult
+Use areas: character, province, and county
+
+Tag: $TERRAIN_TYPE$_barter_goods_mult
+Use areas: character, province, and county
+
+Tag: cowed_vassal_barter_goods_contribution_mult
+Use areas: character
+
+Tag: subject_salary_income_barter_goods_$SUBJECT_SALARY$_add
+Use areas: character
+
+Tag: vassal_barter_goods_contribution_add
+Use areas: character
+
+(and so on)
+
+barter_troops is a dlc_feature.
+
+Armies can barter (tied to availlable_loot) and carry barter_loot:
+is_barter_army - Is the scoped army a barter army?
+Traits: yes/no 
+Supported Scopes: army
+
+barter_loot - How much barter loot is the army carrying?
+Traits: <, <=, =, !=, >, >=
+Supported Scopes: army
+ 
+Cameron122 [LUX],  — 10/27/25, 9:09 AM
+so happy about this, my mod Lux Renata is really admin focused and I had to make a gov type I really didn't like for independent dukes for the variation of admin I made called Classical
+PDX-JonZone — 10/28/25, 9:26 AM
+by the way, I can confirm that "add_innovation" "remove_innovation" "has_innovation" will all accept the new scope in 1.18.1
+KeizerHarm | T4N
+OP
+ — 10/28/25, 10:00 AM
+JonZone best Zone. Thank you!
+Typical | DATaW, AGOT — 10/28/25, 10:30 AM
+:hyperthink:
+Eastpointed | Elf Destiny — 10/28/25, 6:22 PM
+So I see the new features, but from my limited testing my mod seems to be working fine out of the box. Has anyone run into any major breaking changes yet? Anything in particular to keep an eye out for?
+hunter00001 — 10/28/25, 11:01 PM
+i need urgent help withg the flatmaps
+Trig | LotR Realms [ELĀ!],  — 10/28/25, 11:05 PM
+What type?
+ [ELĀ!], 
+hunter00001 — 10/28/25, 11:08 PM
+tried to save a flat map as usual and had this issue
+Image
+i tried with custom save setting and with overwritte from gimp
+Speedweed|MedievalImmersion| — 10/29/25, 7:46 PM
+Well I don’t know what error I’m running into into particular, only that there are around 14,000 of them.
+Haghog | After the End — 10/29/25, 10:30 PM
+Spotted for the Silk Road regions, should_remember_counties_order - though there's no related scripted effect, so I'm not entirely sure what the effect is
+shatterstar - GoA2 Code Peon [CK3],  — 10/30/25, 7:11 PM
+has anyone noticed if domiciles are any easier to work with now
+like do they now allow you to take the scope of the character who owns them
+i plan on checking this myself but if anyone already knows i'd love to save mysef some time
+mrtats | Advanced Cheat Menu [HIVE],  — 10/30/25, 7:13 PM
+domicile.owner
+ [HIVE], 
+shatterstar - GoA2 Code Peon [CK3],  — 10/30/25, 7:14 PM
+i was trying to do that to make new localizations for the building names and i was running into problems using that for custom loc
+like i think that's available in the scope of the building itself but i don't think its available in the custom loc
+ [CK3], 
+plop — 10/30/25, 7:16 PM
+Hasn't it always been like that?
+mrtats | Advanced Cheat Menu [HIVE],  — 10/30/25, 7:17 PM
+I mean that would be only way to get the domicile owner
+Are you sure that the scope is domicile for the custom loc and not some other scope?
+ [HIVE], 
+shatterstar - GoA2 Code Peon [CK3],  — 10/30/25, 7:18 PM
+the scope for the building localization is just building
+sorry i'll just look into this myself again then ask in general later
+cause this is getting a little OT 
+ [CK3], 
+mrtats | Advanced Cheat Menu [HIVE],  — 10/30/25, 7:26 PM
+I am pretty sure a building scope does not exist
+check 07_ep3_custom_loc.txt I think that might give you the right idea
+Cameron122 [LUX],  — 11/2/25, 3:35 PM
+I’m away from my computer right now so I can’t check but does anyone know if county tier noble families are exclusive to people who own All Under Heaven or can I make my ep_3 governments have it? I don’t want to make two sets of noble family titles depending on if the player owns AUH or not.
+Galle — 11/2/25, 3:59 PM
+We're having some trouble updating the COTC dev build for AUH, maybe you guys can help
+The specific problem is that the game crashes upon launching a campaign, after selecting a character and hitting "Start"
+The problem seems to be caused even with just the map_data, gfx, history, and common/landed_titles folders
+Unfortunately I've had trouble tracking down the source beyond that, since at that point everything is interdependent
+DC123456789 — 11/2/25, 11:22 PM
+Do you use replace_path for your landed_titles folder? If you don't, I might have had that exact problem, not realizing that I was no longer overwriting all the vanilla landed_titles since they added a bunch of files there. 
+Galle — 11/3/25, 1:54 AM
+That was it, I should have known!
+Thanks
+ThatOneGuy | GH — 11/3/25, 3:28 PM
+Would anyone know offhand if there were changes to traits that could cause a previously working one to no longer be added to the database? We have a fairly inconsistent issue where previously ok traits now are not, but I'm struggling to find any correlation between them
+Haghog | After the End — 11/3/25, 10:16 PM
+The poet trait had some changes, might be causing some unexpected token issues
+Speedweed|MedievalImmersion| — 11/4/25, 12:08 AM
+I think the child of concubine trait was changed too
+Trig | LotR Realms [ELĀ!],  — 11/4/25, 10:31 AM
+https://steamdb.info/patchnotes/20662952/ File changes this hotfix
+SteamDB
+Update 1.18.0.2 · Crusader Kings III update for 4 November 2025
+Hello everyone! We’re releasing a hotfix today to address some pressing issues reported to us by the community since the release of All Under Heaven last week. Please check the changelog below for more information!Update 1.18.0.2…
+Update 1.18.0.2 · Crusader Kings III update for 4 November 2025
+jovakiin — 11/6/25, 3:57 PM
+Is there an exhaustive list somewhere with the list of files changed or updated similar to what was provided for 1.16?
+A very presumtive question, I know, but I have to ask
+KeizerHarm | T4N
+OP
+ — 11/6/25, 3:59 PM
+https://steamdb.info/patchnotes/20484521/
+https://steamdb.info/patchnotes/20593377/
+https://steamdb.info/patchnotes/20662952/
+Find it by scrolling down on those pages (1.18.0, 1.18.0.1, 1.18.0.2 respectively)
+jovakiin — 11/6/25, 4:00 PM
+Thank you so much! A saint among men!
+R0B0 — 11/7/25, 4:58 AM
+Did they do anything to the cultural titles? The ruler titles in the history of a holding and the titles of dead rulers are all prince titles :/
+ThatOneGuy | GH — 11/7/25, 9:27 AM
+Yes but that shouldnt have an impact on traits in separate files right? Similarly they're fairly inconsistent as to which arent being loaded in the database, with those before/after being loaded
+jovakiin — 11/12/25, 4:09 PM
+I think I found the cause of my crashes; outdated and terribly organised on_actions 
+Now that I've cleaned up those files, the mod seems to be running well, without a crash for 100 years
+Jaco_Daan | LotR Realms [LotR],  — 11/14/25, 11:19 AM
+Situations GUI files now update without one having to quite to main menu 🙂 Probably done back in 1.18, but I just noticed it, and thought I'd pop it here
+Eastpointed | Elf Destiny — 11/16/25, 4:05 PM
+Seems the potential property on traits has been broken: ⁠coop-general⁠
+TheBigE — 1/6/26, 4:23 AM
+For is_busy_in_events_localised, now that it's been removed, what is the alternative I should use? Just is_busy_in_events? 
+LT-Rascek | WtWSMS — 1/31/26, 11:49 PM
+For the latest patch that dropped. A is added, M is moved, D or R (I forget which) is deleted)
+This thread is meant for the listing (with no discussion) of changes in the patch for 1.18.*; specifically significant to modders.
+a — 10/24/25, 4:24 PM
+script_docs from last dev diary
+https://forum.paradoxplaza.com/forum/developer-diary/dev-diary-188-art-music-modding-achievements.1863996/#post-30815772 
+Lyskorie ⚜ [LILY],  — 10/29/25, 4:07 AM
+create_noble_family_effect scripted effect now requires a GOVERNMENT_GIVER parameter, which takes a character.
+
+Example: create_noble_family_effect = { GOVERNMENT_GIVER = top_liege } (common/scripted_effects/00_administrative_effects.txt line 186)
+Lyskorie ⚜ [LILY],  — 10/29/25, 5:46 AM
+Another thing that I don't think was explicitly spelt out is that Poet is a tracked trait and uses the key lifestyle_poet instead now
+Pep — 11/2/25, 2:41 PM
+New script patterns
+As I am getting deeper into updating my sandbox I am uncovering more new patterns, where Paradox are replacing existing script with new methods.
+
+So I'm gonna try and cram as many new patterns in to one post as I can, to avoid spreading them out over multiple posts.
+The format will be
+
+old pattern
++ new pattern
+
+NOT = { LHS = RHS }
++ LHS != RHS
+
+is_independent_ruler = no
++ top_liege != this
+is_independent_ruler = yes
++ top_liege = this
+NOTE confirmation that this works both ways, which should be obvious but you never know 😉
+
+is_landless_adventurer = yes
++ has_government = landless_adventurer_government
+
+has_government = landless_adventurer_government
++ government_has_flag = government_is_landless_adventurer
+NOTE This counters the previous pattern change but it wouldn't be Paradox if there wasn't some confusing trends 🤷
+
+num_of_relation_ward >= 1
++ any_relation = { type = ward }
+NOTE: This seems to be the case for any num_of_relation_ relationship where the test is > 0 or >= 1, i.e. testing if they have at least 1 of the type of relationship
+
+any_target_title = { count >= 1 }
++ any_target_title = { }
+NOTE: This seems to be the case for any any_ list builder where the test is > 0 or >= 1, i.e. testing if they have at least 1 of the type
+
+any/every/ordered/random_held_title = { tier >= tier_county }
++ any/every/ordered/random_held_title = { title_tier >= county }
+NOTE The new tier is part of the list builder, not the landed titles as the old one was, best illustrated with an effect list builder
+every_held_title = {
+    title_tier = county
+
+    limit = {
+        holder = scope:rival
+        holder.primary_spouse.age >= 21
+    }
+}
+ 
+New script patterns - continued
+any/every/ordered/random_targeting_faction = { limit = { faction_is_type = independence_faction } }
++ any/every/ordered/random_targeting_faction = { faction_type = independence_faction }
+
+ai_has_conqueror_personality = yes
++ has_variable = conqueror
+ai_has_conqueror_personality = no
++ NOT = { has_variable = conqueror }
+
+any/every/ordered/random_character_active_contract = { limit = { has_task_contract_type = laamp_join_faction_contract } }
++ any/every/ordered/random_character_active_contract = { task_contract_type = laamp_join_faction_contract }
+
+any_realm_county = { any_county_province = { or = { terrain = mountains terrain = hills } } }
++ any_realm_county = { county_has_province_with_terrain = { terrain = mountains terrain = hills } }
+NOTE county_has_province_with_terrain is a new landed title trigger replacing the need to use any_county_province to test terrain but unlike other triggers, this one is implicit OR
+
+capital_county ?= { any_county_province = { any_province_epidemic = { count >= 1 outbreak_intensity < apocalyptic } } }
++ capital_county ?= { has_province_with_epidemic = { intensity < apocalyptic } }
+NOTE has_province_with_epidemic is a new landed title trigger replacing the need to use
+any_county_province = { any_province_epidemic = {} }
+
+to test a outbreak intensity 
+has_variable -- New functionality
+This is significant, so deserves it's own post.
+
+Old documentation
+has_global_variable - Checks whether the current scope has the specified variable set
+has_variable = name
+Supported Scopes: none
+
+Old script
+nor = {
+    exists = involved_activity
+    has_variable = homage_liege_scope
+    has_character_flag = meditation_character_flag
+    has_character_flag = petition_liege_character_flag
+    has_character_flag = holding_court_character_flag
+    is_being_visited_on_tour_strict = yes
+}
+
+New documentation
+has_variable - Checks whether the current scope has any of the specified variables set
+
+has_variable = variable_name
+
+has_variable = {
+    name = variable_name1
+    name = variable_name2
+    name = variable_name3
+}
+Supported Scopes: none
+
+New script
+nor = {
+    exists = involved_activity
+    has_variable = {
+        name = homage_liege_scope
+        name = meditation_character_flag
+        name = local_shrine_rite
+        name = petition_liege_character_flag
+        name = holding_court_character_flag
+    }
+    is_being_visited_on_tour_strict = yes
+}
+
+It looks weird considering triggers are implicit AND so you would assume that is not semantically the same but take note of the documentation
+any of the specified variables
+
+Presumably this is from their performance drive, so this new trigger is more efficient than doing multiple has_variable
+Pep — 11/2/25, 2:51 PM
+is_busy_in_events_unlocalised/is_busy_in_events_localised
+These triggers have been removed.
+There are no alternatives, they have simply been removed, which is no bad things as they were cursed triggers. 
+GUI/UI
+These UI functions have been replaced
+
+The format is
+old function
++ new function
+
+- Province.GetRaidLootTooltip
++ Province.GetLootTooltip
+- GUIPotentialBuildingItem.GetGoldCost
++ GUIPotentialBuildingItem.GetCost
+- GUIPotentialBuildingItem.HasGoldCost
++ GUIPotentialBuildingItem.HasCost
+- GUITrackItem.GetSelectedGoldCost
++ GUITrackItem.GetSelectedCost
+- GUITrackItem.HasSelectedGoldCost
++ GUITrackItem.HasSelectedCost
+- GUITrackItem.GetNextGoldCost
++ GUITrackItem.GetNextCost
+- GUITrackItem.HasNextGoldCost
++ GUITrackItem.HasNextCost
+
+1.19(
+This thread is meant for discussion of changes in 1.19.*, such as questions about things on the Modder's Patchnotes thread and their responses. This helps keep patch-related discussion to one place for future reference, though you are free to still use the other channels.
+Nanites - After the End (et al.) — 4/4/26, 2:09 PM
+So just to check, anywhere in the files where it says "GetGrouping" or "GetGroupingHelper" I should replace with "GetCategory" or "GetCategoryHelper"? 
+
+I've already futzed around with doctrine types and everything and I think I'm mooostly good on having fixed those, outside having to go back and double-check everything to make sure the values are right, but the game itself seems to basically be functioning though the Gui is real messed up 
+cuz rn my religions look like this so I'm just sorting through what's needed to make the gui functional again
+Image
+Nanites - After the End (et al.) — 4/4/26, 4:07 PM
+Huh, a change people might wanna be aware of - in the religion_values file, they changed lines 3294-3300, it used to read 
+
+faith_conversion_fervor_mult = {
+    value = define:NReligion|MAX_FERVOR
+    subtract = fervor
+    multiply = define:NReligion|FAITH_CREATION_FERVOR_DISCOUNT_PER_MISSING_FERVOR
+    max = define:NReligion|FAITH_CREATION_FERVOR_DISCOUNT_MAX
+    divide = define:NReligion|MAX_FERVOR
+}
+
+
+it now reads 
+
+faith_conversion_fervor_mult = {
+    value = define:NFaith|MAX_FERVOR
+    subtract = fervor
+    multiply = define:NFaith|FAITH_CREATION_FERVOR_DISCOUNT_PER_MISSING_FERVOR
+    max = define:NFaith|FAITH_CREATION_FERVOR_DISCOUNT_MAX
+    divide = define:NFaith|MAX_FERVOR
+}
+Trig | LotR Realms [ELĀ!],  — 4/10/26, 9:24 PM
+Does anyone have a list of changed files for 1.19? SteamDB doesn't have one bc it's a beta atm, and I wanted to check before I bothered to make one myself
+ [ELĀ!], 
+LT-Rascek | WtWSMS — 4/12/26, 8:38 PM
+I'm waiting until PDX settles on what 1.19 looks like, then I'll tell you.
+LT-Rascek | WtWSMS — 4/20/26, 12:36 PM
+Version 1.19 Changes:
+3901 files changed/moved/deleted/added:
+
+850 files in common
+229 files in events
+230 files in gfx
+108 files in gui
+76 files in history
+2365 files in localization
+9 files in map_data
+34 other files
+Attachment file type: unknown
+v1.19_changes
+234.54 KB
+The Greatest Dr McJenkins — 4/23/26, 12:37 PM
+There is no change to add_doctrine, correct? I've seen people asking for my mod to be updated to 1.19 but I've seen nothing that needs to be updated besides the version number
+jovakiin — 4/25/26, 6:49 AM
+How does the addition of the ledger impact the game files?
+Trig | LotR Realms [ELĀ!],  — 4/25/26, 7:37 PM
+It seems PDX no longer allows religion family opinion modifiers in cultural pillar character modifiers. I don't know if that's relevant to anyone, but it seems likely it's unintended
+Image
+shatterstar - GoA2 Code Peon [CK3],  — 4/28/26, 1:39 PM
+suddenly all the vanilla religions are complaining in our mod because their holy sites don't exist. do we have to include all the vanilla files and comment them out now or is there some other way to silence this? maybe by including the holy site file and pointing them all to some county?
+it wasnt like this before and i can't figure out what changed to make this happen
+ [CK3], 
+Trig | LotR Realms [ELĀ!],  — 4/28/26, 2:38 PM
+Did you update your replace files?
+Also, idk your use case, but I'd suggest either disabling both vanilla religions and holysites, or neither, is prob the best bet
+ [ELĀ!], 
+shatterstar - GoA2 Code Peon [CK3],  — 4/28/26, 3:05 PM
+so you guys have all the vanilla religion files in your mod?
+shatterstar - GoA2 Code Peon [CK3],  — 4/28/26, 3:13 PM
+like just commented out?
+ [CK3], 
+Trig | LotR Realms [ELĀ!],  — 4/28/26, 3:17 PM
+No, we just replace the whole religions/religion_types folder, which does the same thing
+You will need to adjust or remove all references to them in vanilla, but that’s often better imo than letting them sit and silently breaking triggers
+ [ELĀ!], 
+shatterstar - GoA2 Code Peon [CK3],  — 4/28/26, 3:38 PM
+and just as a sanity check, in order to do that you have to include files with identical names to the religion files that are in vanilla to overwrite them, right?
+because otherwise it loads them alongside your modded files
+just making sure there isnt some other way you're doing it
+ [CK3], 
+Trig | LotR Realms [ELĀ!],  — 4/28/26, 3:47 PM
+You can either:
+Load files with identical names to vanilla (empty, commented out, or repalced with your stuff)
+Use a full folder replace in the .mod file by adding replace_path="common/religion/religion_types"
+I'd suggest the second
+shatterstar - GoA2 Code Peon [CK3],  — 4/28/26, 3:56 PM
+ok will try the second
+nope we had it it just needed to be changed to religion_types 
+thanks for helping me troubleshoot that!
+ [CK3], 
+Trig | LotR Realms [ELĀ!],  — 4/28/26, 4:53 PM
+No worries!
+Galle — 5/7/26, 8:12 AM
+Currently flummoxed by a CTD that seems to be related to custom cultures
+If I override 00_west_germanic.txt and add an additional culture with properties identical to English, and then add that custom culture to the game, it works
+If I try to add that culture in its own file, avalonian.txt, and leave vanilla 00_west_germanic.txt alone, the game CTDs when starting a new game.
+All properties are identical between both, it's just a matter of what file it's in
+Anyone have a clue what's going on here?
+
+This thread is meant for the listing (with no discussion) of changes in the patch for 1.19.*; specifically significant to modders.
+Eastpointed | Elf Destiny — 3/30/26, 6:00 PM
+religion folder has a had a revamp
+doctrines split off into two folders doctrine_group_types and doctrine_types
+From Patch Notes: "Split nested "DoctrineType" and "DoctrineGroupType" into separate databases"
+holy_sites renamed => holy_site_types
+religion_families renamed => religion_family_types
+religions renamed => religion_types
+Saltfish | Anime mods, RUI UnO — 3/30/26, 10:51 PM
+assets in holding building
+need explicitly allow_accolades = yes in government to allow accolade
+active_accolades -> accolades
+accolade trigger potential changed to 2 blocks
+standard_activity_cost -> standard_activity_base_cost
+several new vars like can_not_marry can_be_councillor_override artifact_prevent_transfer allow you touch less
+Lyskorie ⚜ [LILY],  — 4/3/26, 9:42 PM
+Datatypes re: religion folder revamping
+GetCategoryHelper -> GetGroupingHelper
+GetCategory -> GetGrouping
+Usage remains the same
+cybrxkhan | VIET 🍚 RICE — 4/6/26, 12:34 AM
+Following up on what Eastpointed mentioned about religion changes, there have also been changes to holy site file, previously any instances of flag are now parameters, such as in the following example:
+
+flag = kerala_conversion_bonus # +50% County Conversion Speed
+
+
+is now
+
+    parameters = {
+        kerala_conversion_bonus # +50% County Conversion Speed
+    }
+
+
+Additionally, the holy site of 
+segrada_familia
+ has been removed, though looks like it wasn't actively used previously (?) 
+Lyskorie ⚜ [LILY],  — 4/8/26, 10:57 AM
+House Power:
+Trigger: has_house_power_parameter is now has_house_aspiration_parameter
+Localization changes:
+<key>_house_aspiration instead of <key>_house_power
+house_aspiration_parameter_<parameter> instead of house_power_parameter_<parameter>
+ 
+Wlqos (Vasikle) | Hēgemonia — 5/7/26, 9:55 AM
+lifestyle_perks
+ Are now required to have both 
+tree
+ and 
+position
+ defined. Previously, they could be used without defining them; now, they cause a CTD on launch if they are not defined.
+Ourg — 5/7/26, 3:25 PM
+character_in_location list still broken in 1.19.0.5
