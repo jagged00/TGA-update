@@ -1,4 +1,4 @@
-xianxia_clear_cultivator_battle_state_effect = {
+﻿xianxia_clear_cultivator_battle_state_effect = {
     remove_character_modifier = xianxia_cultivator_champion_protection
     remove_character_modifier = xianxia_cultivator_champion_collapse
     remove_character_modifier = xianxia_cultivator_champion_routed

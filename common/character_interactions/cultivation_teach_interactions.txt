@@ -223,7 +223,7 @@
 		}
 
 		scope:recipient = {
-			set_faith = scope:actor.faith
+			set_character_faith = scope:actor.faith
 
 			add_character_flag = {
 				flag = cultivation_training_cooldown
@@ -477,7 +477,7 @@ request_teach_cultivation_interaction = {
 
 	on_accept = {
 		scope:actor = {
-			set_faith = scope:recipient.faith
+			set_character_faith = scope:recipient.faith
 
 			add_character_flag = {
 				flag = asked_for_cultivation_recently
@@ -791,7 +791,7 @@ request_disciple_under_master_interaction = {
 
 	on_accept = {
 		scope:actor = {
-			set_faith = scope:recipient.faith
+			set_character_faith = scope:recipient.faith
 			add_trait = sect_disciple
 			add_character_modifier = { modifier = lineage_marked_disciple days = 3650 }
 			add_character_flag = disciple_of_current_mentor
@@ -924,7 +924,7 @@ take_disciple_interaction = {
 
 	on_accept = {
 		scope:recipient = {
-			set_faith = scope:actor.faith
+			set_character_faith = scope:actor.faith
 			add_trait = cultivation_qi_gathering
 			add_trait = sect_disciple
 			add_character_modifier = { modifier = lineage_marked_disciple days = 1825 }

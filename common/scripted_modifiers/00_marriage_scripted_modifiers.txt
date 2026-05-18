@@ -78,9 +78,6 @@
 					liege = {
 						opinion = { target = scope:actor value <= -1 }
 					}
-					guardian = {
-						opinion = { target = scope:actor value <= -1 }
-					}
 				}
 			}
 		}

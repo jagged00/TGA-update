@@ -102,7 +102,7 @@ xianxia_destroy_sect_foundation_cb = {
         scope:attacker = {
             show_pow_release_message_effect = yes
             accolade_attacker_war_end_glory_gain_med_effect = yes
-            add_prestige = high_prestige_value
+            add_prestige = 750
         }
         add_truce_attacker_victory_effect = yes
     }
@@ -202,7 +202,7 @@ xianxia_purge_demonic_sect_cb = {
         scope:attacker = {
             show_pow_release_message_effect = yes
             accolade_attacker_war_end_glory_gain_med_effect = yes
-            add_prestige = high_prestige_value
+            add_prestige = 750
         }
         add_truce_attacker_victory_effect = yes
     }
@@ -275,7 +275,7 @@ xianxia_purge_vagrant_sect_cb = {
         scope:defender.capital_county = { add_county_modifier = { modifier = corrupted_spirit_vein days = 7300 } }
         if = { limit = { exists = scope:defender.primary_title } scope:attacker = { destroy_title = scope:defender.primary_title } }
         scope:defender = { every_held_title = { limit = { tier >= tier_kingdom NOT = { this = primary_title } } scope:attacker = { destroy_title = prev } } }
-        scope:attacker = { show_pow_release_message_effect = yes accolade_attacker_war_end_glory_gain_med_effect = yes add_prestige = high_prestige_value }
+        scope:attacker = { show_pow_release_message_effect = yes accolade_attacker_war_end_glory_gain_med_effect = yes add_prestige = 750 }
         add_truce_attacker_victory_effect = yes
     }
     on_defeat = {
@@ -329,7 +329,7 @@ xianxia_purge_unorthodox_sect_cb = {
         scope:defender.capital_county = { add_county_modifier = { modifier = corrupted_spirit_vein days = 7300 } }
         if = { limit = { exists = scope:defender.primary_title } scope:attacker = { destroy_title = scope:defender.primary_title } }
         scope:defender = { every_held_title = { limit = { tier >= tier_kingdom NOT = { this = primary_title } } scope:attacker = { destroy_title = prev } } }
-        scope:attacker = { show_pow_release_message_effect = yes accolade_attacker_war_end_glory_gain_med_effect = yes add_prestige = high_prestige_value }
+        scope:attacker = { show_pow_release_message_effect = yes accolade_attacker_war_end_glory_gain_med_effect = yes add_prestige = 750 }
         add_truce_attacker_victory_effect = yes
     }
     on_defeat = {
@@ -393,7 +393,7 @@ xianxia_purge_orthodox_sect_cb = {
         scope:defender.capital_county = { add_county_modifier = { modifier = corrupted_spirit_vein days = 7300 } }
         if = { limit = { exists = scope:defender.primary_title } scope:attacker = { destroy_title = scope:defender.primary_title } }
         scope:defender = { every_held_title = { limit = { tier >= tier_kingdom NOT = { this = primary_title } } scope:attacker = { destroy_title = prev } } }
-        scope:attacker = { show_pow_release_message_effect = yes accolade_attacker_war_end_glory_gain_med_effect = yes add_prestige = high_prestige_value }
+        scope:attacker = { show_pow_release_message_effect = yes accolade_attacker_war_end_glory_gain_med_effect = yes add_prestige = 750 }
         add_truce_attacker_victory_effect = yes
     }
     on_defeat = {
