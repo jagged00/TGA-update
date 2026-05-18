@@ -26,12 +26,15 @@
 						#is_local_player = yes
 						is_ai = no
 						OR = {
-							any_heir = {
-								is_alive = no
-								exists = killer
-								killer = {
-									is_alive = yes
-									is_landed = yes
+							any_memory = {
+								has_memory_type = relative_died
+								exists = memory_participant:dead_relation
+								memory_participant:dead_relation = {
+									exists = killer
+									killer = {
+										is_alive = yes
+										is_landed = yes
+									}
 								}
 							}
 							any_memory = {
@@ -90,24 +93,6 @@
 								}
 							}
 
-							### Write memory for on_family_friend_death!
-
-							any_close_family_member = {
-								is_alive = no
-								exists = killer
-								killer = {
-									is_alive = yes
-									is_landed = yes
-								}
-							}
-							any_extended_family_member = {
-								is_alive = no
-								exists = killer
-								killer = {
-									is_alive = yes
-									is_landed = yes
-								}
-							}
 						}
 
 						NOT = {
