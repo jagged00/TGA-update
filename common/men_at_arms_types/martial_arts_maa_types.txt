@@ -1,0 +1,527 @@
+﻿@cultural_maa_extra_ai_score_1 = -30
+@cultural_maa_extra_ai_score_2 = 10
+@cultural_maa_extra_ai_score_3 = 40
+@cultural_maa_extra_ai_score_4 = 100
+
+martial_artist_cultivator = {
+    type = skirmishers
+    
+    damage = 18
+    toughness = 22
+    pursuit = 5
+    screen = 8
+        
+    can_recruit = {
+        cultivation_martial_arts_can_recruit_cultivator = yes
+    }
+    
+    terrain_bonus = {
+        farmlands = { damage = 6 toughness = 4 }
+        plains = { damage = 6 toughness = 4 }
+        terraced_hills = { damage = 8 toughness = 6 }
+        hills = { damage = 8 toughness = 6 }
+    }
+    
+    counters = {
+        pikemen = 1
+        peasant_militia = 2.5
+        archers = 2.5
+        heavy_infantry = 1
+        skirmishers = 1.5
+        light_cavalry = 1
+    }
+    
+    buy_cost = { prestige = 20 piety = 40 }
+    low_maintenance_cost = { piety = 0.1 }
+    high_maintenance_cost = { piety = 0.3 }
+    
+    stack = 120
+    ai_quality = { value = @cultural_maa_extra_ai_score_1 }
+
+    icon = skirmishers
+}
+
+martial_artist_army_1 = {
+    type = skirmishers
+    
+    damage = 26
+    toughness = 30
+    pursuit = 6
+    screen = 10
+        
+    can_recruit = {
+        cultivation_martial_arts_can_recruit_martial_artist = yes
+    }
+    
+    terrain_bonus = {
+        farmlands = { damage = 6 toughness = 4 }
+        plains = { damage = 6 toughness = 4 }
+        terraced_hills = { damage = 8 toughness = 6 }
+        hills = { damage = 8 toughness = 6 }
+    }
+    
+    counters = {
+        pikemen = 1
+        peasant_militia = 3
+        archers = 3
+        heavy_infantry = 1
+        skirmishers = 1.5
+        light_cavalry = 1
+    }
+    
+    buy_cost = { piety = 80 }
+    low_maintenance_cost = { piety = 0.2 }
+    high_maintenance_cost = { piety = 0.6 }
+    
+    stack = 100
+    ai_quality = { value = @cultural_maa_extra_ai_score_1 }
+
+    icon = skirmishers
+}
+
+martial_artist_army_2 = {
+    type = heavy_infantry
+    
+    damage = 38
+    toughness = 45
+    pursuit = 10
+    screen = 12
+        
+    can_recruit = {
+        OR = { 
+            has_trait = cultivation_qi_refining
+            has_trait = cultivation_qi_building
+            has_trait = cultivation_core_formation
+            has_trait = cultivation_nascent_soul
+            has_trait = cultivation_heavenly_being
+            has_trait = cultivation_four_axis
+            has_trait = cultivation_integration
+            has_trait = cultivation_star_shattering
+            has_trait = cultivation_sacred_vessel
+            has_trait = cultivation_entering_nirvana
+            has_trait = cultivation_true_immortal
+        }    
+        cultivation_martial_arts_can_recruit_martial_artist = yes
+    }
+    
+    terrain_bonus = {
+        farmlands = { damage = 6 toughness = 4 }
+        plains = { damage = 6 toughness = 4 }
+        terraced_hills = { damage = 8 toughness = 6 }
+        hills = { damage = 8 toughness = 6 }
+    }
+    
+    counters = {
+        pikemen = 1
+        peasant_militia = 3
+        archers = 3
+        heavy_infantry = 1.2
+        skirmishers = 1.8
+        light_cavalry = 1
+    }
+    
+    buy_cost = { piety = 150 }
+    low_maintenance_cost = { piety = 0.4 }
+    high_maintenance_cost = { piety = 1.0 }
+    
+    stack = 90
+    ai_quality = { value = @cultural_maa_extra_ai_score_2 }
+
+    icon = heavy_infantry
+}
+
+martial_artist_army_3 = {
+    type = heavy_infantry
+    
+    damage = 55
+    toughness = 65
+    pursuit = 15
+    screen = 15
+        
+    can_recruit = {
+        OR = { 
+            has_trait = cultivation_qi_building
+            has_trait = cultivation_core_formation
+            has_trait = cultivation_nascent_soul
+            has_trait = cultivation_heavenly_being
+            has_trait = cultivation_four_axis
+            has_trait = cultivation_integration
+            has_trait = cultivation_star_shattering
+            has_trait = cultivation_sacred_vessel
+            has_trait = cultivation_entering_nirvana
+            has_trait = cultivation_true_immortal
+        }    
+        cultivation_martial_arts_can_recruit_martial_artist = yes
+    }
+    
+    terrain_bonus = {
+        farmlands = { damage = 6 toughness = 4 }
+        plains = { damage = 6 toughness = 4 }
+        terraced_hills = { damage = 8 toughness = 6 }
+        hills = { damage = 8 toughness = 6 }
+    }
+    
+    counters = {
+        pikemen = 1
+        peasant_militia = 3
+        archers = 3
+        heavy_infantry = 1.3
+        skirmishers = 2.0
+        light_cavalry = 1
+    }
+    
+    buy_cost = { piety = 250 }
+    low_maintenance_cost = { piety = 0.6 }
+    high_maintenance_cost = { piety = 1.5 }
+    
+    stack = 70
+    ai_quality = { value = @cultural_maa_extra_ai_score_3 }
+
+    icon = heavy_infantry
+}
+
+# =========================
+# ZOMBIES (FIXED SCALING)
+# =========================
+
+zombie_army_1 = {
+    type = peasant_militia
+    
+    damage = 12
+    toughness = 30
+    pursuit = 10
+    screen = 20
+    siege_value = 0.01
+    siege_tier = 1
+    
+    can_recruit = {
+        cultivation_martial_arts_can_recruit_zombie = yes
+    }
+    
+    terrain_bonus = {
+        farmlands = { damage = 6 toughness = 4 }
+        plains = { damage = 6 toughness = 4 }
+        terraced_hills = { damage = 8 toughness = 6 }
+        hills = { damage = 8 toughness = 6 }
+    }
+    
+    counters = {
+        pikemen = 0.75
+        peasant_militia = 3
+        heavy_infantry = 1
+        skirmishers = 0.75
+        light_cavalry = 1
+        heavy_cavalry = 0.5
+    }
+    
+    buy_cost = { piety = 120 }
+    low_maintenance_cost = { piety = 0 }
+    high_maintenance_cost = { piety = 0.5 }
+    
+    stack = 200
+    ai_quality = { value = @cultural_maa_extra_ai_score_2 }
+
+    icon = peasant_militia
+}
+
+zombie_army_2 = {
+    type = peasant_militia
+    
+    damage = 20
+    toughness = 45
+    pursuit = 12
+    screen = 22
+    siege_value = 0.05
+    siege_tier = 2
+    
+    can_recruit = {
+        OR = {
+            has_trait = cultivation_qi_building
+            has_trait = cultivation_core_formation
+            has_trait = cultivation_nascent_soul
+            has_trait = cultivation_heavenly_being
+            has_trait = cultivation_four_axis
+            has_trait = cultivation_integration
+            has_trait = cultivation_star_shattering
+            has_trait = cultivation_sacred_vessel
+            has_trait = cultivation_entering_nirvana
+            has_trait = cultivation_true_immortal
+        }    
+        cultivation_martial_arts_can_recruit_zombie = yes
+    }
+    
+    terrain_bonus = {
+        farmlands = { damage = 6 toughness = 4 }
+        plains = { damage = 6 toughness = 4 }
+        terraced_hills = { damage = 8 toughness = 6 }
+        hills = { damage = 8 toughness = 6 }
+    }
+    
+    counters = {
+        pikemen = 0.75
+        peasant_militia = 3
+        heavy_infantry = 1
+        skirmishers = 0.75
+        light_cavalry = 1
+        heavy_cavalry = 0.5
+    }
+    
+    buy_cost = { piety = 180 }
+    low_maintenance_cost = { piety = 0 }
+    high_maintenance_cost = { piety = 1 }
+    
+    stack = 160
+    ai_quality = { value = @cultural_maa_extra_ai_score_2 }
+
+    icon = peasant_militia
+}
+zombie_army_3 = {
+    type = skirmishers
+    
+    damage = 28
+    toughness = 60
+    pursuit = 20
+    screen = 28
+    siege_value = 0.08
+    siege_tier = 3
+    
+    can_recruit = {
+        OR = {
+            has_trait = cultivation_core_formation
+            has_trait = cultivation_nascent_soul
+            has_trait = cultivation_heavenly_being
+            has_trait = cultivation_four_axis
+            has_trait = cultivation_integration
+            has_trait = cultivation_star_shattering
+            has_trait = cultivation_sacred_vessel
+            has_trait = cultivation_entering_nirvana
+            has_trait = cultivation_true_immortal
+        }    
+        cultivation_martial_arts_can_recruit_zombie = yes
+    }
+    
+    terrain_bonus = {
+        farmlands = { damage = 6 toughness = 4 }
+        plains = { damage = 6 toughness = 4 }
+        terraced_hills = { damage = 8 toughness = 6 }
+        hills = { damage = 8 toughness = 6 }
+    }
+    
+    counters = {
+        pikemen = 0.75
+        peasant_militia = 3
+        heavy_infantry = 1
+        skirmishers = 0.75
+        light_cavalry = 1
+        heavy_cavalry = 0.5
+    }
+    
+    buy_cost = { piety = 250 }
+    low_maintenance_cost = { piety = 0.1 }
+    high_maintenance_cost = { piety = 1.5 }
+    
+    stack = 120
+    ai_quality = { value = @cultural_maa_extra_ai_score_3 }
+
+    icon = skirmishers
+}
+
+zombie_army_4 = {
+    type = heavy_infantry
+    
+    damage = 45
+    toughness = 90
+    pursuit = 15
+    screen = 25
+    siege_value = 0.12
+    siege_tier = 4
+    
+    can_recruit = {
+        OR = {    
+            has_trait = cultivation_nascent_soul
+            has_trait = cultivation_heavenly_being
+            has_trait = cultivation_four_axis
+            has_trait = cultivation_integration
+            has_trait = cultivation_star_shattering
+            has_trait = cultivation_sacred_vessel
+            has_trait = cultivation_entering_nirvana
+            has_trait = cultivation_true_immortal
+        }
+        cultivation_martial_arts_can_recruit_zombie = yes    
+    }    
+    
+    terrain_bonus = {
+        farmlands = { damage = 6 toughness = 4 }
+        plains = { damage = 6 toughness = 4 }
+        terraced_hills = { damage = 8 toughness = 6 }
+        hills = { damage = 8 toughness = 6 }
+    }
+    
+    counters = {
+        pikemen = 0.75
+        peasant_militia = 3
+        heavy_infantry = 1.2
+        skirmishers = 0.75
+        light_cavalry = 1
+        heavy_cavalry = 0.5
+    }
+    
+    buy_cost = { piety = 350 }
+    low_maintenance_cost = { piety = 0.2 }
+    high_maintenance_cost = { piety = 2 }
+    
+    stack = 80
+    ai_quality = { value = @cultural_maa_extra_ai_score_3 }
+
+    icon = heavy_infantry
+}
+
+zombie_army_5 = {
+    type = heavy_infantry
+    
+    damage = 70
+    toughness = 140
+    pursuit = 12
+    screen = 22
+    siege_value = 0.2
+    siege_tier = 4
+    
+    can_recruit = {
+        OR = {    
+            has_trait = cultivation_four_axis
+            has_trait = cultivation_integration
+            has_trait = cultivation_star_shattering
+            has_trait = cultivation_sacred_vessel
+            has_trait = cultivation_entering_nirvana
+            has_trait = cultivation_true_immortal
+        }
+        cultivation_martial_arts_can_recruit_zombie = yes
+    }
+    
+    terrain_bonus = {
+        farmlands = { damage = 6 toughness = 4 }
+        plains = { damage = 6 toughness = 4 }
+        terraced_hills = { damage = 8 toughness = 6 }
+        hills = { damage = 8 toughness = 6 }
+    }
+    
+    counters = {
+        pikemen = 0.75
+        peasant_militia = 3
+        heavy_infantry = 1.3
+        skirmishers = 0.75
+        light_cavalry = 1
+        heavy_cavalry = 0.5
+    }
+    
+    buy_cost = { gold = 50 piety = 500 }
+    low_maintenance_cost = { piety = 0.4 }
+    high_maintenance_cost = { piety = 3 }
+    
+    stack = 50
+    ai_quality = { value = @cultural_maa_extra_ai_score_4 }
+
+    icon = heavy_infantry
+}
+
+# =========================
+# IMMORTAL SUPPORT (FIXED)
+# =========================
+
+immortal_army_1 = {
+    type = heavy_infantry
+    
+    damage = 80
+    toughness = 120
+    pursuit = 40
+    screen = 40
+    siege_value = 0.4
+    siege_tier = 1
+    
+    can_recruit = {
+        OR = {    
+            has_trait = cultivation_four_axis
+            has_trait = cultivation_integration
+            has_trait = cultivation_star_shattering
+            has_trait = cultivation_sacred_vessel
+            has_trait = cultivation_entering_nirvana
+            has_trait = cultivation_true_immortal
+        }
+        cultivation_martial_arts_can_recruit_immortal = yes
+    }
+    
+    terrain_bonus = {
+        farmlands = { damage = 6 toughness = 4 }
+        plains = { damage = 6 toughness = 4 }
+        terraced_hills = { damage = 8 toughness = 6 }
+        hills = { damage = 8 toughness = 6 }
+    }
+    
+    counters = {
+        pikemen = 2
+        peasant_militia = 4
+        archers = 4
+        heavy_infantry = 2
+        skirmishers = 3
+        light_cavalry = 2
+        heavy_cavalry = 2
+    }
+    
+    buy_cost = { piety = 800 }
+    low_maintenance_cost = { prestige = 0.5 }
+    high_maintenance_cost = { prestige = 1 }
+    
+    stack = 30
+    ai_quality = { value = @cultural_maa_extra_ai_score_4 }
+
+    icon = heavy_infantry
+}
+
+immortal_army_2 = {
+    type = heavy_infantry
+    
+    damage = 100
+    toughness = 160
+    pursuit = 50
+    screen = 50
+    siege_value = 0.6
+    siege_tier = 2
+    
+    can_recruit = {
+        OR = {    
+            has_trait = cultivation_four_axis
+            has_trait = cultivation_integration
+            has_trait = cultivation_star_shattering
+            has_trait = cultivation_sacred_vessel
+            has_trait = cultivation_entering_nirvana
+            has_trait = cultivation_true_immortal
+        }
+        cultivation_martial_arts_can_recruit_immortal = yes    
+    }
+    
+    terrain_bonus = {
+        farmlands = { damage = 6 toughness = 4 }
+        plains = { damage = 6 toughness = 4 }
+        terraced_hills = { damage = 8 toughness = 6 }
+        hills = { damage = 8 toughness = 6 }
+    }
+    
+    counters = {
+        pikemen = 2.5
+        peasant_militia = 5
+        archers = 5
+        heavy_infantry = 2.5
+        skirmishers = 3.5
+        light_cavalry = 3
+        heavy_cavalry = 2.5
+    }
+    
+    buy_cost = { piety = 1200 }
+    low_maintenance_cost = { prestige = 0.8 }
+    high_maintenance_cost = { prestige = 1.5 }
+    
+    stack = 20
+    ai_quality = { value = @cultural_maa_extra_ai_score_4 }
+
+    icon = heavy_infantry
+}
