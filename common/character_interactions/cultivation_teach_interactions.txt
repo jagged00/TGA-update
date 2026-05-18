@@ -1,0 +1,1105 @@
+﻿teach_cultivation_interaction = {
+	category = interaction_category_friendly
+	interface_priority = 100
+	icon = icon_combat
+	desc = teach_cultivation_interaction_desc
+	use_diplomatic_range = yes
+
+	ai_frequency = 120
+	ai_targets = {
+		ai_recipients = courtiers
+		ai_recipients = children
+		ai_recipients = family
+	}
+
+	is_shown = {
+		NOT = { scope:actor = scope:recipient }
+
+		scope:actor = {
+			is_alive = yes
+			is_cultivator = yes
+			NOT = { has_character_flag = taught_cultivation_cooldown }
+			gold >= 50
+		}
+
+		scope:recipient = {
+			is_alive = yes
+			is_courtier_of = scope:actor
+			NOT = { is_cultivator = yes }
+			NOT = { has_character_flag = cultivation_training_cooldown }
+			NOT = { has_trait = crippled_meridians }
+			OR = {
+				has_trait = poor_meridians
+				has_trait = normal_meridians
+				has_trait = good_meridians
+				has_trait = excellent_meridians
+				has_trait = heavenly_meridians
+			}
+		}
+	}
+
+	is_valid_showing_failures_only = {
+		scope:actor = {
+			is_alive = yes
+			is_cultivator = yes
+			NOT = { has_character_flag = taught_cultivation_cooldown }
+			gold >= 50
+		}
+
+		scope:recipient = {
+			is_alive = yes
+			NOT = { is_cultivator = yes }
+			NOT = { has_character_flag = cultivation_training_cooldown }
+			NOT = { has_trait = crippled_meridians }
+			OR = {
+				has_trait = poor_meridians
+				has_trait = normal_meridians
+				has_trait = good_meridians
+				has_trait = excellent_meridians
+				has_trait = heavenly_meridians
+			}
+		}
+	}
+
+	ai_will_do = {
+		base = 0.05
+
+		modifier = {
+			factor = 100
+			scope:recipient = { is_close_family_of = scope:actor }
+		}
+
+		modifier = {
+			factor = 5
+			scope:recipient = { is_child_of = scope:actor }
+		}
+
+		modifier = {
+			factor = 3
+			scope:recipient = { is_courtier_of = scope:actor }
+		}
+
+		modifier = {
+			factor = 2
+			scope:recipient = { has_trait = sect_disciple }
+		}
+
+		modifier = {
+			factor = 1.5
+			scope:actor = { has_trait = sect_leader }
+		}
+
+		modifier = {
+			factor = 20
+			scope:recipient = { has_trait = heavenly_meridians }
+		}
+		modifier = {
+			factor = 10
+			scope:recipient = { has_trait = excellent_meridians }
+		}
+		modifier = {
+			factor = 4
+			scope:recipient = { has_trait = good_meridians }
+		}
+		modifier = {
+			factor = 1
+			scope:recipient = { has_trait = normal_meridians }
+		}
+		modifier = {
+			factor = 0.1
+			scope:recipient = { has_trait = poor_meridians }
+		}
+		modifier = {
+			factor = 0
+			scope:recipient = { has_trait = crippled_meridians }
+		}
+
+		modifier = {
+			factor = 1.5
+			scope:recipient = {
+				OR = {
+					has_trait = yin_bloodline_1
+					has_trait = yang_bloodline_1
+					has_trait = dragon_bloodline_1
+					has_trait = phoenix_bloodline_1
+					has_trait = anchestor_bloodline_1
+					has_trait = poison_bloodline_1
+					has_trait = cursed_bloodline_1
+					has_trait = demon_bloodline_1
+				}
+			}
+		}
+		modifier = {
+			factor = 2
+			scope:recipient = {
+				OR = {
+					has_trait = yin_bloodline_2
+					has_trait = yang_bloodline_2
+					has_trait = dragon_bloodline_2
+					has_trait = phoenix_bloodline_2
+					has_trait = anchestor_bloodline_2
+					has_trait = poison_bloodline_2
+					has_trait = cursed_bloodline_2
+					has_trait = demon_bloodline_2
+				}
+			}
+		}
+		modifier = {
+			factor = 3
+			scope:recipient = {
+				OR = {
+					has_trait = yin_bloodline_3
+					has_trait = yang_bloodline_3
+					has_trait = dragon_bloodline_3
+					has_trait = phoenix_bloodline_3
+					has_trait = anchestor_bloodline_3
+					has_trait = poison_bloodline_3
+					has_trait = cursed_bloodline_3
+					has_trait = demon_bloodline_3
+				}
+			}
+		}
+
+		modifier = {
+			factor = 1.25
+			scope:actor = { has_trait = cultivation_core_formation }
+		}
+		modifier = {
+			factor = 1.5
+			scope:actor = { has_trait = cultivation_nascent_soul }
+		}
+		modifier = {
+			factor = 1.75
+			scope:actor = {
+				OR = {
+					has_trait = cultivation_heavenly_being
+					has_trait = cultivation_four_axis
+					has_trait = cultivation_integration
+					has_trait = cultivation_star_shattering
+					has_trait = cultivation_sacred_vessel
+					has_trait = cultivation_entering_nirvana
+				}
+			}
+		}
+		modifier = {
+			factor = 0.25
+			scope:actor = {
+				OR = {
+					has_trait = cultivation_nascent_soul
+					has_trait = cultivation_heavenly_being
+					has_trait = cultivation_four_axis
+					has_trait = cultivation_integration
+					has_trait = cultivation_star_shattering
+					has_trait = cultivation_sacred_vessel
+					has_trait = cultivation_entering_nirvana
+				}
+			}
+			scope:recipient = { has_trait = poor_meridians }
+		}
+
+		modifier = {
+			factor = 0
+			scope:recipient = { is_cultivator = yes }
+		}
+		modifier = {
+			factor = 0
+			scope:actor = { has_character_flag = taught_cultivation_cooldown }
+		}
+		modifier = {
+			factor = 0
+			scope:actor = { gold < 50 }
+		}
+	}
+
+	auto_accept = yes
+
+	on_accept = {
+		scope:actor = {
+			add_gold = -50
+			add_character_flag = {
+				flag = taught_cultivation_cooldown
+				years = 1
+			}
+		}
+
+		scope:recipient = {
+			set_faith = scope:actor.faith
+
+			add_character_flag = {
+				flag = cultivation_training_cooldown
+				years = 1
+			}
+
+			if = {
+				limit = { has_trait = poor_meridians }
+				random = {
+					chance = 5
+					add_trait = cultivation_qi_gathering
+					add_opinion = {
+						target = scope:actor
+						modifier = taught_me_cultivation_opinion
+						years = 20
+					}
+					scope:actor = {
+						add_opinion = {
+							target = scope:recipient
+							modifier = taught_them_cultivation_opinion
+							years = 20
+						}
+					}
+				}
+			}
+			else_if = {
+				limit = { has_trait = normal_meridians }
+				random = {
+					chance = 20
+					add_trait = cultivation_qi_gathering
+					add_opinion = {
+						target = scope:actor
+						modifier = taught_me_cultivation_opinion
+						years = 20
+					}
+					scope:actor = {
+						add_opinion = {
+							target = scope:recipient
+							modifier = taught_them_cultivation_opinion
+							years = 20
+						}
+					}
+				}
+			}
+			else_if = {
+				limit = { has_trait = good_meridians }
+				random = {
+					chance = 45
+					add_trait = cultivation_qi_gathering
+					add_opinion = {
+						target = scope:actor
+						modifier = taught_me_cultivation_opinion
+						years = 20
+					}
+					scope:actor = {
+						add_opinion = {
+							target = scope:recipient
+							modifier = taught_them_cultivation_opinion
+							years = 20
+						}
+					}
+				}
+			}
+			else_if = {
+				limit = { has_trait = excellent_meridians }
+				random = {
+					chance = 70
+					add_trait = cultivation_qi_gathering
+					add_opinion = {
+						target = scope:actor
+						modifier = taught_me_cultivation_opinion
+						years = 20
+					}
+					scope:actor = {
+						add_opinion = {
+							target = scope:recipient
+							modifier = taught_them_cultivation_opinion
+							years = 20
+						}
+					}
+				}
+			}
+			else_if = {
+				limit = { has_trait = heavenly_meridians }
+				random = {
+					chance = 90
+					add_trait = cultivation_qi_gathering
+					add_opinion = {
+						target = scope:actor
+						modifier = taught_me_cultivation_opinion
+						years = 20
+					}
+					scope:actor = {
+						add_opinion = {
+							target = scope:recipient
+							modifier = taught_them_cultivation_opinion
+							years = 20
+						}
+					}
+				}
+			}
+		}
+	}
+}
+
+request_teach_cultivation_interaction = {
+	icon = icon_combat
+	category = interaction_category_friendly
+	interface_priority = 89
+	desc = request_teach_cultivation_interaction_desc
+	use_diplomatic_range = yes
+
+	is_shown = {
+		NOT = { scope:recipient = scope:actor }
+
+		scope:actor = {
+			is_alive = yes
+			NOT = { is_cultivator = yes }
+			NOT = { has_character_flag = asked_for_cultivation_recently }
+			NOT = { has_character_flag = cultivation_training_cooldown }
+			NOT = { has_trait = crippled_meridians }
+			OR = {
+				has_trait = poor_meridians
+				has_trait = normal_meridians
+				has_trait = good_meridians
+				has_trait = excellent_meridians
+				has_trait = heavenly_meridians
+			}
+		}
+
+		scope:recipient = {
+			is_alive = yes
+			is_cultivator = yes
+			NOT = { has_character_flag = taught_cultivation_cooldown }
+			gold >= 50
+		}
+	}
+
+	is_valid_showing_failures_only = {
+		scope:actor = {
+			is_alive = yes
+			NOT = { is_cultivator = yes }
+			NOT = { has_character_flag = asked_for_cultivation_recently }
+			NOT = { has_character_flag = cultivation_training_cooldown }
+			NOT = { has_trait = crippled_meridians }
+			OR = {
+				has_trait = poor_meridians
+				has_trait = normal_meridians
+				has_trait = good_meridians
+				has_trait = excellent_meridians
+				has_trait = heavenly_meridians
+			}
+		}
+
+		scope:recipient = {
+			is_alive = yes
+			is_cultivator = yes
+			NOT = { has_character_flag = taught_cultivation_cooldown }
+			gold >= 50
+		}
+	}
+
+	ai_will_do = {
+		base = 0.2
+
+		modifier = {
+			factor = 2
+			scope:actor = { has_trait = sect_disciple }
+		}
+
+		modifier = {
+			factor = 5
+			scope:actor = { has_trait = heavenly_meridians }
+		}
+		modifier = {
+			factor = 3
+			scope:actor = { has_trait = excellent_meridians }
+		}
+		modifier = {
+			factor = 2
+			scope:actor = { has_trait = good_meridians }
+		}
+		modifier = {
+			factor = 0.75
+			scope:actor = { has_trait = normal_meridians }
+		}
+		modifier = {
+			factor = 0.2
+			scope:actor = { has_trait = poor_meridians }
+		}
+		modifier = {
+			factor = 0
+			scope:actor = { has_trait = crippled_meridians }
+		}
+
+		modifier = {
+			factor = 1.5
+			scope:actor = {
+				OR = {
+					has_trait = yin_bloodline_1
+					has_trait = yang_bloodline_1
+					has_trait = dragon_bloodline_1
+					has_trait = phoenix_bloodline_1
+					has_trait = anchestor_bloodline_1
+					has_trait = poison_bloodline_1
+					has_trait = cursed_bloodline_1
+					has_trait = demon_bloodline_1
+				}
+			}
+		}
+		modifier = {
+			factor = 2
+			scope:actor = {
+				OR = {
+					has_trait = yin_bloodline_2
+					has_trait = yang_bloodline_2
+					has_trait = dragon_bloodline_2
+					has_trait = phoenix_bloodline_2
+					has_trait = anchestor_bloodline_2
+					has_trait = poison_bloodline_2
+					has_trait = cursed_bloodline_2
+					has_trait = demon_bloodline_2
+				}
+			}
+		}
+		modifier = {
+			factor = 3
+			scope:actor = {
+				OR = {
+					has_trait = yin_bloodline_3
+					has_trait = yang_bloodline_3
+					has_trait = dragon_bloodline_3
+					has_trait = phoenix_bloodline_3
+					has_trait = anchestor_bloodline_3
+					has_trait = poison_bloodline_3
+					has_trait = cursed_bloodline_3
+					has_trait = demon_bloodline_3
+				}
+			}
+		}
+
+		modifier = {
+			factor = 0
+			scope:actor = { has_character_flag = asked_for_cultivation_recently }
+		}
+		modifier = {
+			factor = 0
+			scope:actor = { is_cultivator = yes }
+		}
+	}
+
+	on_accept = {
+		scope:actor = {
+			set_faith = scope:recipient.faith
+
+			add_character_flag = {
+				flag = asked_for_cultivation_recently
+				years = 1
+			}
+			add_character_flag = {
+				flag = cultivation_training_cooldown
+				years = 1
+			}
+		}
+
+		scope:recipient = {
+			add_gold = -50
+			add_character_flag = {
+				flag = taught_cultivation_cooldown
+				years = 1
+			}
+		}
+
+		scope:actor = {
+			if = {
+				limit = { has_trait = poor_meridians }
+				random = {
+					chance = 5
+					add_trait = cultivation_qi_gathering
+					add_opinion = {
+						target = scope:recipient
+						modifier = taught_me_cultivation_opinion
+						years = 20
+					}
+					scope:recipient = {
+						add_opinion = {
+							target = scope:actor
+							modifier = taught_them_cultivation_opinion
+							years = 20
+						}
+					}
+				}
+			}
+			else_if = {
+				limit = { has_trait = normal_meridians }
+				random = {
+					chance = 20
+					add_trait = cultivation_qi_gathering
+					add_opinion = {
+						target = scope:recipient
+						modifier = taught_me_cultivation_opinion
+						years = 20
+					}
+					scope:recipient = {
+						add_opinion = {
+							target = scope:actor
+							modifier = taught_them_cultivation_opinion
+							years = 20
+						}
+					}
+				}
+			}
+			else_if = {
+				limit = { has_trait = good_meridians }
+				random = {
+					chance = 45
+					add_trait = cultivation_qi_gathering
+					add_opinion = {
+						target = scope:recipient
+						modifier = taught_me_cultivation_opinion
+						years = 20
+					}
+					scope:recipient = {
+						add_opinion = {
+							target = scope:actor
+							modifier = taught_them_cultivation_opinion
+							years = 20
+						}
+					}
+				}
+			}
+			else_if = {
+				limit = { has_trait = excellent_meridians }
+				random = {
+					chance = 70
+					add_trait = cultivation_qi_gathering
+					add_opinion = {
+						target = scope:recipient
+						modifier = taught_me_cultivation_opinion
+						years = 20
+					}
+					scope:recipient = {
+						add_opinion = {
+							target = scope:actor
+							modifier = taught_them_cultivation_opinion
+							years = 20
+						}
+					}
+				}
+			}
+			else_if = {
+				limit = { has_trait = heavenly_meridians }
+				random = {
+					chance = 90
+					add_trait = cultivation_qi_gathering
+					add_opinion = {
+						target = scope:recipient
+						modifier = taught_me_cultivation_opinion
+						years = 20
+					}
+					scope:recipient = {
+						add_opinion = {
+							target = scope:actor
+							modifier = taught_them_cultivation_opinion
+							years = 20
+						}
+					}
+				}
+			}
+		}
+	}
+
+	ai_accept = {
+		base = 0
+
+		modifier = {
+			factor = 100
+			scope:actor = { is_close_family_of = scope:recipient }
+		}
+		modifier = {
+			factor = 2
+			scope:actor = { has_trait = sect_disciple }
+		}
+		modifier = {
+			factor = 1.5
+			scope:recipient = { has_trait = sect_leader }
+		}
+
+		modifier = {
+			factor = 25
+			scope:actor = { has_trait = heavenly_meridians }
+		}
+		modifier = {
+			factor = 12
+			scope:actor = { has_trait = excellent_meridians }
+		}
+		modifier = {
+			factor = 5
+			scope:actor = { has_trait = good_meridians }
+		}
+		modifier = {
+			factor = 1
+			scope:actor = { has_trait = normal_meridians }
+		}
+		modifier = {
+			factor = 0.1
+			scope:actor = { has_trait = poor_meridians }
+		}
+		modifier = {
+			factor = 0
+			scope:actor = { has_trait = crippled_meridians }
+		}
+
+		modifier = {
+			factor = 1.5
+			scope:actor = {
+				OR = {
+					has_trait = yin_bloodline_1
+					has_trait = yang_bloodline_1
+					has_trait = dragon_bloodline_1
+					has_trait = phoenix_bloodline_1
+					has_trait = anchestor_bloodline_1
+					has_trait = poison_bloodline_1
+					has_trait = cursed_bloodline_1
+					has_trait = demon_bloodline_1
+				}
+			}
+		}
+		modifier = {
+			factor = 2
+			scope:actor = {
+				OR = {
+					has_trait = yin_bloodline_2
+					has_trait = yang_bloodline_2
+					has_trait = dragon_bloodline_2
+					has_trait = phoenix_bloodline_2
+					has_trait = anchestor_bloodline_2
+					has_trait = poison_bloodline_2
+					has_trait = cursed_bloodline_2
+					has_trait = demon_bloodline_2
+				}
+			}
+		}
+		modifier = {
+			factor = 3
+			scope:actor = {
+				OR = {
+					has_trait = yin_bloodline_3
+					has_trait = yang_bloodline_3
+					has_trait = dragon_bloodline_3
+					has_trait = phoenix_bloodline_3
+					has_trait = anchestor_bloodline_3
+					has_trait = poison_bloodline_3
+					has_trait = cursed_bloodline_3
+					has_trait = demon_bloodline_3
+				}
+			}
+		}
+
+		modifier = {
+			factor = 1.25
+			scope:recipient = { has_trait = cultivation_core_formation }
+		}
+		modifier = {
+			factor = 1.5
+			scope:recipient = { has_trait = cultivation_nascent_soul }
+		}
+		modifier = {
+			factor = 1.75
+			scope:recipient = {
+				OR = {
+					has_trait = cultivation_heavenly_being
+					has_trait = cultivation_four_axis
+					has_trait = cultivation_integration
+					has_trait = cultivation_star_shattering
+					has_trait = cultivation_sacred_vessel
+					has_trait = cultivation_entering_nirvana
+				}
+			}
+		}
+		modifier = {
+			factor = 0.25
+			scope:recipient = {
+				OR = {
+					has_trait = cultivation_nascent_soul
+					has_trait = cultivation_heavenly_being
+					has_trait = cultivation_four_axis
+					has_trait = cultivation_integration
+					has_trait = cultivation_star_shattering
+					has_trait = cultivation_sacred_vessel
+					has_trait = cultivation_entering_nirvana
+				}
+			}
+			scope:actor = { has_trait = poor_meridians }
+		}
+
+		modifier = {
+			factor = 0
+			scope:recipient = { has_character_flag = taught_cultivation_cooldown }
+		}
+		modifier = {
+			factor = 0
+			scope:recipient = { gold < 50 }
+		}
+
+		opinion_modifier = {
+			opinion_target = scope:actor
+			who = scope:recipient
+			multiplier = 0.5
+		}
+	}
+}
+
+request_disciple_under_master_interaction = {
+	category = interaction_category_friendly
+	interface_priority = 109
+	icon = icon_lifestyle_learning
+	desc = request_disciple_under_master_interaction_desc
+	use_diplomatic_range = yes
+
+	is_shown = {
+		scope:actor = {
+			is_adult = yes
+			is_cultivator = yes
+			NOT = { has_character_flag = requested_master_once }
+			NOT = { has_trait = sect_disciple }
+		}
+		scope:recipient = {
+			is_adult = yes
+			is_alive = yes
+			is_cultivator = yes
+			NOT = { has_trait = sect_disciple }
+			OR = {
+				has_trait = sect_leader
+				has_trait = cultivation_nascent_soul
+				has_trait = cultivation_heavenly_being
+				has_trait = cultivation_four_axis
+				has_trait = cultivation_integration
+				has_trait = cultivation_star_shattering
+				has_trait = cultivation_sacred_vessel
+				has_trait = cultivation_entering_nirvana
+			}
+		}
+	}
+
+	is_valid_showing_failures_only = {
+		scope:actor = {
+			NOT = { has_character_flag = requested_master_once }
+			gold >= 100
+			prestige >= 100
+		}
+		scope:recipient = {
+			is_adult = yes
+			is_alive = yes
+		}
+	}
+
+	on_send = {
+		scope:actor = {
+			add_gold = -100
+			add_prestige = -100
+			add_character_flag = requested_master_once
+		}
+	}
+
+	on_accept = {
+		scope:actor = {
+			set_faith = scope:recipient.faith
+			add_trait = sect_disciple
+			add_character_modifier = { modifier = lineage_marked_disciple days = 3650 }
+			add_character_flag = disciple_of_current_mentor
+			add_character_flag = has_lineage_mentor
+			add_learning_lifestyle_xp = medium_lifestyle_xp
+			add_martial_lifestyle_xp = minor_lifestyle_xp
+			add_opinion = { target = scope:recipient modifier = mentor_guidance_opinion years = 20 }
+		}
+		scope:recipient = {
+			add_opinion = { target = scope:actor modifier = cultivation_invests_in_my_talent_opinion years = 20 }
+			add_character_modifier = { modifier = lineage_prestige_mentor days = 730 }
+		}
+	}
+
+	on_decline = {
+		scope:actor = {
+			add_stress = 35
+		}
+	}
+
+	ai_accept = {
+		base = -70
+		modifier = {
+			add = 160
+			scope:actor = { is_close_family_of = scope:recipient }
+		}
+		modifier = {
+			add = 140
+			scope:recipient = { opinion = { target = scope:actor value >= 85 } }
+		}
+		modifier = {
+			add = 80
+			scope:actor = { has_trait = heavenly_meridians }
+		}
+		modifier = {
+			add = 40
+			scope:actor = { has_trait = excellent_meridians }
+		}
+		modifier = {
+			add = 20
+			scope:actor = { has_trait = good_meridians }
+		}
+		modifier = {
+			add = -10
+			scope:actor = { has_trait = normal_meridians }
+		}
+		modifier = {
+			add = -20
+			scope:actor = { has_trait = poor_meridians }
+		}
+		modifier = {
+			add = -999
+			scope:actor = { has_trait = crippled_meridians }
+		}
+		modifier = {
+			add = -180
+			scope:recipient = { opinion = { target = scope:actor value < -10 } }
+		}
+		modifier = {
+			add = -220
+			scope:recipient = { opinion = { target = scope:actor value < -40 } }
+		}
+	}
+
+	ai_will_do = {
+		base = 2
+		modifier = {
+			factor = 8
+			scope:actor = { has_trait = heavenly_meridians }
+		}
+		modifier = {
+			factor = 4
+			scope:actor = { has_trait = excellent_meridians }
+		}
+		modifier = {
+			factor = 2
+			scope:actor = { has_trait = good_meridians }
+		}
+	}
+}
+
+take_disciple_interaction = {
+	category = interaction_category_friendly
+	interface_priority = 110
+	icon = icon_court
+	desc = take_disciple_interaction_desc
+	use_diplomatic_range = yes
+
+	is_shown = {
+		scope:actor = {
+			is_cultivator = yes
+			is_adult = yes
+			OR = {
+				has_trait = sect_leader
+				has_trait = cultivation_nascent_soul
+				has_trait = cultivation_heavenly_being
+				has_trait = cultivation_four_axis
+				has_trait = cultivation_integration
+				has_trait = cultivation_star_shattering
+				has_trait = cultivation_sacred_vessel
+				has_trait = cultivation_entering_nirvana
+			}
+		}
+		scope:recipient = {
+			is_adult = yes
+			is_alive = yes
+			NOT = { has_trait = sect_disciple }
+			NOT = { has_trait = crippled_meridians }
+			OR = {
+				has_trait = good_meridians
+				has_trait = excellent_meridians
+				has_trait = heavenly_meridians
+			}
+		}
+	}
+
+	is_valid_showing_failures_only = {
+		scope:actor = {
+			gold >= 50
+			prestige >= 75
+		}
+	}
+
+	on_send = {
+		scope:actor = {
+			add_gold = -50
+			add_prestige = -75
+		}
+	}
+
+	on_accept = {
+		scope:recipient = {
+			set_faith = scope:actor.faith
+			add_trait = cultivation_qi_gathering
+			add_trait = sect_disciple
+			add_character_modifier = { modifier = lineage_marked_disciple days = 1825 }
+			add_character_flag = disciple_of_current_mentor
+			add_character_flag = has_lineage_mentor
+			add_learning_lifestyle_xp = minor_lifestyle_xp
+			add_opinion = { target = scope:actor modifier = mentor_guidance_opinion years = 15 }
+			set_variable = { name = lineage_generation value = 1 }
+		}
+		scope:actor = {
+			add_character_modifier = { modifier = lineage_prestige_mentor days = 1825 }
+			add_character_modifier = { modifier = sect_lineage_favor days = 1095 }
+			add_dynasty_prestige = 150
+			change_variable = { name = disciples_recruited add = 1 }
+			add_opinion = { target = scope:recipient modifier = cultivation_invests_in_my_talent_opinion years = 10 }
+		}
+	}
+
+	ai_accept = {
+		base = 30
+		modifier = {
+			add = 30
+			scope:recipient = { opinion = { target = scope:actor value >= 40 } }
+		}
+		modifier = {
+			add = 45
+			scope:recipient = { is_close_family_of = scope:actor }
+		}
+		modifier = {
+			add = -45
+			scope:recipient = { opinion = { target = scope:actor value < 0 } }
+		}
+	}
+
+	ai_will_do = {
+		base = 5
+		modifier = { factor = 20 scope:recipient = { has_trait = heavenly_meridians } }
+		modifier = { factor = 3 scope:recipient = { has_trait = excellent_meridians } }
+		modifier = { factor = 1 scope:recipient = { has_trait = good_meridians } }
+		modifier = { factor = 0 scope:recipient = { has_trait = poor_meridians } }
+		modifier = { factor = 0 scope:recipient = { has_trait = crippled_meridians } }
+	}
+}
+
+teach_technique_interaction = {
+	category = interaction_category_friendly
+	interface_priority = 111
+	icon = icon_lifestyle_learning
+	desc = teach_technique_interaction_desc
+	use_diplomatic_range = no
+
+	is_shown = {
+		scope:actor = {
+			is_cultivator = yes
+			is_adult = yes
+		}
+		scope:recipient = {
+			is_courtier_of = scope:actor
+			has_trait = sect_disciple
+			is_cultivator = yes
+		}
+	}
+
+	is_valid_showing_failures_only = {
+		scope:recipient = {
+			NOT = { has_character_flag = teach_technique_cooldown }
+		}
+	}
+
+	auto_accept = yes
+
+	on_accept = {
+		scope:recipient = {
+			add_learning_lifestyle_xp = medium_lifestyle_xp
+			add_character_flag = { flag = teach_technique_cooldown days = 365 }
+
+			if = {
+				limit = { has_character_flag = has_lineage_mentor }
+				change_variable = { name = lineage_techniques_learned add = 1 }
+			}
+
+			if = {
+				limit = {
+					scope:actor = {
+						OR = {
+							has_trait = sect_leader
+							has_trait = cultivation_nascent_soul
+							has_trait = cultivation_heavenly_being
+							has_trait = cultivation_four_axis
+							has_trait = cultivation_integration
+							has_trait = cultivation_star_shattering
+							has_trait = cultivation_sacred_vessel
+							has_trait = cultivation_entering_nirvana
+						}
+					}
+				}
+				add_character_modifier = { modifier = manual_comprehension days = 365 }
+			}
+		}
+		scope:actor = {
+			add_prestige = 100
+		}
+	}
+}
+
+inherit_manuals_interaction = {
+	category = interaction_category_friendly
+	interface_priority = 112
+	icon = icon_artifact
+	desc = inherit_manuals_interaction_desc
+	use_diplomatic_range = no
+
+	is_shown = {
+		scope:actor = {
+			is_cultivator = yes
+			is_adult = yes
+		}
+		scope:recipient = {
+			has_trait = sect_disciple
+			is_cultivator = yes
+			is_courtier_of = scope:actor
+		}
+	}
+
+	auto_accept = yes
+
+	on_accept = {
+		scope:recipient = {
+			add_character_modifier = { modifier = secret_realm_inheritance days = 1095 }
+			add_character_modifier = { modifier = sect_lineage_favor days = 1825 }
+			change_variable = { name = lineage_generation add = 1 }
+			add_opinion = { target = scope:actor modifier = mentor_guidance_opinion years = 20 }
+		}
+		scope:actor = {
+			add_character_modifier = { modifier = lineage_prestige_mentor days = 1095 }
+		}
+	}
+}
+
+expel_or_betray_disciple_interaction = {
+	category = interaction_category_hostile
+	interface_priority = 113
+	icon = icon_tyranny
+	desc = expel_or_betray_disciple_interaction_desc
+	use_diplomatic_range = no
+
+	is_shown = {
+		scope:actor = {
+			is_cultivator = yes
+			is_adult = yes
+		}
+		scope:recipient = {
+			has_trait = sect_disciple
+			is_cultivator = yes
+			is_courtier_of = scope:actor
+		}
+	}
+
+	auto_accept = yes
+
+	on_accept = {
+		scope:recipient = {
+			remove_trait = sect_disciple
+			add_character_modifier = { modifier = sect_internal_dispute days = 1825 }
+			add_character_modifier = { modifier = sect_lineage_fracture days = 1460 }
+			add_opinion = { target = scope:actor modifier = lineage_betrayal_opinion years = 20 }
+			remove_character_flag = disciple_of_current_mentor
+			remove_character_flag = has_lineage_mentor
+		}
+		scope:actor = {
+			add_dread = 15
+			add_stress = 40
+			add_character_modifier = { modifier = sect_internal_dispute days = 1095 }
+			add_character_modifier = { modifier = sect_power_struggle days = 730 }
+			add_character_modifier = { modifier = sect_lineage_fracture days = 730 }
+		}
+	}
+}
