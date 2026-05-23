@@ -330,22 +330,14 @@ cultivation_ai.2290 = {
 }
 
 
-# Startup bootstrap so AI cultivation is never player-gated.
+# Legacy startup bootstrap retained as a no-op for compatibility.
+# Heavy every_living_character startup scanning was removed to prevent long freezes.
 cultivation_ai.1000 = {
     type = character_event
     scope = none
     hidden = yes
 
     immediate = {
-        every_living_character = {
-            limit = {
-                is_ai = yes
-                is_adult = yes
-                NOT = { has_trait = incapable }
-            }
-            trigger_event = cultivation_ai.0001
-            trigger_event = cultivation_ai.0002
-        }
     }
 
     option = { name = OK }
