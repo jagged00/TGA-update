@@ -6,44 +6,40 @@ xianxia_world.1000 = {
     hidden = yes
 
     immediate = {
-        every_ruler = {
+        # Startup-safe: no global scans. The legacy every_ruler/every_living_character
+        # passes are intentionally removed to avoid first-unpause stalls.
+    }
+
+    option = { name = OK }
+}
+
+# Batched xianxia adaptation pass so the world is initialized over time.
+xianxia_world.1001 = {
+    type = character_event
+    scope = none
+    hidden = yes
+
+    immediate = {
+        random_living_character = {
             limit = {
                 is_alive = yes
-                is_landed = yes
                 is_adult = yes
+                NOT = { has_character_flag = xianxia_world_initialization_checked }
             }
-            xianxia_apply_government_adaptation_effect = yes
+
             xianxia_non_cultivator_stat_cap_effect = yes
             xianxia_apply_commander_sect_archetype_effect = yes
+            xianxia_assign_missing_weapon_talent_effect = yes
 
-            every_courtier = {
-                limit = {
-                    is_alive = yes
-                    is_adult = yes
-                }
-                xianxia_non_cultivator_stat_cap_effect = yes
-                xianxia_apply_commander_sect_archetype_effect = yes
-            }
-
-            every_vassal = {
-                limit = {
-                    is_alive = yes
-                    is_adult = yes
-                }
-                xianxia_non_cultivator_stat_cap_effect = yes
-                xianxia_apply_commander_sect_archetype_effect = yes
-            }
-        }
-
-        every_ruler = {
-            limit = {
-                is_alive = yes
-                is_adult = yes
-                is_cultivator = yes
+            if = {
+                limit = { is_landed = yes }
+                xianxia_apply_government_adaptation_effect = yes
             }
 
             if = {
                 limit = {
+                    is_landed = yes
+                    is_cultivator = yes
                     OR = {
                         has_trait = cultivation_nascent_soul
                         has_trait = cultivation_heavenly_being
@@ -60,15 +56,8 @@ xianxia_world.1000 = {
                     days = 365
                 }
             }
-        }
 
-        every_living_character = {
-            limit = {
-                is_alive = yes
-                is_adult = yes
-                is_cultivator = yes
-            }
-            xianxia_assign_missing_weapon_talent_effect = yes
+            add_character_flag = xianxia_world_initialization_checked
         }
     }
 
