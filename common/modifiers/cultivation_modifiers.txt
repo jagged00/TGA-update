@@ -413,3 +413,11 @@ legendary_breakthrough_pill_ready = {
     monthly_lifestyle_xp_gain_mult = 0.12
     health = 0.15
 }
+
+# High-realm cultivators can reliably scheme against low-realm targets.
+high_realm_plotting_supremacy = {
+    icon = intrigue_positive
+    hostile_scheme_power_mult = 0.45
+    personal_scheme_power_mult = 0.25
+    owned_hostile_scheme_success_chance_add = 18
+}

@@ -572,17 +572,17 @@ cultivation_character_initialization.0006 = {
 			# bloodline awakenings.
 			random_list = {
 				99784 = { }
-				15 = { add_trait = yin_bloodline_1 }
-				15 = { add_trait = yang_bloodline_1 }
-				15 = { add_trait = dragon_bloodline_1 }
-				15 = { add_trait = phoenix_bloodline_1 }
-				15 = { add_trait = anchestor_bloodline_1 }
-				15 = { add_trait = poison_bloodline_1 }
-				15 = { add_trait = cursed_bloodline_1 }
-				15 = { add_trait = demon_bloodline_1 }
-				15 = { add_trait = primal_bloodline_1 }
-				15 = { add_trait = spirit_bloodline_1 }
-				15 = { add_trait = sun_bloodline_1 }
+				80 = { add_trait = yin_bloodline_1 }
+				80 = { add_trait = yang_bloodline_1 }
+				80 = { add_trait = dragon_bloodline_1 }
+				80 = { add_trait = phoenix_bloodline_1 }
+				80 = { add_trait = anchestor_bloodline_1 }
+				80 = { add_trait = poison_bloodline_1 }
+				80 = { add_trait = cursed_bloodline_1 }
+				80 = { add_trait = demon_bloodline_1 }
+				80 = { add_trait = primal_bloodline_1 }
+				80 = { add_trait = spirit_bloodline_1 }
+				80 = { add_trait = sun_bloodline_1 }
 				10 = { add_trait = alchemy_body_tier_1 }
 				4 = { add_trait = alchemy_body_tier_2 }
 				2 = { add_trait = alchemy_body_tier_3 }
@@ -692,18 +692,18 @@ cultivation_character_initialization.0006 = {
 		}
 		else = {
 			random_list = {
-				99835 = { }
-				15 = { add_trait = yin_bloodline_1 }
-				15 = { add_trait = yang_bloodline_1 }
-				15 = { add_trait = dragon_bloodline_1 }
-				15 = { add_trait = phoenix_bloodline_1 }
-				15 = { add_trait = anchestor_bloodline_1 }
-				15 = { add_trait = poison_bloodline_1 }
-				15 = { add_trait = cursed_bloodline_1 }
-				15 = { add_trait = demon_bloodline_1 }
-				15 = { add_trait = primal_bloodline_1 }
-				15 = { add_trait = spirit_bloodline_1 }
-				15 = { add_trait = sun_bloodline_1 }
+				98500 = { }
+				80 = { add_trait = yin_bloodline_1 }
+				80 = { add_trait = yang_bloodline_1 }
+				80 = { add_trait = dragon_bloodline_1 }
+				80 = { add_trait = phoenix_bloodline_1 }
+				80 = { add_trait = anchestor_bloodline_1 }
+				80 = { add_trait = poison_bloodline_1 }
+				80 = { add_trait = cursed_bloodline_1 }
+				80 = { add_trait = demon_bloodline_1 }
+				80 = { add_trait = primal_bloodline_1 }
+				80 = { add_trait = spirit_bloodline_1 }
+				80 = { add_trait = sun_bloodline_1 }
 				10 = { add_trait = alchemy_body_tier_1 }
 				4 = { add_trait = alchemy_body_tier_2 }
 				2 = { add_trait = alchemy_body_tier_3 }
