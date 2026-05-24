@@ -1,0 +1,36 @@
+# Cultivation holy site definitions (new religion format)
+
+chang_an = {
+	county = c_chang_an
+	character_modifier = {
+		monthly_piety_gain_mult = 0.05
+	}
+}
+
+hiei = {
+	county = c_hiei
+	character_modifier = {
+		learning_per_piety_level = 1
+	}
+}
+
+luoyang = {
+	county = c_luoyang
+	character_modifier = {
+		development_growth_factor = 0.05
+	}
+}
+
+bianliang = {
+	county = c_bianliang
+	character_modifier = {
+		same_faith_opinion = 5
+	}
+}
+
+hangzhou = {
+	county = c_hangzhou
+	character_modifier = {
+		monthly_prestige_gain_mult = 0.05
+	}
+}

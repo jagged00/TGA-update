@@ -434,10 +434,10 @@ cultivation_ai.0001 = {
             random_list = {
                 1 = { trigger = { has_trait = poor_meridians } remove_trait = cultivation_qi_gathering add_trait = cultivation_qi_refining }
                 2 = { trigger = { has_trait = normal_meridians } remove_trait = cultivation_qi_gathering add_trait = cultivation_qi_refining }
-                10 = { trigger = { has_trait = good_meridians } remove_trait = cultivation_qi_gathering add_trait = cultivation_qi_refining }
-                36 = { trigger = { has_trait = excellent_meridians } remove_trait = cultivation_qi_gathering add_trait = cultivation_qi_refining }
-                150 = { trigger = { has_trait = heavenly_meridians } remove_trait = cultivation_qi_gathering add_trait = cultivation_qi_refining }
-                801 = { }
+                22 = { trigger = { has_trait = good_meridians } remove_trait = cultivation_qi_gathering add_trait = cultivation_qi_refining }
+                70 = { trigger = { has_trait = excellent_meridians } remove_trait = cultivation_qi_gathering add_trait = cultivation_qi_refining }
+                260 = { trigger = { has_trait = heavenly_meridians } remove_trait = cultivation_qi_gathering add_trait = cultivation_qi_refining }
+                645 = { }
             }
         }
         else_if = {
@@ -675,7 +675,7 @@ cultivation_ai.0004 = {
     }
 
     immediate = {
-        add_character_flag = { flag = cultivation_talent_posture_cooldown days = 365 }
+        add_character_flag = { flag = cultivation_talent_posture_cooldown days = 180 }
 
         if = {
             limit = {
@@ -812,6 +812,37 @@ cultivation_ai.0004 = {
                 }
                 add_prestige = 75
             }
+
+
+            every_close_family_member = {
+                limit = {
+                    is_alive = yes
+                    is_adult = yes
+                    has_active_meridians = yes
+                    OR = {
+                        has_trait = good_meridians
+                        has_trait = excellent_meridians
+                        has_trait = heavenly_meridians
+                    }
+                    NOR = {
+                        has_trait = cultivation_nascent_soul
+                        has_trait = cultivation_heavenly_being
+                        has_trait = cultivation_four_axis
+                        has_trait = cultivation_integration
+                        has_trait = cultivation_star_shattering
+                        has_trait = cultivation_sacred_vessel
+                        has_trait = cultivation_entering_nirvana
+                        has_trait = cultivation_true_immortal
+                    }
+                }
+                add_opinion = {
+                    target = scope:root
+                    modifier = cultivation_invests_in_my_talent_opinion
+                    years = 15
+                }
+                add_prestige = 120
+                add_stress = -15
+            }
         }
     }
 
@@ -841,6 +872,7 @@ cultivation_ai.0005 = {
         remove_character_modifier = jade_chamber_alluring_presence
         remove_character_modifier = blood_moon_killing_intent
         remove_character_modifier = ancient_relic_treasure_resonance
+        remove_character_modifier = high_realm_plotting_supremacy
 
         if = {
             limit = { faith = faith:divine_beast_mountain }
@@ -903,6 +935,24 @@ cultivation_ai.0005 = {
             limit = { faith = { has_doctrine = tenet_vagrant_cultivation } }
             add_character_modifier = {
                 modifier = vagrant_realm_insight
+                days = 730
+            }
+        }
+
+        if = {
+            limit = {
+                OR = {
+                    has_trait = cultivation_heavenly_being
+                    has_trait = cultivation_four_axis
+                    has_trait = cultivation_integration
+                    has_trait = cultivation_star_shattering
+                    has_trait = cultivation_sacred_vessel
+                    has_trait = cultivation_entering_nirvana
+                    has_trait = cultivation_true_immortal
+                }
+            }
+            add_character_modifier = {
+                modifier = high_realm_plotting_supremacy
                 days = 730
             }
         }
@@ -1259,8 +1309,8 @@ cultivation_ai.2250 = {
                         is_ai = yes
                         is_adult = no
                         NOT = { is_lowborn = yes }
-                        age >= 6
-                        age <= 13
+                        age >= 4
+                        age <= 15
                         NOT = { has_trait = huxian_blood }
                         NOT = { has_trait = incapable }
                         NOT = { has_trait = inbred }
@@ -1282,8 +1332,8 @@ cultivation_ai.2250 = {
                         is_ai = yes
                         is_adult = no
                         NOT = { is_lowborn = yes }
-                        age >= 6
-                        age <= 13
+                        age >= 4
+                        age <= 15
                         NOT = { has_trait = huxian_blood }
                         NOT = { has_trait = incapable }
                         NOT = { has_trait = inbred }
@@ -1299,13 +1349,11 @@ cultivation_ai.2250 = {
                         }
                     }
                     add_trait = huxian_blood
-                    if = {
-                        limit = { NOT = { has_active_meridians = yes } }
-                        random_list = {
-                            80 = { add_trait = excellent_meridians }
-                            20 = { add_trait = heavenly_meridians }
-                        }
-                    }
+                    remove_trait = poor_meridians
+                    remove_trait = normal_meridians
+                    remove_trait = good_meridians
+                    remove_trait = excellent_meridians
+                    if = { limit = { NOT = { has_trait = heavenly_meridians } } add_trait = heavenly_meridians }
                     if = {
                         limit = { NOT = { has_perk = qi_gathering_meridian_1_perk } }
                         add_perk = qi_gathering_meridian_1_perk
@@ -1336,20 +1384,18 @@ cultivation_ai.2250 = {
                         is_alive = yes
                         is_ai = yes
                         is_adult = no
-                        age >= 6
-                        age <= 13
+                        age >= 4
+                        age <= 15
                         NOT = { has_trait = huxian_blood }
                         NOT = { has_trait = incapable }
                         NOT = { has_trait = inbred }
                     }
                     add_trait = huxian_blood
-                    if = {
-                        limit = { NOT = { has_active_meridians = yes } }
-                        random_list = {
-                            80 = { add_trait = excellent_meridians }
-                            20 = { add_trait = heavenly_meridians }
-                        }
-                    }
+                    remove_trait = poor_meridians
+                    remove_trait = normal_meridians
+                    remove_trait = good_meridians
+                    remove_trait = excellent_meridians
+                    if = { limit = { NOT = { has_trait = heavenly_meridians } } add_trait = heavenly_meridians }
                     if = {
                         limit = { NOT = { has_perk = qi_gathering_meridian_1_perk } }
                         add_perk = qi_gathering_meridian_1_perk
@@ -1386,7 +1432,7 @@ cultivation_ai.2250 = {
                 }
             }
             random_list = {
-                35 = {
+                60 = {
                     if = {
                         limit = {
                             any_living_character = {
@@ -1394,8 +1440,8 @@ cultivation_ai.2250 = {
                                 is_ai = yes
                                 is_adult = no
                                 NOT = { is_lowborn = yes }
-                                age >= 6
-                                age <= 13
+                                age >= 4
+                                age <= 15
                                 NOT = { has_trait = huxian_blood }
                                 NOT = { has_trait = incapable }
                                 NOT = { has_trait = inbred }
@@ -1417,8 +1463,8 @@ cultivation_ai.2250 = {
                                 is_ai = yes
                                 is_adult = no
                                 NOT = { is_lowborn = yes }
-                                age >= 6
-                                age <= 13
+                                age >= 4
+                                age <= 15
                                 NOT = { has_trait = huxian_blood }
                                 NOT = { has_trait = incapable }
                                 NOT = { has_trait = inbred }
@@ -1434,13 +1480,11 @@ cultivation_ai.2250 = {
                                 }
                             }
                             add_trait = huxian_blood
-                            if = {
-                                limit = { NOT = { has_active_meridians = yes } }
-                                random_list = {
-                                    80 = { add_trait = excellent_meridians }
-                                    20 = { add_trait = heavenly_meridians }
-                                }
-                            }
+                            remove_trait = poor_meridians
+                            remove_trait = normal_meridians
+                            remove_trait = good_meridians
+                            remove_trait = excellent_meridians
+                            if = { limit = { NOT = { has_trait = heavenly_meridians } } add_trait = heavenly_meridians }
                             if = {
                                 limit = { NOT = { has_perk = qi_gathering_meridian_1_perk } }
                                 add_perk = qi_gathering_meridian_1_perk
@@ -1471,20 +1515,18 @@ cultivation_ai.2250 = {
                                 is_alive = yes
                                 is_ai = yes
                                 is_adult = no
-                                age >= 6
-                                age <= 13
+                                age >= 4
+                                age <= 15
                                 NOT = { has_trait = huxian_blood }
                                 NOT = { has_trait = incapable }
                                 NOT = { has_trait = inbred }
                             }
                             add_trait = huxian_blood
-                            if = {
-                                limit = { NOT = { has_active_meridians = yes } }
-                                random_list = {
-                                    80 = { add_trait = excellent_meridians }
-                                    20 = { add_trait = heavenly_meridians }
-                                }
-                            }
+                            remove_trait = poor_meridians
+                            remove_trait = normal_meridians
+                            remove_trait = good_meridians
+                            remove_trait = excellent_meridians
+                            if = { limit = { NOT = { has_trait = heavenly_meridians } } add_trait = heavenly_meridians }
                             if = {
                                 limit = { NOT = { has_perk = qi_gathering_meridian_1_perk } }
                                 add_perk = qi_gathering_meridian_1_perk
