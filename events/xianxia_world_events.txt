@@ -1597,7 +1597,10 @@ xianxia_world.9605 = {
     }
 
     immediate = {
-        trigger_event = { id = xianxia_world.9602 days = 73000 }
+        random_living_character = {
+            limit = { is_alive = yes }
+            trigger_event = { id = xianxia_world.9602 days = 73000 }
+        }
     }
 
     option = { name = OK }

@@ -26,12 +26,25 @@ cultivation_vagrant = {
 	doctrine = doctrine_funeral_bewailment
 
 	traits = {
-		virtues = { brave ambitious gregarious adventurer }
-		sins = { craven content shy }
+		virtues = {
+			brave
+			ambitious
+			gregarious
+			adventurer
+		}
+		sins = {
+			craven
+			content
+			shy
+		}
 	}
 
 	custom_faith_icons = {
-		custom_faith_1 custom_faith_2 custom_faith_3 custom_faith_4 custom_faith_5
+		custom_faith_1
+		custom_faith_2
+		custom_faith_3
+		custom_faith_4
+		custom_faith_5
 	}
 
 	holy_order_names = {
