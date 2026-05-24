@@ -395,13 +395,27 @@ purge_mortal_afflictions_decision = {
             has_trait = one_legged
             has_trait = disfigured
             has_trait = infirm
+            has_trait = withering_mind
+            has_trait = clouded_eyes
+            has_trait = faltering_heart
+            has_trait = fragile_bones
+            has_trait = incapable
             has_trait = gout_ridden
+            has_trait = consumption
+            has_trait = typhus
+            has_trait = bubonic_plague
+            has_trait = smallpox
+            has_trait = measles
+            has_trait = dysentery
+            has_trait = ergotism
         }
     }
 
     ai_check_interval = 6
     ai_potential = { always = yes }
-    ai_will_do = { base = 1000 }
+    ai_will_do = {
+        base = 5000
+    }
 
     effect = {
         # Diseases and bodily trauma are burned away with circulating qi.
@@ -419,7 +433,19 @@ purge_mortal_afflictions_decision = {
         remove_trait = one_legged
         remove_trait = disfigured
         remove_trait = infirm
+        remove_trait = withering_mind
+        remove_trait = clouded_eyes
+        remove_trait = faltering_heart
+        remove_trait = fragile_bones
+        remove_trait = incapable
         remove_trait = gout_ridden
+        remove_trait = consumption
+        remove_trait = typhus
+        remove_trait = bubonic_plague
+        remove_trait = smallpox
+        remove_trait = measles
+        remove_trait = dysentery
+        remove_trait = ergotism
 
         add_character_modifier = {
             modifier = realm_stabilization

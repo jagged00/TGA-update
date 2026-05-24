@@ -28,12 +28,24 @@ cultivation_unorthodox = {
 	doctrine = doctrine_funeral_bewailment
 
 	traits = {
-		virtues = { brave ambitious vengeful wrathful }
-		sins = { craven content forgiving calm }
+		virtues = {
+			brave
+			ambitious
+			vengeful
+			wrathful
+		}
+		sins = {
+			craven
+			content
+			forgiving
+			calm
+		}
 	}
 
 	custom_faith_icons = {
-		custom_faith_1 custom_faith_2 custom_faith_3
+		custom_faith_1
+		custom_faith_2
+		custom_faith_3
 	}
 
 	holy_order_names = {
