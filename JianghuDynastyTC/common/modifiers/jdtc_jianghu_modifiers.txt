@@ -1,0 +1,154 @@
+# Jianghu Dynasty v2.4.0 - additive vanilla-map character modifiers.
+
+jianghu_reputation_low = {
+	icon = prestige_negative
+	general_opinion = -1
+	monthly_prestige = 0.05
+}
+
+jianghu_reputation_respected = {
+	icon = prestige_positive
+	general_opinion = 2
+	prowess = 1
+	monthly_prestige = 0.1
+}
+
+jianghu_reputation_renowned = {
+	icon = prestige_positive
+	general_opinion = 4
+	prowess = 2
+	monthly_prestige = 0.2
+}
+
+jianghu_reputation_legendary = {
+	icon = prestige_positive
+	general_opinion = 6
+	prowess = 3
+	martial = 1
+	monthly_prestige = 0.3
+}
+
+jdtc_martial_discipline_modifier = {
+	icon = martial_positive
+	martial = 1
+	prowess = 1
+}
+
+jdtc_jianghu_challenge_modifier = {
+	icon = prowess_positive
+	prowess = 2
+	monthly_prestige = 0.1
+}
+
+jdtc_local_master_guidance_modifier = {
+	icon = learning_positive
+	learning = 1
+	prowess = 1
+}
+
+jdtc_meditative_recovery_modifier = {
+	icon = health_positive
+	stress_loss_mult = 0.1
+}
+
+jdtc_weapon_forms_practice_modifier = {
+	icon = prowess_positive
+	prowess = 1
+	martial = 1
+}
+
+jdtc_military_service_modifier = {
+	icon = martial_positive
+	martial = 1
+	monthly_prestige = 0.1
+}
+
+jdtc_field_assignment_modifier = {
+	icon = martial_positive
+	prowess = 1
+	knight_effectiveness_mult = 0.02
+}
+
+jdtc_troop_training_modifier = {
+	icon = martial_positive
+	martial = 1
+	levy_size = 0.02
+}
+
+jdtc_officer_network_modifier = {
+	icon = diplomacy_positive
+	diplomacy = 1
+	martial = 1
+}
+
+jdtc_campaign_strategy_modifier = {
+	icon = learning_positive
+	martial = 1
+	learning = 1
+}
+
+jdtc_court_service_modifier = {
+	icon = diplomacy_positive
+	diplomacy = 1
+	monthly_prestige = 0.05
+}
+
+jdtc_strategic_counsel_modifier = {
+	icon = martial_positive
+	martial = 1
+	diplomacy = 1
+}
+
+jdtc_bureaucratic_connections_modifier = {
+	icon = stewardship_positive
+	stewardship = 1
+	diplomacy = 1
+}
+
+jdtc_imperial_recognition_modifier = {
+	icon = prestige_positive
+	general_opinion = 3
+	monthly_prestige = 0.2
+}
+
+jdtc_wandering_artist_modifier = {
+	icon = prowess_positive
+	prowess = 1
+	stress_loss_mult = 0.05
+}
+
+jdtc_soldier_path_modifier = {
+	icon = martial_positive
+	prowess = 1
+	martial = 1
+}
+
+jdtc_officer_path_modifier = {
+	icon = diplomacy_positive
+	martial = 1
+	diplomacy = 1
+}
+
+jdtc_general_path_modifier = {
+	icon = martial_positive
+	martial = 2
+	monthly_prestige = 0.15
+}
+
+jdtc_strategist_path_modifier = {
+	icon = learning_positive
+	learning = 2
+	martial = 1
+}
+
+jdtc_mentor_disciple_modifier = {
+	icon = learning_positive
+	learning = 1
+	general_opinion = 1
+}
+
+jdtc_honor_rivalry_modifier = {
+	icon = prowess_positive
+	prowess = 1
+	monthly_prestige = 0.1
+}

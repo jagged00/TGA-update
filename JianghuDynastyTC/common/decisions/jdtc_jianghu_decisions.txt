@@ -1,0 +1,247 @@
+# Jianghu Dynasty v2.4.0 - additive vanilla-map sandbox decisions.
+
+jdtc_train_martial_discipline_decision = {
+	picture = { reference = "gfx/interface/illustrations/decisions/decision_knight_kneeling.dds" }
+	desc = jdtc_train_martial_discipline_decision_desc
+	selection_tooltip = jdtc_train_martial_discipline_decision_tooltip
+	confirm_text = jdtc_train_martial_discipline_decision_confirm
+	ai_check_interval = 0
+	cooldown = { years = 2 }
+	is_shown = { is_ai = no is_adult = yes }
+	is_valid = { is_imprisoned = no NOT = { has_trait = incapable } }
+	effect = { trigger_event = { id = jdtc_jianghu.1000 } }
+}
+
+jdtc_seek_jianghu_challenge_decision = {
+	picture = { reference = "gfx/interface/illustrations/decisions/decision_siege_warfare.dds" }
+	desc = jdtc_seek_jianghu_challenge_decision_desc
+	selection_tooltip = jdtc_seek_jianghu_challenge_decision_tooltip
+	confirm_text = jdtc_seek_jianghu_challenge_decision_confirm
+	ai_check_interval = 0
+	cooldown = { years = 3 }
+	is_shown = { is_ai = no is_adult = yes }
+	is_valid = { is_imprisoned = no NOT = { has_trait = incapable } prowess >= 6 }
+	effect = { trigger_event = { id = jdtc_jianghu.1001 } }
+}
+
+jdtc_visit_local_master_decision = {
+	picture = { reference = "gfx/interface/illustrations/decisions/decision_major_religion.dds" }
+	desc = jdtc_visit_local_master_decision_desc
+	selection_tooltip = jdtc_visit_local_master_decision_tooltip
+	confirm_text = jdtc_visit_local_master_decision_confirm
+	ai_check_interval = 0
+	cooldown = { years = 4 }
+	is_shown = { is_ai = no is_adult = yes }
+	is_valid = { is_imprisoned = no NOT = { has_trait = incapable } prestige >= minor_prestige_value }
+	effect = {
+		add_prestige = minor_prestige_loss
+		trigger_event = { id = jdtc_jianghu.1002 }
+	}
+}
+
+jdtc_meditate_and_recover_decision = {
+	picture = { reference = "gfx/interface/illustrations/decisions/decision_personal_religious.dds" }
+	desc = jdtc_meditate_and_recover_decision_desc
+	selection_tooltip = jdtc_meditate_and_recover_decision_tooltip
+	confirm_text = jdtc_meditate_and_recover_decision_confirm
+	ai_check_interval = 0
+	cooldown = { years = 2 }
+	is_shown = { is_ai = no is_adult = yes }
+	is_valid = { is_imprisoned = no NOT = { has_trait = incapable } }
+	effect = { trigger_event = { id = jdtc_jianghu.1003 } }
+}
+
+jdtc_practice_weapon_forms_decision = {
+	picture = { reference = "gfx/interface/illustrations/decisions/decision_smith.dds" }
+	desc = jdtc_practice_weapon_forms_decision_desc
+	selection_tooltip = jdtc_practice_weapon_forms_decision_tooltip
+	confirm_text = jdtc_practice_weapon_forms_decision_confirm
+	ai_check_interval = 0
+	cooldown = { years = 2 }
+	is_shown = { is_ai = no is_adult = yes }
+	is_valid = { is_imprisoned = no NOT = { has_trait = incapable } }
+	effect = { trigger_event = { id = jdtc_jianghu.1004 } }
+}
+
+jdtc_enter_military_service_decision = {
+	picture = { reference = "gfx/interface/illustrations/decisions/decision_recruitment.dds" }
+	desc = jdtc_enter_military_service_decision_desc
+	selection_tooltip = jdtc_enter_military_service_decision_tooltip
+	confirm_text = jdtc_enter_military_service_decision_confirm
+	ai_check_interval = 0
+	cooldown = { years = 4 }
+	is_shown = { is_ai = no is_adult = yes }
+	is_valid = { is_imprisoned = no NOT = { has_trait = incapable } }
+	effect = { trigger_event = { id = jdtc_jianghu.1100 } }
+}
+
+jdtc_request_field_assignment_decision = {
+	picture = { reference = "gfx/interface/illustrations/decisions/decision_invite_knights.dds" }
+	desc = jdtc_request_field_assignment_decision_desc
+	selection_tooltip = jdtc_request_field_assignment_decision_tooltip
+	confirm_text = jdtc_request_field_assignment_decision_confirm
+	ai_check_interval = 0
+	cooldown = { years = 3 }
+	is_shown = { is_ai = no is_adult = yes }
+	is_valid = { is_imprisoned = no NOT = { has_trait = incapable } martial >= 8 }
+	effect = { trigger_event = { id = jdtc_jianghu.1101 } }
+}
+
+jdtc_train_troops_decision = {
+	picture = { reference = "gfx/interface/illustrations/decisions/decision_siege_warfare.dds" }
+	desc = jdtc_train_troops_decision_desc
+	selection_tooltip = jdtc_train_troops_decision_tooltip
+	confirm_text = jdtc_train_troops_decision_confirm
+	ai_check_interval = 0
+	cooldown = { years = 3 }
+	is_shown = { is_ai = no is_adult = yes }
+	is_valid = { is_imprisoned = no NOT = { has_trait = incapable } }
+	effect = { trigger_event = { id = jdtc_jianghu.1102 } }
+}
+
+jdtc_build_officer_network_decision = {
+	picture = { reference = "gfx/interface/illustrations/decisions/decision_realm.dds" }
+	desc = jdtc_build_officer_network_decision_desc
+	selection_tooltip = jdtc_build_officer_network_decision_tooltip
+	confirm_text = jdtc_build_officer_network_decision_confirm
+	ai_check_interval = 0
+	cooldown = { years = 5 }
+	is_shown = { is_ai = no is_adult = yes }
+	is_valid = { is_imprisoned = no NOT = { has_trait = incapable } prestige >= minor_prestige_value }
+	effect = {
+		add_prestige = minor_prestige_loss
+		trigger_event = { id = jdtc_jianghu.1103 }
+	}
+}
+
+jdtc_study_campaign_strategy_decision = {
+	picture = { reference = "gfx/interface/illustrations/decisions/decision_tale.dds" }
+	desc = jdtc_study_campaign_strategy_decision_desc
+	selection_tooltip = jdtc_study_campaign_strategy_decision_tooltip
+	confirm_text = jdtc_study_campaign_strategy_decision_confirm
+	ai_check_interval = 0
+	cooldown = { years = 3 }
+	is_shown = { is_ai = no is_adult = yes }
+	is_valid = { is_imprisoned = no NOT = { has_trait = incapable } }
+	effect = { trigger_event = { id = jdtc_jianghu.1104 } }
+}
+
+jdtc_serve_the_court_decision = {
+	picture = { reference = "gfx/interface/illustrations/decisions/decision_realm.dds" }
+	desc = jdtc_serve_the_court_decision_desc
+	selection_tooltip = jdtc_serve_the_court_decision_tooltip
+	confirm_text = jdtc_serve_the_court_decision_confirm
+	ai_check_interval = 0
+	cooldown = { years = 4 }
+	is_shown = { is_ai = no is_adult = yes }
+	is_valid = { is_imprisoned = no NOT = { has_trait = incapable } }
+	effect = { trigger_event = { id = jdtc_jianghu.1200 } }
+}
+
+jdtc_offer_strategic_counsel_decision = {
+	picture = { reference = "gfx/interface/illustrations/decisions/decision_realm.dds" }
+	desc = jdtc_offer_strategic_counsel_decision_desc
+	selection_tooltip = jdtc_offer_strategic_counsel_decision_tooltip
+	confirm_text = jdtc_offer_strategic_counsel_decision_confirm
+	ai_check_interval = 0
+	cooldown = { years = 3 }
+	is_shown = { is_ai = no is_adult = yes }
+	is_valid = { is_imprisoned = no NOT = { has_trait = incapable } OR = { martial >= 10 diplomacy >= 10 } }
+	effect = { trigger_event = { id = jdtc_jianghu.1201 } }
+}
+
+jdtc_build_bureaucratic_connections_decision = {
+	picture = { reference = "gfx/interface/illustrations/decisions/decision_dynasty_house.dds" }
+	desc = jdtc_build_bureaucratic_connections_decision_desc
+	selection_tooltip = jdtc_build_bureaucratic_connections_decision_tooltip
+	confirm_text = jdtc_build_bureaucratic_connections_decision_confirm
+	ai_check_interval = 0
+	cooldown = { years = 5 }
+	is_shown = { is_ai = no is_adult = yes }
+	is_valid = { is_imprisoned = no NOT = { has_trait = incapable } stewardship >= 8 }
+	effect = { trigger_event = { id = jdtc_jianghu.1202 } }
+}
+
+jdtc_request_imperial_recognition_decision = {
+	picture = { reference = "gfx/interface/illustrations/decisions/decision_golden_age.dds" }
+	desc = jdtc_request_imperial_recognition_decision_desc
+	selection_tooltip = jdtc_request_imperial_recognition_decision_tooltip
+	confirm_text = jdtc_request_imperial_recognition_decision_confirm
+	ai_check_interval = 0
+	cooldown = { years = 8 }
+	is_shown = { is_ai = no is_adult = yes }
+	is_valid = { is_imprisoned = no NOT = { has_trait = incapable } prestige_level >= 1 }
+	effect = { trigger_event = { id = jdtc_jianghu.1203 } }
+}
+
+jdtc_walk_wandering_road_decision = {
+	picture = { reference = "gfx/interface/illustrations/decisions/decision_activity.dds" }
+	desc = jdtc_walk_wandering_road_decision_desc
+	selection_tooltip = jdtc_walk_wandering_road_decision_tooltip
+	confirm_text = jdtc_walk_wandering_road_decision_confirm
+	ai_check_interval = 0
+	cooldown = { years = 4 }
+	is_shown = { is_ai = no is_adult = yes }
+	is_valid = { is_imprisoned = no NOT = { has_trait = incapable } }
+	effect = { trigger_event = { id = jdtc_jianghu.1300 } }
+}
+
+jdtc_organize_officer_drill_decision = {
+	picture = { reference = "gfx/interface/illustrations/decisions/decision_invite_knights.dds" }
+	desc = jdtc_organize_officer_drill_decision_desc
+	selection_tooltip = jdtc_organize_officer_drill_decision_tooltip
+	confirm_text = jdtc_organize_officer_drill_decision_confirm
+	ai_check_interval = 0
+	cooldown = { years = 4 }
+	is_shown = { is_ai = no is_adult = yes }
+	is_valid = { is_imprisoned = no NOT = { has_trait = incapable } martial >= 8 }
+	effect = { trigger_event = { id = jdtc_jianghu.1301 } }
+}
+
+jdtc_plan_campaign_staff_decision = {
+	picture = { reference = "gfx/interface/illustrations/decisions/decision_spend_money.dds" }
+	desc = jdtc_plan_campaign_staff_decision_desc
+	selection_tooltip = jdtc_plan_campaign_staff_decision_tooltip
+	confirm_text = jdtc_plan_campaign_staff_decision_confirm
+	ai_check_interval = 0
+	cooldown = { years = 5 }
+	is_shown = { is_ai = no is_adult = yes }
+	is_valid = { is_imprisoned = no NOT = { has_trait = incapable } martial >= 10 }
+	effect = { trigger_event = { id = jdtc_jianghu.1302 } }
+}
+
+jdtc_study_strategy_network_decision = {
+	picture = { reference = "gfx/interface/illustrations/decisions/decision_tale.dds" }
+	desc = jdtc_study_strategy_network_decision_desc
+	selection_tooltip = jdtc_study_strategy_network_decision_tooltip
+	confirm_text = jdtc_study_strategy_network_decision_confirm
+	ai_check_interval = 0
+	cooldown = { years = 5 }
+	is_shown = { is_ai = no is_adult = yes }
+	is_valid = { is_imprisoned = no NOT = { has_trait = incapable } learning >= 8 }
+	effect = { trigger_event = { id = jdtc_jianghu.1303 } }
+}
+
+jdtc_accept_disciple_decision = {
+	picture = { reference = "gfx/interface/illustrations/decisions/decision_dynasty_house.dds" }
+	desc = jdtc_accept_disciple_decision_desc
+	selection_tooltip = jdtc_accept_disciple_decision_tooltip
+	confirm_text = jdtc_accept_disciple_decision_confirm
+	ai_check_interval = 0
+	cooldown = { years = 6 }
+	is_shown = { is_ai = no is_adult = yes }
+	is_valid = { is_imprisoned = no NOT = { has_trait = incapable } OR = { learning >= 10 prowess >= 10 } }
+	effect = { trigger_event = { id = jdtc_jianghu.1304 } }
+}
+
+jdtc_answer_honor_challenge_decision = {
+	picture = { reference = "gfx/interface/illustrations/decisions/decision_knight_kneeling.dds" }
+	desc = jdtc_answer_honor_challenge_decision_desc
+	selection_tooltip = jdtc_answer_honor_challenge_decision_tooltip
+	confirm_text = jdtc_answer_honor_challenge_decision_confirm
+	ai_check_interval = 0
+	cooldown = { years = 5 }
+	is_shown = { is_ai = no is_adult = yes }
+	is_valid = { is_imprisoned = no NOT = { has_trait = incapable } prowess >= 8 }
+	effect = { trigger_event = { id = jdtc_jianghu.1305 } }
+}

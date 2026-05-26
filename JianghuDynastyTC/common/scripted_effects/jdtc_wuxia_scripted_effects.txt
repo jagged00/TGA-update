@@ -1,0 +1,15 @@
+# Jianghu Dynasty v2.10.0 - small additive effects only.
+
+jdtc_gain_minor_wulin_reputation_effect = {
+	add_prestige = minor_prestige_gain
+	add_character_modifier = { modifier = jianghu_reputation_respected years = 3 }
+}
+
+jdtc_gain_major_wulin_reputation_effect = {
+	add_prestige = medium_prestige_gain
+	add_character_modifier = { modifier = jianghu_reputation_renowned years = 4 }
+}
+
+jdtc_pay_minor_prestige_cost_effect = {
+	add_prestige = minor_prestige_loss
+}

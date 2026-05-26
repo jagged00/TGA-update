@@ -1,0 +1,112 @@
+# Jianghu Dynasty v2.10.0 - additive Song-era wuxia modifiers.
+
+# Martial school archetypes
+jdtc_mountain_sword_school_modifier = { icon = prowess_positive prowess = 1 learning = 1 }
+jdtc_frontier_spear_school_modifier = { icon = martial_positive martial = 1 prowess = 1 }
+jdtc_inner_breath_hall_modifier = { icon = health_positive health = 0.1 stress_loss_mult = 0.05 }
+jdtc_river_lake_wanderer_school_modifier = { icon = diplomacy_positive diplomacy = 1 prowess = 1 }
+jdtc_monastic_staff_tradition_modifier = { icon = learning_positive learning = 1 prowess = 1 }
+jdtc_hidden_valley_school_modifier = { icon = intrigue_positive intrigue = 1 prowess = 1 }
+jdtc_iron_palm_lineage_modifier = { icon = prowess_positive prowess = 2 health = -0.05 }
+jdtc_gallant_archer_lodge_modifier = { icon = martial_positive martial = 1 monthly_prestige = 0.05 }
+
+# School ranks, expressed as social recognition rather than CK3 map titles.
+jdtc_unaffiliated_wanderer_modifier = { icon = diplomacy_positive prowess = 1 }
+jdtc_probationary_disciple_modifier = { icon = learning_positive learning = 1 }
+jdtc_outer_disciple_modifier = { icon = prowess_positive prowess = 1 }
+jdtc_inner_disciple_modifier = { icon = martial_positive martial = 1 prowess = 1 }
+jdtc_senior_disciple_modifier = { icon = diplomacy_positive diplomacy = 1 martial = 1 }
+jdtc_core_inheritor_modifier = { icon = prestige_positive general_opinion = 2 prowess = 1 }
+jdtc_martial_instructor_modifier = { icon = learning_positive learning = 1 diplomacy = 1 }
+jdtc_school_elder_modifier = { icon = prestige_positive general_opinion = 2 learning = 1 }
+jdtc_school_master_modifier = { icon = prestige_positive general_opinion = 3 martial = 1 learning = 1 }
+
+# Sect archetypes
+jdtc_orthodox_wulin_alliance_modifier = { icon = diplomacy_positive diplomacy = 1 general_opinion = 1 }
+jdtc_frontier_militia_sect_modifier = { icon = martial_positive martial = 1 levy_size = 0.02 }
+jdtc_hidden_valley_sect_modifier = { icon = intrigue_positive intrigue = 1 learning = 1 }
+jdtc_merchant_martial_society_modifier = { icon = stewardship_positive stewardship = 1 diplomacy = 1 }
+jdtc_shadow_oath_society_modifier = { icon = intrigue_positive intrigue = 2 general_opinion = -1 }
+jdtc_wayfarer_bowl_brotherhood_modifier = { icon = diplomacy_positive diplomacy = 1 stress_loss_mult = 0.05 }
+
+# Sect ranks and influence
+jdtc_sect_associate_modifier = { icon = diplomacy_positive diplomacy = 1 }
+jdtc_sect_disciple_modifier = { icon = prowess_positive prowess = 1 }
+jdtc_sect_protector_modifier = { icon = martial_positive martial = 1 prowess = 1 }
+jdtc_hall_enforcer_modifier = { icon = prowess_positive prowess = 2 }
+jdtc_sect_strategist_modifier = { icon = learning_positive learning = 1 intrigue = 1 }
+jdtc_sect_elder_modifier = { icon = prestige_positive general_opinion = 2 diplomacy = 1 }
+jdtc_deputy_leader_modifier = { icon = diplomacy_positive diplomacy = 2 martial = 1 }
+jdtc_sect_leader_candidate_modifier = { icon = prestige_positive general_opinion = 2 intrigue = 1 }
+jdtc_sect_influence_modifier = { icon = diplomacy_positive diplomacy = 1 monthly_prestige = 0.05 }
+jdtc_internal_faction_support_modifier = { icon = intrigue_positive intrigue = 1 diplomacy = 1 }
+jdtc_elder_support_modifier = { icon = prestige_positive general_opinion = 1 learning = 1 }
+
+# Power struggle results
+jdtc_master_trust_modifier = { icon = learning_positive learning = 1 general_opinion = 1 }
+jdtc_rival_discredited_modifier = { icon = intrigue_positive intrigue = 1 monthly_prestige = 0.05 }
+jdtc_quiet_consolidation_modifier = { icon = diplomacy_positive diplomacy = 1 stewardship = 1 }
+jdtc_court_patronage_modifier = { icon = diplomacy_positive diplomacy = 1 monthly_prestige = 0.1 }
+jdtc_corruption_exposed_modifier = { icon = intrigue_positive intrigue = 1 general_opinion = 1 }
+jdtc_commander_trust_modifier = { icon = martial_positive martial = 1 knight_effectiveness_mult = 0.02 }
+jdtc_frontier_recognition_modifier = { icon = prestige_positive martial = 1 monthly_prestige = 0.1 }
+jdtc_rival_pressure_modifier = { icon = intrigue_negative stress_loss_mult = -0.05 general_opinion = -1 }
+
+# Wulin gatherings, tournaments, and leadership flavor
+jdtc_wulin_gathering_voice_modifier = { icon = diplomacy_positive diplomacy = 1 monthly_prestige = 0.05 }
+jdtc_wulin_mediator_modifier = { icon = diplomacy_positive diplomacy = 2 general_opinion = 1 }
+jdtc_martial_alliance_speaker_modifier = { icon = prestige_positive diplomacy = 1 martial = 1 }
+jdtc_protector_of_wulin_modifier = { icon = prestige_positive prowess = 1 general_opinion = 2 }
+jdtc_tournament_victor_modifier = { icon = prowess_positive prowess = 2 monthly_prestige = 0.1 }
+jdtc_tournament_bruised_modifier = { icon = health_negative health = -0.2 prowess = 1 }
+jdtc_crisis_responder_modifier = { icon = martial_positive martial = 1 diplomacy = 1 }
+jdtc_disputed_wulin_figure_modifier = { icon = intrigue_negative general_opinion = -2 monthly_prestige = 0.1 }
+jdtc_suspected_opportunist_modifier = { icon = intrigue_positive intrigue = 1 general_opinion = -2 }
+jdtc_respected_hero_of_realm_modifier = { icon = prestige_positive general_opinion = 3 monthly_prestige = 0.15 }
+
+# Legendary arts and manuals
+jdtc_sword_art_modifier = { icon = prowess_positive prowess = 1 }
+jdtc_saber_art_modifier = { icon = martial_positive martial = 1 prowess = 1 }
+jdtc_spear_art_modifier = { icon = martial_positive martial = 1 }
+jdtc_staff_art_modifier = { icon = learning_positive learning = 1 prowess = 1 }
+jdtc_archery_art_modifier = { icon = martial_positive martial = 1 monthly_prestige = 0.05 }
+jdtc_palm_art_modifier = { icon = prowess_positive prowess = 2 health = -0.05 }
+jdtc_fist_art_modifier = { icon = prowess_positive prowess = 1 stress_loss_mult = 0.03 }
+jdtc_breath_method_modifier = { icon = health_positive health = 0.15 stress_loss_mult = 0.05 }
+jdtc_internal_force_modifier = { icon = prowess_positive prowess = 2 stress_loss_mult = -0.03 }
+jdtc_healing_circulation_modifier = { icon = health_positive health = 0.25 }
+jdtc_defensive_circulation_modifier = { icon = martial_positive prowess = 1 health = 0.1 }
+jdtc_explosive_reserve_modifier = { icon = prowess_positive prowess = 3 health = -0.15 }
+jdtc_lightness_skill_modifier = { icon = prowess_positive prowess = 1 diplomacy = 1 }
+jdtc_evasive_footwork_modifier = { icon = intrigue_positive intrigue = 1 prowess = 1 }
+jdtc_river_step_modifier = { icon = diplomacy_positive diplomacy = 1 stress_loss_mult = 0.04 }
+jdtc_mountain_leap_modifier = { icon = martial_positive martial = 1 prowess = 1 }
+jdtc_hidden_weapons_modifier = { icon = intrigue_positive intrigue = 2 general_opinion = -1 }
+jdtc_battlefield_formation_modifier = { icon = martial_positive martial = 2 }
+jdtc_anti_cavalry_discipline_modifier = { icon = martial_positive martial = 1 levy_size = 0.02 }
+jdtc_mounted_archery_modifier = { icon = martial_positive martial = 1 prowess = 1 }
+jdtc_defensive_guard_modifier = { icon = health_positive health = 0.1 martial = 1 }
+jdtc_dangerous_meridian_modifier = { icon = health_negative prowess = 3 health = -0.3 stress_loss_mult = -0.08 }
+jdtc_blood_costing_technique_modifier = { icon = prowess_positive prowess = 4 health = -0.4 general_opinion = -1 }
+jdtc_poison_hand_modifier = { icon = intrigue_positive intrigue = 2 prowess = 1 general_opinion = -2 }
+jdtc_shadow_discipline_modifier = { icon = intrigue_positive intrigue = 2 stress_loss_mult = -0.03 }
+jdtc_forbidden_breath_reversal_modifier = { icon = health_negative prowess = 3 learning = 1 health = -0.25 }
+jdtc_manual_guardian_modifier = { icon = learning_positive learning = 1 general_opinion = 1 }
+jdtc_incomplete_manual_modifier = { icon = learning_negative learning = -1 stress_loss_mult = -0.05 }
+jdtc_internal_injury_modifier = { icon = health_negative health = -0.35 stress_loss_mult = -0.05 }
+jdtc_manual_hidden_modifier = { icon = intrigue_positive intrigue = 1 }
+
+# Frontier patriotism and court-Jianghu tension
+jdtc_realm_loyalist_modifier = { icon = prestige_positive diplomacy = 1 monthly_prestige = 0.1 }
+jdtc_defender_of_realm_modifier = { icon = martial_positive martial = 1 general_opinion = 1 }
+jdtc_frontier_protector_modifier = { icon = martial_positive martial = 1 prowess = 1 }
+jdtc_court_recognized_hero_modifier = { icon = diplomacy_positive diplomacy = 1 general_opinion = 2 }
+jdtc_pragmatic_wanderer_modifier = { icon = diplomacy_positive diplomacy = 1 intrigue = 1 }
+jdtc_independent_wulin_figure_modifier = { icon = prowess_positive prowess = 1 monthly_prestige = 0.05 }
+jdtc_suspected_collaborator_modifier = { icon = intrigue_negative general_opinion = -3 intrigue = 1 }
+jdtc_border_veteran_modifier = { icon = martial_positive martial = 2 prowess = 1 }
+jdtc_border_militia_trainer_modifier = { icon = martial_positive martial = 1 levy_size = 0.03 }
+jdtc_supply_escort_modifier = { icon = stewardship_positive stewardship = 1 martial = 1 }
+jdtc_refugee_protector_modifier = { icon = diplomacy_positive diplomacy = 1 general_opinion = 2 }
+jdtc_bandit_hunter_modifier = { icon = prowess_positive prowess = 1 martial = 1 }
+jdtc_jianghu_state_tension_modifier = { icon = diplomacy_negative diplomacy = -1 intrigue = 1 }

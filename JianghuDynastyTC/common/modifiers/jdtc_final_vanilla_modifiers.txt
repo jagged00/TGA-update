@@ -1,0 +1,37 @@
+# Jianghu Dynasty v2.15.0 - final vanilla-map edition modifiers.
+
+# v2.11 school and sect depth
+jdtc_school_council_moderator_modifier = { icon = diplomacy_positive diplomacy = 1 learning = 1 }
+jdtc_school_rules_reformer_modifier = { icon = learning_positive learning = 1 general_opinion = 1 }
+jdtc_cross_school_exchange_modifier = { icon = prowess_positive prowess = 1 diplomacy = 1 }
+jdtc_sect_relief_patron_modifier = { icon = diplomacy_positive diplomacy = 1 monthly_prestige = 0.05 }
+jdtc_sect_oath_keeper_modifier = { icon = prestige_positive general_opinion = 2 stress_loss_mult = 0.03 }
+jdtc_school_archive_keeper_modifier = { icon = learning_positive learning = 2 }
+
+# v2.12 Jianghu social web
+jdtc_sworn_oath_companion_modifier = { icon = diplomacy_positive diplomacy = 1 prowess = 1 }
+jdtc_bitter_rivalry_memory_modifier = { icon = intrigue_negative intrigue = 1 stress_loss_mult = -0.05 }
+jdtc_reconciled_grievance_modifier = { icon = diplomacy_positive general_opinion = 1 stress_loss_mult = 0.05 }
+jdtc_betrayal_watcher_modifier = { icon = intrigue_positive intrigue = 1 learning = 1 }
+jdtc_honor_mediator_path_modifier = { icon = diplomacy_positive diplomacy = 2 }
+jdtc_debt_of_honor_modifier = { icon = prestige_positive monthly_prestige = 0.05 general_opinion = 1 }
+
+# v2.13 court, frontier, and military deepening
+jdtc_frontier_command_counselor_modifier = { icon = martial_positive martial = 1 diplomacy = 1 }
+jdtc_military_logistics_reformer_modifier = { icon = stewardship_positive stewardship = 2 martial = 1 }
+jdtc_court_jianghu_envoy_modifier = { icon = diplomacy_positive diplomacy = 2 intrigue = 1 }
+jdtc_border_rescue_organizer_modifier = { icon = diplomacy_positive diplomacy = 1 martial = 1 }
+jdtc_commander_rivalry_tempered_modifier = { icon = martial_positive martial = 1 stress_loss_mult = 0.03 }
+jdtc_public_service_reputation_modifier = { icon = prestige_positive general_opinion = 2 monthly_prestige = 0.1 }
+
+# v2.14 legendary arts polish
+jdtc_manual_commentary_author_modifier = { icon = learning_positive learning = 2 monthly_prestige = 0.05 }
+jdtc_forbidden_art_restrained_modifier = { icon = health_positive health = 0.15 learning = 1 }
+jdtc_technique_lineage_clarified_modifier = { icon = learning_positive learning = 1 general_opinion = 1 }
+jdtc_secret_art_overuse_warning_modifier = { icon = health_negative health = -0.2 prowess = 1 }
+jdtc_complete_manual_cycle_modifier = { icon = prestige_positive learning = 1 prowess = 1 monthly_prestige = 0.1 }
+jdtc_technique_inheritance_dispute_modifier = { icon = intrigue_negative general_opinion = -1 intrigue = 1 }
+
+# v2.15 final edition polish markers
+jdtc_final_vanilla_edition_modifier = { icon = prestige_positive general_opinion = 1 monthly_prestige = 0.05 }
+jdtc_balanced_sandbox_cadence_modifier = { icon = learning_positive stress_loss_mult = 0.03 learning = 1 }

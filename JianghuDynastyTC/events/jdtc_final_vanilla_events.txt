@@ -1,0 +1,187 @@
+namespace = jdtc_final
+
+jdtc_final.3000 = {
+	type = character_event
+	title = jdtc_final.3000.t
+	desc = jdtc_final.3000.desc
+	theme = diplomacy
+	left_portrait = { character = root animation = personality_honorable }
+	option = { name = jdtc_final_council_a add_character_modifier = { modifier = jdtc_school_council_moderator_modifier years = 6 } add_character_modifier = { modifier = jdtc_school_elder_modifier years = 3 } }
+}
+
+jdtc_final.3001 = {
+	type = character_event
+	title = jdtc_final.3001.t
+	desc = jdtc_final.3001.desc
+	theme = education
+	left_portrait = { character = root animation = personality_rational }
+	option = { name = jdtc_final_reform_a add_character_modifier = { modifier = jdtc_school_rules_reformer_modifier years = 6 } add_stress = 10 }
+	option = { name = jdtc_final_reform_b add_character_modifier = { modifier = jdtc_master_trust_modifier years = 4 } add_stress = -5 }
+}
+
+jdtc_final.3002 = {
+	type = character_event
+	title = jdtc_final.3002.t
+	desc = jdtc_final.3002.desc
+	theme = diplomacy
+	left_portrait = { character = root animation = personality_honorable }
+	option = { name = jdtc_final_exchange_a add_character_modifier = { modifier = jdtc_cross_school_exchange_modifier years = 5 } jdtc_gain_minor_wulin_reputation_effect = yes }
+}
+
+jdtc_final.3003 = {
+	type = character_event
+	title = jdtc_final.3003.t
+	desc = jdtc_final.3003.desc
+	theme = diplomacy
+	left_portrait = { character = root animation = personality_honorable }
+	option = { name = jdtc_final_relief_a add_character_modifier = { modifier = jdtc_sect_relief_patron_modifier years = 5 } add_character_modifier = { modifier = jdtc_sect_oath_keeper_modifier years = 4 } }
+}
+
+jdtc_final.3004 = {
+	type = character_event
+	title = jdtc_final.3004.t
+	desc = jdtc_final.3004.desc
+	theme = education
+	left_portrait = { character = root animation = personality_rational }
+	option = { name = jdtc_final_archive_a add_character_modifier = { modifier = jdtc_school_archive_keeper_modifier years = 6 } add_character_modifier = { modifier = jdtc_manual_guardian_modifier years = 4 } }
+}
+
+jdtc_final.3100 = {
+	type = character_event
+	title = jdtc_final.3100.t
+	desc = jdtc_final.3100.desc
+	theme = diplomacy
+	left_portrait = { character = root animation = personality_honorable }
+	option = { name = jdtc_final_oath_a add_character_modifier = { modifier = jdtc_sworn_oath_companion_modifier years = 6 } add_character_modifier = { modifier = jdtc_debt_of_honor_modifier years = 5 } }
+}
+
+jdtc_final.3101 = {
+	type = character_event
+	title = jdtc_final.3101.t
+	desc = jdtc_final.3101.desc
+	theme = diplomacy
+	left_portrait = { character = root animation = personality_rational }
+	option = { name = jdtc_final_reconcile_a add_character_modifier = { modifier = jdtc_reconciled_grievance_modifier years = 6 } add_stress = -15 }
+	option = { name = jdtc_final_reconcile_b add_character_modifier = { modifier = jdtc_bitter_rivalry_memory_modifier years = 4 } add_stress = 10 }
+}
+
+jdtc_final.3102 = {
+	type = character_event
+	title = jdtc_final.3102.t
+	desc = jdtc_final.3102.desc
+	theme = intrigue
+	left_portrait = { character = root animation = personality_rational }
+	option = { name = jdtc_final_betrayal_a add_character_modifier = { modifier = jdtc_betrayal_watcher_modifier years = 5 } add_character_modifier = { modifier = jdtc_rival_pressure_modifier years = 2 } }
+	option = { name = jdtc_final_betrayal_b add_character_modifier = { modifier = jdtc_reconciled_grievance_modifier years = 3 } add_stress = -5 }
+}
+
+jdtc_final.3103 = {
+	type = character_event
+	title = jdtc_final.3103.t
+	desc = jdtc_final.3103.desc
+	theme = diplomacy
+	left_portrait = { character = root animation = personality_honorable }
+	option = { name = jdtc_final_mediator_a add_character_modifier = { modifier = jdtc_honor_mediator_path_modifier years = 5 } jdtc_gain_minor_wulin_reputation_effect = yes }
+}
+
+jdtc_final.3104 = {
+	type = character_event
+	title = jdtc_final.3104.t
+	desc = jdtc_final.3104.desc
+	theme = diplomacy
+	left_portrait = { character = root animation = personality_honorable }
+	option = { name = jdtc_final_debt_a add_character_modifier = { modifier = jdtc_debt_of_honor_modifier years = 6 } add_stress = 5 }
+}
+
+jdtc_final.3200 = {
+	type = character_event
+	title = jdtc_final.3200.t
+	desc = jdtc_final.3200.desc
+	theme = war
+	left_portrait = { character = root animation = personality_rational }
+	option = { name = jdtc_final_frontier_a add_character_modifier = { modifier = jdtc_frontier_command_counselor_modifier years = 5 } add_character_modifier = { modifier = jdtc_commander_trust_modifier years = 4 } }
+}
+
+jdtc_final.3201 = {
+	type = character_event
+	title = jdtc_final.3201.t
+	desc = jdtc_final.3201.desc
+	theme = war
+	left_portrait = { character = root animation = personality_rational }
+	option = { name = jdtc_final_logistics_a add_character_modifier = { modifier = jdtc_military_logistics_reformer_modifier years = 6 } add_stress = 10 }
+}
+
+jdtc_final.3202 = {
+	type = character_event
+	title = jdtc_final.3202.t
+	desc = jdtc_final.3202.desc
+	theme = diplomacy
+	left_portrait = { character = root animation = personality_honorable }
+	option = { name = jdtc_final_envoy_a add_character_modifier = { modifier = jdtc_court_jianghu_envoy_modifier years = 6 } add_character_modifier = { modifier = jdtc_jianghu_state_tension_modifier years = 3 } }
+}
+
+jdtc_final.3203 = {
+	type = character_event
+	title = jdtc_final.3203.t
+	desc = jdtc_final.3203.desc
+	theme = diplomacy
+	left_portrait = { character = root animation = personality_honorable }
+	option = { name = jdtc_final_rescue_a add_character_modifier = { modifier = jdtc_border_rescue_organizer_modifier years = 5 } add_character_modifier = { modifier = jdtc_public_service_reputation_modifier years = 4 } }
+}
+
+jdtc_final.3204 = {
+	type = character_event
+	title = jdtc_final.3204.t
+	desc = jdtc_final.3204.desc
+	theme = war
+	left_portrait = { character = root animation = personality_bold }
+	option = { name = jdtc_final_temper_a add_character_modifier = { modifier = jdtc_commander_rivalry_tempered_modifier years = 5 } add_stress = -10 }
+	option = { name = jdtc_final_temper_b add_character_modifier = { modifier = jdtc_rival_pressure_modifier years = 3 } add_stress = 15 }
+}
+
+jdtc_final.3300 = {
+	type = character_event
+	title = jdtc_final.3300.t
+	desc = jdtc_final.3300.desc
+	theme = education
+	left_portrait = { character = root animation = personality_rational }
+	option = { name = jdtc_final_manual_a add_character_modifier = { modifier = jdtc_manual_commentary_author_modifier years = 7 } add_character_modifier = { modifier = jdtc_technique_lineage_clarified_modifier years = 5 } }
+}
+
+jdtc_final.3301 = {
+	type = character_event
+	title = jdtc_final.3301.t
+	desc = jdtc_final.3301.desc
+	theme = healthcare
+	left_portrait = { character = root animation = personality_honorable }
+	option = { name = jdtc_final_forbidden_a add_character_modifier = { modifier = jdtc_forbidden_art_restrained_modifier years = 5 } add_stress = -15 }
+	option = { name = jdtc_final_forbidden_b add_character_modifier = { modifier = jdtc_secret_art_overuse_warning_modifier years = 3 } add_stress = 10 }
+}
+
+jdtc_final.3302 = {
+	type = character_event
+	title = jdtc_final.3302.t
+	desc = jdtc_final.3302.desc
+	theme = education
+	left_portrait = { character = root animation = personality_rational }
+	option = { name = jdtc_final_lineage_a add_character_modifier = { modifier = jdtc_technique_lineage_clarified_modifier years = 6 } add_character_modifier = { modifier = jdtc_manual_guardian_modifier years = 3 } }
+	option = { name = jdtc_final_lineage_b add_character_modifier = { modifier = jdtc_technique_inheritance_dispute_modifier years = 4 } add_stress = 15 }
+}
+
+jdtc_final.3303 = {
+	type = character_event
+	title = jdtc_final.3303.t
+	desc = jdtc_final.3303.desc
+	theme = education
+	left_portrait = { character = root animation = personality_honorable }
+	option = { name = jdtc_final_complete_a add_character_modifier = { modifier = jdtc_complete_manual_cycle_modifier years = 8 } add_character_modifier = { modifier = jdtc_final_vanilla_edition_modifier years = 4 } }
+}
+
+jdtc_final.3400 = {
+	type = character_event
+	title = jdtc_final.3400.t
+	desc = jdtc_final.3400.desc
+	theme = diplomacy
+	left_portrait = { character = root animation = personality_rational }
+	option = { name = jdtc_final_cadence_a add_character_modifier = { modifier = jdtc_balanced_sandbox_cadence_modifier years = 6 } add_stress = -10 }
+}

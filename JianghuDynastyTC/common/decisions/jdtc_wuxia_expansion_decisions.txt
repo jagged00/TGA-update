@@ -1,0 +1,670 @@
+# Jianghu Dynasty v2.10.0 - Song-era wuxia expansion decisions.
+
+jdtc_seek_martial_school_decision = {
+	picture = { reference = "gfx/interface/illustrations/decisions/decision_knight_kneeling.dds" }
+	desc = jdtc_seek_martial_school_decision_desc
+	selection_tooltip = jdtc_seek_martial_school_decision_tooltip
+	confirm_text = jdtc_wuxia_confirm
+	ai_check_interval = 0
+	ai_potential = { always = no }
+	cooldown = { years = 3 }
+	is_shown = { is_ai = no is_adult = yes }
+	is_valid = { jdtc_adult_free_character_trigger = yes }
+	effect = { trigger_event = { id = jdtc_wuxia.2000 } }
+}
+
+jdtc_join_martial_school_decision = {
+	picture = { reference = "gfx/interface/illustrations/decisions/decision_invite_knights.dds" }
+	desc = jdtc_join_martial_school_decision_desc
+	selection_tooltip = jdtc_join_martial_school_decision_tooltip
+	confirm_text = jdtc_wuxia_confirm
+	ai_check_interval = 0
+	ai_potential = { always = no }
+	cooldown = { years = 6 }
+	is_shown = { is_ai = no is_adult = yes }
+	is_valid = { jdtc_adult_free_character_trigger = yes prestige >= minor_prestige_value }
+	effect = {
+		jdtc_pay_minor_prestige_cost_effect = yes
+		trigger_event = { id = jdtc_wuxia.2001 }
+	}
+}
+
+jdtc_train_under_school_rules_decision = {
+	picture = { reference = "gfx/interface/illustrations/decisions/decision_smith.dds" }
+	desc = jdtc_train_under_school_rules_decision_desc
+	selection_tooltip = jdtc_train_under_school_rules_decision_tooltip
+	confirm_text = jdtc_wuxia_confirm
+	ai_check_interval = 0
+	ai_potential = { always = no }
+	cooldown = { years = 2 }
+	is_shown = { is_ai = no is_adult = yes }
+	is_valid = { jdtc_adult_free_character_trigger = yes }
+	effect = { trigger_event = { id = jdtc_wuxia.2002 } }
+}
+
+jdtc_request_guidance_from_master_decision = {
+	picture = { reference = "gfx/interface/illustrations/decisions/decision_tale.dds" }
+	desc = jdtc_request_guidance_from_master_decision_desc
+	selection_tooltip = jdtc_request_guidance_from_master_decision_tooltip
+	confirm_text = jdtc_wuxia_confirm
+	ai_check_interval = 0
+	ai_potential = { always = no }
+	cooldown = { years = 4 }
+	is_shown = { is_ai = no is_adult = yes }
+	is_valid = { jdtc_adult_free_character_trigger = yes }
+	effect = { trigger_event = { id = jdtc_wuxia.2003 } }
+}
+
+jdtc_challenge_senior_disciple_decision = {
+	picture = { reference = "gfx/interface/illustrations/decisions/decision_siege_warfare.dds" }
+	desc = jdtc_challenge_senior_disciple_decision_desc
+	selection_tooltip = jdtc_challenge_senior_disciple_decision_tooltip
+	confirm_text = jdtc_wuxia_confirm
+	ai_check_interval = 0
+	ai_potential = { always = no }
+	cooldown = { years = 5 }
+	is_shown = { is_ai = no is_adult = yes }
+	is_valid = { jdtc_martial_capable_character_trigger = yes }
+	effect = { trigger_event = { id = jdtc_wuxia.2004 } }
+}
+
+jdtc_defend_school_honor_decision = {
+	picture = { reference = "gfx/interface/illustrations/decisions/decision_golden_age.dds" }
+	desc = jdtc_defend_school_honor_decision_desc
+	selection_tooltip = jdtc_defend_school_honor_decision_tooltip
+	confirm_text = jdtc_wuxia_confirm
+	ai_check_interval = 0
+	ai_potential = { always = no }
+	cooldown = { years = 4 }
+	is_shown = { is_ai = no is_adult = yes }
+	is_valid = { jdtc_adult_free_character_trigger = yes }
+	effect = { trigger_event = { id = jdtc_wuxia.2005 } }
+}
+
+jdtc_teach_junior_disciples_decision = {
+	picture = { reference = "gfx/interface/illustrations/decisions/decision_dynasty_house.dds" }
+	desc = jdtc_teach_junior_disciples_decision_desc
+	selection_tooltip = jdtc_teach_junior_disciples_decision_tooltip
+	confirm_text = jdtc_wuxia_confirm
+	ai_check_interval = 0
+	ai_potential = { always = no }
+	cooldown = { years = 4 }
+	is_shown = { is_ai = no is_adult = yes }
+	is_valid = { jdtc_adult_free_character_trigger = yes learning >= 8 }
+	effect = { trigger_event = { id = jdtc_wuxia.2006 } }
+}
+
+jdtc_seek_school_inheritor_recognition_decision = {
+	picture = { reference = "gfx/interface/illustrations/decisions/decision_legend.dds" }
+	desc = jdtc_seek_school_inheritor_recognition_decision_desc
+	selection_tooltip = jdtc_seek_school_inheritor_recognition_decision_tooltip
+	confirm_text = jdtc_wuxia_confirm
+	ai_check_interval = 0
+	ai_potential = { always = no }
+	cooldown = { years = 8 }
+	is_shown = { is_ai = no is_adult = yes }
+	is_valid = { jdtc_martial_capable_character_trigger = yes prestige_level >= 1 }
+	effect = { trigger_event = { id = jdtc_wuxia.2007 } }
+}
+
+jdtc_leave_martial_school_decision = {
+	picture = { reference = "gfx/interface/illustrations/decisions/decision_activity.dds" }
+	desc = jdtc_leave_martial_school_decision_desc
+	selection_tooltip = jdtc_leave_martial_school_decision_tooltip
+	confirm_text = jdtc_wuxia_confirm
+	ai_check_interval = 0
+	ai_potential = { always = no }
+	cooldown = { years = 3 }
+	is_shown = { is_ai = no is_adult = yes }
+	is_valid = { jdtc_adult_free_character_trigger = yes }
+	effect = { trigger_event = { id = jdtc_wuxia.2008 } }
+}
+
+jdtc_contact_local_sect_decision = {
+	picture = { reference = "gfx/interface/illustrations/decisions/decision_social.dds" }
+	desc = jdtc_contact_local_sect_decision_desc
+	selection_tooltip = jdtc_contact_local_sect_decision_tooltip
+	confirm_text = jdtc_wuxia_confirm
+	ai_check_interval = 0
+	ai_potential = { always = no }
+	cooldown = { years = 3 }
+	is_shown = { is_ai = no is_adult = yes }
+	is_valid = { jdtc_adult_free_character_trigger = yes }
+	effect = { trigger_event = { id = jdtc_wuxia.2010 } }
+}
+
+jdtc_join_sect_decision = {
+	picture = { reference = "gfx/interface/illustrations/decisions/decision_dynasty_house.dds" }
+	desc = jdtc_join_sect_decision_desc
+	selection_tooltip = jdtc_join_sect_decision_tooltip
+	confirm_text = jdtc_wuxia_confirm
+	ai_check_interval = 0
+	ai_potential = { always = no }
+	cooldown = { years = 6 }
+	is_shown = { is_ai = no is_adult = yes }
+	is_valid = { jdtc_adult_free_character_trigger = yes prestige >= minor_prestige_value }
+	effect = {
+		jdtc_pay_minor_prestige_cost_effect = yes
+		trigger_event = { id = jdtc_wuxia.2011 }
+	}
+}
+
+jdtc_build_sect_influence_decision = {
+	picture = { reference = "gfx/interface/illustrations/decisions/decision_realm.dds" }
+	desc = jdtc_build_sect_influence_decision_desc
+	selection_tooltip = jdtc_build_sect_influence_decision_tooltip
+	confirm_text = jdtc_wuxia_confirm
+	ai_check_interval = 0
+	ai_potential = { always = no }
+	cooldown = { years = 4 }
+	is_shown = { is_ai = no is_adult = yes }
+	is_valid = { jdtc_court_capable_character_trigger = yes }
+	effect = { trigger_event = { id = jdtc_wuxia.2012 } }
+}
+
+jdtc_support_internal_faction_decision = {
+	picture = { reference = "gfx/interface/illustrations/decisions/decision_misc.dds" }
+	desc = jdtc_support_internal_faction_decision_desc
+	selection_tooltip = jdtc_support_internal_faction_decision_tooltip
+	confirm_text = jdtc_wuxia_confirm
+	ai_check_interval = 0
+	ai_potential = { always = no }
+	cooldown = { years = 5 }
+	is_shown = { is_ai = no is_adult = yes }
+	is_valid = { jdtc_adult_free_character_trigger = yes intrigue >= 8 }
+	effect = { trigger_event = { id = jdtc_wuxia.2013 } }
+}
+
+jdtc_defend_sect_reputation_decision = {
+	picture = { reference = "gfx/interface/illustrations/decisions/decision_golden_age.dds" }
+	desc = jdtc_defend_sect_reputation_decision_desc
+	selection_tooltip = jdtc_defend_sect_reputation_decision_tooltip
+	confirm_text = jdtc_wuxia_confirm
+	ai_check_interval = 0
+	ai_potential = { always = no }
+	cooldown = { years = 4 }
+	is_shown = { is_ai = no is_adult = yes }
+	is_valid = { jdtc_adult_free_character_trigger = yes }
+	effect = { trigger_event = { id = jdtc_wuxia.2014 } }
+}
+
+jdtc_negotiate_sect_alliance_decision = {
+	picture = { reference = "gfx/interface/illustrations/decisions/decision_realm.dds" }
+	desc = jdtc_negotiate_sect_alliance_decision_desc
+	selection_tooltip = jdtc_negotiate_sect_alliance_decision_tooltip
+	confirm_text = jdtc_wuxia_confirm
+	ai_check_interval = 0
+	ai_potential = { always = no }
+	cooldown = { years = 6 }
+	is_shown = { is_ai = no is_adult = yes }
+	is_valid = { jdtc_court_capable_character_trigger = yes }
+	effect = { trigger_event = { id = jdtc_wuxia.2015 } }
+}
+
+jdtc_suppress_internal_rival_decision = {
+	picture = { reference = "gfx/interface/illustrations/decisions/decision_prison.dds" }
+	desc = jdtc_suppress_internal_rival_decision_desc
+	selection_tooltip = jdtc_suppress_internal_rival_decision_tooltip
+	confirm_text = jdtc_wuxia_confirm
+	ai_check_interval = 0
+	ai_potential = { always = no }
+	cooldown = { years = 6 }
+	is_shown = { is_ai = no is_adult = yes }
+	is_valid = { jdtc_adult_free_character_trigger = yes intrigue >= 8 }
+	effect = { trigger_event = { id = jdtc_wuxia.2016 } }
+}
+
+jdtc_seek_elder_support_decision = {
+	picture = { reference = "gfx/interface/illustrations/decisions/decision_tale.dds" }
+	desc = jdtc_seek_elder_support_decision_desc
+	selection_tooltip = jdtc_seek_elder_support_decision_tooltip
+	confirm_text = jdtc_wuxia_confirm
+	ai_check_interval = 0
+	ai_potential = { always = no }
+	cooldown = { years = 5 }
+	is_shown = { is_ai = no is_adult = yes }
+	is_valid = { jdtc_adult_free_character_trigger = yes }
+	effect = { trigger_event = { id = jdtc_wuxia.2017 } }
+}
+
+jdtc_challenge_sect_authority_decision = {
+	picture = { reference = "gfx/interface/illustrations/decisions/decision_siege_warfare.dds" }
+	desc = jdtc_challenge_sect_authority_decision_desc
+	selection_tooltip = jdtc_challenge_sect_authority_decision_tooltip
+	confirm_text = jdtc_wuxia_confirm
+	ai_check_interval = 0
+	ai_potential = { always = no }
+	cooldown = { years = 8 }
+	is_shown = { is_ai = no is_adult = yes }
+	is_valid = { jdtc_martial_capable_character_trigger = yes prestige_level >= 1 }
+	effect = { trigger_event = { id = jdtc_wuxia.2018 } }
+}
+
+jdtc_compete_for_senior_disciple_decision = {
+	picture = { reference = "gfx/interface/illustrations/decisions/decision_invite_knights.dds" }
+	desc = jdtc_compete_for_senior_disciple_decision_desc
+	selection_tooltip = jdtc_compete_for_senior_disciple_decision_tooltip
+	confirm_text = jdtc_wuxia_confirm
+	ai_check_interval = 0
+	ai_potential = { always = no }
+	cooldown = { years = 5 }
+	is_shown = { is_ai = no is_adult = yes }
+	is_valid = { jdtc_martial_capable_character_trigger = yes }
+	effect = { trigger_event = { id = jdtc_wuxia.2100 } }
+}
+
+jdtc_secure_master_trust_decision = {
+	picture = { reference = "gfx/interface/illustrations/decisions/decision_major_religion.dds" }
+	desc = jdtc_secure_master_trust_decision_desc
+	selection_tooltip = jdtc_secure_master_trust_decision_tooltip
+	confirm_text = jdtc_wuxia_confirm
+	ai_check_interval = 0
+	ai_potential = { always = no }
+	cooldown = { years = 5 }
+	is_shown = { is_ai = no is_adult = yes }
+	is_valid = { jdtc_adult_free_character_trigger = yes }
+	effect = { trigger_event = { id = jdtc_wuxia.2101 } }
+}
+
+jdtc_gain_elder_backing_decision = {
+	picture = { reference = "gfx/interface/illustrations/decisions/decision_dynasty_house.dds" }
+	desc = jdtc_gain_elder_backing_decision_desc
+	selection_tooltip = jdtc_gain_elder_backing_decision_tooltip
+	confirm_text = jdtc_wuxia_confirm
+	ai_check_interval = 0
+	ai_potential = { always = no }
+	cooldown = { years = 6 }
+	is_shown = { is_ai = no is_adult = yes }
+	is_valid = { jdtc_court_capable_character_trigger = yes }
+	effect = { trigger_event = { id = jdtc_wuxia.2102 } }
+}
+
+jdtc_expose_rival_misconduct_decision = {
+	picture = { reference = "gfx/interface/illustrations/decisions/decision_misc.dds" }
+	desc = jdtc_expose_rival_misconduct_decision_desc
+	selection_tooltip = jdtc_expose_rival_misconduct_decision_tooltip
+	confirm_text = jdtc_wuxia_confirm
+	ai_check_interval = 0
+	ai_potential = { always = no }
+	cooldown = { years = 6 }
+	is_shown = { is_ai = no is_adult = yes }
+	is_valid = { jdtc_adult_free_character_trigger = yes intrigue >= 8 }
+	effect = { trigger_event = { id = jdtc_wuxia.2103 } }
+}
+
+jdtc_consolidate_sect_influence_decision = {
+	picture = { reference = "gfx/interface/illustrations/decisions/decision_realm.dds" }
+	desc = jdtc_consolidate_sect_influence_decision_desc
+	selection_tooltip = jdtc_consolidate_sect_influence_decision_tooltip
+	confirm_text = jdtc_wuxia_confirm
+	ai_check_interval = 0
+	ai_potential = { always = no }
+	cooldown = { years = 6 }
+	is_shown = { is_ai = no is_adult = yes }
+	is_valid = { jdtc_court_capable_character_trigger = yes }
+	effect = { trigger_event = { id = jdtc_wuxia.2104 } }
+}
+
+jdtc_gain_court_patronage_decision = {
+	picture = { reference = "gfx/interface/illustrations/decisions/decision_realm.dds" }
+	desc = jdtc_gain_court_patronage_decision_desc
+	selection_tooltip = jdtc_gain_court_patronage_decision_tooltip
+	confirm_text = jdtc_wuxia_confirm
+	ai_check_interval = 0
+	ai_potential = { always = no }
+	cooldown = { years = 5 }
+	is_shown = { is_ai = no is_adult = yes }
+	is_valid = { jdtc_court_capable_character_trigger = yes }
+	effect = { trigger_event = { id = jdtc_wuxia.2105 } }
+}
+
+jdtc_expose_corrupt_official_decision = {
+	picture = { reference = "gfx/interface/illustrations/decisions/decision_prison.dds" }
+	desc = jdtc_expose_corrupt_official_decision_desc
+	selection_tooltip = jdtc_expose_corrupt_official_decision_tooltip
+	confirm_text = jdtc_wuxia_confirm
+	ai_check_interval = 0
+	ai_potential = { always = no }
+	cooldown = { years = 7 }
+	is_shown = { is_ai = no is_adult = yes }
+	is_valid = { jdtc_adult_free_character_trigger = yes intrigue >= 8 }
+	effect = { trigger_event = { id = jdtc_wuxia.2106 } }
+}
+
+jdtc_challenge_incompetent_officer_decision = {
+	picture = { reference = "gfx/interface/illustrations/decisions/decision_siege_warfare.dds" }
+	desc = jdtc_challenge_incompetent_officer_decision_desc
+	selection_tooltip = jdtc_challenge_incompetent_officer_decision_tooltip
+	confirm_text = jdtc_wuxia_confirm
+	ai_check_interval = 0
+	ai_potential = { always = no }
+	cooldown = { years = 6 }
+	is_shown = { is_ai = no is_adult = yes }
+	is_valid = { jdtc_martial_capable_character_trigger = yes }
+	effect = { trigger_event = { id = jdtc_wuxia.2107 } }
+}
+
+jdtc_attend_local_wulin_gathering_decision = {
+	picture = { reference = "gfx/interface/illustrations/decisions/decision_activity.dds" }
+	desc = jdtc_attend_local_wulin_gathering_decision_desc
+	selection_tooltip = jdtc_attend_local_wulin_gathering_decision_tooltip
+	confirm_text = jdtc_wuxia_confirm
+	ai_check_interval = 0
+	ai_potential = { always = no }
+	cooldown = { years = 5 }
+	is_shown = { is_ai = no is_adult = yes }
+	is_valid = { jdtc_adult_free_character_trigger = yes }
+	effect = { trigger_event = { id = jdtc_wuxia.2200 } }
+}
+
+jdtc_speak_before_heroes_decision = {
+	picture = { reference = "gfx/interface/illustrations/decisions/decision_golden_age.dds" }
+	desc = jdtc_speak_before_heroes_decision_desc
+	selection_tooltip = jdtc_speak_before_heroes_decision_tooltip
+	confirm_text = jdtc_wuxia_confirm
+	ai_check_interval = 0
+	ai_potential = { always = no }
+	cooldown = { years = 5 }
+	is_shown = { is_ai = no is_adult = yes }
+	is_valid = { jdtc_court_capable_character_trigger = yes }
+	effect = { trigger_event = { id = jdtc_wuxia.2201 } }
+}
+
+jdtc_mediate_school_dispute_decision = {
+	picture = { reference = "gfx/interface/illustrations/decisions/decision_social.dds" }
+	desc = jdtc_mediate_school_dispute_decision_desc
+	selection_tooltip = jdtc_mediate_school_dispute_decision_tooltip
+	confirm_text = jdtc_wuxia_confirm
+	ai_check_interval = 0
+	ai_potential = { always = no }
+	cooldown = { years = 6 }
+	is_shown = { is_ai = no is_adult = yes }
+	is_valid = { jdtc_court_capable_character_trigger = yes }
+	effect = { trigger_event = { id = jdtc_wuxia.2202 } }
+}
+
+jdtc_accuse_wulin_traitor_decision = {
+	picture = { reference = "gfx/interface/illustrations/decisions/decision_prison.dds" }
+	desc = jdtc_accuse_wulin_traitor_decision_desc
+	selection_tooltip = jdtc_accuse_wulin_traitor_decision_tooltip
+	confirm_text = jdtc_wuxia_confirm
+	ai_check_interval = 0
+	ai_potential = { always = no }
+	cooldown = { years = 8 }
+	is_shown = { is_ai = no is_adult = yes }
+	is_valid = { jdtc_adult_free_character_trigger = yes intrigue >= 8 }
+	effect = { trigger_event = { id = jdtc_wuxia.2203 } }
+}
+
+jdtc_support_martial_alliance_decision = {
+	picture = { reference = "gfx/interface/illustrations/decisions/decision_realm.dds" }
+	desc = jdtc_support_martial_alliance_decision_desc
+	selection_tooltip = jdtc_support_martial_alliance_decision_tooltip
+	confirm_text = jdtc_wuxia_confirm
+	ai_check_interval = 0
+	ai_potential = { always = no }
+	cooldown = { years = 6 }
+	is_shown = { is_ai = no is_adult = yes }
+	is_valid = { jdtc_adult_free_character_trigger = yes }
+	effect = { trigger_event = { id = jdtc_wuxia.2204 } }
+}
+
+jdtc_seek_public_recognition_decision = {
+	picture = { reference = "gfx/interface/illustrations/decisions/decision_legend.dds" }
+	desc = jdtc_seek_public_recognition_decision_desc
+	selection_tooltip = jdtc_seek_public_recognition_decision_tooltip
+	confirm_text = jdtc_wuxia_confirm
+	ai_check_interval = 0
+	ai_potential = { always = no }
+	cooldown = { years = 7 }
+	is_shown = { is_ai = no is_adult = yes }
+	is_valid = { jdtc_martial_capable_character_trigger = yes prestige_level >= 1 }
+	effect = { trigger_event = { id = jdtc_wuxia.2205 } }
+}
+
+jdtc_challenge_famous_fighter_decision = {
+	picture = { reference = "gfx/interface/illustrations/decisions/decision_siege_warfare.dds" }
+	desc = jdtc_challenge_famous_fighter_decision_desc
+	selection_tooltip = jdtc_challenge_famous_fighter_decision_tooltip
+	confirm_text = jdtc_wuxia_confirm
+	ai_check_interval = 0
+	ai_potential = { always = no }
+	cooldown = { years = 8 }
+	is_shown = { is_ai = no is_adult = yes }
+	is_valid = { jdtc_martial_capable_character_trigger = yes }
+	effect = { trigger_event = { id = jdtc_wuxia.2206 } }
+}
+
+jdtc_enter_wulin_tournament_decision = {
+	picture = { reference = "gfx/interface/illustrations/decisions/decision_activity.dds" }
+	desc = jdtc_enter_wulin_tournament_decision_desc
+	selection_tooltip = jdtc_enter_wulin_tournament_decision_tooltip
+	confirm_text = jdtc_wuxia_confirm
+	ai_check_interval = 0
+	ai_potential = { always = no }
+	cooldown = { years = 10 }
+	is_shown = { is_ai = no is_adult = yes }
+	is_valid = { jdtc_martial_capable_character_trigger = yes }
+	effect = { trigger_event = { id = jdtc_wuxia.2207 } }
+}
+
+jdtc_respond_to_martial_crisis_decision = {
+	picture = { reference = "gfx/interface/illustrations/decisions/decision_black_plague.dds" }
+	desc = jdtc_respond_to_martial_crisis_decision_desc
+	selection_tooltip = jdtc_respond_to_martial_crisis_decision_tooltip
+	confirm_text = jdtc_wuxia_confirm
+	ai_check_interval = 0
+	ai_potential = { always = no }
+	cooldown = { years = 8 }
+	is_shown = { is_ai = no is_adult = yes }
+	is_valid = { jdtc_adult_free_character_trigger = yes }
+	effect = { trigger_event = { id = jdtc_wuxia.2208 } }
+}
+
+jdtc_discover_secret_manual_decision = {
+	picture = { reference = "gfx/interface/illustrations/decisions/decision_tale.dds" }
+	desc = jdtc_discover_secret_manual_decision_desc
+	selection_tooltip = jdtc_discover_secret_manual_decision_tooltip
+	confirm_text = jdtc_wuxia_confirm
+	ai_check_interval = 0
+	ai_potential = { always = no }
+	cooldown = { years = 7 }
+	is_shown = { is_ai = no is_adult = yes }
+	is_valid = { jdtc_adult_free_character_trigger = yes }
+	effect = { trigger_event = { id = jdtc_wuxia.2300 } }
+}
+
+jdtc_study_ancient_manual_decision = {
+	picture = { reference = "gfx/interface/illustrations/decisions/decision_tale.dds" }
+	desc = jdtc_study_ancient_manual_decision_desc
+	selection_tooltip = jdtc_study_ancient_manual_decision_tooltip
+	confirm_text = jdtc_wuxia_confirm
+	ai_check_interval = 0
+	ai_potential = { always = no }
+	cooldown = { years = 5 }
+	is_shown = { is_ai = no is_adult = yes }
+	is_valid = { jdtc_adult_free_character_trigger = yes learning >= 8 }
+	effect = { trigger_event = { id = jdtc_wuxia.2301 } }
+}
+
+jdtc_decipher_damaged_scripture_decision = {
+	picture = { reference = "gfx/interface/illustrations/decisions/decision_tale.dds" }
+	desc = jdtc_decipher_damaged_scripture_decision_desc
+	selection_tooltip = jdtc_decipher_damaged_scripture_decision_tooltip
+	confirm_text = jdtc_wuxia_confirm
+	ai_check_interval = 0
+	ai_potential = { always = no }
+	cooldown = { years = 6 }
+	is_shown = { is_ai = no is_adult = yes }
+	is_valid = { jdtc_adult_free_character_trigger = yes learning >= 8 }
+	effect = { trigger_event = { id = jdtc_wuxia.2302 } }
+}
+
+jdtc_guard_school_scripture_decision = {
+	picture = { reference = "gfx/interface/illustrations/decisions/decision_major_religion.dds" }
+	desc = jdtc_guard_school_scripture_decision_desc
+	selection_tooltip = jdtc_guard_school_scripture_decision_tooltip
+	confirm_text = jdtc_wuxia_confirm
+	ai_check_interval = 0
+	ai_potential = { always = no }
+	cooldown = { years = 5 }
+	is_shown = { is_ai = no is_adult = yes }
+	is_valid = { jdtc_adult_free_character_trigger = yes }
+	effect = { trigger_event = { id = jdtc_wuxia.2303 } }
+}
+
+jdtc_recover_stolen_manual_decision = {
+	picture = { reference = "gfx/interface/illustrations/decisions/decision_prison.dds" }
+	desc = jdtc_recover_stolen_manual_decision_desc
+	selection_tooltip = jdtc_recover_stolen_manual_decision_tooltip
+	confirm_text = jdtc_wuxia_confirm
+	ai_check_interval = 0
+	ai_potential = { always = no }
+	cooldown = { years = 7 }
+	is_shown = { is_ai = no is_adult = yes }
+	is_valid = { jdtc_martial_capable_character_trigger = yes }
+	effect = { trigger_event = { id = jdtc_wuxia.2304 } }
+}
+
+jdtc_pass_down_technique_decision = {
+	picture = { reference = "gfx/interface/illustrations/decisions/decision_dynasty_house.dds" }
+	desc = jdtc_pass_down_technique_decision_desc
+	selection_tooltip = jdtc_pass_down_technique_decision_tooltip
+	confirm_text = jdtc_wuxia_confirm
+	ai_check_interval = 0
+	ai_potential = { always = no }
+	cooldown = { years = 8 }
+	is_shown = { is_ai = no is_adult = yes }
+	is_valid = { jdtc_adult_free_character_trigger = yes OR = { learning >= 10 prowess >= 10 } }
+	effect = { trigger_event = { id = jdtc_wuxia.2305 } }
+}
+
+jdtc_destroy_dangerous_manual_decision = {
+	picture = { reference = "gfx/interface/illustrations/decisions/decision_black_plague.dds" }
+	desc = jdtc_destroy_dangerous_manual_decision_desc
+	selection_tooltip = jdtc_destroy_dangerous_manual_decision_tooltip
+	confirm_text = jdtc_wuxia_confirm
+	ai_check_interval = 0
+	ai_potential = { always = no }
+	cooldown = { years = 8 }
+	is_shown = { is_ai = no is_adult = yes }
+	is_valid = { jdtc_adult_free_character_trigger = yes }
+	effect = { trigger_event = { id = jdtc_wuxia.2306 } }
+}
+
+jdtc_hide_manual_from_rivals_decision = {
+	picture = { reference = "gfx/interface/illustrations/decisions/decision_misc.dds" }
+	desc = jdtc_hide_manual_from_rivals_decision_desc
+	selection_tooltip = jdtc_hide_manual_from_rivals_decision_tooltip
+	confirm_text = jdtc_wuxia_confirm
+	ai_check_interval = 0
+	ai_potential = { always = no }
+	cooldown = { years = 6 }
+	is_shown = { is_ai = no is_adult = yes }
+	is_valid = { jdtc_adult_free_character_trigger = yes intrigue >= 8 }
+	effect = { trigger_event = { id = jdtc_wuxia.2307 } }
+}
+
+jdtc_defend_frontier_decision = {
+	picture = { reference = "gfx/interface/illustrations/decisions/decision_siege_warfare.dds" }
+	desc = jdtc_defend_frontier_decision_desc
+	selection_tooltip = jdtc_defend_frontier_decision_tooltip
+	confirm_text = jdtc_wuxia_confirm
+	ai_check_interval = 0
+	ai_potential = { always = no }
+	cooldown = { years = 5 }
+	is_shown = { is_ai = no is_adult = yes }
+	is_valid = { jdtc_martial_capable_character_trigger = yes }
+	effect = { trigger_event = { id = jdtc_wuxia.2400 } }
+}
+
+jdtc_train_border_militia_decision = {
+	picture = { reference = "gfx/interface/illustrations/decisions/decision_recruitment.dds" }
+	desc = jdtc_train_border_militia_decision_desc
+	selection_tooltip = jdtc_train_border_militia_decision_tooltip
+	confirm_text = jdtc_wuxia_confirm
+	ai_check_interval = 0
+	ai_potential = { always = no }
+	cooldown = { years = 4 }
+	is_shown = { is_ai = no is_adult = yes }
+	is_valid = { jdtc_martial_capable_character_trigger = yes }
+	effect = { trigger_event = { id = jdtc_wuxia.2401 } }
+}
+
+jdtc_advise_border_commander_decision = {
+	picture = { reference = "gfx/interface/illustrations/decisions/decision_realm.dds" }
+	desc = jdtc_advise_border_commander_decision_desc
+	selection_tooltip = jdtc_advise_border_commander_decision_tooltip
+	confirm_text = jdtc_wuxia_confirm
+	ai_check_interval = 0
+	ai_potential = { always = no }
+	cooldown = { years = 5 }
+	is_shown = { is_ai = no is_adult = yes }
+	is_valid = { jdtc_court_capable_character_trigger = yes }
+	effect = { trigger_event = { id = jdtc_wuxia.2402 } }
+}
+
+jdtc_escort_military_supplies_decision = {
+	picture = { reference = "gfx/interface/illustrations/decisions/decision_spend_money.dds" }
+	desc = jdtc_escort_military_supplies_decision_desc
+	selection_tooltip = jdtc_escort_military_supplies_decision_tooltip
+	confirm_text = jdtc_wuxia_confirm
+	ai_check_interval = 0
+	ai_potential = { always = no }
+	cooldown = { years = 4 }
+	is_shown = { is_ai = no is_adult = yes }
+	is_valid = { jdtc_adult_free_character_trigger = yes }
+	effect = { trigger_event = { id = jdtc_wuxia.2403 } }
+}
+
+jdtc_protect_refugees_decision = {
+	picture = { reference = "gfx/interface/illustrations/decisions/decision_social.dds" }
+	desc = jdtc_protect_refugees_decision_desc
+	selection_tooltip = jdtc_protect_refugees_decision_tooltip
+	confirm_text = jdtc_wuxia_confirm
+	ai_check_interval = 0
+	ai_potential = { always = no }
+	cooldown = { years = 5 }
+	is_shown = { is_ai = no is_adult = yes }
+	is_valid = { jdtc_adult_free_character_trigger = yes }
+	effect = { trigger_event = { id = jdtc_wuxia.2404 } }
+}
+
+jdtc_hunt_frontier_bandits_decision = {
+	picture = { reference = "gfx/interface/illustrations/decisions/decision_levy_outcasts.dds" }
+	desc = jdtc_hunt_frontier_bandits_decision_desc
+	selection_tooltip = jdtc_hunt_frontier_bandits_decision_tooltip
+	confirm_text = jdtc_wuxia_confirm
+	ai_check_interval = 0
+	ai_potential = { always = no }
+	cooldown = { years = 5 }
+	is_shown = { is_ai = no is_adult = yes }
+	is_valid = { jdtc_martial_capable_character_trigger = yes }
+	effect = { trigger_event = { id = jdtc_wuxia.2405 } }
+}
+
+jdtc_rally_martial_heroes_for_realm_decision = {
+	picture = { reference = "gfx/interface/illustrations/decisions/decision_golden_age.dds" }
+	desc = jdtc_rally_martial_heroes_for_realm_decision_desc
+	selection_tooltip = jdtc_rally_martial_heroes_for_realm_decision_tooltip
+	confirm_text = jdtc_wuxia_confirm
+	ai_check_interval = 0
+	ai_potential = { always = no }
+	cooldown = { years = 8 }
+	is_shown = { is_ai = no is_adult = yes }
+	is_valid = { jdtc_adult_free_character_trigger = yes prestige_level >= 1 }
+	effect = { trigger_event = { id = jdtc_wuxia.2406 } }
+}
+
+jdtc_debate_court_and_jianghu_duty_decision = {
+	picture = { reference = "gfx/interface/illustrations/decisions/decision_tale.dds" }
+	desc = jdtc_debate_court_and_jianghu_duty_decision_desc
+	selection_tooltip = jdtc_debate_court_and_jianghu_duty_decision_tooltip
+	confirm_text = jdtc_wuxia_confirm
+	ai_check_interval = 0
+	ai_potential = { always = no }
+	cooldown = { years = 6 }
+	is_shown = { is_ai = no is_adult = yes }
+	is_valid = { jdtc_adult_free_character_trigger = yes }
+	effect = { trigger_event = { id = jdtc_wuxia.2407 } }
+}

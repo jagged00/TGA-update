@@ -1,0 +1,16 @@
+Jianghu Dynasty CK3 cache-clear and validation instructions
+===========================================================
+
+1. Back up old save games before testing.
+2. If loading remains slow, move old save games out of:
+   Documents/Paradox Interactive/Crusader Kings III/save games
+3. Delete the CK3 cache folder:
+   Documents/Paradox Interactive/Crusader Kings III/cache
+4. Delete the CK3 shadercache folder:
+   Documents/Paradox Interactive/Crusader Kings III/shadercache
+5. Launch CK3 with only Jianghu Dynasty enabled.
+6. Start a new game on the vanilla map.
+7. Do not load old saves during the first validation pass.
+8. After reaching the map, save, exit to menu, and load that new save.
+9. If the game still hangs before the main menu, inspect:
+   Documents/Paradox Interactive/Crusader Kings III/logs/error.log

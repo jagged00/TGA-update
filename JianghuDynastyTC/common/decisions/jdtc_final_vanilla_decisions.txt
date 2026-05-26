@@ -1,0 +1,264 @@
+# Jianghu Dynasty v2.15.0 - final vanilla-map edition decisions.
+
+jdtc_hold_school_council_decision = {
+	picture = { reference = "gfx/interface/illustrations/decisions/decision_realm.dds" }
+	desc = jdtc_hold_school_council_decision_desc
+	selection_tooltip = jdtc_hold_school_council_decision_tooltip
+	confirm_text = jdtc_final_vanilla_confirm
+	ai_check_interval = 0
+	ai_potential = { always = no }
+	cooldown = { years = 6 }
+	is_shown = { is_ai = no is_adult = yes }
+	is_valid = { jdtc_court_capable_character_trigger = yes }
+	effect = { trigger_event = { id = jdtc_final.3000 } }
+}
+
+jdtc_reform_school_rules_decision = {
+	picture = { reference = "gfx/interface/illustrations/decisions/decision_tale.dds" }
+	desc = jdtc_reform_school_rules_decision_desc
+	selection_tooltip = jdtc_reform_school_rules_decision_tooltip
+	confirm_text = jdtc_final_vanilla_confirm
+	ai_check_interval = 0
+	ai_potential = { always = no }
+	cooldown = { years = 8 }
+	is_shown = { is_ai = no is_adult = yes }
+	is_valid = { jdtc_adult_free_character_trigger = yes learning >= 8 }
+	effect = { trigger_event = { id = jdtc_final.3001 } }
+}
+
+jdtc_host_cross_school_exchange_decision = {
+	picture = { reference = "gfx/interface/illustrations/decisions/decision_social.dds" }
+	desc = jdtc_host_cross_school_exchange_decision_desc
+	selection_tooltip = jdtc_host_cross_school_exchange_decision_tooltip
+	confirm_text = jdtc_final_vanilla_confirm
+	ai_check_interval = 0
+	ai_potential = { always = no }
+	cooldown = { years = 7 }
+	is_shown = { is_ai = no is_adult = yes }
+	is_valid = { jdtc_adult_free_character_trigger = yes }
+	effect = { trigger_event = { id = jdtc_final.3002 } }
+}
+
+jdtc_sponsor_sect_relief_decision = {
+	picture = { reference = "gfx/interface/illustrations/decisions/decision_spend_money.dds" }
+	desc = jdtc_sponsor_sect_relief_decision_desc
+	selection_tooltip = jdtc_sponsor_sect_relief_decision_tooltip
+	confirm_text = jdtc_final_vanilla_confirm
+	ai_check_interval = 0
+	ai_potential = { always = no }
+	cooldown = { years = 5 }
+	is_shown = { is_ai = no is_adult = yes }
+	is_valid = { jdtc_adult_free_character_trigger = yes prestige >= minor_prestige_value }
+	effect = {
+		jdtc_pay_minor_prestige_cost_effect = yes
+		trigger_event = { id = jdtc_final.3003 }
+	}
+}
+
+jdtc_guard_school_archives_decision = {
+	picture = { reference = "gfx/interface/illustrations/decisions/decision_major_religion.dds" }
+	desc = jdtc_guard_school_archives_decision_desc
+	selection_tooltip = jdtc_guard_school_archives_decision_tooltip
+	confirm_text = jdtc_final_vanilla_confirm
+	ai_check_interval = 0
+	ai_potential = { always = no }
+	cooldown = { years = 6 }
+	is_shown = { is_ai = no is_adult = yes }
+	is_valid = { jdtc_adult_free_character_trigger = yes }
+	effect = { trigger_event = { id = jdtc_final.3004 } }
+}
+
+jdtc_form_sworn_oath_bond_decision = {
+	picture = { reference = "gfx/interface/illustrations/decisions/decision_dynasty_house.dds" }
+	desc = jdtc_form_sworn_oath_bond_decision_desc
+	selection_tooltip = jdtc_form_sworn_oath_bond_decision_tooltip
+	confirm_text = jdtc_final_vanilla_confirm
+	ai_check_interval = 0
+	ai_potential = { always = no }
+	cooldown = { years = 8 }
+	is_shown = { is_ai = no is_adult = yes }
+	is_valid = { jdtc_adult_free_character_trigger = yes }
+	effect = { trigger_event = { id = jdtc_final.3100 } }
+}
+
+jdtc_settle_old_grievance_decision = {
+	picture = { reference = "gfx/interface/illustrations/decisions/decision_social.dds" }
+	desc = jdtc_settle_old_grievance_decision_desc
+	selection_tooltip = jdtc_settle_old_grievance_decision_tooltip
+	confirm_text = jdtc_final_vanilla_confirm
+	ai_check_interval = 0
+	ai_potential = { always = no }
+	cooldown = { years = 6 }
+	is_shown = { is_ai = no is_adult = yes }
+	is_valid = { jdtc_adult_free_character_trigger = yes }
+	effect = { trigger_event = { id = jdtc_final.3101 } }
+}
+
+jdtc_investigate_betrayal_rumor_decision = {
+	picture = { reference = "gfx/interface/illustrations/decisions/decision_misc.dds" }
+	desc = jdtc_investigate_betrayal_rumor_decision_desc
+	selection_tooltip = jdtc_investigate_betrayal_rumor_decision_tooltip
+	confirm_text = jdtc_final_vanilla_confirm
+	ai_check_interval = 0
+	ai_potential = { always = no }
+	cooldown = { years = 7 }
+	is_shown = { is_ai = no is_adult = yes }
+	is_valid = { jdtc_adult_free_character_trigger = yes intrigue >= 8 }
+	effect = { trigger_event = { id = jdtc_final.3102 } }
+}
+
+jdtc_mend_jianghu_reputation_decision = {
+	picture = { reference = "gfx/interface/illustrations/decisions/decision_golden_age.dds" }
+	desc = jdtc_mend_jianghu_reputation_decision_desc
+	selection_tooltip = jdtc_mend_jianghu_reputation_decision_tooltip
+	confirm_text = jdtc_final_vanilla_confirm
+	ai_check_interval = 0
+	ai_potential = { always = no }
+	cooldown = { years = 6 }
+	is_shown = { is_ai = no is_adult = yes }
+	is_valid = { jdtc_court_capable_character_trigger = yes }
+	effect = { trigger_event = { id = jdtc_final.3103 } }
+}
+
+jdtc_accept_debt_of_honor_decision = {
+	picture = { reference = "gfx/interface/illustrations/decisions/decision_legend.dds" }
+	desc = jdtc_accept_debt_of_honor_decision_desc
+	selection_tooltip = jdtc_accept_debt_of_honor_decision_tooltip
+	confirm_text = jdtc_final_vanilla_confirm
+	ai_check_interval = 0
+	ai_potential = { always = no }
+	cooldown = { years = 8 }
+	is_shown = { is_ai = no is_adult = yes }
+	is_valid = { jdtc_adult_free_character_trigger = yes }
+	effect = { trigger_event = { id = jdtc_final.3104 } }
+}
+
+jdtc_advise_frontier_command_council_decision = {
+	picture = { reference = "gfx/interface/illustrations/decisions/decision_siege_warfare.dds" }
+	desc = jdtc_advise_frontier_command_council_decision_desc
+	selection_tooltip = jdtc_advise_frontier_command_council_decision_tooltip
+	confirm_text = jdtc_final_vanilla_confirm
+	ai_check_interval = 0
+	ai_potential = { always = no }
+	cooldown = { years = 6 }
+	is_shown = { is_ai = no is_adult = yes }
+	is_valid = { jdtc_court_capable_character_trigger = yes }
+	effect = { trigger_event = { id = jdtc_final.3200 } }
+}
+
+jdtc_reform_military_logistics_decision = {
+	picture = { reference = "gfx/interface/illustrations/decisions/decision_spend_money.dds" }
+	desc = jdtc_reform_military_logistics_decision_desc
+	selection_tooltip = jdtc_reform_military_logistics_decision_tooltip
+	confirm_text = jdtc_final_vanilla_confirm
+	ai_check_interval = 0
+	ai_potential = { always = no }
+	cooldown = { years = 8 }
+	is_shown = { is_ai = no is_adult = yes }
+	is_valid = { jdtc_adult_free_character_trigger = yes stewardship >= 8 }
+	effect = { trigger_event = { id = jdtc_final.3201 } }
+}
+
+jdtc_serve_as_court_jianghu_envoy_decision = {
+	picture = { reference = "gfx/interface/illustrations/decisions/decision_realm.dds" }
+	desc = jdtc_serve_as_court_jianghu_envoy_decision_desc
+	selection_tooltip = jdtc_serve_as_court_jianghu_envoy_decision_tooltip
+	confirm_text = jdtc_final_vanilla_confirm
+	ai_check_interval = 0
+	ai_potential = { always = no }
+	cooldown = { years = 7 }
+	is_shown = { is_ai = no is_adult = yes }
+	is_valid = { jdtc_court_capable_character_trigger = yes }
+	effect = { trigger_event = { id = jdtc_final.3202 } }
+}
+
+jdtc_organize_border_rescue_decision = {
+	picture = { reference = "gfx/interface/illustrations/decisions/decision_social.dds" }
+	desc = jdtc_organize_border_rescue_decision_desc
+	selection_tooltip = jdtc_organize_border_rescue_decision_tooltip
+	confirm_text = jdtc_final_vanilla_confirm
+	ai_check_interval = 0
+	ai_potential = { always = no }
+	cooldown = { years = 6 }
+	is_shown = { is_ai = no is_adult = yes }
+	is_valid = { jdtc_adult_free_character_trigger = yes }
+	effect = { trigger_event = { id = jdtc_final.3203 } }
+}
+
+jdtc_temper_commander_rivalry_decision = {
+	picture = { reference = "gfx/interface/illustrations/decisions/decision_invite_knights.dds" }
+	desc = jdtc_temper_commander_rivalry_decision_desc
+	selection_tooltip = jdtc_temper_commander_rivalry_decision_tooltip
+	confirm_text = jdtc_final_vanilla_confirm
+	ai_check_interval = 0
+	ai_potential = { always = no }
+	cooldown = { years = 7 }
+	is_shown = { is_ai = no is_adult = yes }
+	is_valid = { jdtc_martial_capable_character_trigger = yes }
+	effect = { trigger_event = { id = jdtc_final.3204 } }
+}
+
+jdtc_write_manual_commentary_decision = {
+	picture = { reference = "gfx/interface/illustrations/decisions/decision_tale.dds" }
+	desc = jdtc_write_manual_commentary_decision_desc
+	selection_tooltip = jdtc_write_manual_commentary_decision_tooltip
+	confirm_text = jdtc_final_vanilla_confirm
+	ai_check_interval = 0
+	ai_potential = { always = no }
+	cooldown = { years = 8 }
+	is_shown = { is_ai = no is_adult = yes }
+	is_valid = { jdtc_adult_free_character_trigger = yes learning >= 10 }
+	effect = { trigger_event = { id = jdtc_final.3300 } }
+}
+
+jdtc_restrain_forbidden_art_decision = {
+	picture = { reference = "gfx/interface/illustrations/decisions/decision_black_plague.dds" }
+	desc = jdtc_restrain_forbidden_art_decision_desc
+	selection_tooltip = jdtc_restrain_forbidden_art_decision_tooltip
+	confirm_text = jdtc_final_vanilla_confirm
+	ai_check_interval = 0
+	ai_potential = { always = no }
+	cooldown = { years = 7 }
+	is_shown = { is_ai = no is_adult = yes }
+	is_valid = { jdtc_adult_free_character_trigger = yes }
+	effect = { trigger_event = { id = jdtc_final.3301 } }
+}
+
+jdtc_clarify_technique_lineage_decision = {
+	picture = { reference = "gfx/interface/illustrations/decisions/decision_major_religion.dds" }
+	desc = jdtc_clarify_technique_lineage_decision_desc
+	selection_tooltip = jdtc_clarify_technique_lineage_decision_tooltip
+	confirm_text = jdtc_final_vanilla_confirm
+	ai_check_interval = 0
+	ai_potential = { always = no }
+	cooldown = { years = 8 }
+	is_shown = { is_ai = no is_adult = yes }
+	is_valid = { jdtc_adult_free_character_trigger = yes learning >= 8 }
+	effect = { trigger_event = { id = jdtc_final.3302 } }
+}
+
+jdtc_complete_manual_cycle_decision = {
+	picture = { reference = "gfx/interface/illustrations/decisions/decision_legend.dds" }
+	desc = jdtc_complete_manual_cycle_decision_desc
+	selection_tooltip = jdtc_complete_manual_cycle_decision_tooltip
+	confirm_text = jdtc_final_vanilla_confirm
+	ai_check_interval = 0
+	ai_potential = { always = no }
+	cooldown = { years = 10 }
+	is_shown = { is_ai = no is_adult = yes }
+	is_valid = { jdtc_adult_free_character_trigger = yes OR = { learning >= 10 prowess >= 10 } }
+	effect = { trigger_event = { id = jdtc_final.3303 } }
+}
+
+jdtc_review_final_sandbox_cadence_decision = {
+	picture = { reference = "gfx/interface/illustrations/decisions/decision_misc.dds" }
+	desc = jdtc_review_final_sandbox_cadence_decision_desc
+	selection_tooltip = jdtc_review_final_sandbox_cadence_decision_tooltip
+	confirm_text = jdtc_final_vanilla_confirm
+	ai_check_interval = 0
+	ai_potential = { always = no }
+	cooldown = { years = 10 }
+	is_shown = { is_ai = no is_adult = yes }
+	is_valid = { jdtc_adult_free_character_trigger = yes }
+	effect = { trigger_event = { id = jdtc_final.3400 } }
+}
