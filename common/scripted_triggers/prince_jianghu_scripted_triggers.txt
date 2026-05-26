@@ -1,0 +1,20 @@
+prince_adult_free_character_trigger = {
+    is_ai = no
+    is_adult = yes
+    is_imprisoned = no
+    NOT = { has_trait = incapable }
+}
+
+prince_martial_capable_character_trigger = {
+    prince_adult_free_character_trigger = yes
+    prowess >= 6
+}
+
+prince_court_capable_character_trigger = {
+    prince_adult_free_character_trigger = yes
+    OR = {
+        diplomacy >= 8
+        stewardship >= 8
+        learning >= 8
+    }
+}

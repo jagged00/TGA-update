@@ -1,0 +1,154 @@
+# Jianghu Dynasty v2.4.0 - additive vanilla-map character modifiers.
+
+prince_jianghu_reputation_low = {
+	icon = prestige_negative
+	general_opinion = -1
+	monthly_prestige = 0.05
+}
+
+prince_jianghu_reputation_respected = {
+	icon = prestige_positive
+	general_opinion = 2
+	prowess = 1
+	monthly_prestige = 0.1
+}
+
+prince_jianghu_reputation_renowned = {
+	icon = prestige_positive
+	general_opinion = 4
+	prowess = 2
+	monthly_prestige = 0.2
+}
+
+prince_jianghu_reputation_legendary = {
+	icon = prestige_positive
+	general_opinion = 6
+	prowess = 3
+	martial = 1
+	monthly_prestige = 0.3
+}
+
+prince_martial_discipline_modifier = {
+	icon = martial_positive
+	martial = 1
+	prowess = 1
+}
+
+prince_jianghu_challenge_modifier = {
+	icon = prowess_positive
+	prowess = 2
+	monthly_prestige = 0.1
+}
+
+prince_local_master_guidance_modifier = {
+	icon = learning_positive
+	learning = 1
+	prowess = 1
+}
+
+prince_meditative_recovery_modifier = {
+	icon = health_positive
+	stress_loss_mult = 0.1
+}
+
+prince_weapon_forms_practice_modifier = {
+	icon = prowess_positive
+	prowess = 1
+	martial = 1
+}
+
+prince_military_service_modifier = {
+	icon = martial_positive
+	martial = 1
+	monthly_prestige = 0.1
+}
+
+prince_field_assignment_modifier = {
+	icon = martial_positive
+	prowess = 1
+	knight_effectiveness_mult = 0.02
+}
+
+prince_troop_training_modifier = {
+	icon = martial_positive
+	martial = 1
+	levy_size = 0.02
+}
+
+prince_officer_network_modifier = {
+	icon = diplomacy_positive
+	diplomacy = 1
+	martial = 1
+}
+
+prince_campaign_strategy_modifier = {
+	icon = learning_positive
+	martial = 1
+	learning = 1
+}
+
+prince_court_service_modifier = {
+	icon = diplomacy_positive
+	diplomacy = 1
+	monthly_prestige = 0.05
+}
+
+prince_strategic_counsel_modifier = {
+	icon = martial_positive
+	martial = 1
+	diplomacy = 1
+}
+
+prince_bureaucratic_connections_modifier = {
+	icon = stewardship_positive
+	stewardship = 1
+	diplomacy = 1
+}
+
+prince_imperial_recognition_modifier = {
+	icon = prestige_positive
+	general_opinion = 3
+	monthly_prestige = 0.2
+}
+
+prince_wandering_artist_modifier = {
+	icon = prowess_positive
+	prowess = 1
+	stress_loss_mult = 0.05
+}
+
+prince_soldier_path_modifier = {
+	icon = martial_positive
+	prowess = 1
+	martial = 1
+}
+
+prince_officer_path_modifier = {
+	icon = diplomacy_positive
+	martial = 1
+	diplomacy = 1
+}
+
+prince_general_path_modifier = {
+	icon = martial_positive
+	martial = 2
+	monthly_prestige = 0.15
+}
+
+prince_strategist_path_modifier = {
+	icon = learning_positive
+	learning = 2
+	martial = 1
+}
+
+prince_mentor_disciple_modifier = {
+	icon = learning_positive
+	learning = 1
+	general_opinion = 1
+}
+
+prince_honor_rivalry_modifier = {
+	icon = prowess_positive
+	prowess = 1
+	monthly_prestige = 0.1
+}

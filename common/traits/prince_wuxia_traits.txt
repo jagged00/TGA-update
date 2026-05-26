@@ -1,0 +1,43 @@
+# Jianghu Dynasty v2.10.0 - original wuxia identity traits.
+
+prince_wulin_mediator = {
+	icon = diplomat.dds
+	diplomacy = 1
+	general_opinion = 1
+	ruler_designer_cost = 0
+	shown_in_ruler_designer = no
+}
+
+prince_frontier_hero = {
+	icon = brave.dds
+	martial = 1
+	prowess = 1
+	monthly_prestige = 0.1
+	ruler_designer_cost = 0
+	shown_in_ruler_designer = no
+}
+
+prince_secret_manual_inheritor = {
+	icon = blademaster.dds
+	prowess = 2
+	learning = 1
+	ruler_designer_cost = 0
+	shown_in_ruler_designer = no
+}
+
+prince_school_inheritor = {
+	icon = strategist.dds
+	martial = 1
+	learning = 1
+	general_opinion = 1
+	ruler_designer_cost = 0
+	shown_in_ruler_designer = no
+}
+
+prince_suspected_opportunist = {
+	icon = schemer.dds
+	intrigue = 1
+	general_opinion = -1
+	ruler_designer_cost = 0
+	shown_in_ruler_designer = no
+}
