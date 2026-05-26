@@ -1,0 +1,270 @@
+namespace = prince_jianghu
+
+prince_jianghu.1000 = {
+	type = character_event
+	title = prince_jianghu.1000.t
+	desc = prince_jianghu.1000.desc
+	theme = war
+	left_portrait = { character = root animation = personality_bold }
+	option = {
+		name = prince_jianghu.1000.a
+		hidden_effect = { add_prestige = minor_prestige_gain }
+		add_character_modifier = { modifier = prince_martial_discipline_modifier years = 3 }
+		add_character_modifier = { modifier = prince_jianghu_reputation_respected years = 4 }
+		add_prestige = minor_prestige_gain
+	}
+}
+
+prince_jianghu.1001 = {
+	type = character_event
+	title = prince_jianghu.1001.t
+	desc = prince_jianghu.1001.desc
+	theme = war
+	left_portrait = { character = root animation = personality_bold }
+	option = {
+		name = prince_jianghu.1001.a
+		add_character_modifier = { modifier = prince_jianghu_challenge_modifier years = 3 }
+		add_character_modifier = { modifier = prince_jianghu_reputation_renowned years = 4 }
+		add_prestige = minor_prestige_gain
+	}
+	option = {
+		name = prince_jianghu.1001.b
+		add_character_modifier = { modifier = prince_jianghu_reputation_low years = 2 }
+		add_prestige = minor_prestige_gain
+	}
+}
+
+prince_jianghu.1002 = {
+	type = character_event
+	title = prince_jianghu.1002.t
+	desc = prince_jianghu.1002.desc
+	theme = education
+	left_portrait = { character = root animation = personality_honorable }
+	option = {
+		name = prince_jianghu.1002.a
+		add_character_modifier = { modifier = prince_local_master_guidance_modifier years = 5 }
+		add_character_modifier = { modifier = prince_jianghu_reputation_respected years = 4 }
+	}
+}
+
+prince_jianghu.1003 = {
+	type = character_event
+	title = prince_jianghu.1003.t
+	desc = prince_jianghu.1003.desc
+	theme = healthcare
+	left_portrait = { character = root animation = personality_rational }
+	option = {
+		name = prince_jianghu.1003.a
+		add_character_modifier = { modifier = prince_meditative_recovery_modifier years = 2 }
+		add_stress = -20
+	}
+}
+
+prince_jianghu.1004 = {
+	type = character_event
+	title = prince_jianghu.1004.t
+	desc = prince_jianghu.1004.desc
+	theme = war
+	left_portrait = { character = root animation = personality_bold }
+	option = {
+		name = prince_jianghu.1004.a
+		add_character_modifier = { modifier = prince_weapon_forms_practice_modifier years = 3 }
+	}
+}
+
+prince_jianghu.1100 = {
+	type = character_event
+	title = prince_jianghu.1100.t
+	desc = prince_jianghu.1100.desc
+	theme = war
+	left_portrait = { character = root animation = personality_honorable }
+	option = {
+		name = prince_jianghu.1100.a
+		add_character_modifier = { modifier = prince_military_service_modifier years = 4 }
+		add_character_modifier = { modifier = prince_soldier_path_modifier years = 4 }
+		add_prestige = minor_prestige_gain
+	}
+}
+
+prince_jianghu.1101 = {
+	type = character_event
+	title = prince_jianghu.1101.t
+	desc = prince_jianghu.1101.desc
+	theme = war
+	left_portrait = { character = root animation = personality_bold }
+	option = {
+		name = prince_jianghu.1101.a
+		add_character_modifier = { modifier = prince_field_assignment_modifier years = 3 }
+		add_prestige = minor_prestige_gain
+	}
+}
+
+prince_jianghu.1102 = {
+	type = character_event
+	title = prince_jianghu.1102.t
+	desc = prince_jianghu.1102.desc
+	theme = war
+	left_portrait = { character = root animation = personality_bold }
+	option = {
+		name = prince_jianghu.1102.a
+		add_character_modifier = { modifier = prince_troop_training_modifier years = 3 }
+	}
+}
+
+prince_jianghu.1103 = {
+	type = character_event
+	title = prince_jianghu.1103.t
+	desc = prince_jianghu.1103.desc
+	theme = diplomacy
+	left_portrait = { character = root animation = personality_rational }
+	option = {
+		name = prince_jianghu.1103.a
+		add_character_modifier = { modifier = prince_officer_network_modifier years = 5 }
+		add_character_modifier = { modifier = prince_officer_path_modifier years = 5 }
+	}
+}
+
+prince_jianghu.1104 = {
+	type = character_event
+	title = prince_jianghu.1104.t
+	desc = prince_jianghu.1104.desc
+	theme = education
+	left_portrait = { character = root animation = personality_rational }
+	option = {
+		name = prince_jianghu.1104.a
+		add_character_modifier = { modifier = prince_campaign_strategy_modifier years = 4 }
+	}
+}
+
+prince_jianghu.1200 = {
+	type = character_event
+	title = prince_jianghu.1200.t
+	desc = prince_jianghu.1200.desc
+	theme = diplomacy
+	left_portrait = { character = root animation = personality_honorable }
+	option = {
+		name = prince_jianghu.1200.a
+		add_character_modifier = { modifier = prince_court_service_modifier years = 4 }
+		add_prestige = minor_prestige_gain
+	}
+}
+
+prince_jianghu.1201 = {
+	type = character_event
+	title = prince_jianghu.1201.t
+	desc = prince_jianghu.1201.desc
+	theme = war
+	left_portrait = { character = root animation = personality_rational }
+	option = {
+		name = prince_jianghu.1201.a
+		add_character_modifier = { modifier = prince_strategic_counsel_modifier years = 4 }
+		add_prestige = minor_prestige_gain
+	}
+}
+
+prince_jianghu.1202 = {
+	type = character_event
+	title = prince_jianghu.1202.t
+	desc = prince_jianghu.1202.desc
+	theme = diplomacy
+	left_portrait = { character = root animation = personality_rational }
+	option = {
+		name = prince_jianghu.1202.a
+		add_character_modifier = { modifier = prince_bureaucratic_connections_modifier years = 5 }
+	}
+}
+
+prince_jianghu.1203 = {
+	type = character_event
+	title = prince_jianghu.1203.t
+	desc = prince_jianghu.1203.desc
+	theme = diplomacy
+	left_portrait = { character = root animation = personality_honorable }
+	option = {
+		name = prince_jianghu.1203.a
+		add_character_modifier = { modifier = prince_imperial_recognition_modifier years = 6 }
+		add_character_modifier = { modifier = prince_jianghu_reputation_renowned years = 6 }
+	}
+}
+
+prince_jianghu.1300 = {
+	type = character_event
+	title = prince_jianghu.1300.t
+	desc = prince_jianghu.1300.desc
+	theme = diplomacy
+	left_portrait = { character = root animation = personality_bold }
+	option = {
+		name = prince_jianghu.1300.a
+		add_character_modifier = { modifier = prince_wandering_artist_modifier years = 4 }
+		add_character_modifier = { modifier = prince_jianghu_reputation_respected years = 4 }
+	}
+}
+
+prince_jianghu.1301 = {
+	type = character_event
+	title = prince_jianghu.1301.t
+	desc = prince_jianghu.1301.desc
+	theme = war
+	left_portrait = { character = root animation = personality_bold }
+	option = {
+		name = prince_jianghu.1301.a
+		add_character_modifier = { modifier = prince_officer_path_modifier years = 5 }
+		add_prestige = minor_prestige_gain
+	}
+}
+
+prince_jianghu.1302 = {
+	type = character_event
+	title = prince_jianghu.1302.t
+	desc = prince_jianghu.1302.desc
+	theme = war
+	left_portrait = { character = root animation = personality_rational }
+	option = {
+		name = prince_jianghu.1302.a
+		add_character_modifier = { modifier = prince_general_path_modifier years = 5 }
+	}
+}
+
+prince_jianghu.1303 = {
+	type = character_event
+	title = prince_jianghu.1303.t
+	desc = prince_jianghu.1303.desc
+	theme = education
+	left_portrait = { character = root animation = personality_rational }
+	option = {
+		name = prince_jianghu.1303.a
+		add_character_modifier = { modifier = prince_strategist_path_modifier years = 5 }
+	}
+}
+
+prince_jianghu.1304 = {
+	type = character_event
+	title = prince_jianghu.1304.t
+	desc = prince_jianghu.1304.desc
+	theme = education
+	left_portrait = { character = root animation = personality_honorable }
+	option = {
+		name = prince_jianghu.1304.a
+		add_character_modifier = { modifier = prince_mentor_disciple_modifier years = 6 }
+		add_character_modifier = { modifier = prince_jianghu_reputation_respected years = 4 }
+	}
+}
+
+prince_jianghu.1305 = {
+	type = character_event
+	title = prince_jianghu.1305.t
+	desc = prince_jianghu.1305.desc
+	theme = war
+	left_portrait = { character = root animation = personality_bold }
+	option = {
+		name = prince_jianghu.1305.a
+		add_character_modifier = { modifier = prince_honor_rivalry_modifier years = 4 }
+		add_character_modifier = { modifier = prince_jianghu_reputation_renowned years = 4 }
+		add_prestige = minor_prestige_gain
+	}
+	option = {
+		name = prince_jianghu.1305.b
+		add_character_modifier = { modifier = prince_jianghu_reputation_low years = 2 }
+		add_stress = 15
+	}
+}

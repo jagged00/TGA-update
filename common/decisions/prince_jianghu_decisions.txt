@@ -1,0 +1,247 @@
+# Jianghu Dynasty v2.4.0 - additive vanilla-map sandbox decisions.
+
+prince_train_martial_discipline_decision = {
+	picture = { reference = "gfx/interface/illustrations/decisions/decision_knight_kneeling.dds" }
+	desc = prince_train_martial_discipline_decision_desc
+	selection_tooltip = prince_train_martial_discipline_decision_tooltip
+	confirm_text = prince_train_martial_discipline_decision_confirm
+	ai_check_interval = 0
+	cooldown = { years = 2 }
+	is_shown = { is_ai = no is_adult = yes }
+	is_valid = { is_imprisoned = no NOT = { has_trait = incapable } OR = { has_trait = qi_sense has_trait = qi_condensation has_trait = foundation_establishment has_trait = core_formation has_trait = nascent_soul } }
+	effect = { trigger_event = { id = prince_jianghu.1000 } }
+}
+
+prince_seek_jianghu_challenge_decision = {
+	picture = { reference = "gfx/interface/illustrations/decisions/decision_siege_warfare.dds" }
+	desc = prince_seek_jianghu_challenge_decision_desc
+	selection_tooltip = prince_seek_jianghu_challenge_decision_tooltip
+	confirm_text = prince_seek_jianghu_challenge_decision_confirm
+	ai_check_interval = 0
+	cooldown = { years = 3 }
+	is_shown = { is_ai = no is_adult = yes }
+	is_valid = { is_imprisoned = no NOT = { has_trait = incapable } prowess >= 6 }
+	effect = { trigger_event = { id = prince_jianghu.1001 } }
+}
+
+prince_visit_local_master_decision = {
+	picture = { reference = "gfx/interface/illustrations/decisions/decision_major_religion.dds" }
+	desc = prince_visit_local_master_decision_desc
+	selection_tooltip = prince_visit_local_master_decision_tooltip
+	confirm_text = prince_visit_local_master_decision_confirm
+	ai_check_interval = 0
+	cooldown = { years = 4 }
+	is_shown = { is_ai = no is_adult = yes }
+	is_valid = { is_imprisoned = no NOT = { has_trait = incapable } prestige >= minor_prestige_value }
+	effect = {
+		add_prestige = minor_prestige_loss
+		trigger_event = { id = prince_jianghu.1002 }
+	}
+}
+
+prince_meditate_and_recover_decision = {
+	picture = { reference = "gfx/interface/illustrations/decisions/decision_personal_religious.dds" }
+	desc = prince_meditate_and_recover_decision_desc
+	selection_tooltip = prince_meditate_and_recover_decision_tooltip
+	confirm_text = prince_meditate_and_recover_decision_confirm
+	ai_check_interval = 0
+	cooldown = { years = 2 }
+	is_shown = { is_ai = no is_adult = yes }
+	is_valid = { is_imprisoned = no NOT = { has_trait = incapable } OR = { has_trait = qi_sense has_trait = qi_condensation has_trait = foundation_establishment has_trait = core_formation has_trait = nascent_soul } }
+	effect = { trigger_event = { id = prince_jianghu.1003 } }
+}
+
+prince_practice_weapon_forms_decision = {
+	picture = { reference = "gfx/interface/illustrations/decisions/decision_smith.dds" }
+	desc = prince_practice_weapon_forms_decision_desc
+	selection_tooltip = prince_practice_weapon_forms_decision_tooltip
+	confirm_text = prince_practice_weapon_forms_decision_confirm
+	ai_check_interval = 0
+	cooldown = { years = 2 }
+	is_shown = { is_ai = no is_adult = yes }
+	is_valid = { is_imprisoned = no NOT = { has_trait = incapable } OR = { has_trait = qi_sense has_trait = qi_condensation has_trait = foundation_establishment has_trait = core_formation has_trait = nascent_soul } }
+	effect = { trigger_event = { id = prince_jianghu.1004 } }
+}
+
+prince_enter_military_service_decision = {
+	picture = { reference = "gfx/interface/illustrations/decisions/decision_recruitment.dds" }
+	desc = prince_enter_military_service_decision_desc
+	selection_tooltip = prince_enter_military_service_decision_tooltip
+	confirm_text = prince_enter_military_service_decision_confirm
+	ai_check_interval = 0
+	cooldown = { years = 4 }
+	is_shown = { is_ai = no is_adult = yes }
+	is_valid = { is_imprisoned = no NOT = { has_trait = incapable } OR = { has_trait = qi_sense has_trait = qi_condensation has_trait = foundation_establishment has_trait = core_formation has_trait = nascent_soul } }
+	effect = { trigger_event = { id = prince_jianghu.1100 } }
+}
+
+prince_request_field_assignment_decision = {
+	picture = { reference = "gfx/interface/illustrations/decisions/decision_invite_knights.dds" }
+	desc = prince_request_field_assignment_decision_desc
+	selection_tooltip = prince_request_field_assignment_decision_tooltip
+	confirm_text = prince_request_field_assignment_decision_confirm
+	ai_check_interval = 0
+	cooldown = { years = 3 }
+	is_shown = { is_ai = no is_adult = yes }
+	is_valid = { is_imprisoned = no NOT = { has_trait = incapable } martial >= 8 }
+	effect = { trigger_event = { id = prince_jianghu.1101 } }
+}
+
+prince_train_troops_decision = {
+	picture = { reference = "gfx/interface/illustrations/decisions/decision_siege_warfare.dds" }
+	desc = prince_train_troops_decision_desc
+	selection_tooltip = prince_train_troops_decision_tooltip
+	confirm_text = prince_train_troops_decision_confirm
+	ai_check_interval = 0
+	cooldown = { years = 3 }
+	is_shown = { is_ai = no is_adult = yes }
+	is_valid = { is_imprisoned = no NOT = { has_trait = incapable } OR = { has_trait = qi_sense has_trait = qi_condensation has_trait = foundation_establishment has_trait = core_formation has_trait = nascent_soul } }
+	effect = { trigger_event = { id = prince_jianghu.1102 } }
+}
+
+prince_build_officer_network_decision = {
+	picture = { reference = "gfx/interface/illustrations/decisions/decision_realm.dds" }
+	desc = prince_build_officer_network_decision_desc
+	selection_tooltip = prince_build_officer_network_decision_tooltip
+	confirm_text = prince_build_officer_network_decision_confirm
+	ai_check_interval = 0
+	cooldown = { years = 5 }
+	is_shown = { is_ai = no is_adult = yes }
+	is_valid = { is_imprisoned = no NOT = { has_trait = incapable } prestige >= minor_prestige_value }
+	effect = {
+		add_prestige = minor_prestige_loss
+		trigger_event = { id = prince_jianghu.1103 }
+	}
+}
+
+prince_study_campaign_strategy_decision = {
+	picture = { reference = "gfx/interface/illustrations/decisions/decision_tale.dds" }
+	desc = prince_study_campaign_strategy_decision_desc
+	selection_tooltip = prince_study_campaign_strategy_decision_tooltip
+	confirm_text = prince_study_campaign_strategy_decision_confirm
+	ai_check_interval = 0
+	cooldown = { years = 3 }
+	is_shown = { is_ai = no is_adult = yes }
+	is_valid = { is_imprisoned = no NOT = { has_trait = incapable } OR = { has_trait = qi_sense has_trait = qi_condensation has_trait = foundation_establishment has_trait = core_formation has_trait = nascent_soul } }
+	effect = { trigger_event = { id = prince_jianghu.1104 } }
+}
+
+prince_serve_the_court_decision = {
+	picture = { reference = "gfx/interface/illustrations/decisions/decision_realm.dds" }
+	desc = prince_serve_the_court_decision_desc
+	selection_tooltip = prince_serve_the_court_decision_tooltip
+	confirm_text = prince_serve_the_court_decision_confirm
+	ai_check_interval = 0
+	cooldown = { years = 4 }
+	is_shown = { is_ai = no is_adult = yes }
+	is_valid = { is_imprisoned = no NOT = { has_trait = incapable } OR = { has_trait = qi_sense has_trait = qi_condensation has_trait = foundation_establishment has_trait = core_formation has_trait = nascent_soul } }
+	effect = { trigger_event = { id = prince_jianghu.1200 } }
+}
+
+prince_offer_strategic_counsel_decision = {
+	picture = { reference = "gfx/interface/illustrations/decisions/decision_realm.dds" }
+	desc = prince_offer_strategic_counsel_decision_desc
+	selection_tooltip = prince_offer_strategic_counsel_decision_tooltip
+	confirm_text = prince_offer_strategic_counsel_decision_confirm
+	ai_check_interval = 0
+	cooldown = { years = 3 }
+	is_shown = { is_ai = no is_adult = yes }
+	is_valid = { is_imprisoned = no NOT = { has_trait = incapable } OR = { martial >= 10 diplomacy >= 10 } }
+	effect = { trigger_event = { id = prince_jianghu.1201 } }
+}
+
+prince_build_bureaucratic_connections_decision = {
+	picture = { reference = "gfx/interface/illustrations/decisions/decision_dynasty_house.dds" }
+	desc = prince_build_bureaucratic_connections_decision_desc
+	selection_tooltip = prince_build_bureaucratic_connections_decision_tooltip
+	confirm_text = prince_build_bureaucratic_connections_decision_confirm
+	ai_check_interval = 0
+	cooldown = { years = 5 }
+	is_shown = { is_ai = no is_adult = yes }
+	is_valid = { is_imprisoned = no NOT = { has_trait = incapable } stewardship >= 8 }
+	effect = { trigger_event = { id = prince_jianghu.1202 } }
+}
+
+prince_request_imperial_recognition_decision = {
+	picture = { reference = "gfx/interface/illustrations/decisions/decision_golden_age.dds" }
+	desc = prince_request_imperial_recognition_decision_desc
+	selection_tooltip = prince_request_imperial_recognition_decision_tooltip
+	confirm_text = prince_request_imperial_recognition_decision_confirm
+	ai_check_interval = 0
+	cooldown = { years = 8 }
+	is_shown = { is_ai = no is_adult = yes }
+	is_valid = { is_imprisoned = no NOT = { has_trait = incapable } prestige_level >= 1 }
+	effect = { trigger_event = { id = prince_jianghu.1203 } }
+}
+
+prince_walk_wandering_road_decision = {
+	picture = { reference = "gfx/interface/illustrations/decisions/decision_activity.dds" }
+	desc = prince_walk_wandering_road_decision_desc
+	selection_tooltip = prince_walk_wandering_road_decision_tooltip
+	confirm_text = prince_walk_wandering_road_decision_confirm
+	ai_check_interval = 0
+	cooldown = { years = 4 }
+	is_shown = { is_ai = no is_adult = yes }
+	is_valid = { is_imprisoned = no NOT = { has_trait = incapable } OR = { has_trait = qi_sense has_trait = qi_condensation has_trait = foundation_establishment has_trait = core_formation has_trait = nascent_soul } }
+	effect = { trigger_event = { id = prince_jianghu.1300 } }
+}
+
+prince_organize_officer_drill_decision = {
+	picture = { reference = "gfx/interface/illustrations/decisions/decision_invite_knights.dds" }
+	desc = prince_organize_officer_drill_decision_desc
+	selection_tooltip = prince_organize_officer_drill_decision_tooltip
+	confirm_text = prince_organize_officer_drill_decision_confirm
+	ai_check_interval = 0
+	cooldown = { years = 4 }
+	is_shown = { is_ai = no is_adult = yes }
+	is_valid = { is_imprisoned = no NOT = { has_trait = incapable } martial >= 8 }
+	effect = { trigger_event = { id = prince_jianghu.1301 } }
+}
+
+prince_plan_campaign_staff_decision = {
+	picture = { reference = "gfx/interface/illustrations/decisions/decision_spend_money.dds" }
+	desc = prince_plan_campaign_staff_decision_desc
+	selection_tooltip = prince_plan_campaign_staff_decision_tooltip
+	confirm_text = prince_plan_campaign_staff_decision_confirm
+	ai_check_interval = 0
+	cooldown = { years = 5 }
+	is_shown = { is_ai = no is_adult = yes }
+	is_valid = { is_imprisoned = no NOT = { has_trait = incapable } martial >= 10 }
+	effect = { trigger_event = { id = prince_jianghu.1302 } }
+}
+
+prince_study_strategy_network_decision = {
+	picture = { reference = "gfx/interface/illustrations/decisions/decision_tale.dds" }
+	desc = prince_study_strategy_network_decision_desc
+	selection_tooltip = prince_study_strategy_network_decision_tooltip
+	confirm_text = prince_study_strategy_network_decision_confirm
+	ai_check_interval = 0
+	cooldown = { years = 5 }
+	is_shown = { is_ai = no is_adult = yes }
+	is_valid = { is_imprisoned = no NOT = { has_trait = incapable } learning >= 8 }
+	effect = { trigger_event = { id = prince_jianghu.1303 } }
+}
+
+prince_accept_disciple_decision = {
+	picture = { reference = "gfx/interface/illustrations/decisions/decision_dynasty_house.dds" }
+	desc = prince_accept_disciple_decision_desc
+	selection_tooltip = prince_accept_disciple_decision_tooltip
+	confirm_text = prince_accept_disciple_decision_confirm
+	ai_check_interval = 0
+	cooldown = { years = 6 }
+	is_shown = { is_ai = no is_adult = yes }
+	is_valid = { is_imprisoned = no NOT = { has_trait = incapable } OR = { learning >= 10 prowess >= 10 } }
+	effect = { trigger_event = { id = prince_jianghu.1304 } }
+}
+
+prince_answer_honor_challenge_decision = {
+	picture = { reference = "gfx/interface/illustrations/decisions/decision_knight_kneeling.dds" }
+	desc = prince_answer_honor_challenge_decision_desc
+	selection_tooltip = prince_answer_honor_challenge_decision_tooltip
+	confirm_text = prince_answer_honor_challenge_decision_confirm
+	ai_check_interval = 0
+	cooldown = { years = 5 }
+	is_shown = { is_ai = no is_adult = yes }
+	is_valid = { is_imprisoned = no NOT = { has_trait = incapable } prowess >= 8 }
+	effect = { trigger_event = { id = prince_jianghu.1305 } }
+}

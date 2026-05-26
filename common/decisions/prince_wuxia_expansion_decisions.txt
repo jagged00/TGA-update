@@ -1,0 +1,670 @@
+# Jianghu Dynasty v2.10.0 - Song-era wuxia expansion decisions.
+
+prince_seek_martial_school_decision = {
+	picture = { reference = "gfx/interface/illustrations/decisions/decision_knight_kneeling.dds" }
+	desc = prince_seek_martial_school_decision_desc
+	selection_tooltip = prince_seek_martial_school_decision_tooltip
+	confirm_text = prince_wuxia_confirm
+	ai_check_interval = 0
+	ai_potential = { always = no }
+	cooldown = { years = 3 }
+	is_shown = { is_ai = no is_adult = yes }
+	is_valid = { prince_adult_free_character_trigger = yes OR = { has_trait = qi_sense has_trait = qi_condensation has_trait = foundation_establishment has_trait = core_formation has_trait = nascent_soul } }
+	effect = { trigger_event = { id = prince_wuxia.2000 } }
+}
+
+prince_join_martial_school_decision = {
+	picture = { reference = "gfx/interface/illustrations/decisions/decision_invite_knights.dds" }
+	desc = prince_join_martial_school_decision_desc
+	selection_tooltip = prince_join_martial_school_decision_tooltip
+	confirm_text = prince_wuxia_confirm
+	ai_check_interval = 0
+	ai_potential = { always = no }
+	cooldown = { years = 6 }
+	is_shown = { is_ai = no is_adult = yes }
+	is_valid = { prince_adult_free_character_trigger = yes prestige >= minor_prestige_value }
+	effect = {
+		prince_pay_minor_prestige_cost_effect = yes
+		trigger_event = { id = prince_wuxia.2001 }
+	}
+}
+
+prince_train_under_school_rules_decision = {
+	picture = { reference = "gfx/interface/illustrations/decisions/decision_smith.dds" }
+	desc = prince_train_under_school_rules_decision_desc
+	selection_tooltip = prince_train_under_school_rules_decision_tooltip
+	confirm_text = prince_wuxia_confirm
+	ai_check_interval = 0
+	ai_potential = { always = no }
+	cooldown = { years = 2 }
+	is_shown = { is_ai = no is_adult = yes }
+	is_valid = { prince_adult_free_character_trigger = yes OR = { has_trait = qi_sense has_trait = qi_condensation has_trait = foundation_establishment has_trait = core_formation has_trait = nascent_soul } }
+	effect = { trigger_event = { id = prince_wuxia.2002 } }
+}
+
+prince_request_guidance_from_master_decision = {
+	picture = { reference = "gfx/interface/illustrations/decisions/decision_tale.dds" }
+	desc = prince_request_guidance_from_master_decision_desc
+	selection_tooltip = prince_request_guidance_from_master_decision_tooltip
+	confirm_text = prince_wuxia_confirm
+	ai_check_interval = 0
+	ai_potential = { always = no }
+	cooldown = { years = 4 }
+	is_shown = { is_ai = no is_adult = yes }
+	is_valid = { prince_adult_free_character_trigger = yes OR = { has_trait = qi_sense has_trait = qi_condensation has_trait = foundation_establishment has_trait = core_formation has_trait = nascent_soul } }
+	effect = { trigger_event = { id = prince_wuxia.2003 } }
+}
+
+prince_challenge_senior_disciple_decision = {
+	picture = { reference = "gfx/interface/illustrations/decisions/decision_siege_warfare.dds" }
+	desc = prince_challenge_senior_disciple_decision_desc
+	selection_tooltip = prince_challenge_senior_disciple_decision_tooltip
+	confirm_text = prince_wuxia_confirm
+	ai_check_interval = 0
+	ai_potential = { always = no }
+	cooldown = { years = 5 }
+	is_shown = { is_ai = no is_adult = yes }
+	is_valid = { prince_martial_capable_character_trigger = yes }
+	effect = { trigger_event = { id = prince_wuxia.2004 } }
+}
+
+prince_defend_school_honor_decision = {
+	picture = { reference = "gfx/interface/illustrations/decisions/decision_golden_age.dds" }
+	desc = prince_defend_school_honor_decision_desc
+	selection_tooltip = prince_defend_school_honor_decision_tooltip
+	confirm_text = prince_wuxia_confirm
+	ai_check_interval = 0
+	ai_potential = { always = no }
+	cooldown = { years = 4 }
+	is_shown = { is_ai = no is_adult = yes }
+	is_valid = { prince_adult_free_character_trigger = yes OR = { has_trait = qi_sense has_trait = qi_condensation has_trait = foundation_establishment has_trait = core_formation has_trait = nascent_soul } }
+	effect = { trigger_event = { id = prince_wuxia.2005 } }
+}
+
+prince_teach_junior_disciples_decision = {
+	picture = { reference = "gfx/interface/illustrations/decisions/decision_dynasty_house.dds" }
+	desc = prince_teach_junior_disciples_decision_desc
+	selection_tooltip = prince_teach_junior_disciples_decision_tooltip
+	confirm_text = prince_wuxia_confirm
+	ai_check_interval = 0
+	ai_potential = { always = no }
+	cooldown = { years = 4 }
+	is_shown = { is_ai = no is_adult = yes }
+	is_valid = { prince_adult_free_character_trigger = yes learning >= 8 }
+	effect = { trigger_event = { id = prince_wuxia.2006 } }
+}
+
+prince_seek_school_inheritor_recognition_decision = {
+	picture = { reference = "gfx/interface/illustrations/decisions/decision_legend.dds" }
+	desc = prince_seek_school_inheritor_recognition_decision_desc
+	selection_tooltip = prince_seek_school_inheritor_recognition_decision_tooltip
+	confirm_text = prince_wuxia_confirm
+	ai_check_interval = 0
+	ai_potential = { always = no }
+	cooldown = { years = 8 }
+	is_shown = { is_ai = no is_adult = yes }
+	is_valid = { prince_martial_capable_character_trigger = yes prestige_level >= 1 }
+	effect = { trigger_event = { id = prince_wuxia.2007 } }
+}
+
+prince_leave_martial_school_decision = {
+	picture = { reference = "gfx/interface/illustrations/decisions/decision_activity.dds" }
+	desc = prince_leave_martial_school_decision_desc
+	selection_tooltip = prince_leave_martial_school_decision_tooltip
+	confirm_text = prince_wuxia_confirm
+	ai_check_interval = 0
+	ai_potential = { always = no }
+	cooldown = { years = 3 }
+	is_shown = { is_ai = no is_adult = yes }
+	is_valid = { prince_adult_free_character_trigger = yes OR = { has_trait = qi_sense has_trait = qi_condensation has_trait = foundation_establishment has_trait = core_formation has_trait = nascent_soul } }
+	effect = { trigger_event = { id = prince_wuxia.2008 } }
+}
+
+prince_contact_local_sect_decision = {
+	picture = { reference = "gfx/interface/illustrations/decisions/decision_social.dds" }
+	desc = prince_contact_local_sect_decision_desc
+	selection_tooltip = prince_contact_local_sect_decision_tooltip
+	confirm_text = prince_wuxia_confirm
+	ai_check_interval = 0
+	ai_potential = { always = no }
+	cooldown = { years = 3 }
+	is_shown = { is_ai = no is_adult = yes }
+	is_valid = { prince_adult_free_character_trigger = yes OR = { has_trait = qi_sense has_trait = qi_condensation has_trait = foundation_establishment has_trait = core_formation has_trait = nascent_soul } }
+	effect = { trigger_event = { id = prince_wuxia.2010 } }
+}
+
+prince_join_sect_decision = {
+	picture = { reference = "gfx/interface/illustrations/decisions/decision_dynasty_house.dds" }
+	desc = prince_join_sect_decision_desc
+	selection_tooltip = prince_join_sect_decision_tooltip
+	confirm_text = prince_wuxia_confirm
+	ai_check_interval = 0
+	ai_potential = { always = no }
+	cooldown = { years = 6 }
+	is_shown = { is_ai = no is_adult = yes }
+	is_valid = { prince_adult_free_character_trigger = yes prestige >= minor_prestige_value }
+	effect = {
+		prince_pay_minor_prestige_cost_effect = yes
+		trigger_event = { id = prince_wuxia.2011 }
+	}
+}
+
+prince_build_sect_influence_decision = {
+	picture = { reference = "gfx/interface/illustrations/decisions/decision_realm.dds" }
+	desc = prince_build_sect_influence_decision_desc
+	selection_tooltip = prince_build_sect_influence_decision_tooltip
+	confirm_text = prince_wuxia_confirm
+	ai_check_interval = 0
+	ai_potential = { always = no }
+	cooldown = { years = 4 }
+	is_shown = { is_ai = no is_adult = yes }
+	is_valid = { prince_court_capable_character_trigger = yes }
+	effect = { trigger_event = { id = prince_wuxia.2012 } }
+}
+
+prince_support_internal_faction_decision = {
+	picture = { reference = "gfx/interface/illustrations/decisions/decision_misc.dds" }
+	desc = prince_support_internal_faction_decision_desc
+	selection_tooltip = prince_support_internal_faction_decision_tooltip
+	confirm_text = prince_wuxia_confirm
+	ai_check_interval = 0
+	ai_potential = { always = no }
+	cooldown = { years = 5 }
+	is_shown = { is_ai = no is_adult = yes }
+	is_valid = { prince_adult_free_character_trigger = yes intrigue >= 8 }
+	effect = { trigger_event = { id = prince_wuxia.2013 } }
+}
+
+prince_defend_sect_reputation_decision = {
+	picture = { reference = "gfx/interface/illustrations/decisions/decision_golden_age.dds" }
+	desc = prince_defend_sect_reputation_decision_desc
+	selection_tooltip = prince_defend_sect_reputation_decision_tooltip
+	confirm_text = prince_wuxia_confirm
+	ai_check_interval = 0
+	ai_potential = { always = no }
+	cooldown = { years = 4 }
+	is_shown = { is_ai = no is_adult = yes }
+	is_valid = { prince_adult_free_character_trigger = yes OR = { has_trait = qi_sense has_trait = qi_condensation has_trait = foundation_establishment has_trait = core_formation has_trait = nascent_soul } }
+	effect = { trigger_event = { id = prince_wuxia.2014 } }
+}
+
+prince_negotiate_sect_alliance_decision = {
+	picture = { reference = "gfx/interface/illustrations/decisions/decision_realm.dds" }
+	desc = prince_negotiate_sect_alliance_decision_desc
+	selection_tooltip = prince_negotiate_sect_alliance_decision_tooltip
+	confirm_text = prince_wuxia_confirm
+	ai_check_interval = 0
+	ai_potential = { always = no }
+	cooldown = { years = 6 }
+	is_shown = { is_ai = no is_adult = yes }
+	is_valid = { prince_court_capable_character_trigger = yes }
+	effect = { trigger_event = { id = prince_wuxia.2015 } }
+}
+
+prince_suppress_internal_rival_decision = {
+	picture = { reference = "gfx/interface/illustrations/decisions/decision_prison.dds" }
+	desc = prince_suppress_internal_rival_decision_desc
+	selection_tooltip = prince_suppress_internal_rival_decision_tooltip
+	confirm_text = prince_wuxia_confirm
+	ai_check_interval = 0
+	ai_potential = { always = no }
+	cooldown = { years = 6 }
+	is_shown = { is_ai = no is_adult = yes }
+	is_valid = { prince_adult_free_character_trigger = yes intrigue >= 8 }
+	effect = { trigger_event = { id = prince_wuxia.2016 } }
+}
+
+prince_seek_elder_support_decision = {
+	picture = { reference = "gfx/interface/illustrations/decisions/decision_tale.dds" }
+	desc = prince_seek_elder_support_decision_desc
+	selection_tooltip = prince_seek_elder_support_decision_tooltip
+	confirm_text = prince_wuxia_confirm
+	ai_check_interval = 0
+	ai_potential = { always = no }
+	cooldown = { years = 5 }
+	is_shown = { is_ai = no is_adult = yes }
+	is_valid = { prince_adult_free_character_trigger = yes OR = { has_trait = qi_sense has_trait = qi_condensation has_trait = foundation_establishment has_trait = core_formation has_trait = nascent_soul } }
+	effect = { trigger_event = { id = prince_wuxia.2017 } }
+}
+
+prince_challenge_sect_authority_decision = {
+	picture = { reference = "gfx/interface/illustrations/decisions/decision_siege_warfare.dds" }
+	desc = prince_challenge_sect_authority_decision_desc
+	selection_tooltip = prince_challenge_sect_authority_decision_tooltip
+	confirm_text = prince_wuxia_confirm
+	ai_check_interval = 0
+	ai_potential = { always = no }
+	cooldown = { years = 8 }
+	is_shown = { is_ai = no is_adult = yes }
+	is_valid = { prince_martial_capable_character_trigger = yes prestige_level >= 1 }
+	effect = { trigger_event = { id = prince_wuxia.2018 } }
+}
+
+prince_compete_for_senior_disciple_decision = {
+	picture = { reference = "gfx/interface/illustrations/decisions/decision_invite_knights.dds" }
+	desc = prince_compete_for_senior_disciple_decision_desc
+	selection_tooltip = prince_compete_for_senior_disciple_decision_tooltip
+	confirm_text = prince_wuxia_confirm
+	ai_check_interval = 0
+	ai_potential = { always = no }
+	cooldown = { years = 5 }
+	is_shown = { is_ai = no is_adult = yes }
+	is_valid = { prince_martial_capable_character_trigger = yes }
+	effect = { trigger_event = { id = prince_wuxia.2100 } }
+}
+
+prince_secure_master_trust_decision = {
+	picture = { reference = "gfx/interface/illustrations/decisions/decision_major_religion.dds" }
+	desc = prince_secure_master_trust_decision_desc
+	selection_tooltip = prince_secure_master_trust_decision_tooltip
+	confirm_text = prince_wuxia_confirm
+	ai_check_interval = 0
+	ai_potential = { always = no }
+	cooldown = { years = 5 }
+	is_shown = { is_ai = no is_adult = yes }
+	is_valid = { prince_adult_free_character_trigger = yes OR = { has_trait = qi_sense has_trait = qi_condensation has_trait = foundation_establishment has_trait = core_formation has_trait = nascent_soul } }
+	effect = { trigger_event = { id = prince_wuxia.2101 } }
+}
+
+prince_gain_elder_backing_decision = {
+	picture = { reference = "gfx/interface/illustrations/decisions/decision_dynasty_house.dds" }
+	desc = prince_gain_elder_backing_decision_desc
+	selection_tooltip = prince_gain_elder_backing_decision_tooltip
+	confirm_text = prince_wuxia_confirm
+	ai_check_interval = 0
+	ai_potential = { always = no }
+	cooldown = { years = 6 }
+	is_shown = { is_ai = no is_adult = yes }
+	is_valid = { prince_court_capable_character_trigger = yes }
+	effect = { trigger_event = { id = prince_wuxia.2102 } }
+}
+
+prince_expose_rival_misconduct_decision = {
+	picture = { reference = "gfx/interface/illustrations/decisions/decision_misc.dds" }
+	desc = prince_expose_rival_misconduct_decision_desc
+	selection_tooltip = prince_expose_rival_misconduct_decision_tooltip
+	confirm_text = prince_wuxia_confirm
+	ai_check_interval = 0
+	ai_potential = { always = no }
+	cooldown = { years = 6 }
+	is_shown = { is_ai = no is_adult = yes }
+	is_valid = { prince_adult_free_character_trigger = yes intrigue >= 8 }
+	effect = { trigger_event = { id = prince_wuxia.2103 } }
+}
+
+prince_consolidate_sect_influence_decision = {
+	picture = { reference = "gfx/interface/illustrations/decisions/decision_realm.dds" }
+	desc = prince_consolidate_sect_influence_decision_desc
+	selection_tooltip = prince_consolidate_sect_influence_decision_tooltip
+	confirm_text = prince_wuxia_confirm
+	ai_check_interval = 0
+	ai_potential = { always = no }
+	cooldown = { years = 6 }
+	is_shown = { is_ai = no is_adult = yes }
+	is_valid = { prince_court_capable_character_trigger = yes }
+	effect = { trigger_event = { id = prince_wuxia.2104 } }
+}
+
+prince_gain_court_patronage_decision = {
+	picture = { reference = "gfx/interface/illustrations/decisions/decision_realm.dds" }
+	desc = prince_gain_court_patronage_decision_desc
+	selection_tooltip = prince_gain_court_patronage_decision_tooltip
+	confirm_text = prince_wuxia_confirm
+	ai_check_interval = 0
+	ai_potential = { always = no }
+	cooldown = { years = 5 }
+	is_shown = { is_ai = no is_adult = yes }
+	is_valid = { prince_court_capable_character_trigger = yes }
+	effect = { trigger_event = { id = prince_wuxia.2105 } }
+}
+
+prince_expose_corrupt_official_decision = {
+	picture = { reference = "gfx/interface/illustrations/decisions/decision_prison.dds" }
+	desc = prince_expose_corrupt_official_decision_desc
+	selection_tooltip = prince_expose_corrupt_official_decision_tooltip
+	confirm_text = prince_wuxia_confirm
+	ai_check_interval = 0
+	ai_potential = { always = no }
+	cooldown = { years = 7 }
+	is_shown = { is_ai = no is_adult = yes }
+	is_valid = { prince_adult_free_character_trigger = yes intrigue >= 8 }
+	effect = { trigger_event = { id = prince_wuxia.2106 } }
+}
+
+prince_challenge_incompetent_officer_decision = {
+	picture = { reference = "gfx/interface/illustrations/decisions/decision_siege_warfare.dds" }
+	desc = prince_challenge_incompetent_officer_decision_desc
+	selection_tooltip = prince_challenge_incompetent_officer_decision_tooltip
+	confirm_text = prince_wuxia_confirm
+	ai_check_interval = 0
+	ai_potential = { always = no }
+	cooldown = { years = 6 }
+	is_shown = { is_ai = no is_adult = yes }
+	is_valid = { prince_martial_capable_character_trigger = yes }
+	effect = { trigger_event = { id = prince_wuxia.2107 } }
+}
+
+prince_attend_local_prince_wulin_gathering_decision = {
+	picture = { reference = "gfx/interface/illustrations/decisions/decision_activity.dds" }
+	desc = prince_attend_local_prince_wulin_gathering_decision_desc
+	selection_tooltip = prince_attend_local_prince_wulin_gathering_decision_tooltip
+	confirm_text = prince_wuxia_confirm
+	ai_check_interval = 0
+	ai_potential = { always = no }
+	cooldown = { years = 5 }
+	is_shown = { is_ai = no is_adult = yes }
+	is_valid = { prince_adult_free_character_trigger = yes OR = { has_trait = qi_sense has_trait = qi_condensation has_trait = foundation_establishment has_trait = core_formation has_trait = nascent_soul } }
+	effect = { trigger_event = { id = prince_wuxia.2200 } }
+}
+
+prince_speak_before_heroes_decision = {
+	picture = { reference = "gfx/interface/illustrations/decisions/decision_golden_age.dds" }
+	desc = prince_speak_before_heroes_decision_desc
+	selection_tooltip = prince_speak_before_heroes_decision_tooltip
+	confirm_text = prince_wuxia_confirm
+	ai_check_interval = 0
+	ai_potential = { always = no }
+	cooldown = { years = 5 }
+	is_shown = { is_ai = no is_adult = yes }
+	is_valid = { prince_court_capable_character_trigger = yes }
+	effect = { trigger_event = { id = prince_wuxia.2201 } }
+}
+
+prince_mediate_school_dispute_decision = {
+	picture = { reference = "gfx/interface/illustrations/decisions/decision_social.dds" }
+	desc = prince_mediate_school_dispute_decision_desc
+	selection_tooltip = prince_mediate_school_dispute_decision_tooltip
+	confirm_text = prince_wuxia_confirm
+	ai_check_interval = 0
+	ai_potential = { always = no }
+	cooldown = { years = 6 }
+	is_shown = { is_ai = no is_adult = yes }
+	is_valid = { prince_court_capable_character_trigger = yes }
+	effect = { trigger_event = { id = prince_wuxia.2202 } }
+}
+
+prince_accuse_prince_wulin_traitor_decision = {
+	picture = { reference = "gfx/interface/illustrations/decisions/decision_prison.dds" }
+	desc = prince_accuse_prince_wulin_traitor_decision_desc
+	selection_tooltip = prince_accuse_prince_wulin_traitor_decision_tooltip
+	confirm_text = prince_wuxia_confirm
+	ai_check_interval = 0
+	ai_potential = { always = no }
+	cooldown = { years = 8 }
+	is_shown = { is_ai = no is_adult = yes }
+	is_valid = { prince_adult_free_character_trigger = yes intrigue >= 8 }
+	effect = { trigger_event = { id = prince_wuxia.2203 } }
+}
+
+prince_support_martial_alliance_decision = {
+	picture = { reference = "gfx/interface/illustrations/decisions/decision_realm.dds" }
+	desc = prince_support_martial_alliance_decision_desc
+	selection_tooltip = prince_support_martial_alliance_decision_tooltip
+	confirm_text = prince_wuxia_confirm
+	ai_check_interval = 0
+	ai_potential = { always = no }
+	cooldown = { years = 6 }
+	is_shown = { is_ai = no is_adult = yes }
+	is_valid = { prince_adult_free_character_trigger = yes OR = { has_trait = qi_sense has_trait = qi_condensation has_trait = foundation_establishment has_trait = core_formation has_trait = nascent_soul } }
+	effect = { trigger_event = { id = prince_wuxia.2204 } }
+}
+
+prince_seek_public_recognition_decision = {
+	picture = { reference = "gfx/interface/illustrations/decisions/decision_legend.dds" }
+	desc = prince_seek_public_recognition_decision_desc
+	selection_tooltip = prince_seek_public_recognition_decision_tooltip
+	confirm_text = prince_wuxia_confirm
+	ai_check_interval = 0
+	ai_potential = { always = no }
+	cooldown = { years = 7 }
+	is_shown = { is_ai = no is_adult = yes }
+	is_valid = { prince_martial_capable_character_trigger = yes prestige_level >= 1 }
+	effect = { trigger_event = { id = prince_wuxia.2205 } }
+}
+
+prince_challenge_famous_fighter_decision = {
+	picture = { reference = "gfx/interface/illustrations/decisions/decision_siege_warfare.dds" }
+	desc = prince_challenge_famous_fighter_decision_desc
+	selection_tooltip = prince_challenge_famous_fighter_decision_tooltip
+	confirm_text = prince_wuxia_confirm
+	ai_check_interval = 0
+	ai_potential = { always = no }
+	cooldown = { years = 8 }
+	is_shown = { is_ai = no is_adult = yes }
+	is_valid = { prince_martial_capable_character_trigger = yes }
+	effect = { trigger_event = { id = prince_wuxia.2206 } }
+}
+
+prince_enter_prince_wulin_tournament_decision = {
+	picture = { reference = "gfx/interface/illustrations/decisions/decision_activity.dds" }
+	desc = prince_enter_prince_wulin_tournament_decision_desc
+	selection_tooltip = prince_enter_prince_wulin_tournament_decision_tooltip
+	confirm_text = prince_wuxia_confirm
+	ai_check_interval = 0
+	ai_potential = { always = no }
+	cooldown = { years = 10 }
+	is_shown = { is_ai = no is_adult = yes }
+	is_valid = { prince_martial_capable_character_trigger = yes }
+	effect = { trigger_event = { id = prince_wuxia.2207 } }
+}
+
+prince_respond_to_martial_crisis_decision = {
+	picture = { reference = "gfx/interface/illustrations/decisions/decision_black_plague.dds" }
+	desc = prince_respond_to_martial_crisis_decision_desc
+	selection_tooltip = prince_respond_to_martial_crisis_decision_tooltip
+	confirm_text = prince_wuxia_confirm
+	ai_check_interval = 0
+	ai_potential = { always = no }
+	cooldown = { years = 8 }
+	is_shown = { is_ai = no is_adult = yes }
+	is_valid = { prince_adult_free_character_trigger = yes OR = { has_trait = qi_sense has_trait = qi_condensation has_trait = foundation_establishment has_trait = core_formation has_trait = nascent_soul } }
+	effect = { trigger_event = { id = prince_wuxia.2208 } }
+}
+
+prince_discover_secret_manual_decision = {
+	picture = { reference = "gfx/interface/illustrations/decisions/decision_tale.dds" }
+	desc = prince_discover_secret_manual_decision_desc
+	selection_tooltip = prince_discover_secret_manual_decision_tooltip
+	confirm_text = prince_wuxia_confirm
+	ai_check_interval = 0
+	ai_potential = { always = no }
+	cooldown = { years = 7 }
+	is_shown = { is_ai = no is_adult = yes }
+	is_valid = { prince_adult_free_character_trigger = yes OR = { has_trait = qi_sense has_trait = qi_condensation has_trait = foundation_establishment has_trait = core_formation has_trait = nascent_soul } }
+	effect = { trigger_event = { id = prince_wuxia.2300 } }
+}
+
+prince_study_ancient_manual_decision = {
+	picture = { reference = "gfx/interface/illustrations/decisions/decision_tale.dds" }
+	desc = prince_study_ancient_manual_decision_desc
+	selection_tooltip = prince_study_ancient_manual_decision_tooltip
+	confirm_text = prince_wuxia_confirm
+	ai_check_interval = 0
+	ai_potential = { always = no }
+	cooldown = { years = 5 }
+	is_shown = { is_ai = no is_adult = yes }
+	is_valid = { prince_adult_free_character_trigger = yes learning >= 8 }
+	effect = { trigger_event = { id = prince_wuxia.2301 } }
+}
+
+prince_decipher_damaged_scripture_decision = {
+	picture = { reference = "gfx/interface/illustrations/decisions/decision_tale.dds" }
+	desc = prince_decipher_damaged_scripture_decision_desc
+	selection_tooltip = prince_decipher_damaged_scripture_decision_tooltip
+	confirm_text = prince_wuxia_confirm
+	ai_check_interval = 0
+	ai_potential = { always = no }
+	cooldown = { years = 6 }
+	is_shown = { is_ai = no is_adult = yes }
+	is_valid = { prince_adult_free_character_trigger = yes learning >= 8 }
+	effect = { trigger_event = { id = prince_wuxia.2302 } }
+}
+
+prince_guard_school_scripture_decision = {
+	picture = { reference = "gfx/interface/illustrations/decisions/decision_major_religion.dds" }
+	desc = prince_guard_school_scripture_decision_desc
+	selection_tooltip = prince_guard_school_scripture_decision_tooltip
+	confirm_text = prince_wuxia_confirm
+	ai_check_interval = 0
+	ai_potential = { always = no }
+	cooldown = { years = 5 }
+	is_shown = { is_ai = no is_adult = yes }
+	is_valid = { prince_adult_free_character_trigger = yes OR = { has_trait = qi_sense has_trait = qi_condensation has_trait = foundation_establishment has_trait = core_formation has_trait = nascent_soul } }
+	effect = { trigger_event = { id = prince_wuxia.2303 } }
+}
+
+prince_recover_stolen_manual_decision = {
+	picture = { reference = "gfx/interface/illustrations/decisions/decision_prison.dds" }
+	desc = prince_recover_stolen_manual_decision_desc
+	selection_tooltip = prince_recover_stolen_manual_decision_tooltip
+	confirm_text = prince_wuxia_confirm
+	ai_check_interval = 0
+	ai_potential = { always = no }
+	cooldown = { years = 7 }
+	is_shown = { is_ai = no is_adult = yes }
+	is_valid = { prince_martial_capable_character_trigger = yes }
+	effect = { trigger_event = { id = prince_wuxia.2304 } }
+}
+
+prince_pass_down_technique_decision = {
+	picture = { reference = "gfx/interface/illustrations/decisions/decision_dynasty_house.dds" }
+	desc = prince_pass_down_technique_decision_desc
+	selection_tooltip = prince_pass_down_technique_decision_tooltip
+	confirm_text = prince_wuxia_confirm
+	ai_check_interval = 0
+	ai_potential = { always = no }
+	cooldown = { years = 8 }
+	is_shown = { is_ai = no is_adult = yes }
+	is_valid = { prince_adult_free_character_trigger = yes OR = { learning >= 10 prowess >= 10 } }
+	effect = { trigger_event = { id = prince_wuxia.2305 } }
+}
+
+prince_destroy_dangerous_manual_decision = {
+	picture = { reference = "gfx/interface/illustrations/decisions/decision_black_plague.dds" }
+	desc = prince_destroy_dangerous_manual_decision_desc
+	selection_tooltip = prince_destroy_dangerous_manual_decision_tooltip
+	confirm_text = prince_wuxia_confirm
+	ai_check_interval = 0
+	ai_potential = { always = no }
+	cooldown = { years = 8 }
+	is_shown = { is_ai = no is_adult = yes }
+	is_valid = { prince_adult_free_character_trigger = yes OR = { has_trait = qi_sense has_trait = qi_condensation has_trait = foundation_establishment has_trait = core_formation has_trait = nascent_soul } }
+	effect = { trigger_event = { id = prince_wuxia.2306 } }
+}
+
+prince_hide_manual_from_rivals_decision = {
+	picture = { reference = "gfx/interface/illustrations/decisions/decision_misc.dds" }
+	desc = prince_hide_manual_from_rivals_decision_desc
+	selection_tooltip = prince_hide_manual_from_rivals_decision_tooltip
+	confirm_text = prince_wuxia_confirm
+	ai_check_interval = 0
+	ai_potential = { always = no }
+	cooldown = { years = 6 }
+	is_shown = { is_ai = no is_adult = yes }
+	is_valid = { prince_adult_free_character_trigger = yes intrigue >= 8 }
+	effect = { trigger_event = { id = prince_wuxia.2307 } }
+}
+
+prince_defend_frontier_decision = {
+	picture = { reference = "gfx/interface/illustrations/decisions/decision_siege_warfare.dds" }
+	desc = prince_defend_frontier_decision_desc
+	selection_tooltip = prince_defend_frontier_decision_tooltip
+	confirm_text = prince_wuxia_confirm
+	ai_check_interval = 0
+	ai_potential = { always = no }
+	cooldown = { years = 5 }
+	is_shown = { is_ai = no is_adult = yes }
+	is_valid = { prince_martial_capable_character_trigger = yes }
+	effect = { trigger_event = { id = prince_wuxia.2400 } }
+}
+
+prince_train_border_militia_decision = {
+	picture = { reference = "gfx/interface/illustrations/decisions/decision_recruitment.dds" }
+	desc = prince_train_border_militia_decision_desc
+	selection_tooltip = prince_train_border_militia_decision_tooltip
+	confirm_text = prince_wuxia_confirm
+	ai_check_interval = 0
+	ai_potential = { always = no }
+	cooldown = { years = 4 }
+	is_shown = { is_ai = no is_adult = yes }
+	is_valid = { prince_martial_capable_character_trigger = yes }
+	effect = { trigger_event = { id = prince_wuxia.2401 } }
+}
+
+prince_advise_border_commander_decision = {
+	picture = { reference = "gfx/interface/illustrations/decisions/decision_realm.dds" }
+	desc = prince_advise_border_commander_decision_desc
+	selection_tooltip = prince_advise_border_commander_decision_tooltip
+	confirm_text = prince_wuxia_confirm
+	ai_check_interval = 0
+	ai_potential = { always = no }
+	cooldown = { years = 5 }
+	is_shown = { is_ai = no is_adult = yes }
+	is_valid = { prince_court_capable_character_trigger = yes }
+	effect = { trigger_event = { id = prince_wuxia.2402 } }
+}
+
+prince_escort_military_supplies_decision = {
+	picture = { reference = "gfx/interface/illustrations/decisions/decision_spend_money.dds" }
+	desc = prince_escort_military_supplies_decision_desc
+	selection_tooltip = prince_escort_military_supplies_decision_tooltip
+	confirm_text = prince_wuxia_confirm
+	ai_check_interval = 0
+	ai_potential = { always = no }
+	cooldown = { years = 4 }
+	is_shown = { is_ai = no is_adult = yes }
+	is_valid = { prince_adult_free_character_trigger = yes OR = { has_trait = qi_sense has_trait = qi_condensation has_trait = foundation_establishment has_trait = core_formation has_trait = nascent_soul } }
+	effect = { trigger_event = { id = prince_wuxia.2403 } }
+}
+
+prince_protect_refugees_decision = {
+	picture = { reference = "gfx/interface/illustrations/decisions/decision_social.dds" }
+	desc = prince_protect_refugees_decision_desc
+	selection_tooltip = prince_protect_refugees_decision_tooltip
+	confirm_text = prince_wuxia_confirm
+	ai_check_interval = 0
+	ai_potential = { always = no }
+	cooldown = { years = 5 }
+	is_shown = { is_ai = no is_adult = yes }
+	is_valid = { prince_adult_free_character_trigger = yes OR = { has_trait = qi_sense has_trait = qi_condensation has_trait = foundation_establishment has_trait = core_formation has_trait = nascent_soul } }
+	effect = { trigger_event = { id = prince_wuxia.2404 } }
+}
+
+prince_hunt_frontier_bandits_decision = {
+	picture = { reference = "gfx/interface/illustrations/decisions/decision_levy_outcasts.dds" }
+	desc = prince_hunt_frontier_bandits_decision_desc
+	selection_tooltip = prince_hunt_frontier_bandits_decision_tooltip
+	confirm_text = prince_wuxia_confirm
+	ai_check_interval = 0
+	ai_potential = { always = no }
+	cooldown = { years = 5 }
+	is_shown = { is_ai = no is_adult = yes }
+	is_valid = { prince_martial_capable_character_trigger = yes }
+	effect = { trigger_event = { id = prince_wuxia.2405 } }
+}
+
+prince_rally_martial_heroes_for_realm_decision = {
+	picture = { reference = "gfx/interface/illustrations/decisions/decision_golden_age.dds" }
+	desc = prince_rally_martial_heroes_for_realm_decision_desc
+	selection_tooltip = prince_rally_martial_heroes_for_realm_decision_tooltip
+	confirm_text = prince_wuxia_confirm
+	ai_check_interval = 0
+	ai_potential = { always = no }
+	cooldown = { years = 8 }
+	is_shown = { is_ai = no is_adult = yes }
+	is_valid = { prince_adult_free_character_trigger = yes prestige_level >= 1 }
+	effect = { trigger_event = { id = prince_wuxia.2406 } }
+}
+
+prince_debate_court_and_prince_jianghu_duty_decision = {
+	picture = { reference = "gfx/interface/illustrations/decisions/decision_tale.dds" }
+	desc = prince_debate_court_and_prince_jianghu_duty_decision_desc
+	selection_tooltip = prince_debate_court_and_prince_jianghu_duty_decision_tooltip
+	confirm_text = prince_wuxia_confirm
+	ai_check_interval = 0
+	ai_potential = { always = no }
+	cooldown = { years = 6 }
+	is_shown = { is_ai = no is_adult = yes }
+	is_valid = { prince_adult_free_character_trigger = yes OR = { has_trait = qi_sense has_trait = qi_condensation has_trait = foundation_establishment has_trait = core_formation has_trait = nascent_soul } }
+	effect = { trigger_event = { id = prince_wuxia.2407 } }
+}

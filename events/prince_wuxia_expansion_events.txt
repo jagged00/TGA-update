@@ -1,0 +1,544 @@
+namespace = prince_wuxia
+
+prince_wuxia.2000 = {
+	type = character_event
+	title = prince_wuxia.2000.t
+	desc = prince_wuxia.2000.desc
+	theme = diplomacy
+	left_portrait = { character = root animation = personality_honorable }
+	option = {
+		name = prince_wuxia.2000.a
+		add_character_modifier = { modifier = prince_unaffiliated_wanderer_modifier years = 5 }
+		prince_gain_minor_wulin_reputation_effect = yes
+	}
+}
+
+prince_wuxia.2001 = {
+	type = character_event
+	title = prince_wuxia.2001.t
+	desc = prince_wuxia.2001.desc
+	theme = education
+	left_portrait = { character = root animation = personality_rational }
+	option = { name = prince_school_mountain_sword add_character_modifier = { modifier = prince_mountain_sword_school_modifier years = 10 } add_character_modifier = { modifier = prince_probationary_disciple_modifier years = 5 } }
+	option = { name = prince_school_frontier_spear add_character_modifier = { modifier = prince_frontier_spear_school_modifier years = 10 } add_character_modifier = { modifier = prince_probationary_disciple_modifier years = 5 } }
+	option = { name = prince_school_inner_breath add_character_modifier = { modifier = prince_inner_breath_hall_modifier years = 10 } add_character_modifier = { modifier = prince_probationary_disciple_modifier years = 5 } }
+	option = { name = prince_school_river_lake add_character_modifier = { modifier = prince_river_lake_wanderer_school_modifier years = 10 } add_character_modifier = { modifier = prince_probationary_disciple_modifier years = 5 } }
+	option = { name = prince_school_monastic_staff add_character_modifier = { modifier = prince_monastic_staff_tradition_modifier years = 10 } add_character_modifier = { modifier = prince_probationary_disciple_modifier years = 5 } }
+	option = { name = prince_school_hidden_valley add_character_modifier = { modifier = prince_hidden_valley_school_modifier years = 10 } add_character_modifier = { modifier = prince_probationary_disciple_modifier years = 5 } }
+	option = { name = prince_school_iron_palm add_character_modifier = { modifier = prince_iron_palm_lineage_modifier years = 10 } add_character_modifier = { modifier = prince_probationary_disciple_modifier years = 5 } }
+	option = { name = prince_school_gallant_archer add_character_modifier = { modifier = prince_gallant_archer_lodge_modifier years = 10 } add_character_modifier = { modifier = prince_probationary_disciple_modifier years = 5 } }
+}
+
+prince_wuxia.2002 = {
+	type = character_event
+	title = prince_wuxia.2002.t
+	desc = prince_wuxia.2002.desc
+	theme = war
+	left_portrait = { character = root animation = personality_bold }
+	option = {
+		name = prince_wuxia_training_a
+		add_character_modifier = { modifier = prince_outer_disciple_modifier years = 4 }
+		add_character_modifier = { modifier = prince_martial_discipline_modifier years = 3 }
+		add_stress = 10
+	}
+}
+
+prince_wuxia.2003 = {
+	type = character_event
+	title = prince_wuxia.2003.t
+	desc = prince_wuxia.2003.desc
+	theme = education
+	left_portrait = { character = root animation = personality_honorable }
+	option = {
+		name = prince_wuxia_guidance_a
+		add_character_modifier = { modifier = prince_master_trust_modifier years = 5 }
+		add_character_modifier = { modifier = prince_inner_disciple_modifier years = 4 }
+	}
+}
+
+prince_wuxia.2004 = {
+	type = character_event
+	title = prince_wuxia.2004.t
+	desc = prince_wuxia.2004.desc
+	theme = war
+	left_portrait = { character = root animation = personality_bold }
+	option = {
+		name = prince_wuxia_challenge_hard
+		add_character_modifier = { modifier = prince_senior_disciple_modifier years = 5 }
+		add_character_modifier = { modifier = prince_rival_pressure_modifier years = 3 }
+		prince_gain_minor_wulin_reputation_effect = yes
+	}
+	option = {
+		name = prince_wuxia_challenge_cautious
+		add_character_modifier = { modifier = prince_outer_disciple_modifier years = 5 }
+		add_stress = -10
+	}
+}
+
+prince_wuxia.2005 = {
+	type = character_event
+	title = prince_wuxia.2005.t
+	desc = prince_wuxia.2005.desc
+	theme = war
+	left_portrait = { character = root animation = personality_honorable }
+	option = {
+		name = prince_wuxia_honor_a
+		add_character_modifier = { modifier = prince_protector_of_prince_wulin_modifier years = 4 }
+		prince_gain_minor_wulin_reputation_effect = yes
+	}
+}
+
+prince_wuxia.2006 = {
+	type = character_event
+	title = prince_wuxia.2006.t
+	desc = prince_wuxia.2006.desc
+	theme = education
+	left_portrait = { character = root animation = personality_rational }
+	option = {
+		name = prince_wuxia_teach_a
+		add_character_modifier = { modifier = prince_martial_instructor_modifier years = 5 }
+		add_character_modifier = { modifier = prince_mentor_disciple_modifier years = 4 }
+	}
+}
+
+prince_wuxia.2007 = {
+	type = character_event
+	title = prince_wuxia.2007.t
+	desc = prince_wuxia.2007.desc
+	theme = education
+	left_portrait = { character = root animation = personality_honorable }
+	option = {
+		name = prince_wuxia_inheritor_a
+		add_character_modifier = { modifier = prince_core_inheritor_modifier years = 8 }
+		add_trait = prince_school_inheritor
+		prince_gain_major_wulin_reputation_effect = yes
+	}
+	option = {
+		name = prince_wuxia_inheritor_b
+		add_character_modifier = { modifier = prince_incomplete_manual_modifier years = 2 }
+		add_stress = 20
+	}
+}
+
+prince_wuxia.2008 = {
+	type = character_event
+	title = prince_wuxia.2008.t
+	desc = prince_wuxia.2008.desc
+	theme = diplomacy
+	left_portrait = { character = root animation = personality_rational }
+	option = {
+		name = prince_wuxia_leave_a
+		remove_character_modifier = prince_probationary_disciple_modifier
+		remove_character_modifier = prince_outer_disciple_modifier
+		remove_character_modifier = prince_inner_disciple_modifier
+		remove_character_modifier = prince_senior_disciple_modifier
+		add_character_modifier = { modifier = prince_unaffiliated_wanderer_modifier years = 6 }
+	}
+}
+
+prince_wuxia.2010 = {
+	type = character_event
+	title = prince_wuxia.2010.t
+	desc = prince_wuxia.2010.desc
+	theme = diplomacy
+	left_portrait = { character = root animation = personality_rational }
+	option = {
+		name = prince_wuxia_contact_a
+		add_character_modifier = { modifier = prince_sect_associate_modifier years = 5 }
+		add_prestige = minor_prestige_gain
+	}
+}
+
+prince_wuxia.2011 = {
+	type = character_event
+	title = prince_wuxia.2011.t
+	desc = prince_wuxia.2011.desc
+	theme = intrigue
+	left_portrait = { character = root animation = personality_rational }
+	option = { name = prince_sect_orthodox add_character_modifier = { modifier = prince_orthodox_prince_wulin_alliance_modifier years = 10 } add_character_modifier = { modifier = prince_sect_disciple_modifier years = 5 } }
+	option = { name = prince_sect_frontier add_character_modifier = { modifier = prince_frontier_militia_sect_modifier years = 10 } add_character_modifier = { modifier = prince_sect_disciple_modifier years = 5 } }
+	option = { name = prince_sect_hidden_valley add_character_modifier = { modifier = prince_hidden_valley_sect_modifier years = 10 } add_character_modifier = { modifier = prince_sect_disciple_modifier years = 5 } }
+	option = { name = prince_sect_merchant_society add_character_modifier = { modifier = prince_merchant_martial_society_modifier years = 10 } add_character_modifier = { modifier = prince_sect_disciple_modifier years = 5 } }
+	option = { name = prince_sect_shadow_oath add_character_modifier = { modifier = prince_shadow_oath_society_modifier years = 10 } add_character_modifier = { modifier = prince_sect_disciple_modifier years = 5 } }
+	option = { name = prince_sect_wayfarer_bowl add_character_modifier = { modifier = prince_wayfarer_bowl_brotherhood_modifier years = 10 } add_character_modifier = { modifier = prince_sect_disciple_modifier years = 5 } }
+}
+
+prince_wuxia.2012 = {
+	type = character_event
+	title = prince_wuxia.2012.t
+	desc = prince_wuxia.2012.desc
+	theme = diplomacy
+	left_portrait = { character = root animation = personality_honorable }
+	option = { name = prince_wuxia_influence_a add_character_modifier = { modifier = prince_sect_influence_modifier years = 5 } add_character_modifier = { modifier = prince_sect_protector_modifier years = 4 } }
+}
+
+prince_wuxia.2013 = {
+	type = character_event
+	title = prince_wuxia.2013.t
+	desc = prince_wuxia.2013.desc
+	theme = intrigue
+	left_portrait = { character = root animation = personality_rational }
+	option = { name = prince_wuxia_faction_a add_character_modifier = { modifier = prince_internal_faction_support_modifier years = 5 } add_stress = 10 }
+}
+
+prince_wuxia.2014 = {
+	type = character_event
+	title = prince_wuxia.2014.t
+	desc = prince_wuxia.2014.desc
+	theme = diplomacy
+	left_portrait = { character = root animation = personality_honorable }
+	option = { name = prince_wuxia_honor_a add_character_modifier = { modifier = prince_sect_protector_modifier years = 5 } prince_gain_minor_wulin_reputation_effect = yes }
+}
+
+prince_wuxia.2015 = {
+	type = character_event
+	title = prince_wuxia.2015.t
+	desc = prince_wuxia.2015.desc
+	theme = diplomacy
+	left_portrait = { character = root animation = personality_rational }
+	option = { name = prince_wuxia_alliance_a add_character_modifier = { modifier = prince_martial_alliance_speaker_modifier years = 5 } add_character_modifier = { modifier = prince_sect_strategist_modifier years = 5 } }
+}
+
+prince_wuxia.2016 = {
+	type = character_event
+	title = prince_wuxia.2016.t
+	desc = prince_wuxia.2016.desc
+	theme = intrigue
+	left_portrait = { character = root animation = personality_bold }
+	option = { name = prince_wuxia_suppress_a add_character_modifier = { modifier = prince_rival_discredited_modifier years = 4 } add_stress = 15 }
+	option = { name = prince_wuxia_suppress_b add_character_modifier = { modifier = prince_rival_pressure_modifier years = 3 } add_stress = -5 }
+}
+
+prince_wuxia.2017 = {
+	type = character_event
+	title = prince_wuxia.2017.t
+	desc = prince_wuxia.2017.desc
+	theme = education
+	left_portrait = { character = root animation = personality_honorable }
+	option = { name = prince_wuxia_elder_a add_character_modifier = { modifier = prince_elder_support_modifier years = 6 } add_character_modifier = { modifier = prince_sect_elder_modifier years = 4 } }
+}
+
+prince_wuxia.2018 = {
+	type = character_event
+	title = prince_wuxia.2018.t
+	desc = prince_wuxia.2018.desc
+	theme = war
+	left_portrait = { character = root animation = personality_bold }
+	option = { name = prince_wuxia_authority_a add_character_modifier = { modifier = prince_sect_leader_candidate_modifier years = 6 } add_character_modifier = { modifier = prince_disputed_prince_wulin_figure_modifier years = 3 } }
+}
+
+prince_wuxia.2100 = {
+	type = character_event
+	title = prince_wuxia.2100.t
+	desc = prince_wuxia.2100.desc
+	theme = war
+	left_portrait = { character = root animation = personality_bold }
+	option = { name = prince_wuxia_power_a add_character_modifier = { modifier = prince_senior_disciple_modifier years = 6 } add_stress = 10 }
+}
+
+prince_wuxia.2101 = {
+	type = character_event
+	title = prince_wuxia.2101.t
+	desc = prince_wuxia.2101.desc
+	theme = education
+	left_portrait = { character = root animation = personality_honorable }
+	option = { name = prince_wuxia_power_a add_character_modifier = { modifier = prince_master_trust_modifier years = 6 } add_character_modifier = { modifier = prince_inner_disciple_modifier years = 4 } }
+}
+
+prince_wuxia.2102 = {
+	type = character_event
+	title = prince_wuxia.2102.t
+	desc = prince_wuxia.2102.desc
+	theme = diplomacy
+	left_portrait = { character = root animation = personality_rational }
+	option = { name = prince_wuxia_power_a add_character_modifier = { modifier = prince_elder_support_modifier years = 6 } add_character_modifier = { modifier = prince_school_elder_modifier years = 3 } }
+}
+
+prince_wuxia.2103 = {
+	type = character_event
+	title = prince_wuxia.2103.t
+	desc = prince_wuxia.2103.desc
+	theme = intrigue
+	left_portrait = { character = root animation = personality_rational }
+	option = { name = prince_wuxia_power_a add_character_modifier = { modifier = prince_rival_discredited_modifier years = 5 } add_stress = 10 }
+	option = { name = prince_wuxia_power_b add_character_modifier = { modifier = prince_rival_pressure_modifier years = 4 } add_stress = 20 }
+}
+
+prince_wuxia.2104 = {
+	type = character_event
+	title = prince_wuxia.2104.t
+	desc = prince_wuxia.2104.desc
+	theme = diplomacy
+	left_portrait = { character = root animation = personality_honorable }
+	option = { name = prince_wuxia_power_a add_character_modifier = { modifier = prince_quiet_consolidation_modifier years = 6 } add_character_modifier = { modifier = prince_deputy_leader_modifier years = 4 } }
+}
+
+prince_wuxia.2105 = {
+	type = character_event
+	title = prince_wuxia.2105.t
+	desc = prince_wuxia.2105.desc
+	theme = diplomacy
+	left_portrait = { character = root animation = personality_honorable }
+	option = { name = prince_wuxia_power_a add_character_modifier = { modifier = prince_court_patronage_modifier years = 6 } add_character_modifier = { modifier = prince_court_recognized_hero_modifier years = 4 } }
+}
+
+prince_wuxia.2106 = {
+	type = character_event
+	title = prince_wuxia.2106.t
+	desc = prince_wuxia.2106.desc
+	theme = intrigue
+	left_portrait = { character = root animation = personality_bold }
+	option = { name = prince_wuxia_power_a add_character_modifier = { modifier = prince_corruption_exposed_modifier years = 5 } add_prestige = medium_prestige_gain }
+	option = { name = prince_wuxia_power_b add_character_modifier = { modifier = prince_suspected_opportunist_modifier years = 4 } add_stress = 15 }
+}
+
+prince_wuxia.2107 = {
+	type = character_event
+	title = prince_wuxia.2107.t
+	desc = prince_wuxia.2107.desc
+	theme = war
+	left_portrait = { character = root animation = personality_bold }
+	option = { name = prince_wuxia_power_a add_character_modifier = { modifier = prince_commander_trust_modifier years = 5 } add_character_modifier = { modifier = prince_frontier_recognition_modifier years = 4 } }
+}
+
+prince_wuxia.2200 = {
+	type = character_event
+	title = prince_wuxia.2200.t
+	desc = prince_wuxia.2200.desc
+	theme = diplomacy
+	left_portrait = { character = root animation = personality_honorable }
+	option = { name = prince_wuxia_gather_a add_character_modifier = { modifier = prince_wulin_gathering_voice_modifier years = 5 } add_prestige = minor_prestige_gain }
+}
+
+prince_wuxia.2201 = {
+	type = character_event
+	title = prince_wuxia.2201.t
+	desc = prince_wuxia.2201.desc
+	theme = diplomacy
+	left_portrait = { character = root animation = personality_honorable }
+	option = { name = prince_wuxia_gather_a add_character_modifier = { modifier = prince_martial_alliance_speaker_modifier years = 5 } }
+}
+
+prince_wuxia.2202 = {
+	type = character_event
+	title = prince_wuxia.2202.t
+	desc = prince_wuxia.2202.desc
+	theme = diplomacy
+	left_portrait = { character = root animation = personality_rational }
+	option = { name = prince_wuxia_gather_a add_character_modifier = { modifier = prince_wulin_mediator_modifier years = 6 } add_trait = prince_wulin_mediator }
+}
+
+prince_wuxia.2203 = {
+	type = character_event
+	title = prince_wuxia.2203.t
+	desc = prince_wuxia.2203.desc
+	theme = intrigue
+	left_portrait = { character = root animation = personality_bold }
+	option = { name = prince_wuxia_accuse_a add_character_modifier = { modifier = prince_corruption_exposed_modifier years = 4 } add_stress = 15 }
+	option = { name = prince_wuxia_accuse_b add_character_modifier = { modifier = prince_disputed_prince_wulin_figure_modifier years = 4 } add_stress = -5 }
+}
+
+prince_wuxia.2204 = {
+	type = character_event
+	title = prince_wuxia.2204.t
+	desc = prince_wuxia.2204.desc
+	theme = diplomacy
+	left_portrait = { character = root animation = personality_honorable }
+	option = { name = prince_wuxia_gather_a add_character_modifier = { modifier = prince_martial_alliance_speaker_modifier years = 6 } prince_gain_minor_wulin_reputation_effect = yes }
+}
+
+prince_wuxia.2205 = {
+	type = character_event
+	title = prince_wuxia.2205.t
+	desc = prince_wuxia.2205.desc
+	theme = war
+	left_portrait = { character = root animation = personality_bold }
+	option = { name = prince_wuxia_recognition_a add_character_modifier = { modifier = prince_respected_hero_of_realm_modifier years = 6 } add_trait = prince_frontier_hero }
+	option = { name = prince_wuxia_recognition_b add_character_modifier = { modifier = prince_suspected_opportunist_modifier years = 4 } add_trait = prince_suspected_opportunist }
+}
+
+prince_wuxia.2206 = {
+	type = character_event
+	title = prince_wuxia.2206.t
+	desc = prince_wuxia.2206.desc
+	theme = war
+	left_portrait = { character = root animation = personality_bold }
+	option = { name = prince_wuxia_challenge_hard add_character_modifier = { modifier = prince_tournament_victor_modifier years = 4 } add_character_modifier = { modifier = prince_rival_pressure_modifier years = 3 } }
+	option = { name = prince_wuxia_challenge_cautious add_character_modifier = { modifier = prince_tournament_bruised_modifier years = 2 } add_prestige = minor_prestige_gain }
+}
+
+prince_wuxia.2207 = {
+	type = character_event
+	title = prince_wuxia.2207.t
+	desc = prince_wuxia.2207.desc
+	theme = war
+	left_portrait = { character = root animation = personality_bold }
+	option = { name = prince_wuxia_tournament_a add_character_modifier = { modifier = prince_tournament_victor_modifier years = 5 } prince_gain_major_wulin_reputation_effect = yes }
+	option = { name = prince_wuxia_tournament_b add_character_modifier = { modifier = prince_tournament_bruised_modifier years = 2 } add_stress = -10 }
+}
+
+prince_wuxia.2208 = {
+	type = character_event
+	title = prince_wuxia.2208.t
+	desc = prince_wuxia.2208.desc
+	theme = intrigue
+	left_portrait = { character = root animation = personality_rational }
+	option = { name = prince_wuxia_crisis_manual add_character_modifier = { modifier = prince_crisis_responder_modifier years = 5 } add_character_modifier = { modifier = prince_manual_guardian_modifier years = 4 } }
+	option = { name = prince_wuxia_crisis_frontier add_character_modifier = { modifier = prince_frontier_protector_modifier years = 5 } add_stress = 10 }
+	option = { name = prince_wuxia_crisis_court add_character_modifier = { modifier = prince_jianghu_state_tension_modifier years = 4 } add_stress = -5 }
+}
+
+prince_wuxia.2300 = {
+	type = character_event
+	title = prince_wuxia.2300.t
+	desc = prince_wuxia.2300.desc
+	theme = education
+	left_portrait = { character = root animation = personality_rational }
+	option = { name = prince_wuxia_manual_a add_character_modifier = { modifier = prince_manual_guardian_modifier years = 5 } add_character_modifier = { modifier = prince_incomplete_manual_modifier years = 2 } }
+}
+
+prince_wuxia.2301 = {
+	type = character_event
+	title = prince_wuxia.2301.t
+	desc = prince_wuxia.2301.desc
+	theme = education
+	left_portrait = { character = root animation = personality_rational }
+	option = { name = prince_art_external add_character_modifier = { modifier = prince_sword_art_modifier years = 5 } add_character_modifier = { modifier = prince_saber_art_modifier years = 5 } }
+	option = { name = prince_art_internal add_character_modifier = { modifier = prince_breath_method_modifier years = 5 } add_character_modifier = { modifier = prince_internal_force_modifier years = 4 } }
+	option = { name = prince_art_movement add_character_modifier = { modifier = prince_lightness_skill_modifier years = 5 } add_character_modifier = { modifier = prince_evasive_footwork_modifier years = 4 } }
+	option = { name = prince_art_special add_character_modifier = { modifier = prince_battlefield_formation_modifier years = 5 } add_character_modifier = { modifier = prince_defensive_guard_modifier years = 4 } }
+	option = { name = prince_art_forbidden add_character_modifier = { modifier = prince_dangerous_meridian_modifier years = 3 } add_character_modifier = { modifier = prince_internal_injury_modifier years = 2 } add_stress = 25 }
+}
+
+prince_wuxia.2302 = {
+	type = character_event
+	title = prince_wuxia.2302.t
+	desc = prince_wuxia.2302.desc
+	theme = education
+	left_portrait = { character = root animation = personality_rational }
+	option = { name = prince_wuxia_manual_a add_character_modifier = { modifier = prince_healing_circulation_modifier years = 4 } add_stress = 10 }
+	option = { name = prince_wuxia_manual_b add_character_modifier = { modifier = prince_incomplete_manual_modifier years = 3 } add_stress = -5 }
+}
+
+prince_wuxia.2303 = {
+	type = character_event
+	title = prince_wuxia.2303.t
+	desc = prince_wuxia.2303.desc
+	theme = intrigue
+	left_portrait = { character = root animation = personality_honorable }
+	option = { name = prince_wuxia_manual_guard add_character_modifier = { modifier = prince_manual_guardian_modifier years = 6 } add_character_modifier = { modifier = prince_school_elder_modifier years = 3 } }
+}
+
+prince_wuxia.2304 = {
+	type = character_event
+	title = prince_wuxia.2304.t
+	desc = prince_wuxia.2304.desc
+	theme = war
+	left_portrait = { character = root animation = personality_bold }
+	option = { name = prince_wuxia_manual_recover add_character_modifier = { modifier = prince_manual_guardian_modifier years = 5 } add_character_modifier = { modifier = prince_hidden_weapons_modifier years = 3 } }
+	option = { name = prince_wuxia_manual_cautious add_character_modifier = { modifier = prince_manual_hidden_modifier years = 5 } add_stress = -5 }
+}
+
+prince_wuxia.2305 = {
+	type = character_event
+	title = prince_wuxia.2305.t
+	desc = prince_wuxia.2305.desc
+	theme = education
+	left_portrait = { character = root animation = personality_honorable }
+	option = { name = prince_wuxia_manual_pass add_character_modifier = { modifier = prince_mentor_disciple_modifier years = 6 } add_trait = prince_secret_manual_inheritor }
+}
+
+prince_wuxia.2306 = {
+	type = character_event
+	title = prince_wuxia.2306.t
+	desc = prince_wuxia.2306.desc
+	theme = healthcare
+	left_portrait = { character = root animation = personality_honorable }
+	option = { name = prince_wuxia_manual_destroy add_character_modifier = { modifier = prince_protector_of_prince_wulin_modifier years = 4 } add_stress = -20 }
+	option = { name = prince_wuxia_manual_keep add_character_modifier = { modifier = prince_shadow_discipline_modifier years = 3 } add_stress = 15 }
+}
+
+prince_wuxia.2307 = {
+	type = character_event
+	title = prince_wuxia.2307.t
+	desc = prince_wuxia.2307.desc
+	theme = intrigue
+	left_portrait = { character = root animation = personality_rational }
+	option = { name = prince_wuxia_manual_hide add_character_modifier = { modifier = prince_manual_hidden_modifier years = 5 } add_character_modifier = { modifier = prince_rival_pressure_modifier years = 2 } }
+}
+
+prince_wuxia.2400 = {
+	type = character_event
+	title = prince_wuxia.2400.t
+	desc = prince_wuxia.2400.desc
+	theme = war
+	left_portrait = { character = root animation = personality_bold }
+	option = { name = prince_frontier_serve add_character_modifier = { modifier = prince_frontier_protector_modifier years = 5 } add_trait = prince_frontier_hero }
+	option = { name = prince_frontier_independent add_character_modifier = { modifier = prince_independent_prince_wulin_figure_modifier years = 5 } }
+}
+
+prince_wuxia.2401 = {
+	type = character_event
+	title = prince_wuxia.2401.t
+	desc = prince_wuxia.2401.desc
+	theme = war
+	left_portrait = { character = root animation = personality_honorable }
+	option = { name = prince_frontier_serve add_character_modifier = { modifier = prince_border_militia_trainer_modifier years = 5 } add_prestige = minor_prestige_gain }
+}
+
+prince_wuxia.2402 = {
+	type = character_event
+	title = prince_wuxia.2402.t
+	desc = prince_wuxia.2402.desc
+	theme = diplomacy
+	left_portrait = { character = root animation = personality_rational }
+	option = { name = prince_frontier_serve add_character_modifier = { modifier = prince_commander_trust_modifier years = 5 } add_character_modifier = { modifier = prince_border_veteran_modifier years = 4 } }
+}
+
+prince_wuxia.2403 = {
+	type = character_event
+	title = prince_wuxia.2403.t
+	desc = prince_wuxia.2403.desc
+	theme = war
+	left_portrait = { character = root animation = personality_honorable }
+	option = { name = prince_frontier_serve add_character_modifier = { modifier = prince_supply_escort_modifier years = 4 } add_stress = 10 }
+}
+
+prince_wuxia.2404 = {
+	type = character_event
+	title = prince_wuxia.2404.t
+	desc = prince_wuxia.2404.desc
+	theme = diplomacy
+	left_portrait = { character = root animation = personality_honorable }
+	option = { name = prince_frontier_people add_character_modifier = { modifier = prince_refugee_protector_modifier years = 5 } add_prestige = minor_prestige_gain }
+}
+
+prince_wuxia.2405 = {
+	type = character_event
+	title = prince_wuxia.2405.t
+	desc = prince_wuxia.2405.desc
+	theme = war
+	left_portrait = { character = root animation = personality_bold }
+	option = { name = prince_frontier_serve add_character_modifier = { modifier = prince_bandit_hunter_modifier years = 5 } add_character_modifier = { modifier = prince_tournament_bruised_modifier years = 1 } }
+}
+
+prince_wuxia.2406 = {
+	type = character_event
+	title = prince_wuxia.2406.t
+	desc = prince_wuxia.2406.desc
+	theme = diplomacy
+	left_portrait = { character = root animation = personality_honorable }
+	option = { name = prince_frontier_serve add_character_modifier = { modifier = prince_realm_loyalist_modifier years = 6 } add_character_modifier = { modifier = prince_respected_hero_of_realm_modifier years = 5 } }
+	option = { name = prince_frontier_independent add_character_modifier = { modifier = prince_pragmatic_wanderer_modifier years = 5 } add_character_modifier = { modifier = prince_jianghu_state_tension_modifier years = 3 } }
+}
+
+prince_wuxia.2407 = {
+	type = character_event
+	title = prince_wuxia.2407.t
+	desc = prince_wuxia.2407.desc
+	theme = diplomacy
+	left_portrait = { character = root animation = personality_rational }
+	option = { name = prince_frontier_serve add_character_modifier = { modifier = prince_court_recognized_hero_modifier years = 5 } }
+	option = { name = prince_frontier_people add_character_modifier = { modifier = prince_independent_prince_wulin_figure_modifier years = 5 } }
+	option = { name = prince_frontier_exploit add_character_modifier = { modifier = prince_suspected_collaborator_modifier years = 4 } add_trait = prince_suspected_opportunist }
+}
