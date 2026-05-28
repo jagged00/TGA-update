@@ -5,7 +5,7 @@
         cultivation_ai.2295
         cultivation_ai.2290
         cultivation_ai.3000
-		xianxia_world.9602
+        xianxia_world.9602
         xianxia_world.1700
         xianxia_sect_conflict.0001
     }
